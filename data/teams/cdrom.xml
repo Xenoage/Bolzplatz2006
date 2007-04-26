@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="cdrom" name="CD Rom" description="" group="clubteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="EEC591" shirt="FFA54F" shirt2="FFA54F" pants="8B2323" shoes="000000"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="FFFFFF" shirt2="FFFFFF" pants="8B2323" shoes="FFA54F"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="1874CD" shirt2="1874CD" pants="FFFFFF" shoes="8B2323"/>
+  <players>
+    <player name="December Mango" attack="2" defense="6" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Sammy Kuhfuhr" attack="4" defense="5" speed="5" stamina="5" headdress="none" glasses="glasses"/>
+    <player name="Daddel de Verre" attack="5" defense="4" speed="5" stamina="6" headdress="bobblecap" glasses=""/>
+    <player name="Franzl Flotti" attack="4" defense="9" speed="6" stamina="10" headdress="ted" glasses=""/>
+    <player name="Chef Chackalaka" attack="5" defense="3" speed="5" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

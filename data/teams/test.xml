@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="Beschreibung des Vereinssdf" group="nationalteams" id="test" name="Test" stadium="allstars_3">
+  <colors id="home" pants="CC0000" pattern="" shirt="F4E5E5" shirt2="EEEEFF" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="BE0000" pattern="horizontal" shirt="1E64A0" shirt2="1E64A0" shoes="A0A0A0" skin="99785A"/>
+  <colors id="goalkeeper" pants="BE0000" pattern="vertical" shirt="1E64A0" shirt2="1E64A0" shoes="A0A0A0" skin="99785A"/>
+  <players>
+    <player attack="5" defense="5" glasses="" headdress="" name="Torwart" speed="5" stamina="5"/>
+    <player attack="5" defense="5" glasses="" headdress="" name="Linker Verteidiger" speed="5" stamina="5"/>
+    <player attack="5" defense="5" glasses="" headdress="" name="Rechter Verteidiger" speed="5" stamina="5"/>
+    <player attack="5" defense="5" glasses="" headdress="" name="Linker Stürmer" speed="5" stamina="5"/>
+    <player attack="5" defense="5" glasses="" headdress="" name="Rechter Stürmer" speed="5" stamina="5"/>
+  </players>
+</team>

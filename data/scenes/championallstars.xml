@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<guiscene id="championallstars">
+  <stadium id="%career.stadium.id%" light="false" usecareerads="true"/>
+  <weather id="night-moonlight"/>
+	<program id="championallstars"/>
+
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.2" loop="true">
+      <from>
+        <point x="0" y="8" z="-20"/>
+        <point x="0" y="6" z="-18"/>
+				<point x="0" y="4" z="-16"/>
+				<point x="-2" y="2" z="-14"/>
+				<point x="-6" y="2" z="-14"/>
+				<point x="-10" y="2" z="-14"/>
+				<point x="-14" y="1" z="-14"/>
+				<point x="-14" y="1" z="-5"/>
+				<point x="-14" y="1" z="8"/>
+				<point x="-5" y="2" z="5"/>
+				<point x="0" y="2" z="-5"/>
+				<point x="0" y="4" z="-15"/>
+      </from>
+      <at>
+        <point x="0" y="1" z="-9"/>
+        <point x="0" y="1" z="-9"/>
+				<point x="0" y="1" z="-9"/>
+				<point x="0" y="1" z="-9"/>
+				<point x="0" y="1" z="-9"/>
+				<point x="0" y="5" z="-5"/>
+				<point x="0" y="10" z="0"/>
+				<point x="0" y="15" z="0"/>
+				<point x="0" y="15" z="0"/>
+				<point x="0" y="10" z="0"/>
+				<point x="0" y="5" z="0"/>
+				<point x="0" y="1" z="0"/>
+      </at>
+    </cameraflight>
+
+  </cameraflights>
+</guiscene>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="pvceindhoven" name="PVC Eindhoven" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_2">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="CC0000" shirt2="FFFFFF" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="0099CC" shirt2="1E64A0" pants="0099CC" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FFCC00" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Heury Silverpommes" attack="7" defense="8" speed="8" stamina="9" headdress="" glasses=""/>
+    <player name="Alexander Rodeo" attack="7" defense="9" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Philly Cocos" attack="7" defense="9" speed="9" stamina="8" headdress="none" glasses=""/>
+    <player name="Joe zu Jung" attack="9" defense="9" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Damaskus Beaty" attack="9" defense="7" speed="8" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

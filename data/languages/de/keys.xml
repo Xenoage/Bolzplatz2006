@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="key" value="Taste"/>
+  <entry id="key_left" value="Links"/>
+  <entry id="key_up" value="Oben"/>
+  <entry id="key_right" value="Rechts"/>
+  <entry id="key_down" value="Unten"/>
+  <entry id="key_tab" value="Tab"/>
+  <entry id="key_backspace" value="Backspace"/>
+  <entry id="key_enter" value="Enter"/>
+  <entry id="key_shift" value="Shift"/>
+  <entry id="key_ctrl" value="Strg"/>
+  <entry id="key_menu" value="Menu"/>
+  <entry id="key_pause" value="Pause"/>
+  <entry id="key_kana" value="Kana"/>
+  <entry id="key_hanguel" value="Hanguel"/>
+  <entry id="key_hangul" value="Hangul"/>
+  <entry id="key_junja" value="Junja"/>
+  <entry id="key_final" value="Final"/>
+  <entry id="key_hanja" value="Hanja"/>
+  <entry id="key_kanji" value="Kanji"/>
+  <entry id="key_escape" value="Esc"/>
+  <entry id="key_convert" value="Convert"/>
+  <entry id="key_nonconvert" value="Nonconvert"/>
+  <entry id="key_accept" value="Accept"/>
+  <entry id="key_modechange" value="Modechange"/>
+  <entry id="key_space" value="Leertaste"/>
+  <entry id="key_prior" value="Prior"/>
+  <entry id="key_next" value="Next"/>
+  <entry id="key_end" value="Ende"/>
+  <entry id="key_home" value="Pos 1"/>
+  <entry id="key_select" value="Select"/>
+  <entry id="key_print" value="Druck"/>
+  <entry id="key_execute" value="Execute"/>
+  <entry id="key_snapshot" value="Snapshot"/>
+  <entry id="key_insert" value="Einfügen"/>
+  <entry id="key_delete" value="Löschen"/>
+  <entry id="key_help" value="Hilfe"/>
+  <entry id="key_lwin" value="Win links"/>
+  <entry id="key_rwin" value="Win rechts"/>
+  <entry id="key_apps" value="Apps"/>
+  <entry id="key_sleep" value="Sleep"/>
+  <entry id="key_numpad" value="Numpad"/>
+  <entry id="key_multiply" value="Multiply"/>
+  <entry id="key_add" value="Add"/>
+  <entry id="key_separator" value="Separator"/>
+  <entry id="key_subtract" value="Subtract"/>
+  <entry id="key_decimal" value="Decimal"/>
+  <entry id="key_divide" value="Divide"/>
+  <entry id="key_numlock" value="NumLock"/>
+  <entry id="key_scroll" value="Scroll"/>
+  <entry id="key_lshift" value="Shift links"/>
+  <entry id="key_rshift" value="Shift rechts"/>
+  <entry id="key_lcontrol" value="Strg links"/>
+  <entry id="key_rcontrol" value="Strg rechts"/>
+  <entry id="key_lmenu" value="Menu links"/>
+  <entry id="key_rmenu" value="Menu rechts"/>
+  <entry id="key_attn" value="Attn"/>
+  <entry id="key_crsel" value="CrSel"/>
+  <entry id="key_exsel" value="ExSel"/>
+  <entry id="key_ereof" value="Erase EOF"/>
+  <entry id="key_play" value="Play"/>
+  <entry id="key_zoom" value="Zoom"/>
+  <entry id="key_pa1" value="PA1"/>
+  <entry id="key_oemclear" value="OEM Clear"/>
+</language>

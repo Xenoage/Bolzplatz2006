@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="blstruempfchen" name="FC Bleiern Strümpfchen" description="Schutzgeld, Seebestattungen - alles aus einer Hand" group="clubteams" stadium="">
+  <colors id="home" pattern="vertical" skin="99785A" shirt="444444" shirt2="202020" pants="000000" shoes="CCCCCC"/>
+  <colors id="away" pattern="vertical" skin="99785A" shirt="444444" shirt2="202020" pants="000000" shoes="CCCCCC"/>
+  <colors id="goalkeeper" pattern="vertical" skin="99785A" shirt="444444" shirt2="202020" pants="A00000" shoes="CCCC00"/>
+  <players>
+    <player name="Kahneval" attack="3" defense="9" speed="8" stamina="5" headdress="none" glasses="glasses"/>
+    <player name="Pro Schmollski" attack="10" defense="4" speed="8" stamina="7" headdress="none" glasses="glasses"/>
+    <player name="Michael LackAb" attack="5" defense="9" speed="6" stamina="5" headdress="none" glasses="glasses"/>
+    <player name="Torsten Stinkts" attack="9" defense="5" speed="7" stamina="9" headdress="none" glasses="glasses"/>
+    <player name="Phillip Schnell" attack="10" defense="5" speed="9" stamina="8" headdress="none" glasses="glasses"/>
+  </players>
+</team>

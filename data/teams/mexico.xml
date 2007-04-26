@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="mexico" name="Mexiko" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="008000" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="008000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="008000" shirt2="FFFFFF" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Yo Cohan" attack="7" defense="6" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Salvy Chama" attack="6" defense="7" speed="8" stamina="7" headdress="iro" glasses=""/>
+    <player name="Ricky Osavo" attack="6" defense="8" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Ama Brava" attack="8" defense="7" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Franz Forsetta" attack="8" defense="7" speed="6" stamina="7" headdress="" glasses=""/>
+  </players>
+</team>

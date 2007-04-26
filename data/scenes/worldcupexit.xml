@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<guiscene id="worldcupexit">
+  <stadium id="worldstadium"/>
+  <weather id="day-rain" sound="true"/>
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.3" loop="true">
+      <from>
+        <point x="0" y="15" z="20"/>
+        <point x="-25" y="10" z="15"/>
+				<point x="-30" y="6" z="0"/>
+        <point x="-25" y="10" z="-15"/>
+        <point x="0" y="15" z="-20"/>
+        <point x="25" y="10" z="-15"/>
+				<point x="30" y="6" z="0"/>
+        <point x="25" y="10" z="15"/>
+      </from>
+      <at>
+        <point x="-25" y="5" z="-15"/>
+        <point x="0" y="10" z="-20"/>
+        <point x="25" y="5" z="-15"/>
+				<point x="30" y="0" z="0"/>
+        <point x="25" y="5" z="15"/>
+        <point x="0" y="10" z="20"/>
+        <point x="-25" y="5" z="15"/>
+				<point x="-30" y="0" z="0"/>
+      </at>
+    </cameraflight>
+
+  </cameraflights>
+</guiscene>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="england" name="England" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F6F1F1" shirt2="EEEEFF" pants="000066" shoes="D7D4D4"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="EC0404" shirt2="1E64A0" pants="F1ECEC" shoes="9D1A1A"/>
+  <colors id="goalkeeper" pattern="" skin="FFB56C" shirt="3399FF" shirt2="1E64A0" pants="F1ECEC" shoes="A0A0A0"/>
+  <players>
+    <player name="Butler James" attack="8" defense="7" speed="6" stamina="7" headdress="" glasses="glasses"/>
+    <player name="Coleman Black" attack="8" defense="9" speed="8" stamina="7" headdress="none" glasses=""/>
+    <player name="Cheeky Checkman" attack="10" defense="8" speed="10" stamina="10" headdress="iro" glasses=""/>
+    <player name="Larry Loony" attack="9" defense="9" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Mike Cloven" attack="8" defense="9" speed="7" stamina="10" headdress="" glasses=""/>
+  </players>
+</team>

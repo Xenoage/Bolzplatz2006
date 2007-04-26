@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="career">
+  <scene systemid="championallstars"/>
+  <fading intime="1" incolor="000000" outtime="1" outcolor="000000"/>
+  <music fadein="2" fadeout="1" continue="true">music/victory.ogg</music>
+
+  <groups start="championallstars">
+
+
+    <!--
+    *****************************
+    * ALLSTARS LEAGUE: CHAMPION *
+    *****************************
+    -->
+
+    <group id="championallstars" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="cameraflight" param1="round1" guisound="move"/>
+
+
+			<label id="championallstars.title" caption="You are the champion of the Allstars League!" color="FFB400" center="false">
+        <pos x="100" y="20" width="700" height="60"/>
+        <flyin x="100" y="-60" starttime="0.0" duration="0.5"/>
+        <flyout x="100" y="-60" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+			<button id="championallstars.hof" caption="Register in Online-Hall-of-Fame!">
+        <focus/>
+        <pos x="100" y="580" width="824" height="60"/>
+        <flyin x="100" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="100" y="768" starttime="0.5" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">championallstars.ok</next_control>
+          <next_control dir="down">championallstars.ok</next_control>
+        </next>
+        <action event="click" type="halloffame" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="championallstars.ok" caption="Continue without registering">
+        <pos x="100" y="660" width="824" height="60"/>
+        <flyin x="100" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="100" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">championallstars.hof</next_control>
+          <next_control dir="down">championallstars.hof</next_control>
+        </next>
+        <action event="click" type="openscreen" param1="career" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+    </group>
+
+
+		<!--
+    ******************
+    * BROWSER OPENED *
+    ******************
+    -->
+
+    <group id="browseropened" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+
+      <label caption="Hall of Fame" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="A browser window was opened. If it does not appear, please activate it manually (Windows: Alt+Tab) to register in the Hall of Fame." color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="browseropened.ok" caption="Continue">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">browseropened.ok</next_control>
+          <next_control dir="down">browseropened.ok</next_control>
+        </next>
+        <action event="click" type="openscreen" param1="career" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+  </groups>
+
+</screen>

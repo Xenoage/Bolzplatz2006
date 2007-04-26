@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fsvheinz05" name="FSV Heinz 05" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="E10F0F" pants="FF0000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="DDDDFF" shirt2="1E64A0" pants="F2F1F1" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF9900" shirt2="1E64A0" pants="0B0101" shoes="A0A0A0"/>
+  <players>
+    <player name="Dino Kracher" attack="4" defense="5" speed="6" stamina="4" headdress="" glasses=""/>
+    <player name="Nikotin O'Whisky" attack="5" defense="3" speed="9" stamina="5" headdress="" glasses=""/>
+    <player name="Goldio da Silber" attack="6" defense="6" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Mike Turtel" attack="8" defense="4" speed="4" stamina="6" headdress="bobblecap" glasses=""/>
+    <player name="Bauer Bene" attack="5" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<input>
+  <user id="1">
+    <keyboard>
+      <key id="arrowleft" value="37"/>
+      <key id="arrowup" value="38"/>
+      <key id="arrowright" value="39"/>
+      <key id="arrowdown" value="40"/>
+      <key id="pass" value="191"/>
+      <key id="shoot" value="222"/>
+      <key id="sprint" value="192"/>
+    </keyboard>
+    <gamepad>
+      <key id="pass" value="1"/>
+      <key id="shoot" value="3"/>
+      <key id="sprint" value="2"/>
+    </gamepad>
+  </user>
+  <user id="2">
+    <keyboard>
+      <key id="arrowleft" value="70"/>
+      <key id="arrowup" value="84"/>
+      <key id="arrowright" value="72"/>
+      <key id="arrowdown" value="71"/>
+      <key id="pass" value="68"/>
+      <key id="shoot" value="83"/>
+      <key id="sprint" value="65"/>
+    </keyboard>
+    <gamepad>
+      <key id="pass" value="1"/>
+      <key id="shoot" value="3"/>
+      <key id="sprint" value="2"/>
+    </gamepad>
+  </user>
+</input>

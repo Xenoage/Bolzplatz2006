@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<font id="timescore" h="75">
+  <letter name="0" x="2" y="1" w="58"/>
+  <letter name="1" x="63" y="1" w="58"/>
+  <letter name="2" x="124" y="1" w="58"/>
+  <letter name="3" x="185" y="1" w="58"/>
+  <letter name="4" x="2" y="77" w="58"/>
+  <letter name="5" x="63" y="77" w="58"/>
+  <letter name="6" x="124" y="77" w="58"/>
+  <letter name="7" x="185" y="77" w="58"/>
+  <letter name="8" x="2" y="153" w="58"/>
+  <letter name="9" x="63" y="153" w="58"/>
+  <letter name=":" x="124" y="153" w="40"/>
+</font>

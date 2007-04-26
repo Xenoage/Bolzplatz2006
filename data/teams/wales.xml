@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="wales" name="Wales" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="E21F1F" shirt2="E21F1F" pants="E21F1F" shoes="D7D4D4"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="EC0404" shirt2="1E64A0" pants="E21F1F" shoes="9D1A1A"/>
+  <colors id="goalkeeper" pattern="" skin="FFB56C" shirt="567356" shirt2="567356" pants="567356" shoes="A0A0A0"/>
+  <players>
+    <player name="One Coin" attack="4" defense="5" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Danny Gibbon" attack="3" defense="4" speed="3" stamina="4" headdress="none" glasses=""/>
+    <player name="So Many Cavies " attack="5" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Rein Giggel" attack="6" defense="5" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Jonas Hart" attack="4" defense="5" speed="5" stamina="4" headdress="none" glasses="glasses"/>
+  </players>
+</team>

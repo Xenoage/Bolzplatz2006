@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="glasgowdangers" name="Glasgow Dangers" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="1222AC" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="vertical" skin="FFC280" shirt="BE0000" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF0000" shirt2="BE0000" pants="0A2DB4" shoes="A0A0A0"/>
+  <players>
+    <player name="Sebastian Koloss" attack="7" defense="9" speed="8" stamina="6" headdress="" glasses=""/>
+    <player name="Zufahrt Kiziwilly" attack="7" defense="9" speed="8" stamina="4" headdress="" glasses="glasses"/>
+    <player name="Hammy Namumy" attack="6" defense="9" speed="6" stamina="3" headdress="" glasses=""/>
+    <player name="Dodo Proscho" attack="8" defense="9" speed="8" stamina="4" headdress="" glasses=""/>
+    <player name="Nuccy Nuovum" attack="7" defense="9" speed="7" stamina="2" headdress="" glasses=""/>
+  </players>
+</team>

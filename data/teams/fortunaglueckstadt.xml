@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fortunaglueckstadt" name="Fortuna Glückstadt" description="Beschreibung des Vereins" group="clubteams" stadium="league3_1">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="F4E5E5" pants="FF0000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F4E5E5" shirt2="1E64A0" pants="F4E5E5" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF0000" shirt2="1E64A0" pants="180202" shoes="A0A0A0"/>
+  <players>
+    <player name="Kasimir Nulling" attack="1" defense="2" speed="4" stamina="2" headdress="" glasses=""/>
+    <player name="Dietmar Böcking" attack="1" defense="2" speed="3" stamina="1" headdress="" glasses=""/>
+    <player name="Olaf Vollbart" attack="2" defense="3" speed="1" stamina="2" headdress="" glasses=""/>
+    <player name="Denis Fuchs" attack="2" defense="0" speed="1" stamina="2" headdress="none" glasses=""/>
+    <player name="Marcel Freibier" attack="2" defense="1" speed="1" stamina="2" headdress="" glasses=""/>
+  </players>
+</team>

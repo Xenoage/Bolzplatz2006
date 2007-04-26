@@ -1,0 +1,53 @@
+body {
+   BACKGROUND-color: #f0f0f0;
+   font-family: Tahoma, Arial;
+   color: #222222;
+   font-size: 11px;
+   scrollbar-face-color:#a0a0a0;
+   scrollbar-base-color:#ffffff;
+   scrollbar-track-color:#ffffff;
+}
+
+
+/* Schriften definieren
+----------------------------------------------------- */
+
+td {
+   font-family: Tahoma, Arial;
+   color: #222222;
+   font-size: 11px;
+}
+.head {
+   font-family: Tahoma, Arial;
+   color: #506600;
+   font-size: 15px;
+}
+.micro {
+   font-family: Tahoma, Arial;
+   color: #222222;
+   font-size: 10px;
+}
+
+.hr {
+   color: #000000;
+}
+
+/* Links definieren
+----------------------------------------------------- */
+
+A:LINK {
+   text-decoration:none;
+   color: #774400;
+}
+A:VISITED {
+   text-decoration:none;
+   color: #774400;
+}
+A:ACTIVE {
+   text-decoration:none;
+    color: #774400;
+}
+A:HOVER {
+   text-decoration:underline;
+   color: #331100;
+}

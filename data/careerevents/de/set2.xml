@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+
+	<event>
+		<aftermatch>
+	    <conditions>
+				<matchresult type="lost"/>
+	    </conditions>
+			<actions>
+				<money value="2000"/>
+			</actions>
+		</aftermatch>
+    <title>Pssst...</title>
+    <text>Streng vertraulich, versteht sich: Über Deine mehr oder weniger gut gepflegten mafiösen Kontakte wurden Dir 2000 € versprochen, wenn Du das nächste Spiel verlierst. Selbstverständlich wirst Du nicht darauf eingehen...</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<teamvalues stamina="-5"/>
+			</actions>
+		</beforematch>
+    <title>Ach ja, das Gras...</title>
+    <text>Überraschend meldet sich dein alter Studienfreund wieder bei dir und bringt auch gleich einen Beutel Haschisch mit, um die alten Zeiten hochleben zu lassen. Leider lässt du dich völlig gehen und vergisst dadurch für eine Woche das Training. Der Ausdauerwert deiner Mannschaft sinkt.</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="-2000"/>
+			</actions>
+		</beforematch>
+    <title>Zu früh gefreut!</title>
+    <text>Den Rechtsstreit mit dem gegnerischen Verein konntest du durch ein nächtliches Treffen mit der Rechtsanwältin der Gegenpartei gerade noch abwenden. Kleine Nebenwirkung: Du musst nun eine Unterhaltzahlung von 2000 Euro leisten.</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="-1000"/>
+			</actions>
+		</beforematch>
+    <title>Wer schön sein will muss leiden:</title>
+    <text>"Einmal rote Haar haben" dachte sich wohl dein Stürmer, bevor er zum Haarfärbemittel griff. Leider enthielt das Mittelchen Polyethylenhexodiolpentolan, das auf der Dopingliste der ÜFA steht. Das kostet Dich 1000 Euro Strafe und Dein Spieler muss zum Friseur!</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="2000"/>
+			</actions>
+		</beforematch>
+    <title>Schiri in "bestechend" guter Form:</title>
+    <text>Um sein maues Gehalt aufzubessern nahm der Schiedsrichter beim letzten Spiel Gelder vom gegnerischen Team an. Leider konnte jemand nicht dicht halten und der Deutsche Bolz-Bund überführte den korrupten Schiedsrichter. Nun bekommst Du die Bestechungssumme von 2000 Euro zugesprochen!</text>
+  </event>
+
+</events>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="australia" name="Australien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFF00" shirt2="EEEEFF" pants="008000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="008000" shirt2="1E64A0" pants="FFFF00" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="000099" shirt2="FFFFFF" pants="CC0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Zecke Kaikai" attack="3" defense="4" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Lubio Minicic" attack="3" defense="4" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Stotch Blitzershield" attack="4" defense="6" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Acci Tambsen" attack="5" defense="4" speed="5" stamina="3" headdress="" glasses="glasses"/>
+    <player name="Jay Calloa" attack="7" defense="4" speed="7" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

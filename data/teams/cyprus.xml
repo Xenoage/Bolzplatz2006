@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="cyprus" name="Zypern" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="5381F4" shirt2="F9F9F9" pants="5381F4" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F9F9F9" shirt2="5381F4" pants="F9F9F9" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="FFFFFF" shirt2="CC0000" pants="0000CC" shoes="A0A0A0"/>
+  <players>
+    <player name="Mike Morfium" attack="1" defense="2" speed="3" stamina="2" headdress="" glasses=""/>
+    <player name="Koulas Koula" attack="2" defense="3" speed="2" stamina="2" headdress="none" glasses=""/>
+    <player name="Ultra Krasser" attack="2" defense="3" speed="3" stamina="1" headdress="ted" glasses="glasses"/>
+    <player name="Costa Karamba" attack="1" defense="2" speed="1" stamina="1" headdress="" glasses=""/>
+    <player name="Ja Du Bist" attack="2" defense="2" speed="1" stamina="2" headdress="" glasses=""/>
+  </players>
+</team>

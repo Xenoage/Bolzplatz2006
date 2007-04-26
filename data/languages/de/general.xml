@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="version" value="Version"/>
+  <entry id="goalkeeper" value="Torwart"/>
+  <entry id="defenseleft" value="Linker Verteidiger"/>
+  <entry id="defenseright" value="Rechter Verteidiger"/>
+  <entry id="forwardleft" value="Linker Stürmer"/>
+  <entry id="forwardright" value="Rechter Stürmer"/>
+  <entry id="error" value="Fehler!"/>
+  <entry id="attention" value="Achtung!"/>
+  <entry id="group" value="Gruppe"/>
+  <entry id="leagueallstars" value="Allstars League"/>
+  <entry id="league1" value="1. Liga"/>
+  <entry id="league2" value="2. Liga"/>
+  <entry id="league3" value="3. Liga"/>
+  <entry id="leagueallstarslong" value="ÜFA Allstars League"/>
+  <entry id="league1long" value="1. Liga (Bundesliga)"/>
+  <entry id="league2long" value="2. Liga (Landesliga)"/>
+  <entry id="league3long" value="3. Liga (Dorfliga)"/>
+  <entry id="leagueallstarsshort" value="All.L."/>
+  <entry id="startofseason" value="Saisonstart"/>
+  <entry id="matchday" value="Spieltag"/>
+  <entry id="emptyslot" value="Noch nicht belegt"/>
+  <entry id="invalidslot" value="Fehlerhafter Spielstand!"/>
+  <entry id="career" value="Karriere"/>
+  <entry id="date" value="%day%.%month%.%year%"/>
+  <entry id="groupmatchday" value="Gruppenspieltag"/>
+  <entry id="eighthfinal" value="Achtelfinale"/>
+  <entry id="quarterfinal" value="Viertelfinale"/>
+  <entry id="semifinal" value="Halbfinale"/>
+  <entry id="thirdplacematch" value="Spiel um Platz 3"/>
+  <entry id="final" value="Finale"/>
+  <entry id="winterbreak" value="Winterpause"/>
+  <entry id="seasonfinal" value="Saisonfinale"/>
+  <entry id="groupa" value="Gruppe A"/>
+  <entry id="groupb" value="Gruppe B"/>
+  <entry id="groupc" value="Gruppe C"/>
+  <entry id="groupd" value="Gruppe D"/>
+  <entry id="groupe" value="Gruppe E"/>
+  <entry id="groupf" value="Gruppe F"/>
+  <entry id="groupg" value="Gruppe G"/>
+  <entry id="grouph" value="Gruppe H"/>
+  <entry id="firstplace" value="Erster"/>
+  <entry id="secondplace" value="Zweiter"/>
+  <entry id="yetunknown" value="Noch unbekannt"/>
+  <entry id="winner" value="Gewinner"/>
+  <entry id="loser" value="Verlierer"/>
+	<entry id="unknown" value="Unbekannt"/>
+  <entry id="fatalerrormessage" value="Es ist ein schwerer Fehler aufgetreten.\nDas Spiel muss beendet werden.\nFür Details siehe log.txt"/>
+	<entry id="alreadybought" value="Bereits gekauft"/>
+	<entry id="loyality0" value="geldgierig. Schon bei wenigen Euros kennt er kein Gewissen mehr."/>
+	<entry id="loyality1" value="zwielichtig. Man munkelt, der Großteil seines Einkommens kommt nicht vom Fußballverband."/>
+	<entry id="loyality2" value="neutral. Den Versuch ist es trotzdem allemal wert."/>
+	<entry id="loyality3" value="zuverlässiger Mann. Fragwürdig, ob er eine Bestechung annehmen würde."/>
+	<entry id="loyality4" value="sehr gewissenhaft. Ihn zu gewinnen, ist eine hohe Kunst."/>
+	<entry id="loyality5" value="äußerst loyal. Bestechung ist für ihn ein Fremdwort."/>
+  <entry id="ok" value="OK"/>
+  <entry id="cancel" value="Abbrechen"/>
+</language>

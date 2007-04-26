@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="palma" name="SC Palma" description="Daniels erstes Team" group="clubteams" stadium="estadiodelaplaya">
+  <colors id="home" pattern="vertical" skin="EEC591" shirt="ADFF2F" shirt2="FFFF00" pants="EEC591" shoes="A0A0A0"/>
+  <colors id="away" pattern="vertical" skin="EEC591" shirt="FFFFFF" shirt2="FFFFFF" pants="ADFF2F" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="FFB90F" shirt2="FFB90F" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Paulinho" attack="5" defense="6" speed="5" stamina="7" headdress="" glasses="glasses"/>
+    <player name="Blanco" attack="7" defense="6" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Charles Akonor" attack="4" defense="5" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Paul" attack="8" defense="4" speed="8" stamina="6" headdress="ted" glasses=""/>
+    <player name="Nuno Cavallio" attack="6" defense="5" speed="6" stamina="7" headdress="" glasses=""/>
+  </players>
+</team>

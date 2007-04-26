@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="en">
+  <entry id="stadiumeditor_title" value="Slam Soccer 2006 - Stadium-Editor (Developer Mode)"/>
+  <entry id="stadiumeditor_openstadium_title" value="Open Stadium"/>
+  <entry id="stadiumeditor_savestadium_title" value="Save Stadium as..."/>
+  <entry id="stadiumeditor_savequestion_text" value="Do you want to save the current stadium?"/>
+  <entry id="stadiumeditor_savequestion_title" value="Save Stadium?"/>
+  <entry id="stage1_normal" value="Normal"/>
+  <entry id="stage1_banister" value="Banister back"/>
+  <entry id="stage1_normal_entrance1" value="Entrance 1"/>
+  <entry id="stage1_normal_entrance2" value="Entrance 2"/>
+  <entry id="stage1_normal_stairs_l" value="Stairs left"/>
+  <entry id="stage1_normal_stairs_m" value="Stairs middle"/>
+  <entry id="stage1_normal_stairs_r" value="Stairs right"/>
+  <entry id="stadium" value="Stadium"/>
+  <entry id="stands" value="Stands"/>
+  <entry id="adboards" value="Adboards"/>
+  <entry id="attractions" value="Attractions"/>
+  <entry id="scoreboard" value="Scoreboard"/>
+  <entry id="floodlight" value="Floodlight"/>
+  <entry id="objects" value="Objects"/>
+  <entry id="lawn" value="Lawn"/>
+  <entry id="terrain" value="Terrain"/>
+  <entry id="attractionalreadybuilt" value="This attraction was already built."/>
+  <entry id="addobject..." value="Add object..."/>
+  <entry id="3dobjectmustbeinmeshesdirectory" value="Object files must be in the folder data/meshes/!"/>
+  <entry id="stadiumname" value="Name of the stadium:"/>
+  <entry id="unnamedstadium" value="Unnamed Stadium"/>
+  <entry id="numberofspectators" value="Number of spectators:"/>
+  <entry id="menu_stadium" value="Stadium"/>
+  <entry id="menu_new" value="New"/>
+  <entry id="menu_open" value="Open..."/>
+  <entry id="menu_saveas" value="Save as..."/>
+  <entry id="menu_exit" value="Exit"/>
+  <entry id="menu_edit" value="Edit"/>
+  <entry id="menu_north" value="Move nothward"/>
+  <entry id="menu_south" value="Move southward"/>
+  <entry id="menu_west" value="Move westward"/>
+  <entry id="menu_east" value="Move eastward"/>
+  <entry id="menu_up" value="Move up"/>
+  <entry id="menu_down" value="Move down"/>
+  <entry id="menu_rotateleft" value="Rotate left"/>
+  <entry id="menu_rotateright" value="Rotate right"/>
+  <entry id="menu_modification" value="Switch modification"/>
+  <entry id="menu_delete" value="Delete"/>
+  <entry id="menu_help" value="Help"/>
+  <entry id="menu_shortcuts" value="Shortcuts..."/>
+  <entry id="menu_about" value="About..."/>
+</language>

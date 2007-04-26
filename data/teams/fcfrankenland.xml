@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcfrankenland" name="1. FC Frankenland" description="1. FC Frankenland by Eintracht4ever" group="clubteams" stadium="league1_3">
+  <colors id="home" pattern="" skin="E1C29E" shirt="E41616" shirt2="000000" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="E1C29E" shirt="F9F9F9" shirt2="888686" pants="F9F9F9" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="E1C29E" shirt="FFEA00" shirt2="000000" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Raffi Bauer" attack="5" defense="7" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Mario Kantenschluppi" attack="4" defense="6" speed="5" stamina="6" headdress="none" glasses=""/>
+    <player name="Andi Fuchs" attack="5" defense="8" speed="6" stamina="4" headdress="" glasses=""/>
+    <player name="Mark Mental" attack="7" defense="7" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Rob Wittert" attack="8" defense="6" speed="7" stamina="6" headdress="none" glasses=""/>
+  </players>
+</team>

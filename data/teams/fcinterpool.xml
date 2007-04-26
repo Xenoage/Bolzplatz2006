@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcinterpool" name="FC Interpool" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_2">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="EEEEFF" pants="FF0000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="000000" pants="000000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="009933" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="J.M. Rainer" attack="6" defense="8" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Sammy Hippie" attack="7" defense="9" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Johnny Riesig" attack="9" defense="9" speed="8" stamina="9" headdress="" glasses=""/>
+    <player name="Steve Gepard" attack="10" defense="9" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Lars Gacelle" attack="9" defense="7" speed="9" stamina="10" headdress="" glasses=""/>
+  </players>
+</team>

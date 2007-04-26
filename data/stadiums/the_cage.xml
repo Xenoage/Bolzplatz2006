@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<stadium id="the_cage" name="The Cage">
+  <terrain id="terrain1"/>
+  <lawn quality="0"/>
+  <goals id="garbagecans"/>
+  <careerstandblocks/>
+  <careeradboardblocks/>
+  <stands maxspectators="0"/>
+  <adboards/>
+  <floodlights>
+    <floodlight stage="1">
+      <position x="-21.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="1">
+      <position x="23.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="225.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="1">
+      <position x="23.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="1">
+      <position x="-21.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </floodlight>
+  </floodlights>
+  <attractions/>
+  <objects>
+    <object id="fence.x">
+      <position x="-4.909998" y="0.0" z="17.070002"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="7.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="12.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="17.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="22.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="7.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="2.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="-3.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="-8.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="24.0" y="0.0" z="-13.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="21.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="16.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="11.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="6.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="1.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-4.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-9.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-14.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-19.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="-13.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="-8.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="-3.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="2.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="7.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-22.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-19.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-14.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-9.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="3.5599995" y="0.0" z="17.320007"/>
+      <rotation x="0.0" y="255.0" z="0.0"/>
+    </object>
+    <object id="tree3.x">
+      <position x="-1.0" y="0.0" z="-34.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="tree3.x">
+      <position x="-42.0" y="0.0" z="0.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="4.0" y="0.0" z="-31.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="tree1.x">
+      <position x="-36.0" y="0.0" z="13.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="tree3.x">
+      <position x="5.0" y="0.0" z="27.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+  </objects>
+</stadium>

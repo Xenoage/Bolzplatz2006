@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="extramailand" name="Extra Mailand" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="000099" shirt2="000000" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="horizontal" skin="FFC280" shirt="000099" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="E3E017" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Julius Caesar" attack="7" defense="8" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Ivo Romeo Cordella" attack="7" defense="9" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Turban Calasso" attack="7" defense="8" speed="7" stamina="9" headdress="iro" glasses=""/>
+    <player name="Jose Venom" attack="9" defense="7" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Andiamo" attack="10" defense="9" speed="8" stamina="10" headdress="none" glasses=""/>
+  </players>
+</team>

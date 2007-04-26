@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="settings" value="Einstellungen"/>
+  <entry id="video" value="Video"/>
+  <entry id="lowquality" value="Weniger Details (für langsamere Rechner empfohlen)"/>
+  <entry id="audio" value="Audio"/>
+	<entry id="language" value="Sprache"/>
+  <entry id="currentvideomodedoesnotexist" value="Der eingestellte Video-Modus existiert nicht.\nBitte wähle einen anderen aus der Liste aus!"/>
+	<entry id="novideomodelistfound" value="Die Liste der möglichen Video-Modi konnte nicht geladen werden!\nEs wird nur die Auflösung 640 x 480 x 16 angeboten!"/>
+  <entry id="windowedmode" value="Fenster-Anzeige"/>
+  <entry id="fullscreenmode" value="Vollbild-Anzeige"/>
+	<entry id="javasounddevice" value="Java Sound (Standard)"/>
+  <entry id="lwjgldevice" value="LWJGL/OpenAL/OggVorbis"/>
+  <entry id="nulldevice" value="Kein Sound (Null Device)"/>
+	<entry id="unknownaudiodevice" value="Unbekannte Audio-Engine eingestellt!\nBitte wähle eine andere aus!"/>
+	<entry id="audioconfiginvalid" value="Audio-Konfigurationsdatei nicht lesbar!\nBitte wähle eine Audio-Engine aus!"/>
+	<entry id="languageconfiginvalid" value="Sprach-Konfigurationsdatei nicht lesbar!\nBitte wähle eine Sprache aus!"/>
+	<entry id="savevideoconfigerror" value="Fehler beim Speichern der Video-Einstellungen!\nDetails: Siehe log.txt"/>
+  <entry id="savevideoqualityconfigerror" value="Fehler beim Speichern der Video-Qualitäts-Einstellungen!\nDetails: Siehe log.txt"/> 
+	<entry id="saveaudioconfigerror" value="Fehler beim Speichern der Audio-Einstellungen!\nDetails: Siehe log.txt"/>
+	<entry id="savelanguageconfigerror" value="Fehler beim Speichern der Sprach-Einstellungen!\nDetails: Siehe log.txt"/>
+	<entry id="notyetimplemented" value="Betaversion: Noch nicht implementiert."/>
+  <entry id="exitwithoutsaving" value="Änderungen wirklich verwerfen?"/>
+</language>

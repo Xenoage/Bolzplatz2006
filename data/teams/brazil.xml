@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="brazil" name="Brasilien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="E9A65D" shirt="FAFA4D" shirt2="EEEEFF" pants="366BD8" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="E9A65D" shirt="366BD8" shirt2="1E64A0" pants="EBF0FB" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="E9A65D" shirt="8BB1FF" shirt2="1E64A0" pants="366BD8" shoes="A0A0A0"/>
+  <players>
+    <player name="Horatio Nelson" attack="9" defense="8" speed="9" stamina="10" headdress="" glasses="glasses"/>
+    <player name="Lutschio" attack="10" defense="9" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Berti Haarlos" attack="10" defense="9" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Roland Ninjo" attack="10" defense="9" speed="10" stamina="10" headdress="iro" glasses=""/>
+    <player name="Andiamo" attack="9" defense="8" speed="9" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

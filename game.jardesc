@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+<jar path="D:/Werkstatt/Bolzplatz2006/bolzplatz2006_v1.1/game.jar"/>
+<options buildIfNeeded="true" compress="false" descriptionLocation="/Bolzplatz 2006/game.jardesc" exportErrors="false" exportWarnings="false" includeDirectoryEntries="false" overwrite="true" saveDescription="true" useSourceFolders="false"/>
+<manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+<sealing sealJar="false">
+<packagesToSeal/>
+<packagesToUnSeal/>
+</sealing>
+</manifest>
+<selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.audio"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.util.language"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.scoreboard"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.attractions"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.scene"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gamemodes.events.conditions"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.physics"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gamemodes"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gamemodes.reports"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gamemodes.events.actions"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.objects"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.characters.actions"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.enums"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.font"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.programs"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.weather"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.floodlight"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.util"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.loader.parser"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.teamai"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gamemodes.events"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.audio.nulldevice"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.imageswitch"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.input"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.util.math"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.terrain"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.settings"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.crowd"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.stadium.goal"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui.loader"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.characters"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.camera"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.referee.decisions"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.gui"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.audio.lwjgl"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.characters.enums"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.match.referee"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.util"/>
+</selectedElements>
+</jardesc>

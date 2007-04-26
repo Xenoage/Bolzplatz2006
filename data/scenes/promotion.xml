@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<guiscene id="promotion">
+  <stadium id="%career.stadium.id%" usecareerads="true"/>
+  <weather id="day-sunshine"/>
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.3" loop="true">
+      <from>
+				<point x="-22" y="3" z="0"/>
+				<point x="-21" y="3" z="0"/>
+        <point x="-20" y="3" z="0"/>
+        <point x="-15" y="3" z="0"/>
+				<point x="-10" y="3" z="0"/>
+				<point x="-5" y="5" z="0"/>
+				<point x="-4" y="10" z="0"/>
+				<point x="-3" y="15" z="0"/>
+				<point x="-2" y="20" z="0"/>
+				<point x="-1" y="25" z="0"/>
+				<point x="-1" y="30" z="0"/>
+				<point x="-1" y="35" z="0"/>
+				<point x="-1" y="40" z="0"/>
+				<point x="-1" y="45" z="0"/>
+				<point x="-1" y="50" z="0" times="10"/>
+				<point x="-8" y="30" z="0"/>
+				<point x="-15" y="10" z="0"/>
+				<point x="-22" y="3" z="0"/>
+      </from>
+      <at>
+        <point x="0" y="0" z="0" times="15"/>
+      </at>
+    </cameraflight>
+
+
+  </cameraflights>
+</guiscene>

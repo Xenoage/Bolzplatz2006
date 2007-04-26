@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="egypt" name="Ägypten" description="Ägypten by Eintracht4ever" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="C78B61" shirt="CF0011" shirt2="F9F9F9" pants="F9F9F9" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="C78B61" shirt="1F6122" shirt2="F9F9F9" pants="1F6122" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="C78B61" shirt="F9F9F9" shirt2="131313" pants="131313" shoes="A0A0A0"/>
+  <players>
+    <player name="Lassen Er Hadert" attack="3" defense="4" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Abdelller Stracker" attack="4" defense="5" speed="3" stamina="5" headdress="none" glasses=""/>
+    <player name="Wahl Gumma" attack="4" defense="5" speed="5" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Mohamed Scharfi" attack="5" defense="3" speed="4" stamina="2" headdress="ted" glasses=""/>
+    <player name="Dido" attack="5" defense="4" speed="4" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

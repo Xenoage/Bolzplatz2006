@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="switzerland" name="Schweiz" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="FF0000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <players>
+    <player name="Farin Coltatly" attack="8" defense="4" speed="9" stamina="3" headdress="" glasses=""/>
+    <player name="Phil Fechter" attack="7" defense="4" speed="7" stamina="3" headdress="none" glasses="glasses"/>
+    <player name="Ludo Agnya" attack="8" defense="4" speed="7" stamina="5" headdress="" glasses=""/>
+    <player name="Tranewy Barkata" attack="8" defense="1" speed="6" stamina="3" headdress="" glasses=""/>
+    <player name="Max Strahler" attack="9" defense="4" speed="9" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

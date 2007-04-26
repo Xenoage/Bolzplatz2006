@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="ghana" name="Ghana" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="734422" shirt="FFCC00" shirt2="EEEEFF" pants="FFCC00" shoes="FFCC00"/>
+  <colors id="away" pattern="" skin="734422" shirt="EBE5E5" shirt2="1E64A0" pants="181717" shoes="181717"/>
+  <colors id="goalkeeper" pattern="" skin="734422" shirt="BE0000" shirt2="1E64A0" pants="FFCC00" shoes="FFCC00"/>
+  <players>
+    <player name="Samba Adiedi" attack="6" defense="5" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Sammy Kofferuhr" attack="4" defense="5" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Jo Hansah" attack="6" defense="4" speed="7" stamina="6" headdress="iro" glasses=""/>
+    <player name="Marcel Essayage" attack="6" defense="6" speed="5" stamina="7" headdress="" glasses=""/>
+    <player name="Maurice Amoebe" attack="6" defense="4" speed="6" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

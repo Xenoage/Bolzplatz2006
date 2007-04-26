@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcchessy" name="FC Chessy" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_1">
+  <colors id="home" pattern="" skin="FFC280" shirt="0000CC" shirt2="EEEEFF" pants="000099" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="E7E6E6" shirt2="000099" pants="CCCCCC" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="464444" shirt2="1E64A0" pants="333333" shoes="A0A0A0"/>
+  <players>
+    <player name="Pavel Cesko" attack="8" defense="9" speed="8" stamina="10" headdress="" glasses=""/>
+    <player name="Will Galle" attack="8" defense="10" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Franz Langbart" attack="10" defense="10" speed="9" stamina="10" headdress="" glasses=""/>
+    <player name="Horst Crespy" attack="10" defense="7" speed="10" stamina="9" headdress="" glasses="glasses"/>
+    <player name="Bibbi Bloggba" attack="10" defense="7" speed="10" stamina="9" headdress="iro" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="filefilter_terrains" value="Terrains (.xml)"/>
+  <entry id="filefilter_3dobjects" value="3D Objekte (.x, .ms3d)"/>
+</language>

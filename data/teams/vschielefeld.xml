@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="vschielefeld" name="Viktoria Schielefeld" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="schiele alm (schiele)">
+  <colors id="home" pattern="" skin="FFC280" shirt="3A5FCD" shirt2="3A5FCD" pants="2B2B2B" shoes="FFFFFF"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="2B2B2B" shirt2="2B2B2B" pants="FFFFFF" shoes="3A5FCD"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="EEEE00" shirt2="EEEE00" pants="FFFFFF" shoes="000000"/>
+  <players>
+    <player name="Markus Wein" attack="3" defense="5" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Rad Kutsche" attack="4" defense="7" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Rudi Klau" attack="5" defense="7" speed="8" stamina="7" headdress="" glasses="glasses"/>
+    <player name="Morgen Tags" attack="8" defense="6" speed="4" stamina="7" headdress="ted" glasses=""/>
+    <player name="Adrian Wischmopp" attack="7" defense="3" speed="8" stamina="6" headdress="bobblecap" glasses=""/>
+  </players>
+</team>

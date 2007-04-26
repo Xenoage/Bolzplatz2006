@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="tunisia" name="Tunesien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F10505" shirt2="EEEEFF" pants="F10505" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="F10505" shirt2="FFFFFF" pants="F10505" shoes="A0A0A0"/>
+  <players>
+    <player name="Chocy E'Ouvre" attack="4" defense="5" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Jubaua Bayer" attack="4" defense="5" speed="3" stamina="5" headdress="none" glasses=""/>
+    <player name="Java Narrie" attack="4" defense="5" speed="5" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Hakan Troubelly" attack="6" defense="4" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Karli Hackay" attack="5" defense="4" speed="4" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

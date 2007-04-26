@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<weather id="night-moonlight">
+  <fog red="30" green="30" blue="50" min="15" max="70"/>
+  <ambientlight red="30" green="30" blue="50"/>
+  <directionallight red="150" green="150" blue="200" x="-1" y="5" z="-1"/>
+  <stadiumlighting>on</stadiumlighting>
+  <crowdfactor>1</crowdfactor>
+</weather>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcsanktmausi" name="FC Sankt Mausi" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league3_1">
+  <colors id="home" pattern="" skin="FFC280" shirt="CCBB9B" shirt2="CCBB9B" pants="6B2805" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="6B2805" shirt2="1E64A0" pants="6B2805" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="CC3300" shirt2="1E64A0" pants="F4E6E6" shoes="A0A0A0"/>
+  <players>
+    <player name="Achim Höllenritt" attack="1" defense="3" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Ralph Gulasch" attack="2" defense="4" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Fabian Migräne" attack="2" defense="3" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Friedrich Lust" attack="5" defense="1" speed="6" stamina="7" headdress="ted" glasses=""/>
+    <player name="Basti Wolfzeck" attack="4" defense="2" speed="5" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

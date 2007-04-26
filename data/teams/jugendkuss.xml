@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="jugendkuss" name="Jugendkuss Turin" description="Jugendkuss Turin als Verein! Copyright Segal!" group="clubteams" stadium="allstars_1">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="FFFFFF" shirt2="000000" pants="000000" shoes="FFFFFF"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FF0000" shirt2="FFFFFF" pants="FFFFFF" shoes="FFFFFF"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="A80D0D" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Gili Baffo" attack="6" defense="10" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Fapri Calamari" attack="6" defense="10" speed="7" stamina="10" headdress="" glasses=""/>
+    <player name="Gianli Charlotta" attack="6" defense="8" speed="7" stamina="7" headdress="ted" glasses=""/>
+    <player name="Alex El Fiero" attack="7" defense="6" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Zalat Ikeaimovic" attack="9" defense="4" speed="6" stamina="9" headdress="" glasses="glasses"/>
+  </players>
+</team>

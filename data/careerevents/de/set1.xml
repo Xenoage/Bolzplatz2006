@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+  <event>
+    <beforematch>
+	    <conditions>
+	    	<money value="1000" type="less"/>
+				<league league3="true"/>
+	    </conditions>
+	    <actions>
+				<money value="2000"/>
+	    </actions>
+		</beforematch>
+    <title>Finanzspritze</title>
+    <text>Dein Heimatort hat das Potenzial Deines Vereins erkannt und möchte Euch mit einer kleinen Finanzspritze aus Steuergeldern fördern. Du bekommst 2000 €.\nIm Gegenzug gibt es natürlich Freikarten für den selbstlosen Herrn Bürgermeister nebst Gemahlin.</text>
+  </event>
+	<event>
+    <beforematch>
+	    <conditions>
+	    	<money value="2000" type="less"/>
+				<league league2="true" league1="true"/>
+	    </conditions>
+	    <actions>
+				<money value="5000"/>
+	    </actions>
+		</beforematch>
+    <title>Finanzspritze</title>
+    <text>Der Anblick Deines Bolzplatzes sei ein Graus, meint ein Millionär, der täglich an Deinem Stadion vorbeifährt. Er überweist Dir 5000 € mit der Bitte, das Stadion endlich zu sanieren oder gleich abzureißen.</text>
+  </event>
+	<event>
+    <beforematch>
+	    <conditions>
+	    	<money value="5000" type="less"/>
+				<league allstars="true" league1="true"/>
+	    </conditions>
+	    <actions>
+				<money value="10000"/>
+	    </actions>
+		</beforematch>
+    <title>Finanzspritze</title>
+    <text>Nachdem aufgrund schon längst überfälliger Kürzungen im Bildungs- und Kultursektor wieder einiges an Geld freigeworden ist, hat sich der Finanzminister dazu entschlossen, den Profi-Fußballvereinen unter die Arme zu greifen und spendet Deiner Mannschaft 10.000 €.</text>
+  </event>
+</events>

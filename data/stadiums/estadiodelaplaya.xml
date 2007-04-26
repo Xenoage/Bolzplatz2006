@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<stadium id="estadiodelaplaya" name="Estadio De La Playa">
+  <terrain id="terrain1"/>
+  <lawn quality="17"/>
+  <goals id="aluminumgoals"/>
+  <careerstandblocks>
+    <block stage="1" alignment="1"/>
+    <block stage="1" alignment="2"/>
+    <block stage="1" alignment="3"/>
+    <block stage="1" alignment="4"/>
+    <block stage="1" alignment="5"/>
+    <block stage="1" alignment="6"/>
+    <block stage="1" alignment="7"/>
+    <block stage="1" alignment="8"/>
+    <block stage="2" alignment="1"/>
+    <block stage="2" alignment="3"/>
+    <block stage="2" alignment="5"/>
+    <block stage="2" alignment="7"/>
+  </careerstandblocks>
+  <careeradboardblocks>
+    <block alignment="1"/>
+    <block alignment="3"/>
+    <block alignment="5"/>
+    <block alignment="7"/>
+  </careeradboardblocks>
+  <stands maxspectators="2550">
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="1">
+      <position x="-20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_entrance1" stage="1" alignment="1">
+      <position x="0.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="1">
+      <position x="20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="7">
+      <position x="-35.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="7">
+      <position x="-35.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve" stage="1" alignment="4">
+      <position x="35.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="3">
+      <position x="35.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="3">
+      <position x="35.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve" stage="1" alignment="2">
+      <position x="35.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="5">
+      <position x="-20.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="5">
+      <position x="0.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal" stage="1" alignment="5">
+      <position x="20.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve" stage="1" alignment="6">
+      <position x="-35.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve" stage="1" alignment="8">
+      <position x="-35.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="1">
+      <position x="-20.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="1">
+      <position x="0.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="1">
+      <position x="20.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="7">
+      <position x="-45.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="7">
+      <position x="-45.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="5">
+      <position x="-20.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="5">
+      <position x="0.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="5">
+      <position x="20.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="3">
+      <position x="45.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal" stage="2" alignment="3">
+      <position x="45.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+  </stands>
+  <adboards>
+    <adboard id="adboard1" alignment="5">
+      <position x="-16.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2" alignment="5">
+      <position x="-8.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3" alignment="5">
+      <position x="0.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4" alignment="5">
+      <position x="8.0" y="0.0" z="-15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1" alignment="1">
+      <position x="-8.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3" alignment="1">
+      <position x="-16.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3" alignment="1">
+      <position x="16.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4" alignment="1">
+      <position x="8.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2" alignment="3">
+      <position x="25.0" y="0.0" z="6.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3" alignment="3">
+      <position x="25.0" y="0.0" z="-6.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2" alignment="7">
+      <position x="-25.0" y="0.0" z="-6.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4" alignment="7">
+      <position x="-25.0" y="0.0" z="6.0"/>
+      <rotation x="0.0" y="-90.0" z="0.0"/>
+    </adboard>
+  </adboards>
+  <scoreboard stage="2">
+    <position x="0.0" y="3.0" z="24.0"/>
+    <rotation x="0.0" y="0.0" z="0.0"/>
+  </scoreboard>
+  <floodlights>
+    <floodlight stage="3" careerposition="1">
+      <position x="25.0" y="0.0" z="24.0"/>
+      <rotation x="0.0" y="225.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3" careerposition="2">
+      <position x="25.0" y="0.0" z="-24.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3" careerposition="4">
+      <position x="-25.0" y="0.0" z="24.0"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3" careerposition="3">
+      <position x="-25.0" y="0.0" z="-24.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </floodlight>
+  </floodlights>
+  <attractions>
+    <track>
+      <position x="0.0" y="0.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </track>
+    <highjump>
+      <position x="15.0" y="0.0" z="-16.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </highjump>
+  </attractions>
+  <objects>
+    <object id="fence.x">
+      <position x="23.0" y="0.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="29.0" y="0.0" z="-13.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="27.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="23.0" y="2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="29.0" y="0.0" z="-13.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+  </objects>
+</stadium>

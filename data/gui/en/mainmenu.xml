@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="mainmenu">
+  <scene systemid="start1"/>
+  <fading intime="1" incolor="ff00ff" outtime="1" outcolor="000000"/>
+  <music fadein="1" fadeout="1" continue="true">music/mainmenu.ogg</music>
+
+  <groups start="prestart">
+
+
+		<group id="prestart">
+      <action event="grouptime" eventparam="0" type="activategroup" param1="start"/>
+    </group>
+
+
+    <!--
+    ***************
+    * START GROUP *
+    ***************
+    -->
+
+    <group id="start" flyinduration="2.3" flyoutduration="0.3" nextgroupwaitduration="0.3">
+      <action event="groupopen" type="cameraflight" param1="start1"/>
+      <action event="grouptime" eventparam="8" type="activategroup" param1="mainmenu"/>
+      <action event="keypress" eventparam="confirm" type="activategroup" param1="mainmenu"/>
+			<action event="keypress" eventparam="cancel" type="exitprogram"/>
+
+			<image id="start.logo1" src="images/en/gamelogo.png" srcx="0" srcy="0" srcwidth="512" srcheight="256">
+        <pos x="172" y="256" width="512" height="256"/>
+				<flyin x="172" y="768" starttime="2" duration="0.3"/>
+				<flyout x="172" y="-256" starttime="0" duration="0.3"/>
+      </image>
+			<image id="start.logo2" src="images/en/gamelogo.png" srcx="0" srcy="256" srcwidth="169" srcheight="256">
+        <pos x="684" y="256" width="169" height="256"/>
+				<flyin x="684" y="768" starttime="2" duration="0.3"/>
+				<flyout x="684" y="-256" starttime="0" duration="0.3"/>
+      </image>
+
+    </group>
+
+
+		<!--
+    ****************************
+    * START GROUP WITHOUT LOGO *
+    ****************************
+    -->
+
+    <group id="startnologo" flyinduration="0" flyoutduration="0" nextgroupwaitduration="0">
+      <action event="groupopen" type="cameraflight" param1="start1"/>
+      <action event="grouptime" eventparam="1" type="activategroup" param1="mainmenu"/>
+		</group>
+
+
+    <!--
+    **************
+    * START MENU *
+    **************
+    -->
+
+    <group id="mainmenu" flyinduration="1" flyoutduration="1" nextgroupwaitduration="0.5">
+      <action event="groupopen" guisound="move"/>
+      <action event="grouptime" eventparam="25" type="cameraflight" param1="round1"/>
+			<action event="keypress" eventparam="cancel" type="exitprogram"/>
+
+      <button id="mainmenu.button0" caption="Quickstart">
+        <focus/>
+        <pos x="312" y="120" width="400" height="60"/>
+        <flyin x="1024" y="120" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.5" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">mainmenu.exit</next_control>
+          <next_control dir="down">mainmenu.newgame</next_control>
+        </next>
+				<action event="click" type="changegamemode" param1="friendlygame"/>
+        <action event="click" type="savesetting" param1="match.controller1" param2="TeamAI5#Player1"/>
+        <action event="click" type="savesetting" param1="match.controller2" param2="TeamAI5#AI"/>
+        <action event="click" type="savesetting" param1="match.team1" param2="%randomwcteam1%"/>
+        <action event="click" type="savesetting" param1="match.team2" param2="%randomwcteam2%"/>
+        <action event="click" type="savesetting" param1="match.stadium" param2="%randomwcstadium%"/>
+        <action event="click" type="savesetting" param1="match.weather" param2="random"/>
+        <action event="click" type="openscreen" param1="matchloading" guisound="alert"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="mainmenu.newgame" caption="New Game">
+        <pos x="312" y="200" width="400" height="60"/>
+        <flyin x="1024" y="200" starttime="0.1" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">mainmenu.button0</next_control>
+          <next_control dir="down">mainmenu.loadcareer</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="newgame" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="mainmenu.loadcareer" caption="Load Career">
+        <pos x="312" y="280" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.2" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.3" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">mainmenu.newgame</next_control>
+          <next_control dir="down">mainmenu.loadworldcup</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="loadcareer" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+			<button id="mainmenu.loadworldcup" caption="Load World Cup">
+        <pos x="312" y="360" width="400" height="60"/>
+        <flyin x="1024" y="360" starttime="0.3" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">mainmenu.loadcareer</next_control>
+          <next_control dir="down">mainmenu.settings</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="loadworldcup" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="mainmenu.settings" caption="Settings">
+        <pos x="312" y="440" width="400" height="60"/>
+        <flyin x="1024" y="440" starttime="0.4" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.1" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">mainmenu.loadworldcup</next_control>
+          <next_control dir="down">mainmenu.exit</next_control>
+        </next>
+        <action event="click" type="openscreen" param1="settings" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="mainmenu.exit" caption="Exit">
+        <pos x="312" y="520" width="400" height="60"/>
+        <flyin x="1024" y="520" starttime="0.5" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <tooltip>Spiel beenden</tooltip>
+        <next>
+          <next_control dir="up">mainmenu.settings</next_control>
+          <next_control dir="down">mainmenu.button0</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="goldedition" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ************
+    * NEW GAME *
+    ************
+    -->
+
+    <group id="newgame" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="cameraflight" param1="goalleft1" guisound="move"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+
+      <button id="newgame.friendlygame" caption="Friendly Game">
+        <focus/>
+        <pos x="492" y="390" width="400" height="60"/>
+        <flyin x="1174" y="390" starttime="0.0" duration="0.5"/>
+        <flyout x="1174" y="390" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newgame.training</next_control>
+          <next_control dir="down">newgame.career</next_control>
+        </next>
+        <action event="click" type="savesetting" param1="gamemode" param2="friendlygame"/>
+        <action event="click" type="activategroup" param1="selectcontrollers" guisound="alert"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="newgame.career" caption="Career">
+        <pos x="442" y="470" width="400" height="60"/>
+        <flyin x="1124" y="470" starttime="0.1" duration="0.5"/>
+        <flyout x="1124" y="470" starttime="0.3" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newgame.friendlygame</next_control>
+          <next_control dir="down">newgame.worldcup</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="newcareer" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="newgame.worldcup" caption="World Cup">
+        <pos x="392" y="550" width="400" height="60"/>
+        <flyin x="1074" y="550" starttime="0.2" duration="0.5"/>
+        <flyout x="1074" y="550" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newgame.career</next_control>
+          <next_control dir="down">newgame.training</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="newworldcup" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="newgame.training" caption="Penalty Shootout" visible="false">
+        <pos x="342" y="630" width="400" height="60"/>
+        <flyin x="1024" y="630" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="630" starttime="0.1" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newgame.worldcup</next_control>
+          <next_control dir="down">newgame.friendlygame</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="notimplemented" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    **********************
+    * SELECT CONTROLLERS *
+    **********************
+    -->
+
+    <group id="selectcontrollers" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+			<action event="groupopen" type="cameraflight" param1="field1" guisound="move"/>
+      <action event="groupopen" type="setactivejoystick" param1="0"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="newgame" guisound="abort"/>
+
+      <optionbutton id="selectcontrollers.team1" caption="Team 1">
+        <pos x="200" y="250" width="624" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="-624" y="200" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectcontrollers.ok</next_control>
+          <next_control dir="down">selectcontrollers.team2</next_control>
+        </next>
+        <action event="switch" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <options default="0">
+          <option value="TeamAI5#Player1">Player 1</option>
+          <option value="TeamAI5">Computer</option>
+        </options>
+      </optionbutton>
+
+      <optionbutton id="selectcontrollers.team2" caption="Team 2">
+        <pos x="200" y="350" width="624" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectcontrollers.team1</next_control>
+          <next_control dir="down">selectcontrollers.ok</next_control>
+        </next>
+        <action event="switch" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <options default="1">
+          <option value="TeamAI5#Player2">Player 2</option>
+          <option value="TeamAI5">Computer</option>
+        </options>
+      </optionbutton>
+
+      <button id="selectcontrollers.ok" caption="Continue">
+        <focus/>
+        <pos x="300" y="500" width="424" height="60"/>
+        <flyin x="1024" y="600" starttime="0.8" duration="0.5"/>
+        <flyout x="300" y="800" starttime="0.5" duration="0"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectcontrollers.team2</next_control>
+          <next_control dir="down">selectcontrollers.team1</next_control>
+        </next>
+        <action event="click" type="savesettingcontrol" param1="match.controller1" param2="selectcontrollers.team1"/>
+        <action event="click" type="savesettingcontrol" param1="match.controller2" param2="selectcontrollers.team2"/>
+        <action event="click" type="activategroup" param1="selectteams" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ****************
+    * SELECT TEAMS *
+    ****************
+    -->
+
+    <group id="selectteams" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+      <action event="groupopen" type="cameraflight" param1="high1" guisound="move"/>
+      <action event="groupopen" type="setactivejoystick" param1="0"/>
+			<action event="groupopen" type="setfocus" param1="selectteams.team1"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="selectcontrollers" guisound="abort"/>
+
+      <image id="selectteams.team1logo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="118" y="120" width="300" height="300"/>
+        <flyin x="-300" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-300" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+      <image id="selectteams.team2logo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="606" y="120" width="300" height="300"/>
+        <flyin x="1024" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+			<optionbutton id="selectteams.team1" caption="1">
+				<focus/>
+        <pos x="50" y="460" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectteams.league1</next_control>
+          <next_control dir="down">selectteams.league1</next_control>
+        </next>
+        <action event="switch" type="changeimage" param1="selectteams.team1logo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+        <action event="focus" type="setactivejoystick" param1="0" guisound="focus"/>
+        <action event="click" type="setfocus" param1="selectteams.team2"/>
+        <options default="0">
+          <option value="?">?</option>
+        </options>
+      </optionbutton>
+
+      <optionbutton id="selectteams.league1" caption="Group">
+        <pos x="50" y="540" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectteams.team1</next_control>
+          <next_control dir="down">selectteams.team1</next_control>
+        </next>
+        <action event="load" type="changesystemlistcontrol" param1="selectteams.team1" param2="selectteams.league1"/>
+        <action event="switch" type="changesystemlistcontrol" param1="selectteams.team1" param2="selectteams.league1" guisound="switch"/>
+        <action event="switch" type="changeimagecontrol" param1="selectteams.team1logo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" param4="selectteams.team1"/>
+        <action event="focus" type="setactivejoystick" param1="0" guisound="focus"/>
+        <action event="click" type="setfocus" param1="selectteams.team1" guisound="accept"/>
+        <options default="0">
+          <option value="teams.league1">League 1</option>
+          <option value="teams.league2">League 2</option>
+          <option value="teams.league3">League 3</option>
+					<option value="teams.international">International</option>
+          <option value="teams.worldcup">National teams</option>
+          <option value="teams.all">All teams</option>
+        </options>
+      </optionbutton>
+
+			<optionbutton id="selectteams.team2" caption="2">
+        <pos x="537" y="460" width="437" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectteams.league2</next_control>
+          <next_control dir="down">selectteams.league2</next_control>
+        </next>
+        <action event="switch" type="changeimage" param1="selectteams.team2logo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+        <action event="focus" type="setactivejoystick" param1="1" param2="true" guisound="focus"/>
+				<action event="click" type="savesettingcontrol" param1="match.team1" param2="selectteams.team1"/>
+        <action event="click" type="savesettingcontrol" param1="match.team2" param2="selectteams.team2"/>
+        <action event="click" type="activategroup" param1="friendlygameoverview" guisound="select"/>
+        <options default="0">
+          <option value="?">?</option>
+        </options>
+      </optionbutton>
+
+      <optionbutton id="selectteams.league2" caption="Group">
+        <pos x="537" y="540" width="437" height="60"/>
+        <flyin x="1024" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectteams.team2</next_control>
+          <next_control dir="down">selectteams.team2</next_control>
+        </next>
+        <action event="load" type="changesystemlistcontrol" param1="selectteams.team2" param2="selectteams.league2" param3="1"/>
+        <action event="switch" type="changesystemlistcontrol" param1="selectteams.team2" param2="selectteams.league2" guisound="switch"/>
+        <action event="switch" type="changeimagecontrol" param1="selectteams.team2logo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" param4="selectteams.team2"/>
+        <action event="focus" type="setactivejoystick" param1="1" param2="true" guisound="focus"/>
+        <action event="click" type="setfocus" param1="selectteams.team2" guisound="accept"/>
+        <options default="0">
+          <option value="teams.league1">League 1</option>
+          <option value="teams.league2">League 2</option>
+          <option value="teams.league3">League 3</option>
+					<option value="teams.international">International</option>
+          <option value="teams.worldcup">National teams</option>
+          <option value="teams.all">All teams</option>
+        </options>
+      </optionbutton>
+
+      <button id="selectteams.ok" caption="Continue">
+        <focus/>
+        <pos x="300" y="640" width="424" height="60"/>
+        <flyin x="300" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="300" y="768" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">selectteams.team1</next_control>
+          <next_control dir="down">selectteams.team1</next_control>
+        </next>
+				<action event="click" type="savesettingcontrol" param1="match.team1" param2="selectteams.team1"/>
+        <action event="click" type="savesettingcontrol" param1="match.team2" param2="selectteams.team2"/>
+        <action event="click" type="activategroup" param1="friendlygameoverview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    **************************
+    * FRIENDLY GAME OVERVIEW *
+    **************************
+    -->
+
+    <group id="friendlygameoverview" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+      <action event="groupopen" type="cameraflight" param1="high1" guisound="move"/>
+			<action event="groupopen" type="setactivejoystick" param1="0" param2="false"/>
+			<action event="groupopen" type="setselection" param1="friendlygameoverview.stadium" param2="%match.team1.stadium.index%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="selectteams" guisound="abort"/>
+
+      <image id="friendlygameoverview.stadiumpreview" src="images/stadiumunknown-preview.png" srcwidth="512" srcheight="384">
+        <pos x="82" y="80" width="400" height="300"/>
+        <flyin x="-400" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-400" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+      <image id="friendlygameoverview.weatherpreview" src="images/weatherunknown-preview.png" srcwidth="256" srcheight="256">
+        <pos x="640" y="102" width="256" height="256"/>
+        <flyin x="1024" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+      <optionbutton id="friendlygameoverview.stadium" caption="Stadium">
+        <pos x="50" y="450" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">friendlygameoverview.ok</next_control>
+          <next_control dir="down">friendlygameoverview.weather</next_control>
+        </next>
+        <action event="load" type="changeimage" param1="friendlygameoverview.stadiumpreview" param2="stadiums/%value%-preview.png" param3="images/stadiumunknown-preview.png"/>
+        <action event="switch" type="changeimage" param1="friendlygameoverview.stadiumpreview" param2="stadiums/%value%-preview.png" param3="images/stadiumunknown-preview.png" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="friendlygameoverview.weather"/>
+        <options systemlist="stadiums" default="%match.team1.stadium.index%"/>
+      </optionbutton>
+
+      <optionbutton id="friendlygameoverview.weather" caption="Weather">
+        <pos x="537" y="450" width="437" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">friendlygameoverview.stadium</next_control>
+          <next_control dir="down">friendlygameoverview.referee</next_control>
+        </next>
+        <action event="load" type="changeimage" param1="friendlygameoverview.weatherpreview" param2="weather/%value%.png" param3="images/weatherunknown-preview.png"/>
+        <action event="switch" type="changeimage" param1="friendlygameoverview.weatherpreview" param2="weather/%value%.png" param3="images/weatherunknown-preview.png" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="friendlygameoverview.referee"/>
+        <options systemlist="weathers" default="0"/>
+      </optionbutton>
+
+      <optionbutton id="friendlygameoverview.referee" caption="Referee"> 
+  			<pos x="50" y="530" width="924" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.2" duration="0.5"/>
+  			<enabled>true</enabled> 
+  			<next> 
+  				<next_control dir="up">friendlygameoverview.weather</next_control> 
+  				<next_control dir="down">friendlygameoverview.ok</next_control> 
+  			</next> 
+  			<action event="switch" guisound="switch"/> 
+        <action event="focus" guisound="focus"/> 
+        <action event="click" type="setfocus" param1="friendlygameoverview.ok"/>
+        <options systemlist="referees" default="0"/>
+  		</optionbutton>
+
+      <button id="friendlygameoverview.ok" caption="Start match">
+        <focus/>
+        <pos x="50" y="610" width="924" height="60"/>
+        <flyin x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">friendlygameoverview.referee</next_control>
+          <next_control dir="down">friendlygameoverview.stadium</next_control>
+        </next>
+        <action event="focus" guisound="focus"/>
+				<action event="click" type="changegamemode" param1="friendlygame"/>
+        <action event="click" type="savesettingcontrol" param1="match.stadium" param2="friendlygameoverview.stadium"/>
+        <action event="click" type="savesettingcontrol" param1="match.weather" param2="friendlygameoverview.weather"/>
+				<action event="click" type="savesettingcontrol" param1="match.referee" param2="friendlygameoverview.referee"/>
+        <action event="click" type="openscreen" param1="matchloading" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    **************
+    * NEW CAREER *
+    **************
+    -->
+
+    <group id="newcareer" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+      <action event="groupopen" type="cameraflight" param1="goalleft2" guisound="move"/>
+			<action event="groupopen" type="savesettingcontrol" param1="teaminfo" param2="newcareer.team"/>
+			<action event="groupopen" type="setvalue" param1="newcareer.attack" param2="%teaminfo.attack%"/>
+			<action event="groupopen" type="setvalue" param1="newcareer.defense" param2="%teaminfo.defense%"/>
+			<action event="groupopen" type="setvalue" param1="newcareer.speed" param2="%teaminfo.speed%"/>
+			<action event="groupopen" type="setvalue" param1="newcareer.stamina" param2="%teaminfo.stamina%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+
+      <image id="newcareer.teamlogo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="118" y="80" width="300" height="300"/>
+        <flyin x="-300" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-300" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+      <optionbutton id="newcareer.team" caption="">
+        <pos x="50" y="400" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newcareer.ok</next_control>
+          <next_control dir="down">newcareer.league</next_control>
+        </next>
+        <action event="load" type="changeimage" param1="newcareer.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png"/>
+        <action event="switch" type="changeimage" param1="newcareer.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+				<action event="switch" type="savesettingcontrol" param1="teaminfo" param2="newcareer.team"/>
+				<action event="switch" type="setvalue" param1="newcareer.attack" param2="%teaminfo.attack%"/>
+				<action event="switch" type="setvalue" param1="newcareer.defense" param2="%teaminfo.defense%"/>
+				<action event="switch" type="setvalue" param1="newcareer.speed" param2="%teaminfo.speed%"/>
+				<action event="switch" type="setvalue" param1="newcareer.stamina" param2="%teaminfo.stamina%"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="newcareer.ok"/>
+        <options default="0">
+          <option value="?">?</option>
+        </options>
+      </optionbutton>
+
+      <optionbutton id="newcareer.league" caption="Group">
+        <pos x="50" y="480" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newcareer.team</next_control>
+          <next_control dir="down">newcareer.ok</next_control>
+        </next>
+        <action event="load" type="changesystemlistcontrol" param1="newcareer.team" param2="newcareer.league"/>
+        <action event="switch" type="changesystemlistcontrol" param1="newcareer.team" param2="newcareer.league" guisound="switch"/>
+        <action event="switch" type="changeimagecontrol" param1="newcareer.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" param4="newcareer.team" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="newcareer.team" guisound="accept"/>
+        <options default="3">
+          <option value="teams.international">International</option>
+          <option value="teams.league1">League 1</option>
+          <option value="teams.league2">League 2</option>
+          <option value="teams.league3">League 3</option>
+          <option value="teams.all">Alle</option>
+        </options>
+      </optionbutton>
+
+
+			<label id="newcareer.attacklabel" caption="Attack:" color="FFEA80" center="false">
+        <pos x="537" y="80" width="420" height="60"/>
+        <flyin x="1024" y="80" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="80" starttime="0.0" duration="0.5"/>
+      </label>
+
+			<energybar id="newcareer.attack">
+        <pos x="537" y="140" width="420" height="50"/>
+        <flyin x="1024" y="140" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="140" starttime="0.1" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newcareer.defenselabel" caption="Defense:" color="FFEA80" center="false">
+        <pos x="537" y="200" width="420" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<energybar id="newcareer.defense">
+        <pos x="537" y="260" width="420" height="50"/>
+        <flyin x="1024" y="260" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="260" starttime="0.3" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newcareer.speedlabel" caption="Speed:" color="FFEA80" center="false">
+        <pos x="537" y="320" width="420" height="60"/>
+        <flyin x="1024" y="320" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0.4" duration="0.5"/>
+      </label>
+
+			<energybar id="newcareer.speed">
+        <pos x="537" y="380" width="420" height="50"/>
+        <flyin x="1024" y="380" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0.5" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newcareer.staminalabel" caption="Stamina:" color="FFEA80" center="false">
+        <pos x="537" y="440" width="420" height="60"/>
+        <flyin x="1024" y="440" starttime="0.6" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0.6" duration="0.5"/>
+      </label>
+
+			<energybar id="newcareer.stamina">
+        <pos x="537" y="500" width="420" height="50"/>
+        <flyin x="1024" y="500" starttime="0.7" duration="0.5"/>
+        <flyout x="1024" y="500" starttime="0.7" duration="0.5"/>
+      </energybar>
+
+
+      <button id="newcareer.ok" caption="Start career">
+        <focus/>
+        <pos x="50" y="610" width="924" height="60"/>
+        <flyin x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newcareer.league</next_control>
+          <next_control dir="down">newcareer.team</next_control>
+        </next>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="changegamemode" param1="newcareer" param2="newcareer.team" guisound="select"/>
+        <action event="click" type="openscreen" param1="career"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ****************
+    * NEW WORLDCUP *
+    ****************
+    -->
+
+    <group id="newworldcup" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+      <action event="groupopen" type="cameraflight" param1="goalleft2" guisound="move"/>
+			<action event="groupopen" type="savesettingcontrol" param1="teaminfo" param2="newworldcup.team"/>
+			<action event="groupopen" type="setvalue" param1="newworldcup.attack" param2="%teaminfo.attack%"/>
+			<action event="groupopen" type="setvalue" param1="newworldcup.defense" param2="%teaminfo.defense%"/>
+			<action event="groupopen" type="setvalue" param1="newworldcup.speed" param2="%teaminfo.speed%"/>
+			<action event="groupopen" type="setvalue" param1="newworldcup.stamina" param2="%teaminfo.stamina%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+
+      <image id="newworldcup.teamlogo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="118" y="80" width="300" height="300"/>
+        <flyin x="-300" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-300" y="380" starttime="0" duration="0.5"/>
+      </image>
+
+      <optionbutton id="newworldcup.team" caption="">
+        <pos x="50" y="400" width="437" height="60"/>
+        <flyin x="-437" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="700" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newworldcup.ok</next_control>
+          <next_control dir="down">newworldcup.ok</next_control>
+        </next>
+        <action event="load" type="changeimage" param1="newworldcup.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png"/>
+        <action event="switch" type="changeimage" param1="newworldcup.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+        <action event="focus" guisound="focus"/>
+        <action event="switch" type="changeimage" param1="newcareer.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+				<action event="switch" type="savesettingcontrol" param1="teaminfo" param2="newworldcup.team"/>
+				<action event="switch" type="setvalue" param1="newworldcup.attack" param2="%teaminfo.attack%"/>
+				<action event="switch" type="setvalue" param1="newworldcup.defense" param2="%teaminfo.defense%"/>
+				<action event="switch" type="setvalue" param1="newworldcup.speed" param2="%teaminfo.speed%"/>
+				<action event="switch" type="setvalue" param1="newworldcup.stamina" param2="%teaminfo.stamina%"/>
+        <action event="click" type="setfocus" param1="newworldcup.ok"/>
+        <options default="0" systemlist="teams.worldcup"/>
+      </optionbutton>
+
+
+			<label id="newworldcup.attacklabel" caption="Attack:" color="FFEA80" center="false">
+        <pos x="537" y="80" width="420" height="60"/>
+        <flyin x="1024" y="80" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="80" starttime="0.0" duration="0.5"/>
+      </label>
+
+			<energybar id="newworldcup.attack">
+        <pos x="537" y="140" width="420" height="50"/>
+        <flyin x="1024" y="140" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="140" starttime="0.1" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newworldcup.defenselabel" caption="Defense:" color="FFEA80" center="false">
+        <pos x="537" y="200" width="420" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<energybar id="newworldcup.defense">
+        <pos x="537" y="260" width="420" height="50"/>
+        <flyin x="1024" y="260" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="260" starttime="0.3" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newworldcup.speedlabel" caption="Speed:" color="FFEA80" center="false">
+        <pos x="537" y="320" width="420" height="60"/>
+        <flyin x="1024" y="320" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0.4" duration="0.5"/>
+      </label>
+
+			<energybar id="newworldcup.speed">
+        <pos x="537" y="380" width="420" height="50"/>
+        <flyin x="1024" y="380" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0.5" duration="0.5"/>
+      </energybar>
+
+
+			<label id="newworldcup.staminalabel" caption="Stamina:" color="FFEA80" center="false">
+        <pos x="537" y="440" width="420" height="60"/>
+        <flyin x="1024" y="440" starttime="0.6" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0.6" duration="0.5"/>
+      </label>
+
+			<energybar id="newworldcup.stamina">
+        <pos x="537" y="500" width="420" height="50"/>
+        <flyin x="1024" y="500" starttime="0.7" duration="0.5"/>
+        <flyout x="1024" y="500" starttime="0.7" duration="0.5"/>
+      </energybar>
+
+
+      <button id="newworldcup.ok" caption="Start World Cup">
+        <focus/>
+        <pos x="50" y="610" width="924" height="60"/>
+        <flyin x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">newworldcup.team</next_control>
+          <next_control dir="down">newworldcup.team</next_control>
+        </next>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="changegamemode" param1="newworldcup" param2="newworldcup.team" guisound="select"/>
+        <action event="click" type="openscreen" param1="worldcup"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ***************
+    * LOAD CAREER *
+    ***************
+    -->
+
+    <group id="loadcareer" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="loadcareer.slot1" param2="%savegame.career1%"/>
+      <action event="groupopen" type="setcaption" param1="loadcareer.slot2" param2="%savegame.career2%"/>
+      <action event="groupopen" type="setcaption" param1="loadcareer.slot3" param2="%savegame.career3%"/>
+      <action event="groupopen" type="setcaption" param1="loadcareer.slot4" param2="%savegame.career4%"/>
+      <action event="groupopen" type="setcaption" param1="loadcareer.slot5" param2="%savegame.career5%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+      <!-- <action event="groupopen" type="cameraflight" param1="center1" guisound="move"/> -->
+
+      <label id="loadcareer.title" caption="Load career" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+
+      <button id="loadcareer.slot1" caption="" center="false">
+        <pos x="30" y="200" width="964" height="60"/>
+        <flyin x="-964" y="200" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.cancel</next_control>
+          <next_control dir="down">loadcareer.slot2</next_control>
+        </next>
+        <action event="click" type="loadcareer" param1="1" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadcareer.slot2" caption="" center="false">
+        <pos x="30" y="280" width="964" height="60"/>
+        <flyin x="1024" y="280" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="280" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.slot1</next_control>
+          <next_control dir="down">loadcareer.slot3</next_control>
+        </next>
+        <action event="click" type="loadcareer" param1="2" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadcareer.slot3" caption="" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="-964" y="360" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.slot2</next_control>
+          <next_control dir="down">loadcareer.slot4</next_control>
+        </next>
+        <action event="click" type="loadcareer" param1="3" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadcareer.slot4" caption="" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.slot3</next_control>
+          <next_control dir="down">loadcareer.slot5</next_control>
+        </next>
+        <action event="click" type="loadcareer" param1="4" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadcareer.slot5" caption="" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="-964" y="520" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.slot4</next_control>
+          <next_control dir="down">loadcareer.cancel</next_control>
+        </next>
+        <action event="click" type="loadcareer" param1="5" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadcareer.cancel" caption="Back">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadcareer.slot5</next_control>
+          <next_control dir="down">loadcareer.slot1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="mainmenu" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    *****************
+    * LOAD WORLDCUP *
+    *****************
+    -->
+
+    <group id="loadworldcup" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="loadworldcup.slot1" param2="%savegame.worldcup1%"/>
+      <action event="groupopen" type="setcaption" param1="loadworldcup.slot2" param2="%savegame.worldcup2%"/>
+      <action event="groupopen" type="setcaption" param1="loadworldcup.slot3" param2="%savegame.worldcup3%"/>
+      <action event="groupopen" type="setcaption" param1="loadworldcup.slot4" param2="%savegame.worldcup4%"/>
+      <action event="groupopen" type="setcaption" param1="loadworldcup.slot5" param2="%savegame.worldcup5%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+      <!-- <action event="groupopen" type="cameraflight" param1="center1" guisound="move"/> -->
+
+      <label id="loadworldcup.title" caption="Load World Cup" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+
+      <button id="loadworldcup.slot1" caption="" center="false">
+        <pos x="30" y="200" width="964" height="60"/>
+        <flyin x="-964" y="200" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.cancel</next_control>
+          <next_control dir="down">loadworldcup.slot2</next_control>
+        </next>
+        <action event="click" type="loadworldcup" param1="1" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadworldcup.slot2" caption="" center="false">
+        <pos x="30" y="280" width="964" height="60"/>
+        <flyin x="1024" y="280" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="280" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.slot1</next_control>
+          <next_control dir="down">loadworldcup.slot3</next_control>
+        </next>
+        <action event="click" type="loadworldcup" param1="2" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadworldcup.slot3" caption="" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="-964" y="360" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.slot2</next_control>
+          <next_control dir="down">loadworldcup.slot4</next_control>
+        </next>
+        <action event="click" type="loadworldcup" param1="3" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadworldcup.slot4" caption="" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.slot3</next_control>
+          <next_control dir="down">loadworldcup.slot5</next_control>
+        </next>
+        <action event="click" type="loadworldcup" param1="4" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadworldcup.slot5" caption="" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="-964" y="520" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.slot4</next_control>
+          <next_control dir="down">loadworldcup.cancel</next_control>
+        </next>
+        <action event="click" type="loadworldcup" param1="5" guisound="accept"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="loadworldcup.cancel" caption="Back">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">loadworldcup.slot5</next_control>
+          <next_control dir="down">loadworldcup.slot1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="mainmenu" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ***********************
+    * NOT IMPLEMENTED YET *
+    ***********************
+    -->
+
+    <group id="notimplemented" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+
+      <label caption="Beta version" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Not implemented yet." color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="notimplemented.ok" caption="Back">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">notimplemented.ok</next_control>
+          <next_control dir="down">notimplemented.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="newgame" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ****************
+    * GOLD EDITION *
+    ****************
+    -->
+
+    <group id="goldedition" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="cameraflight" param1="high1" guisound="move"/>
+      <action event="keypress" eventparam="cancel" type="exitprogram"/>
+
+
+			<image src="images/ads/teameditor1.png" srcwidth="512" srcheight="512">
+        <pos x="100" y="30" width="400" height="300"/>
+        <flyin x="100" y="-400" starttime="0.2" duration="0.5"/>
+        <flyout x="100" y="-400" starttime="0" duration="0.5"/>
+      </image>
+
+
+			<image src="images/ads/stadiumeditor1.png" srcwidth="512" srcheight="512" rotation="5">
+        <pos x="470" y="60" width="400" height="300"/>
+        <flyin x="1024" y="60" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="60" starttime="0" duration="0.5"/>
+      </image>
+
+
+      <label caption="Slam Soccer 2006 is free and open source software - and we, the developers, earn no money with it. So we rely on your support: For a donation of only 10 Euro you get as a thankyou the Gold-Edition of Slam Soccer 2006 containing a team- and stadium-editor, which allow you to create your own teams and stadiums!" color="FFEA80" multiline="true" lineheight="40">
+        <pos x="50" y="360" width="924" height="60"/>
+        <flyin x="-1024" y="380" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0.2" duration="0.5"/>
+      </label>
+
+
+			<!-- <label caption="www.xenoage.com/slamsoccer2006/gold/" color="FFB400" multiline="true" lineheight="30">
+        <pos x="50" y="680" width="924" height="60"/>
+        <flyin x="-1024" y="680" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="680" starttime="0.0" duration="0.5"/>
+      </label> -->
+
+			<button id="goldedition.website" caption="Visit website">
+        <focus/>
+        <pos x="50" y="680" width="437" height="60"/>
+        <flyin x="-1024" y="680" starttime="0.2" duration="0.5"/>
+        <flyout x="-1024" y="680" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">goldedition.ok</next_control>
+          <next_control dir="down">goldedition.ok</next_control>
+        </next>
+        <action event="click" type="openwebsite" param1="http://www.xenoage.com/bp2k6/en/goldedition.php" guisound="select"/>
+				<action event="click" type="exitprogram"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+			<button id="goldedition.ok" caption="Exit">
+        <focus/>
+        <pos x="537" y="680" width="437" height="60"/>
+        <flyin x="1024" y="680" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="680" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">goldedition.website</next_control>
+          <next_control dir="down">goldedition.website</next_control>
+        </next>
+				<action event="click" type="exitprogram" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+
+    </group>
+
+
+
+
+		<!--
+    ******************
+    * TEAM NOT FOUND *
+    ******************
+    -->
+
+    <group id="teamnotfound" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="setcaption" param1="teamnotfound.text" param2="The career or World Cup could not be loaded, because the following team was not found:\n%gamemode.missingteam%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="mainmenu" guisound="abort"/>
+
+      <label caption="Team not found!" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label id="teamnotfound.text" caption="" color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="teamnotfound.ok" caption="Cancel">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">teamnotfound.ok</next_control>
+          <next_control dir="down">teamnotfound.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="mainmenu" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+  </groups>
+
+
+</screen>

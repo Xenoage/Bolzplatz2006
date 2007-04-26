@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="serbia" name="Serbien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="000080" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="000080" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="FFFFFF" shirt2="CC0000" pants="0000CC" shoes="A0A0A0"/>
+  <players>
+    <player name="Dragon Jeeray" attack="3" defense="2" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Fladen Kristallic" attack="2" defense="7" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Debia Stivic" attack="2" defense="3" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Danio Libellia" attack="6" defense="2" speed="4" stamina="3" headdress="ted" glasses=""/>
+    <player name="Matta Krezarm" attack="5" defense="3" speed="4" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

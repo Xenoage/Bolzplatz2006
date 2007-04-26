@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="teameditor_title" value="Bolzplatz 2006 - Team-Editor (Entwicklermodus)"/>
+  <entry id="teamdata" value="Mannschaften und Werte"/>
+  <entry id="worldcup" value="Weltmeisterschaft"/>
+  <entry id="statistics" value="Statistik"/>
+  <entry id="newteam" value="Neues Team"/>
+  <entry id="deleteteam" value="Team löschen"/>
+  <entry id="selectteamhere" value="Team hier auswählen"/>
+  <entry id="teamid" value="ID des Teams"/>
+  <entry id="teamname" value="Name des Teams"/>
+  <entry id="teamdescription" value="Beschreibung"/>
+  <entry id="teamlogo" value="Teamlogo"/>
+  <entry id="selectteamlogo" value="Teamlogo auswählen..."/>
+	<entry id="teamgroup" value="Gruppe"/>
+  <entry id="teamstadium" value="Heimstadion"/>
+  <entry id="nostadium" value="Kein Heimstadion (Zufälliges Stadion)"/>
+  <entry id="playername" value="Name"/>
+  <entry id="attack" value="Angriff"/>
+  <entry id="defense" value="Abwehr"/>
+  <entry id="speed" value="Schnelligkeit"/>
+  <entry id="stamina" value="Ausdauer"/>
+  <entry id="homecolors" value="Heimfarben"/>
+  <entry id="awaycolors" value="Auswärtsfarben"/>
+  <entry id="goalkeepercolors" value="Torwartfarben"/>
+  <entry id="pattern" value="Muster"/>
+  <entry id="pattern_plain" value="Einfarbig"/>
+  <entry id="pattern_vertical" value="Vertikal gestreift"/>
+  <entry id="pattern_horizontal" value="Horizontal gestreift"/>
+  <entry id="pattern_rednose" value="Einfarbig, rote Nase"/>
+  <entry id="skin" value="Haut"/>
+  <entry id="shirt" value="Trikot"/>
+  <entry id="shirt2" value="Trikot 2"/>
+  <entry id="pants" value="Hose"/>
+  <entry id="shoes" value="Schuhe"/>
+  <entry id="choosecolor" value="Farbe wählen"/>
+  <entry id="question_saveteam" value="Die Änderungen an Team &quot;%teamid%&quot; speichern?"/>
+  <entry id="teammodified" value="Team verändert"/>
+  <entry id="chooseteamlogo" value="Team-Logo auswählen"/>
+  <entry id="teamlogofilter" value="PNG-Datei, %size% x% size% Pixel (*.png)"/>
+  <entry id="invalidteamlogo" value="Ungültiges Logo! Die Grafik muss im PNG-Format vorliegen\nund %size% x %size% Pixel groß sein!"/>
+  <entry id="teamlogoerror" value="Fehler beim Kopieren der Team-Logo-Datei!"/>
+  <entry id="newteamid" value="ID des neuen Teams:"/>
+  <entry id="teamalreadyexists" value="Dieses Team gibt es bereits!"/>
+  <entry id="question_deleteteam" value="Team &quot;%teamid%&quot; wirklich löschen?"/>
+  <entry id="ranking" value="Rang"/>
+  <entry id="total" value="Gesamt"/>
+  <entry id="remainingteams" value="Restliche Teams"/>
+  <entry id="worldcupteams" value="WM-Teams"/>
+  <entry id="addteams" value="Teams hinzufügen"/>
+  <entry id="moveup" value="Nach oben"/>
+  <entry id="movedown" value="Nach unten"/>
+  <entry id="removeteams" value="Teams entfernen"/>
+  <entry id="realworldcupteams" value="Reale WM-Teams"/>
+  <entry id="worldcup32teamsallowed" value="Bei einer WM müssen genau 32 Teams teilnehmen!\nEs sind zu viele ausgewählt."/>
+  <entry id="loadrealworldcupteams" value="Wirklich die aktuelle Zusammenstellung löschen\nund die realen Teams der WM 2006 laden?"/>
+  <entry id="warning_32teams" value="Warnung: Eine WM muss aus genau 32 Teams bestehen. Im momentanen Zustand würde das Spiel nicht funktionieren!"/>
+  <entry id="international" value="International"/>
+  <entry id="hint_leagues" value="In der ÜFA Allstars League spielen 13 zufällig gewählte internationale Teams und:"/>
+  <entry id="warning_leagues" value="Warnung: Die 3 Ligen müssen jeweils aus genau 10 Teams bestehen, und es muss mindestens 13 internationale Mannschaften geben. Im momentanen Zustand würde das Spiel nicht funktionieren!"/> 
+  <entry id="league10teamsallowed" value="Eine Liga besteht aus genau 10 Teams!\nEs sind zu viele ausgewählt."/>
+  <entry id="chooseteamads" value="Banden auswählen..."/>
+  <entry id="teamadsfilter" value="PNG-Datei, %size% x %size% Pixel (*.png)"/>
+  <entry id="invalidteamads" value="Ungültiges Banner! Die Grafik muss im PNG-Format vorliegen\nund %size% x %size% Pixel groß sein!"/>
+  <entry id="teamads" value="Werbebanden"/>
+  <entry id="ad" value="Werbung"/>
+  <entry id="fanbanners" value="Fanbanner"/>
+  <entry id="backside" value="Rückseite"/>
+  <entry id="showcareerteams" value="Karriere-Teams anzeigen"/>
+  <entry id="showworldcupteams" value="WM-Teams anzeigen"/>
+  <entry id="hairdress" value="Kopfbed."/>
+  <entry id="nohairdress" value="Keine"/>
+  <entry id="cap" value="Cap"/>
+  <entry id="bobblecap" value="Pudelmütze"/>
+  <entry id="ted" value="Ted"/>
+  <entry id="iro" value="Iro"/>
+  <entry id="glasses" value="Brille"/>
+</language>

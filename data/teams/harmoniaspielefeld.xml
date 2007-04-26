@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="harmoniaspielefeld" name="Harmonia Spielefeld" description="Harmonia Spielefeld by Eintracht4ever" group="clubteams" stadium="league2_1">
+  <colors id="home" pattern="" skin="FFC280" shirt="1D5D9E" shirt2="1A1A1A" pants="1A1A1A" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="1A1A1A" shirt2="CAB171" pants="1A1A1A" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="91BCF1" shirt2="466285" pants="F9F9F9" shoes="A0A0A0"/>
+  <players>
+    <player name="Geh Haim" attack="4" defense="5" speed="4" stamina="7" headdress="" glasses=""/>
+    <player name="Heiko Osterfrau" attack="6" defense="4" speed="7" stamina="4" headdress="iro" glasses=""/>
+    <player name="Rudi Verleih" attack="3" defense="6" speed="5" stamina="5" headdress="ted" glasses=""/>
+    <player name="Artur Wischundweg" attack="6" defense="5" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Summarum Summa" attack="7" defense="2" speed="3" stamina="4" headdress="none" glasses="glasses"/>
+  </players>
+</team>

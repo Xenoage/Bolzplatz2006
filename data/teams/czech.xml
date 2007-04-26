@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="czech" name="Tschechien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F7F5F5" shirt2="EEEEFF" pants="F2EBEB" shoes="F9F7F7"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="D10E0E" shirt2="1E64A0" pants="F7F5F5" shoes="0E0EBF"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="0E0EBF" shirt2="1E64A0" pants="0E0EBF" shoes="A0A0A0"/>
+  <players>
+    <player name="Pavel Cesko" attack="9" defense="8" speed="7" stamina="8" headdress="" glasses="glasses"/>
+    <player name="Martin Janukowytsch" attack="7" defense="6" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Tomas Tsatsiki" attack="7" defense="8" speed="7" stamina="9" headdress="" glasses=""/>
+    <player name="Milian Bartusch" attack="7" defense="6" speed="5" stamina="9" headdress="ted" glasses=""/>
+    <player name="Jakub Roller" attack="8" defense="6" speed="7" stamina="7" headdress="none" glasses=""/>
+  </players>
+</team>

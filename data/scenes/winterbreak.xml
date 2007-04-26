@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<guiscene id="winterbreak">
+  <stadium id="%career.stadium.id%" usecareerads="true"/>
+  <weather id="day-snow"/>
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.5" loop="true">
+      <from>
+        <point x="0" y="1" z="0"/>
+        <point x="5" y="1.2" z="0.3"/>
+        <point x="10" y="1.4" z="0.6"/>
+        <point x="15" y="1.6" z="0.9"/>
+        <point x="20" y="2.4" z="1.2"/>
+        <point x="25" y="4" z="2"/>
+        <point x="30" y="6" z="3"/>
+        <point x="35" y="9" z="4"/>
+        <point x="37" y="12" z="2"/>
+        <point x="38" y="13" z="0"/>
+        <point x="37" y="12" z="-2"/>
+        <point x="35" y="9" z="-4"/>
+        <point x="30" y="6" z="-3"/>
+        <point x="25" y="4" z="-2"/>
+        <point x="20" y="2.4" z="-1.2"/>
+        <point x="15" y="1.6" z="-0.9"/>
+				<point x="10" y="1.4" z="-0.6"/>
+				<point x="5" y="1.2" z="0.3"/>
+				<point x="0" y="1" z="0"/>
+				<point x="-5" y="1.2" z="0.3"/>
+				<point x="-10" y="1.4" z="0.6"/>
+        <point x="-15" y="1.6" z="0.9"/>
+        <point x="-20" y="2.4" z="1.2"/>
+        <point x="-25" y="4" z="2"/>
+        <point x="-30" y="6" z="3"/>
+        <point x="-35" y="9" z="4"/>
+        <point x="-37" y="12" z="2"/>
+        <point x="-38" y="13" z="0"/>
+        <point x="-37" y="12" z="-2"/>
+        <point x="-35" y="9" z="-4"/>
+        <point x="-30" y="6" z="-3"/>
+        <point x="-25" y="4" z="-2"/>
+        <point x="-20" y="2.4" z="-1.2"/>
+        <point x="-15" y="1.6" z="-0.9"/>
+        <point x="-10" y="1.4" z="-0.6"/>
+        <point x="-5" y="1.2" z="-0.3"/>
+      </from>
+      <at>
+        <point x="10" y="1.4" z="0.6"/>
+        <point x="15" y="1.6" z="0.9"/>
+        <point x="20" y="2.4" z="1.2"/>
+        <point x="25" y="4" z="2"/>
+        <point x="30" y="6" z="3"/>
+        <point x="35" y="9" z="4"/>
+        <point x="37" y="12" z="2"/>
+        <point x="38" y="13" z="0"/>
+        <point x="37" y="12" z="-2"/>
+        <point x="35" y="9" z="-4"/>
+        <point x="30" y="6" z="-3"/>
+        <point x="25" y="4" z="-2"/>
+        <point x="20" y="2.4" z="-1.2"/>
+        <point x="15" y="1.6" z="-0.9"/>
+				<point x="10" y="1.4" z="-0.6"/>
+				<point x="5" y="1.2" z="0.3"/>
+				<point x="0" y="1" z="0"/>
+				<point x="-5" y="1.2" z="0.3"/>
+				<point x="-10" y="1.4" z="0.6"/>
+        <point x="-15" y="1.6" z="0.9"/>
+        <point x="-20" y="2.4" z="1.2"/>
+        <point x="-25" y="4" z="2"/>
+        <point x="-30" y="6" z="3"/>
+        <point x="-35" y="9" z="4"/>
+        <point x="-37" y="12" z="2"/>
+        <point x="-38" y="13" z="0"/>
+        <point x="-37" y="12" z="-2"/>
+        <point x="-35" y="9" z="-4"/>
+        <point x="-30" y="6" z="-3"/>
+        <point x="-25" y="4" z="-2"/>
+        <point x="-20" y="2.4" z="-1.2"/>
+        <point x="-15" y="1.6" z="-0.9"/>
+        <point x="-10" y="1.4" z="-0.6"/>
+        <point x="-5" y="1.2" z="-0.3"/>
+				<point x="0" y="1" z="0"/>
+        <point x="5" y="1.2" z="0.3"/>
+      </at>
+    </cameraflight>
+
+
+  </cameraflights>
+</guiscene>

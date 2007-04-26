@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<weather id="day-sunset">
+	<sky id="sky1"/>
+  <ambientlight red="120" green="120" blue="120"/>
+  <directionallight red="255" green="160" blue="0" x="2" y="1" z="1"/>
+  <stadiumlighting>off</stadiumlighting>
+  <crowdfactor>0.9</crowdfactor>
+</weather>

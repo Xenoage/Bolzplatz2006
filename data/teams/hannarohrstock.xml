@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="hannarohrstock" name="Hanna Rohrstock" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_5">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="0D3CEC" shirt2="E6E8F1" pants="070BB9" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="020D16" shirt2="1E64A0" pants="E6E8F1" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="1E64A0" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Franz Schubert" attack="5" defense="5" speed="6" stamina="4" headdress="" glasses=""/>
+    <player name="Ron Haltsmaul" attack="6" defense="5" speed="7" stamina="4" headdress="" glasses=""/>
+    <player name="Rene Radlweg" attack="5" defense="6" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Toni Lachsalve" attack="4" defense="5" speed="6" stamina="6" headdress="none" glasses=""/>
+    <player name="Grade Primzahl" attack="3" defense="5" speed="3" stamina="8" headdress="" glasses="glasses"/>
+  </players>
+</team>

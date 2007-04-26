@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="iran" name="Iran" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FF6060" shirt2="1E64A0" pants="FF6060" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="FFFFFF" shirt2="CC0000" pants="006600" shoes="A0A0A0"/>
+  <players>
+    <player name="Mehdi Basmati" attack="4" defense="4" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Rahman Reisman" attack="4" defense="5" speed="3" stamina="4" headdress="cap" glasses="glasses"/>
+    <player name="Dalli Karibik" attack="4" defense="6" speed="3" stamina="4" headdress="ted" glasses=""/>
+    <player name="Mahdi Mahdresh" attack="6" defense="4" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Valid Hashtablian" attack="7" defense="3" speed="6" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

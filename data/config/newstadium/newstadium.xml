@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<stadium id="newstadium" name="">
+  <terrain id="terrain1"/>
+	<lawn quality="12"/>
+</stadium>

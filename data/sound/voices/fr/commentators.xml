@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<crowd>
+  <!-- B200A: less then 200 spectators: 50/50, otherwise A -->
+  <A>B200A</A>
+  <B>B200A</B>
+  <C>B200A</C>
+  <DE>B200A</DE>
+</crowd>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<guisounds>
+  <guisound id="focus" volume="80"/>
+  <guisound id="select" volume="100"/>
+  <guisound id="switch" volume="80"/>
+  <guisound id="accept" volume="100"/>
+  <guisound id="abort" volume="100"/>
+  <guisound id="alert" volume="100"/>
+  <guisound id="move" volume="20"/>
+</guisounds>

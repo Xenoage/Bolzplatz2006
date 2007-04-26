@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="netherlands" name="Holland" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F1771D" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="F1771D" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="0033FF" shirt2="1E64A0" pants="F1771D" shoes="A0A0A0"/>
+  <players>
+    <player name="Edmund von der Sack" attack="6" defense="7" speed="6" stamina="9" headdress="" glasses=""/>
+    <player name="Kalav Ballerus" attack="6" defense="8" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Michi voll Bammel" attack="6" defense="8" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Raffo von der Wart" attack="10" defense="7" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Rude Nistelzweig" attack="9" defense="6" speed="7" stamina="7" headdress="ted" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="harburgersv" name="Harburger SV" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league1_2">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="0000FF" shirt2="EAEAEC" pants="010214" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="010214" shirt2="1E64A0" pants="0000FF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="0000FF" shirt2="E5E9EC" pants="010214" shoes="A0A0A0"/>
+  <players>
+    <player name="Stefan Wachturm" attack="3" defense="7" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Dani van Bauten" attack="6" defense="8" speed="7" stamina="8" headdress="ted" glasses=""/>
+    <player name="Rene Klangpfeil" attack="6" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Sergej Barbecue" attack="7" defense="6" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Raffo von der Wart" attack="8" defense="4" speed="7" stamina="8" headdress="" glasses="glasses"/>
+  </players>
+</team>

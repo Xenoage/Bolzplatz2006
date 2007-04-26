@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="energieflottschuss" name="Energie Flottschuss" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_5">
+  <colors id="home" pattern="" skin="FFC280" shirt="DE1C25" shirt2="F45A80" pants="C01820" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F7F8F9" shirt2="1E64A0" pants="F7F8F9" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="003366" shirt2="1E64A0" pants="F7F8F9" shoes="A0A0A0"/>
+  <players>
+    <player name="Tomas Pipelinegas" attack="5" defense="5" speed="6" stamina="4" headdress="" glasses=""/>
+    <player name="Cevin McCain" attack="6" defense="5" speed="7" stamina="4" headdress="" glasses="glasses"/>
+    <player name="Limo Most" attack="5" defense="6" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Ari Jussuf Mokka" attack="4" defense="5" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Frederic Kyoto" attack="3" defense="5" speed="3" stamina="8" headdress="bobblecap" glasses=""/>
+  </players>
+</team>

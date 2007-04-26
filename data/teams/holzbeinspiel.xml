@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="holzbeinspiel" name="Holzbein Spiel" description="Hier steht irgendeine Beschreibung zum Team" group="clubteams" stadium="kielholen">
+  <colors id="home" pattern="" skin="EEC591" shirt="0066FF" shirt2="FFFF00" pants="FFFFFF" shoes="FF0033"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="FFFFFF" shirt2="FFFFFF" pants="0066FF" shoes="FF0033"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="FFFF00" shirt2="FFFF00" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Henni Schwab" attack="1" defense="4" speed="2" stamina="2" headdress="none" glasses=""/>
+    <player name="Fritz Augustina" attack="2" defense="3" speed="2" stamina="4" headdress="bobblecap" glasses="glasses"/>
+    <player name="Alex Spaßkopf" attack="5" defense="5" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Thorsten Machtes" attack="5" defense="1" speed="4" stamina="2" headdress="" glasses=""/>
+    <player name="Saurer Whisky" attack="5" defense="1" speed="5" stamina="4" headdress="none" glasses=""/>
+  </players>
+</team>

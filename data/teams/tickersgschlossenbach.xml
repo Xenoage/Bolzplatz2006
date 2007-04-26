@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="tickersgschlossenbach" name="Tickers G'schlossenbach" description="Beschreibung des Vereins" group="clubteams" stadium="bibberhuegel">
+  <colors id="home" pattern="vertical" skin="EEC591" shirt="FF0000" shirt2="FFFFFF" pants="FF0000" shoes="FFFFFF"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="FFCC00" shirt2="FFCC00" pants="000000" shoes="333333"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="009999" shirt2="FFFFFF" pants="666666" shoes="A0A0A0"/>
+  <players>
+    <player name="Nero Bier" attack="2" defense="5" speed="5" stamina="3" headdress="none" glasses=""/>
+    <player name="Ticco Bunker" attack="2" defense="7" speed="3" stamina="4" headdress="none" glasses=""/>
+    <player name="Marc Pappe" attack="3" defense="6" speed="4" stamina="4" headdress="bobblecap" glasses=""/>
+    <player name="Jordan Dee" attack="7" defense="2" speed="6" stamina="3" headdress="" glasses=""/>
+    <player name="Steffen Stiegerl" attack="6" defense="4" speed="6" stamina="5" headdress="" glasses="glasses"/>
+  </players>
+</team>

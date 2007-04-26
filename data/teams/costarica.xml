@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="costarica" name="Costa Rica" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="E3A772" shirt="D60C0C" shirt2="EEEEFF" pants="2B07B9" shoes="F5F1F1"/>
+  <colors id="away" pattern="" skin="E3A772" shirt="F5F1F1" shirt2="1E64A0" pants="2B07B9" shoes="D60C0C"/>
+  <colors id="goalkeeper" pattern="" skin="E3A772" shirt="F5F1F1" shirt2="1E64A0" pants="F5F1F1" shoes="A0A0A0"/>
+  <players>
+    <player name="Albatros Besen" attack="4" defense="3" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Martin Lula" attack="4" defense="3" speed="4" stamina="2" headdress="" glasses="glasses"/>
+    <player name="Gilbert O'Sunnyday" attack="5" defense="6" speed="6" stamina="8" headdress="none" glasses=""/>
+    <player name="Mauronso Solo" attack="3" defense="4" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Roland Goma" attack="4" defense="6" speed="5" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

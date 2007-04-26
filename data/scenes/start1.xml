@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<guiscene id="start1">
+  <stadium id="%random%" light="weatherdependent"/>
+  <weather id="random"/>
+  <cameraflights>
+    <cameraflight id="start1" speed="0.25">
+      <from>
+        <point x="-220" y="140" z="-210"/>
+        <point x="-100" y="60" z="-100"/>
+        <point x="0" y="30" z="-60"/>
+        <point x="0" y="20" z="-20" times="10"/>
+      </from>
+      <at> <!-- TEST -->
+        <point x="-100" y="0" z="-100"/>
+        <point x="0" y="0" z="0"/>
+        <point x="50" y="0" z="0"/>
+        <point x="0" y="0" z="-50"/>
+        <point x="-50" y="0" z="0"/>
+        <point x="0" y="0" z="0" times="8"/>
+      </at>
+    </cameraflight>
+
+    <cameraflight id="goalleft1" speed="0.25">
+      <from>
+        <point pos="current"/>
+        <point x="0" y="15" z="-10"/>
+        <point x="-10" y="5" z="5" times="3"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="-20" y="-5" z="0" times="4"/>
+      </at>
+    </cameraflight>
+
+    <cameraflight id="goalleft2" speed="0.1">
+      <from>
+        <point pos="current"/>
+        <point x="-10" y="5" z="5"/>
+        <point x="-15" y="3" z="3"/>
+        <point x="-20" y="1.7" z="1"/>
+        <point x="-20.7" y="1.7" z="1" times="3"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="-20" y="-5" z="0"/>
+        <point x="-20" y="-5" z="-10"/>
+        <point x="0" y="0" z="0" times="4"/>
+      </at>
+    </cameraflight>
+
+    <cameraflight id="round1" speed="0.25" loop="true">
+      <from>
+        <point pos="current"/>
+        <point x="-100" y="50" z="-60"/>
+        <point x="-100" y="70" z="80"/>
+        <point x="100" y="70" z="80"/>
+        <point x="100" y="50" z="-80"/>
+        <point x="0" y="30" z="-60"/>
+        <point x="0" y="20" z="-20" times="5"/>
+      </from>
+    </cameraflight>
+
+    <cameraflight id="field1" speed="0.10">
+      <from>
+        <point pos="current"/>
+        <point x="0" y="18" z="-18"/>
+        <point x="0" y="5" z="-8" times="10"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="0" y="0" z="0" times="10"/>
+      </at>
+    </cameraflight>
+    
+    <cameraflight id="high1" speed="0.25">
+      <from>
+        <point pos="current"/>
+        <point x="0" y="20" z="0"/>
+        <point x="0" y="80" z="0" times="10"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="0" y="0" z="5"/>
+        <point x="0" y="100" z="100" times="10"/>
+      </at>
+    </cameraflight>
+
+    <cameraflight id="sky1" speed="0.1" loop="true">
+      <from>
+        <point x="0" y="80" z="-5" times="10"/>
+      </from>
+      <at>
+        <point x="0" y="80" z="-5"/>
+        <point x="0" y="90" z="-5"/>
+      </at>
+    </cameraflight>
+
+  </cameraflights>
+</guiscene>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="olympiquemoyneau" name="Olympique Moyneau" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_4">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="46A0EB" shirt2="FFFFFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="46A0EB" shirt2="1E64A0" pants="46A0EB" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000099" shirt2="1E64A0" pants="000099" shoes="A0A0A0"/>
+  <players>
+    <player name="Frederic Bartavelle" attack="6" defense="7" speed="9" stamina="6" headdress="" glasses=""/>
+    <player name="Talli Tallo" attack="6" defense="7" speed="8" stamina="6" headdress="" glasses=""/>
+    <player name="Demenzius Ferrithmo" attack="5" defense="7" speed="7" stamina="8" headdress="bobblecap" glasses=""/>
+    <player name="Francy Robbery" attack="8" defense="5" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Andy Melendez" attack="7" defense="6" speed="7" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

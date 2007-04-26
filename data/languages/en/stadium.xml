@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="en">
+  <entry id="hotdogstand" value="Hot-dog stand"/>
+  <entry id="bettingoffice" value="Betting office"/>
+  <entry id="beerbar" value="Beer bar"/>
+  <entry id="track" value="Track"/>
+  <entry id="highjump" value="High jump"/>
+  <entry id="attractions0" value="Pure boredom"/>
+  <entry id="attractions1" value="Sleazy stall"/>
+  <entry id="attractions2" value="Shallow entertainment"/>
+  <entry id="attractions3" value="Busy market"/>
+  <entry id="attractions4" value="Worth seeing"/>
+  <entry id="attractions5" value="Adventure park"/>
+	<entry id="lawn_mudfield" value="Mudfield"/>
+	<entry id="lawn_grassland" value="Green grassland"/>
+	<entry id="lawn_tendedlawn" value="Tended lawn"/>
+	<entry id="lawn_sod" value="Premium sod"/>
+	<entry id="goals" value="Goals"/>
+	<entry id="goal1" value="Dirty garbage cans"/>
+	<entry id="goal2" value="Unfirm wooden goals"/>
+	<entry id="goal3" value="Aluminum goals"/>
+	<entry id="lighting_moonlit" value="Moonlit"/>
+	<entry id="lighting_dusky" value="Dusky"/>
+	<entry id="lighting_dimlylit" value="Dimly lit"/>
+	<entry id="lighting_bright" value="Bright"/>
+	<entry id="lighting_perfect" value="Perfectly lit"/>
+  <entry id="stadium_stage0name" value="Adboards"/>
+  <entry id="stadium_stage1name" value="Stage 1 (rows 1 to 6)"/>
+  <entry id="stadium_stage2name" value="Stage 2 (rows 7 to 12)"/>
+  <entry id="stadium_stage3name" value="Stage 3 (gallery and roof)"/>
+  <entry id="built" value="built"/>
+	<entry id="floodlight0" value="No light"/>
+	<entry id="floodlight1" value="Street light"/>
+	<entry id="floodlight2" value="Halogen light"/>
+	<entry id="floodlight3" value="Floodlight tower"/>
+	<entry id="stadium_light1name" value="Lighting North-East"/>
+  <entry id="stadium_light2name" value="Lighting South-East"/>
+  <entry id="stadium_light3name" value="Lighting South-West"/>
+  <entry id="stadium_light4name" value="Lighting North-West"/>
+  <entry id="scoreboard_none" value="No scoreboard"/>
+  <entry id="scoreboard1" value="Wooden scoreboard"/>
+	<entry id="scoreboard2" value="Digital display"/>
+	<entry id="scoreboard3" value="Video screen"/>
+</language>

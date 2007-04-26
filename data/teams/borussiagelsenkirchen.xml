@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="borussiagelsenkirchen" name="Borussia Gelsenkirchen" description="Beschreibung des Vereins" group="clubteams" stadium="league1_1">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="FFFF00" shirt2="1A1717" pants="1A1717" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="1A1717" shirt2="1E64A0" pants="FFFF00" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="999999" shirt2="1E64A0" pants="1A1717" shoes="A0A0A0"/>
+  <players>
+    <player name="Römer Birkenfäller" attack="0" defense="6" speed="9" stamina="6" headdress="" glasses=""/>
+    <player name="Chris Worms" attack="0" defense="7" speed="9" stamina="5" headdress="" glasses=""/>
+    <player name="Tomas Tsatsiki" attack="4" defense="6" speed="10" stamina="6" headdress="bobblecap" glasses=""/>
+    <player name="Jakub Kölner" attack="6" defense="3" speed="10" stamina="7" headdress="none" glasses=""/>
+    <player name="Eugen Smokerik" attack="7" defense="5" speed="9" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

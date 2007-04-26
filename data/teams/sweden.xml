@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="sweden" name="Schweden" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFF01C" shirt2="EEEEFF" pants="2856A3" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="79A8CF" shirt2="1E64A0" pants="0D2059" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="2856A3" shirt2="FFDE00" pants="2856A3" shoes="A0A0A0"/>
+  <players>
+    <player name="Magnet Knetmann" attack="6" defense="7" speed="4" stamina="9" headdress="" glasses=""/>
+    <player name="Olf Mehlbag" attack="6" defense="7" speed="3" stamina="9" headdress="none" glasses=""/>
+    <player name="Freddy Jungburg" attack="8" defense="7" speed="3" stamina="9" headdress="" glasses=""/>
+    <player name="Zalat Ikeaimovic" attack="10" defense="4" speed="8" stamina="10" headdress="ted" glasses=""/>
+    <player name="Heny Larsbär" attack="9" defense="5" speed="5" stamina="10" headdress="" glasses=""/>
+  </players>
+</team>

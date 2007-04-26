@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="trinidad" name="Trinidad und Tobago" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="FFFFFF" pants="FF0000" shoes="C8C8C8"/>
+  <colors id="away" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Marlon Andrew" attack="3" defense="3" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Chris Bieraw" attack="2" defense="4" speed="4" stamina="3" headdress="iro" glasses=""/>
+    <player name="Cartel Gwen" attack="3" defense="4" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Dany Lorenz" attack="4" defense="3" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="D'right Jawk" attack="3" defense="2" speed="4" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

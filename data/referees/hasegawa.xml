@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<referee id="hasegawa" name="Hayato Hasegawa">
+  <colors pattern="" skin="FFEABB" shirt="437501" shirt2="000000" pants="111111" shoes="BBBBBB"/>
+  <values competence="2" strictness="6" loyality="3"/>
+</referee>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="manchesterdelighted" name="Manchester Delighted" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_2">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="0000CC" shirt2="1E64A0" pants="0000CC" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="000000" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Edmund von der Sack" attack="6" defense="7" speed="6" stamina="8" headdress="" glasses=""/>
+    <player name="Rio Mexico" attack="7" defense="8" speed="7" stamina="7" headdress="" glasses=""/>
+    <player name="Peter Scotts" attack="9" defense="9" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Larry Loony" attack="9" defense="8" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Rude Nistelzweig" attack="9" defense="6" speed="8" stamina="7" headdress="ted" glasses=""/>
+  </players>
+</team>

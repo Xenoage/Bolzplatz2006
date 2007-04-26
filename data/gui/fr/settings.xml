@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="settings">
+  <background visible="true">images/settings.png</background>
+  <fading intime="1" incolor="ff00ff" outtime="1" outcolor="000000"/>
+  <music fadein="1" fadeout="1" continue="true">music/mainmenu.ogg</music>
+  <groups start="overview">
+
+
+	<group id="overview" flyinduration="1" flyoutduration="1" nextgroupwaitduration="0.5">
+    <action event="groupopen" guisound="move"/>
+		<action event="keypress" eventparam="cancel" type="openscreen" param1="mainmenu" guisound="abort"/>
+
+		<label caption="Options" color="FFB400" center="true">
+      <pos x="0" y="50" width="1024" height="80"/>
+			<flyin x="0" y="-80" starttime="0" duration="0.5"/>
+			<flyout x="0" y="-80" starttime="0" duration="0.5"/>
+    </label>
+
+    <button id="overview.matchsettings" caption="Options de match">
+      <focus/>
+      <pos x="100" y="200" width="824" height="60"/>
+      <flyin x="1024" y="200" starttime="0.1" duration="0.5"/>
+			<flyout x="1024" y="200" starttime="0.1" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">overview.ok</next_control>
+        <next_control dir="down">overview.user1keyboard</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="matchsettings" guisound="select"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+    <button id="overview.user1keyboard" caption="Commande Joueur 1">
+      <pos x="100" y="280" width="824" height="60"/>
+      <flyin x="1024" y="280" starttime="0.2" duration="0.5"/>
+			<flyout x="1024" y="280" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">overview.matchsettings</next_control>
+        <next_control dir="down">overview.user2keyboard</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="user1keyboard" guisound="select"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+		<button id="overview.user2keyboard" caption="Commande Joueur 2">
+      <pos x="100" y="360" width="824" height="60"/>
+      <flyin x="1024" y="600" starttime="0.3" duration="0.5"/>
+			<flyout x="1024" y="600" starttime="0.3" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">overview.user1keyboard</next_control>
+        <next_control dir="down">overview.ok</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="user2keyboard" guisound="select"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+
+    <button id="overview.ok" caption="Retour">
+			<focus/>
+      <pos x="524" y="500" width="400" height="60"/>
+      <flyin x="1448" y="600" starttime="0.5" duration="0.5"/>
+      <flyout x="1448" y="600" starttime="0.5" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">overview.user2keyboard</next_control>
+        <next_control dir="down">overview.matchsettings</next_control>
+      </next>
+      <action event="click" type="openscreen" param1="mainmenu" guisound="select"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+  </group>
+
+
+
+	<group id="matchsettings" flyinduration="1.2" flyoutduration="1.2" nextgroupwaitduration="1.2">
+    <action event="groupopen" guisound="move"/>
+		<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+    <label caption="Option de match" color="FFB400" center="true">
+      <pos x="0" y="50" width="1024" height="80"/>
+			<flyin x="0" y="-80" starttime="0" duration="0.5"/>
+			<flyout x="0" y="-80" starttime="0" duration="0.5"/>
+    </label>
+
+		<label caption="Durée du jeu (90 min):" color="FFEA80" center="false">
+      <pos x="150" y="170" width="500" height="60"/>
+			<flyin x="-500" y="170" starttime="0" duration="0.5"/>
+			<flyout x="-500" y="170" starttime="0" duration="0.5"/>
+    </label>
+
+    <optionbutton id="matchsettings.matchduration">
+      <pos x="624" y="170" width="250" height="60"/>
+      <flyin x="1024" y="170" starttime="0" duration="0.5"/>
+      <flyout x="1024" y="170" starttime="0" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">matchsettings.cancel</next_control>
+        <next_control dir="down">matchsettings.save</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+			<options>
+        <option value="90">1 Minute</option>
+        <option value="45">2 Minutes</option>
+        <option value="30">3 Minutes</option>
+        <option value="22.5">4 Minutes</option>
+        <option value="18">5 Minutes</option>
+      </options>
+    </optionbutton>
+
+
+    <button id="matchsettings.save" caption="Enregistrer">
+      <pos x="100" y="680" width="400" height="60"/>
+      <flyin x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">matchsettings.matchduration</next_control>
+        <next_control dir="down">matchsettings.cancel</next_control>
+      </next>
+			<action event="click" type="savesettingcontrol" param1="match.timefactor" param2="matchsettings.matchduration"/>
+      <action event="click" type="activategroup" param1="overview" guisound="accept"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+    <button id="matchsettings.cancel" caption="Annuler">
+      <pos x="524" y="680" width="400" height="60"/>
+      <flyin x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">matchsettings.save</next_control>
+        <next_control dir="down">matchsettings.matchduration</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="overview" guisound="abort"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+  </group>
+
+
+
+	<group id="user1keyboard" flyinduration="1.2" flyoutduration="1.2" nextgroupwaitduration="1.2">
+    <action event="groupopen" guisound="move"/>
+		<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+    <label caption="Joueur 1 - clavier" color="FFB400" center="true">
+      <pos x="0" y="50" width="1024" height="80"/>
+			<flyin x="0" y="-80" starttime="0" duration="0.5"/>
+			<flyout x="0" y="-80" starttime="0" duration="0.5"/>
+    </label>
+
+		<label caption="Gauche:" color="FFEA80" center="false">
+      <pos x="150" y="170" width="500" height="60"/>
+			<flyin x="-500" y="170" starttime="0" duration="0.5"/>
+			<flyout x="-500" y="170" starttime="0" duration="0.5"/>
+    </label>
+
+    <keychangebutton id="user1keyboard.left" bp2k6key="0" user="0">
+      <pos x="624" y="170" width="250" height="60"/>
+      <flyin x="1024" y="170" starttime="0" duration="0.5"/>
+      <flyout x="1024" y="170" starttime="0" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.cancel</next_control>
+        <next_control dir="down">user1keyboard.up</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="En haut:" color="FFEA80" center="false">
+      <pos x="150" y="240" width="500" height="60"/>
+			<flyin x="-500" y="240" starttime="0.1" duration="0.5"/>
+			<flyout x="-500" y="240" starttime="0.1" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.up" bp2k6key="1" user="0">
+      <pos x="624" y="240" width="250" height="60"/>
+      <flyin x="1024" y="240" starttime="0.1" duration="0.5"/>
+			<flyout x="1024" y="240" starttime="0.1" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.left</next_control>
+        <next_control dir="down">user1keyboard.right</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Droite:" color="FFEA80" center="false">
+      <pos x="150" y="310" width="500" height="60"/>
+			<flyin x="-500" y="310" starttime="0.2" duration="0.5"/>
+			<flyout x="-500" y="310" starttime="0.2" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.right" bp2k6key="2" user="0">
+      <pos x="624" y="310" width="250" height="60"/>
+      <flyin x="1024" y="310" starttime="0.2" duration="0.5"/>
+			<flyout x="1024" y="310" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.up</next_control>
+        <next_control dir="down">user1keyboard.down</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="En bas:" color="FFEA80" center="false">
+      <pos x="150" y="380" width="500" height="60"/>
+			<flyin x="-500" y="380" starttime="0.3" duration="0.5"/>
+			<flyout x="-500" y="380" starttime="0.3" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.down" bp2k6key="3" user="0">
+      <pos x="624" y="380" width="250" height="60"/>
+      <flyin x="1024" y="380" starttime="0.3" duration="0.5"/>
+      <flyout x="1024" y="380" starttime="0.3" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.right</next_control>
+        <next_control dir="down">user1keyboard.pass</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Passer / Écarter:" color="FFEA80" center="false">
+      <pos x="150" y="450" width="500" height="60"/>
+			<flyin x="-500" y="450" starttime="0.4" duration="0.5"/>
+			<flyout x="-500" y="450" starttime="0.4" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.pass" bp2k6key="4" user="0">
+      <pos x="624" y="450" width="250" height="60"/>
+      <flyin x="1024" y="450" starttime="0.4" duration="0.5"/>
+      <flyout x="1024" y="450" starttime="0.4" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.down</next_control>
+        <next_control dir="down">user1keyboard.shoot</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Tirer / Changer d'équipier:" color="FFEA80" center="false">
+      <pos x="150" y="520" width="500" height="60"/>
+			<flyin x="-500" y="520" starttime="0.5" duration="0.5"/>
+			<flyout x="-500" y="520" starttime="0.5" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.shoot" bp2k6key="5" user="0">
+      <pos x="624" y="520" width="250" height="60"/>
+      <flyin x="1024" y="520" starttime="0.5" duration="0.5"/>
+      <flyout x="1024" y="520" starttime="0.5" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.pass</next_control>
+        <next_control dir="down">user1keyboard.sprint</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Courir:" color="FFEA80" center="false">
+      <pos x="150" y="590" width="500" height="60"/>
+			<flyin x="-500" y="590" starttime="0.6" duration="0.5"/>
+			<flyout x="-500" y="590" starttime="0.6" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user1keyboard.sprint" bp2k6key="6" user="0">
+      <pos x="624" y="590" width="250" height="60"/>
+      <flyin x="1024" y="590" starttime="0.6" duration="0.5"/>
+      <flyout x="1024" y="590" starttime="0.6" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.shoot</next_control>
+        <next_control dir="down">user1keyboard.save</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+
+    <button id="user1keyboard.save" caption="Enregistrer">
+      <pos x="100" y="680" width="400" height="60"/>
+      <flyin x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.sprint</next_control>
+        <next_control dir="down">user1keyboard.cancel</next_control>
+      </next>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.left"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.up"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.right"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.down"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.pass"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.shoot"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user1keyboard.sprint"/>
+      <action event="click" type="activategroup" param1="overview" guisound="accept"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+    <button id="user1keyboard.cancel" caption="Annuler">
+			<focus/>
+      <pos x="524" y="680" width="400" height="60"/>
+      <flyin x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user1keyboard.save</next_control>
+        <next_control dir="down">user1keyboard.left</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="overview" guisound="abort"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+  </group>
+
+
+
+
+	<group id="user2keyboard" flyinduration="1.2" flyoutduration="1.2" nextgroupwaitduration="1.2">
+    <action event="groupopen" guisound="move"/>
+		<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+    <label caption="Joueur 2 - Clavier" color="FFB400" center="true">
+      <pos x="0" y="50" width="1024" height="80"/>
+			<flyin x="0" y="-80" starttime="0" duration="0.5"/>
+			<flyout x="0" y="-80" starttime="0" duration="0.5"/>
+    </label>
+
+		<label caption="Gauche:" color="FFEA80" center="false">
+      <pos x="150" y="170" width="500" height="60"/>
+			<flyin x="-500" y="170" starttime="0" duration="0.5"/>
+			<flyout x="-500" y="170" starttime="0" duration="0.5"/>
+    </label>
+
+    <keychangebutton id="user2keyboard.left" bp2k6key="0" user="1">
+      <pos x="624" y="170" width="250" height="60"/>
+      <flyin x="1024" y="170" starttime="0" duration="0.5"/>
+      <flyout x="1024" y="170" starttime="0" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.cancel</next_control>
+        <next_control dir="down">user2keyboard.up</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="En haut:" color="FFEA80" center="false">
+      <pos x="150" y="240" width="500" height="60"/>
+			<flyin x="-500" y="240" starttime="0.1" duration="0.5"/>
+			<flyout x="-500" y="240" starttime="0.1" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.up" bp2k6key="1" user="1">
+      <pos x="624" y="240" width="250" height="60"/>
+      <flyin x="1024" y="240" starttime="0.1" duration="0.5"/>
+			<flyout x="1024" y="240" starttime="0.1" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.left</next_control>
+        <next_control dir="down">user2keyboard.right</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Droite:" color="FFEA80" center="false">
+      <pos x="150" y="310" width="500" height="60"/>
+			<flyin x="-500" y="310" starttime="0.2" duration="0.5"/>
+			<flyout x="-500" y="310" starttime="0.2" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.right" bp2k6key="2" user="1">
+      <pos x="624" y="310" width="250" height="60"/>
+      <flyin x="1024" y="310" starttime="0.2" duration="0.5"/>
+			<flyout x="1024" y="310" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.up</next_control>
+        <next_control dir="down">user2keyboard.down</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="En bas:" color="FFEA80" center="false">
+      <pos x="150" y="380" width="500" height="60"/>
+			<flyin x="-500" y="380" starttime="0.3" duration="0.5"/>
+			<flyout x="-500" y="380" starttime="0.3" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.down" bp2k6key="3" user="1">
+      <pos x="624" y="380" width="250" height="60"/>
+      <flyin x="1024" y="380" starttime="0.3" duration="0.5"/>
+      <flyout x="1024" y="380" starttime="0.3" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.right</next_control>
+        <next_control dir="down">user2keyboard.pass</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Passer / Ecarter:" color="FFEA80" center="false">
+      <pos x="150" y="450" width="500" height="60"/>
+			<flyin x="-500" y="450" starttime="0.4" duration="0.5"/>
+			<flyout x="-500" y="450" starttime="0.4" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.pass" bp2k6key="4" user="1">
+      <pos x="624" y="450" width="250" height="60"/>
+      <flyin x="1024" y="450" starttime="0.4" duration="0.5"/>
+      <flyout x="1024" y="450" starttime="0.4" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.down</next_control>
+        <next_control dir="down">user2keyboard.shoot</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Tirer / Changer d'équipier:" color="FFEA80" center="false">
+      <pos x="150" y="520" width="500" height="60"/>
+			<flyin x="-500" y="520" starttime="0.5" duration="0.5"/>
+			<flyout x="-500" y="520" starttime="0.5" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.shoot" bp2k6key="5" user="1">
+      <pos x="624" y="520" width="250" height="60"/>
+      <flyin x="1024" y="520" starttime="0.5" duration="0.5"/>
+      <flyout x="1024" y="520" starttime="0.5" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.pass</next_control>
+        <next_control dir="down">user2keyboard.sprint</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+		<label caption="Courir:" color="FFEA80" center="false">
+      <pos x="150" y="590" width="500" height="60"/>
+			<flyin x="-500" y="590" starttime="0.6" duration="0.5"/>
+			<flyout x="-500" y="590" starttime="0.6" duration="0.5"/>
+    </label>
+
+		<keychangebutton id="user2keyboard.sprint" bp2k6key="6" user="1">
+      <pos x="624" y="590" width="250" height="60"/>
+      <flyin x="1024" y="590" starttime="0.6" duration="0.5"/>
+      <flyout x="1024" y="590" starttime="0.6" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.shoot</next_control>
+        <next_control dir="down">user2keyboard.save</next_control>
+      </next>
+      <action event="switch" guisound="switch"/>
+      <action event="focus" guisound="focus"/>
+    </keychangebutton>
+
+
+    <button id="user2keyboard.save" caption="Enregistrer">
+      <pos x="100" y="680" width="400" height="60"/>
+      <flyin x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1024" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.sprint</next_control>
+        <next_control dir="down">user2keyboard.cancel</next_control>
+      </next>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.left"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.up"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.right"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.down"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.pass"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.shoot"/>
+			<action event="click" type="savesettingcontrol" param1="keysassignment" param2="user2keyboard.sprint"/>
+      <action event="click" type="activategroup" param1="overview" guisound="accept"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+    <button id="user2keyboard.cancel" caption="Abandonner">
+			<focus/>
+      <pos x="524" y="680" width="400" height="60"/>
+      <flyin x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <flyout x="1448" y="600" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <next>
+        <next_control dir="up">user2keyboard.save</next_control>
+        <next_control dir="down">user2keyboard.left</next_control>
+      </next>
+      <action event="click" type="activategroup" param1="overview" guisound="abort"/>
+      <action event="focus" guisound="focus"/>
+    </button>
+
+  </group>
+
+
+
+		<!--
+    ***********************
+    * NOT IMPLEMENTED YET *
+    ***********************
+    -->
+
+    <group id="notimplemented" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+
+      <label caption="Betaversion" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Diese Funktion ist in dieser Version noch nicht implementiert." color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <button id="notimplemented.ok" caption="Retour">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">notimplemented.ok</next_control>
+          <next_control dir="down">notimplemented.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+</groups>
+</screen>

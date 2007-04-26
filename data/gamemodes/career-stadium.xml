@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<stadium id="career-stadium" name="">
+  <terrain id="terrain1"/>
+	<lawn quality="0"/>
+  <goals id="garbagecans"/>
+  <stands maxspectators="0">
+  </stands>
+  <adboards>
+  </adboards>
+</stadium>

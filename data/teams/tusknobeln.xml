@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="tusknobeln" name="TuS Knobeln" description="Hier steht irgendeine Beschreibung zum Team" group="clubteams" stadium="unterwert">
+  <colors id="home" pattern="vertical" skin="EEC591" shirt="000066" shirt2="000000" pants="000066" shoes="000066"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="CC0000" shirt2="FFFFFF" pants="FFFFFF" shoes="FFFFFF"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="FFFF00" shirt2="FFFF00" pants="0033CC" shoes="A0A0A0"/>
+  <players>
+    <player name="Peder Autsch" attack="4" defense="5" speed="3" stamina="3" headdress="none" glasses=""/>
+    <player name="Andi Anwalt" attack="3" defense="4" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Rübe Zahl" attack="2" defense="5" speed="5" stamina="4" headdress="bobblecap" glasses=""/>
+    <player name="Sven Geben" attack="6" defense="4" speed="4" stamina="3" headdress="" glasses=""/>
+    <player name="Sandy Skater" attack="6" defense="2" speed="6" stamina="4" headdress="iro" glasses="glasses"/>
+  </players>
+</team>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?> 
+<stand id="stage2_completion" sizex="10" sizez="20">
+  <modifications>
+    <modification id="stage2_completion_round_stairs_l" src="stage2_completion_round_stairs_l.x"/>
+    <modification id="stage2_completion_round_stairs_r" src="stage2_completion_round_stairs_r.x"/>
+    <modification id="stage2_completion_round_stairs_banister_l" src="stage2_completion_round_stairs_banister_l.x"/>
+    <modification id="stage2_completion_round_stairs_banister_r" src="stage2_completion_round_stairs_banister_r.x"/>
+  </modifications>
+</stand>

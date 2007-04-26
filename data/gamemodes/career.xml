@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<gamemode id="career">
+  <leagues>
+    <league type="1">
+      <team id="fchollywood"/>
+      <team id="fchalde04"/>
+      <team id="marthabse"/>
+      <team id="harburgersv"/>
+      <team id="borussiagelsenkirchen"/>
+      <team id="fckaiserschmarrn"/>
+      <team id="borussiamflachpass"/>
+      <team id="weialebersausen"/>
+      <team id="vfbstuckrad"/>
+      <team id="svwehebremen"/>
+    </league>
+    <league type="2">
+      <team id="msvduesentrieb"/>
+      <team id="fsvheinz05"/>
+      <team id="1680muenchhausen"/>
+      <team id="zwietrachtzankfurt"/>
+      <team id="hallowach96"/>
+      <team id="hannarohrstock"/>
+      <team id="wcbolzburg"/>
+      <team id="scfreibier"/>
+      <team id="energieflottschuss"/>
+      <team id="fcboekenfoerde"/>
+    </league>
+    <league type="3">
+      <team id="erzgebirgeaua"/>
+      <team id="generatordresden"/>
+      <team id="fortunaglueckstadt"/>
+      <team id="ackermurkshausen"/>
+      <team id="iceleipzig"/>
+      <team id="fcsaarbruegge"/>
+      <team id="spvggmunterhacking"/>
+      <team id="rumpeltalersv"/>
+      <team id="fcsanktmausi"/>
+      <team id="rotweintrinken"/>
+    </league>
+    <league type="0">
+      <team id="acaciamilano"/>
+      <team id="domistasrotterdam"/>
+      <team id="extramailand"/>
+      <team id="fcchessy"/>
+      <team id="fcgorgonzola"/>
+      <team id="fcinterpool"/>
+      <team id="fcmorto"/>
+      <team id="gelatinerayistanbul"/>
+      <team id="glasgowdangers"/>
+      <team id="hellasprag"/>
+      <team id="lazarettlondon"/>
+      <team id="malficalissabon"/>
+      <team id="manchesterdelighted"/>
+      <team id="mimosenborgtrondheim"/>
+      <team id="olympiquemoyneau"/>
+      <team id="pvceindhoven"/>
+      <team id="csdanderland"/>
+      <team id="trafokiew"/>
+      <team id="virtuellmadrid"/>
+    </league>
+  </leagues>
+</gamemode>

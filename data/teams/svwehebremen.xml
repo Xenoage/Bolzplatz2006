@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="svwehebremen" name="SV Wehe Bremen" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league1_3">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="FC8B04" shirt2="3CB371" pants="EDF4ED" shoes="C8C8C8"/>
+  <colors id="away" pattern="vertical" skin="FFC280" shirt="32CD32" shirt2="E2EDDD" pants="32CD32" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF00FF" shirt2="1E64A0" pants="0D0212" shoes="A0A0A0"/>
+  <players>
+    <player name="Tom Wiesel" attack="9" defense="1" speed="4" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Borsten Dings" attack="10" defense="3" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Pat Ovomolevi" attack="10" defense="2" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Marislav Klause" attack="10" defense="5" speed="8" stamina="9" headdress="ted" glasses=""/>
+    <player name="Ivery Klatsche" attack="10" defense="3" speed="7" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<guiscene id="endofseason">
+  <stadium id="%career.stadium.id%" usecareerads="true"/>
+  <weather id="day-fog"/>
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.3" loop="true">
+      <from>
+				<point x="0" y="2" z="5"/>
+				<point x="3.5" y="2" z="3.5"/>
+        <point x="5" y="2" z="0"/>
+        <point x="3.5" y="2" z="-2.1"/>
+				<point x="0" y="2" z="-3"/>
+				<point x="-2.1" y="2" z="-2.1"/>
+				<point x="-3" y="2" z="0"/>
+				<point x="-2.1" y="2" z="3.5"/>
+      </from>
+      <at>
+				<point x="21" y="5" z="21"/>
+        <point x="30" y="5" z="0"/>
+        <point x="21" y="5" z="-21"/>
+				<point x="0" y="5" z="-30"/>
+				<point x="-21" y="5" z="-21"/>
+				<point x="-30" y="5" z="0"/>
+				<point x="-21" y="5" z="21"/>
+        <point x="0" y="5" z="30"/>
+      </at>
+    </cameraflight>
+
+
+  </cameraflights>
+</guiscene>

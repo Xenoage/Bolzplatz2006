@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="1680muenchhausen" name="1680 Münchhausen" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_2">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="6BACF5" shirt2="EEEEFF" pants="E9E5E5" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="131314" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FFCC00" shirt2="1E64A0" pants="1B1717" shoes="A0A0A0"/>
+  <players>
+    <player name="Bio Ochse" attack="6" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Turbo Zoffmann" attack="4" defense="5" speed="6" stamina="4" headdress="" glasses=""/>
+    <player name="Harald Liszt" attack="5" defense="6" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Hiasl B-Mann" attack="7" defense="5" speed="4" stamina="4" headdress="iro" glasses=""/>
+    <player name="Pils Augustina" attack="6" defense="4" speed="5" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

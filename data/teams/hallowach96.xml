@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="hallowach96" name="Hallowach 96" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_1">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="C53131" pants="031B03" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="E9F0E6" shirt2="1E64A0" pants="E9F0E6" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="28B605" shirt2="1E64A0" pants="E9F0E6" shoes="A0A0A0"/>
+  <players>
+    <player name="Bertolt Ekel" attack="4" defense="5" speed="4" stamina="7" headdress="" glasses=""/>
+    <player name="Erd Nussknacker" attack="6" defense="4" speed="7" stamina="4" headdress="iro" glasses=""/>
+    <player name="Mike Tarnkapp" attack="9" defense="6" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Tomas Brettarch" attack="4" defense="5" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Schorschi Schreiner" attack="5" defense="4" speed="3" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

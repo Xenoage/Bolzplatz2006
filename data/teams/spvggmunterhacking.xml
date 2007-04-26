@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="spvggmunterhacking" name="Spvgg Munterhacking" description="Beschreibung des Vereins" group="clubteams" stadium="league3_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="DF0000" shirt2="EEEEFF" pants="1F00FF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="E6EBF0" shirt2="1E64A0" pants="E6EBF0" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="1E64A0" shirt2="BE0000" pants="00001D" shoes="A0A0A0"/>
+  <players>
+    <player name="Florian Sportwagen" attack="2" defense="3" speed="4" stamina="3" headdress="" glasses=""/>
+    <player name="Sebastian Spätreis" attack="2" defense="4" speed="4" stamina="3" headdress="" glasses=""/>
+    <player name="Severin Bug" attack="2" defense="5" speed="2" stamina="3" headdress="" glasses=""/>
+    <player name="Dary Homodiabetes" attack="4" defense="2" speed="3" stamina="4" headdress="bobblecap" glasses=""/>
+    <player name="Bobbikar D'Caye" attack="5" defense="1" speed="3" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

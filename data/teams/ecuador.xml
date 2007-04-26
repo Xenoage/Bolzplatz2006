@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="ecuador" name="Ecuador" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="E9A65D" shirt="EBEB3E" shirt2="EEEEFF" pants="222299" shoes="990000"/>
+  <colors id="away" pattern="" skin="E9A65D" shirt="222299" shirt2="1E64A0" pants="EBE6E6" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="E9A65D" shirt="006600" shirt2="1E64A0" pants="003300" shoes="A0A0A0"/>
+  <players>
+    <player name="Joan Caballas" attack="6" defense="4" speed="3" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Favila Salsa" attack="2" defense="3" speed="3" stamina="4" headdress="none" glasses=""/>
+    <player name="Ruben Santa Cruz" attack="7" defense="6" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Alvaro Manteca" attack="4" defense="2" speed="4" stamina="5" headdress="ted" glasses=""/>
+    <player name="Ivan Escondidas" attack="4" defense="3" speed="7" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

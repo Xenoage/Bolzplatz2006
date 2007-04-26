@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<weather id="night-rain">
+	<precipitation type="rain" minpps="600" maxpps="800" particlescount="6000"/>
+  <fog red="30" green="30" blue="50" min="0.1" max="100"/>
+  <lightnings red="160" green="160" blue="256" persecond="0.2"/>
+  <ambientlight red="50" green="50" blue="70"/>
+  <directionallight red="80" green="80" blue="120" x="1" y="1" z="-1"/>
+  <stadiumlighting>on</stadiumlighting>
+  <ambiencesound>ambience_storm.ogg</ambiencesound>
+  <crowdfactor>0.4</crowdfactor>
+</weather>

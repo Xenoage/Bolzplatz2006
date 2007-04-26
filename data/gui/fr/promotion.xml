@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="career">
+  <scene systemid="promotion"/>
+  <fading intime="1" incolor="000000" outtime="1" outcolor="000000"/>
+  <music fadein="2" fadeout="1" continue="true">%career.higherleaguemusic%</music>
+
+  <groups start="promotion">
+
+
+    <!--
+    ****************************
+    * END OF SEASON: PROMOTION *
+    ****************************
+    -->
+
+    <group id="promotion" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="cameraflight" param1="round1" guisound="move"/>
+
+
+			<label caption="Promotion!" color="FFB400" center="false">
+        <pos x="100" y="200" width="824" height="80"/>
+        <flyin x="100" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="100" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Tu joueras dans une ligue supérieure l´année prochaine!"
+				color="FFEA80" multiline="true" lineheight="50">
+        <pos x="100" y="340" width="824" height="60"/>
+        <flyin x="-1024" y="340" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="340" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <button id="promotion.ok" caption="Continuer">
+        <focus/>
+        <pos x="100" y="620" width="824" height="60"/>
+        <flyin x="1024" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">promotion.ok</next_control>
+          <next_control dir="down">promotion.ok</next_control>
+        </next>
+        <action event="click" type="openscreen" param1="career" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+  </groups>
+
+</screen>

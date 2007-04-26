@@ -1,0 +1,8 @@
+<?xml version="1.0"?> 
+<stand id="stage3_normal" sizex="20" sizez="10">
+  <modifications>
+    <modification id="stage3_normal_roof1" src="stage3_normal_roof1.x" maxspectators="20"/>
+    <modification id="stage3_normal_roof1_platform" src="stage3_normal_roof1_platform.x" maxspectators="20"/>
+    <modification id="stage3_normal_roof2" src="stage3_normal_roof2.x" maxspectators="20"/>
+  </modifications>
+</stand>

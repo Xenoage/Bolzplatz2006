@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="saudiarabia" name="Saudiarabien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="008000" shirt2="1E64A0" pants="008000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="008000" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <players>
+    <player name="Mala Zweif" attack="3" defense="2" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Oli Al Abbada" attack="2" defense="3" speed="4" stamina="4" headdress="none" glasses=""/>
+    <player name="Abi Al Gandalf" attack="2" defense="4" speed="3" stamina="5" headdress="" glasses=""/>
+    <player name="Yassy Il Qualitu" attack="6" defense="2" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Yuri El Bashor" attack="4" defense="3" speed="5" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

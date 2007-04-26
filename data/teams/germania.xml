@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="germania" name="Germania CHIO" description="Germania CHIO. Hergestellt von PsychoFish." group="clubteams" stadium="league2_4">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFF00" shirt2="000000" pants="FFFF00" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000000" shirt2="FFFF00" pants="000000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="999999" pants="66CCFF" shoes="A0A0A0"/>
+  <players>
+    <player name="Steve Strom" attack="4" defense="5" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Wilhelm Stadtbürger" attack="5" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Jens Haudrauf" attack="6" defense="6" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Sebastian Röschen" attack="6" defense="5" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Erich Müller" attack="7" defense="5" speed="6" stamina="6" headdress="ted" glasses=""/>
+  </players>
+</team>

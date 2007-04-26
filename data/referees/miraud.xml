@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<referee id="miraud" name="Maurice Miraud">
+  <colors pattern="" skin="EBB275" shirt="223322" shirt2="000000" pants="111111" shoes="BBBBBB"/>
+  <values competence="2" strictness="4" loyality="6"/>
+</referee>

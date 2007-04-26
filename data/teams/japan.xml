@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="japan" name="Japan" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="0000DD" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="0000DD" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="CF1717" shirt2="1E64A0" pants="FFFFFF" shoes="A0A0A0"/>
+  <players>
+    <player name="Eichi Dei" attack="2" defense="4" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Anker Kalja" attack="2" defense="5" speed="4" stamina="2" headdress="" glasses="glasses"/>
+    <player name="Kaiv Nataze" attack="3" defense="4" speed="2" stamina="3" headdress="" glasses=""/>
+    <player name="Junki Jivomotta" attack="4" defense="3" speed="2" stamina="5" headdress="" glasses=""/>
+    <player name="Gabba Askama" attack="6" defense="4" speed="5" stamina="4" headdress="none" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="Bolzplatz 2006">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/Programme/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Bolzplatz 2006.classpath">
+        <pathelement location="classes"/>
+        <pathelement location="lib/dom4j/dom4j-1.6.1.jar"/>
+        <pathelement location="lib/lwjgl/lwjgl_util.jar"/>
+        <pathelement location="lib/lwjgl/lwjgl.jar"/>
+        <pathelement location="lib/sdl/sdljava.jar"/>
+        <pathelement location="lib/vecmath.jar"/>
+        <pathelement location="lib/jirr/irrlicht.jar"/>
+        <pathelement location="lib/vorbisspi/jogg-0.0.7.jar"/>
+        <pathelement location="lib/vorbisspi/jorbis-0.0.15.jar"/>
+        <pathelement location="lib/vorbisspi/tritonus_share.jar"/>
+        <pathelement location="lib/vorbisspi/vorbisspi1.0.2.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="classes"/>
+        <copy includeemptydirs="false" todir="classes">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="classes" source="${source}" target="${target}">
+            <src path="src"/>
+            <exclude name="com/xenoage/bp2k6/match/characters/PlayerX.java"/>
+            <exclude name="com/xenoage/bp2k6/match/teamai/TeamAI1.java"/>
+            <exclude name="com/xenoage/bp2k6/match/teamai/TeamAI2.java"/>
+            <exclude name="com/xenoage/bp2k6/match/teamai/TeamAI3.java"/>
+            <exclude name="com/xenoage/bp2k6/match/teamai/TeamAI4.java"/>
+            <exclude name="com/xenoage/bp2k6/match/teamai/TeamAIPlayer1.java"/>
+            <exclude name="StreamPlaylist.java"/>
+            <classpath refid="Bolzplatz 2006.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Game">
+        <java classname="com.xenoage.bp2k6.Main" failonerror="true" fork="yes">
+            <jvmarg line="-classpath &quot;classes;lib\jirr\irrlicht.jar;lib\lwjgl\lwjgl_util.jar;lib\lwjgl\lwjgl.jar;lib\dom4j\dom4j-1.6.1.jar;lib\sdl\sdljava.jar;lib\vecmath.jar;&quot; -Djava.library.path=&quot;lib/dom4j;lib/jirr;lib/lwjgl;lib/other;lib/sdl&quot; -splash:&quot;data/images/de/gamelogo.png&quot;"/>
+            <classpath refid="Bolzplatz 2006.classpath"/>
+        </java>
+    </target>
+    <target name="Settings">
+        <java classname="com.xenoage.bp2k6.tools.settings.SettingsTool" failonerror="true" fork="yes">
+            <jvmarg line="-classpath &quot;classes;lib\jirr\irrlicht.jar;lib\lwjgl\lwjgl_util.jar;lib\lwjgl\lwjgl.jar;lib\dom4j\dom4j-1.6.1.jar;lib\sdl\sdljava.jar;lib\vecmath.jar;&quot; -Djava.library.path=&quot;lib/dom4j;lib/jirr;lib/lwjgl;lib/other;lib/sdl&quot;"/>
+            <classpath refid="Bolzplatz 2006.classpath"/>
+        </java>
+    </target>
+    <target name="StadiumEditor">
+        <java classname="com.xenoage.bp2k6.tools.stadiumeditor.StadiumEditor" failonerror="true" fork="yes">
+            <jvmarg line="-classpath &quot;classes;lib\jirr\irrlicht.jar;lib\lwjgl\lwjgl_util.jar;lib\lwjgl\lwjgl.jar;lib\dom4j\dom4j-1.6.1.jar;lib\sdl\sdljava.jar;lib\vecmath.jar;&quot; -Djava.library.path=&quot;lib/dom4j;lib/jirr;lib/lwjgl;lib/other;lib/sdl&quot;"/>
+            <classpath refid="Bolzplatz 2006.classpath"/>
+        </java>
+    </target>
+    <target name="TeamEditor">
+        <java classname="com.xenoage.bp2k6.tools.teameditor.TeamEditor" failonerror="true" fork="yes">
+            <jvmarg line="-classpath &quot;classes;lib\jirr\irrlicht.jar;lib\lwjgl\lwjgl_util.jar;lib\lwjgl\lwjgl.jar;lib\dom4j\dom4j-1.6.1.jar;lib\sdl\sdljava.jar;lib\vecmath.jar;&quot; -Djava.library.path=&quot;lib/dom4j;lib/jirr;lib/lwjgl;lib/other;lib/sdl&quot;"/>
+            <classpath refid="Bolzplatz 2006.classpath"/>
+        </java>
+    </target>
+</project>

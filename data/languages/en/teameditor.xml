@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="en">
+  <entry id="teameditor_title" value="Slam Soccer 2006 - Team-Editor (Developer Mode)"/>
+  <entry id="teamdata" value="Teams and Values"/>
+  <entry id="worldcup" value="World Cup"/>
+  <entry id="statistics" value="Statistics"/>
+  <entry id="newteam" value="New team"/>
+  <entry id="deleteteam" value="Delete team"/>
+  <entry id="selectteamhere" value="Select team here"/>
+  <entry id="teamid" value="ID of the team"/>
+  <entry id="teamname" value="Name of the team"/>
+  <entry id="teamdescription" value="Description"/>
+  <entry id="teamlogo" value="Team logo"/>
+  <entry id="selectteamlogo" value="Select team logo ..."/>
+	<entry id="teamgroup" value="Group"/>
+  <entry id="teamstadium" value="Home stadium"/>
+  <entry id="nostadium" value="No home stadium (random stadium)"/>
+  <entry id="playername" value="Name"/>
+  <entry id="attack" value="Attack"/>
+  <entry id="defense" value="Defense"/>
+  <entry id="speed" value="Speed"/>
+  <entry id="stamina" value="Stamina"/>
+  <entry id="homecolors" value="Home colors"/>
+  <entry id="awaycolors" value="Away colors"/>
+  <entry id="goalkeepercolors" value="Goalkeeper colors"/>
+  <entry id="pattern" value="Pattern"/>
+  <entry id="pattern_plain" value="Single color"/>
+  <entry id="pattern_vertical" value="Vertical Pattern"/>
+  <entry id="pattern_horizontal" value="Horizontal Pattern"/>
+  <entry id="pattern_rednose" value="Single color, red nose"/>
+  <entry id="skin" value="Skin"/>
+  <entry id="shirt" value="Jersey"/>
+  <entry id="shirt2" value="Jersey 2"/>
+  <entry id="pants" value="Pants"/>
+  <entry id="shoes" value="Shoes"/>
+  <entry id="choosecolor" value="Choose color"/>
+  <entry id="question_saveteam" value="Save changes on team &quot;%teamid%&quot;?"/>
+  <entry id="teammodified" value="Team modified"/>
+  <entry id="chooseteamlogo" value="Choose Team-Logo"/>
+  <entry id="teamlogofilter" value="PNG-file, %size% x% size% pixel (*.png)"/>
+  <entry id="invalidteamlogo" value="Invalid Logo! The graphic must be a PNG-file
+and it has to have the size of %size% x %size% pixel!"/>
+  <entry id="teamlogoerror" value="Error when copying the teamlogo file!"/>
+  <entry id="newteamid" value="ID of the new team:"/>
+  <entry id="teamalreadyexists" value="This team already exists!"/>
+  <entry id="question_deleteteam" value="Do you really want to delete the team &quot;%teamid%&quot;?"/>
+  <entry id="ranking" value="Ranking"/>
+  <entry id="total" value="Total"/>
+  <entry id="remainingteams" value="Remaining teams"/>
+  <entry id="worldcupteams" value="Worldcup teams"/>
+  <entry id="addteams" value="Add teams"/>
+  <entry id="moveup" value="Move up"/>
+  <entry id="movedown" value="Move down"/>
+  <entry id="removeteams" value="remove teams"/>
+  <entry id="realworldcupteams" value="Real World Cup teams"/>
+  <entry id="worldcup32teamsallowed" value="At the World Cup there must participate exactly 32 teams!  There are too many selected."/>
+  <entry id="loadrealworldcupteams" value="Do you really want to delete the current buildup
+and load the real teams of the Worldcup 2006?"/>
+  <entry id="warning_32teams" value="Warning: A Worldcup has to consist of exactly 32 teams. At the present status the game wouldn't work!"/>
+  <entry id="international" value="International"/>
+  <entry id="hint_leagues" value="There are 13 teams that are selected at random playing UFO Allstars League and:"/>
+  <entry id="warning_leagues" value="Warning: Each of the 3 leagues have to consist of exactly 10 teams and there must be 13 international teams at the minimum. At the present status the game wouldn't work!"/> 
+  <entry id="league10teamsallowed" value="A league consists of exactly 10 teams!
+There are too many selected."/>
+  <entry id="chooseteamads" value="Select boards..."/>
+  <entry id="teamadsfilter" value="PNG-file, %size% x %size% pixel (*.png)"/>
+  <entry id="invalidteamads" value="Invalid banner! The graphic must be a PNG-file and it has to have the size of %size% x %size% pixel!"/>
+  <entry id="teamads" value="Advertising boards"/>
+  <entry id="ad" value="Advertising"/>
+  <entry id="fanbanners" value="Fan banners"/>
+  <entry id="backside" value="Back side"/>
+  <entry id="showcareerteams" value="Show career teams"/>
+  <entry id="showworldcupteams" value="Show Worldcup teams"/>
+  <entry id="hairdress" value="Headdress"/>
+  <entry id="nohairdress" value="None"/>
+  <entry id="cap" value="Cap"/>
+  <entry id="bobblecap" value="Bobble cap"/>
+  <entry id="ted" value="Ted"/>
+  <entry id="iro" value="Iro"/>
+  <entry id="glasses" value="Glasses"/>
+</language>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="siewillja" name="FC Sie Will Ja" description="FC Sie Will Ja. Hergestellt von PsychoFish." group="clubteams" stadium="allstars_4">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="CC0000" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="CC0000" shirt2="000000" pants="CC0000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="CC0000" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Palimm" attack="6" defense="7" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Danny Unwiss" attack="7" defense="8" speed="8" stamina="8" headdress="bobblecap" glasses=""/>
+    <player name="Unesco" attack="8" defense="6" speed="7" stamina="7" headdress="" glasses=""/>
+    <player name="Renate" attack="7" defense="4" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Luis de Fabian" attack="8" defense="4" speed="7" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

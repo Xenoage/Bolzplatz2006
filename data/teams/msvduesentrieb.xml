@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="msvduesentrieb" name="MSV Düsentrieb" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league2_3">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="0000FF" shirt2="E4E5FE" pants="E4E5FE" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFF000" shirt2="1E64A0" pants="FFF000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="3D4B3A" shirt2="1E64A0" pants="000028" shoes="A0A0A0"/>
+  <players>
+    <player name="Leo Loch" attack="4" defense="6" speed="4" stamina="6" headdress="" glasses=""/>
+    <player name="Panther Bagheera" attack="7" defense="3" speed="9" stamina="4" headdress="" glasses=""/>
+    <player name="Oweh Mörser" attack="6" defense="6" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Mirko Motte" attack="7" defense="5" speed="4" stamina="7" headdress="" glasses=""/>
+    <player name="Abdul is auf Hanf ouf" attack="5" defense="4" speed="3" stamina="1" headdress="iro" glasses=""/>
+  </players>
+</team>

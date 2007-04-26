@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+
+	<event>
+		<beforematch>
+			<actions>
+				<teamvalues stamina="-5"/>
+			</actions>
+		</beforematch>
+    <title>Weed, sweet weed</title>
+    <text>Astonishingly an old friend of you is standing in front of your door. He has taken a bag full of cannabis because he wants to celebrate the good old times. Unfortunately you forgot the time and the training units of your team for one week. Therefore the condition of your team is going down.</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="-2000"/>
+			</actions>
+		</beforematch>
+    <title>Don't halloo till you're out of the wood!</title>
+    <text>You cleared the lawsuit with the adversarial team with a nightly meeting with the female lawyer of the opposing party. There's only a small side effect: Now you have to pay 2000 Euro of alimony...</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="-1000"/>
+			</actions>
+		</beforematch>
+    <title>No beauty without suffering:</title>
+    <text>"Once having red hairs" your striker might have thougt before he took a hair tinting lotion. Unfortunately the lotion contained polyethylenhexodiolpentolan wich is on the doping list of the UFO. The penalty is 1000 Euro, and your player has to cut his hair!</text>
+  </event>
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="2000"/>
+			</actions>
+		</beforematch>
+    <title>Referee in trouble:</title>
+    <text>To improve his scanty salary the referee took money from the opponent team. Unfortunately somebody could not stay mum and the football association convicted the corrupt referee. The money is given to you: 2000 Euro!</text>
+  </event>
+
+</events>

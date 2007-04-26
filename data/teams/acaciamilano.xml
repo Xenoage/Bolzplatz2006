@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="acaciamilano" name="Acacia Milano" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_1">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="FF0000" shirt2="222222" pants="222222" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="EDE7E7" shirt2="1E64A0" pants="E00808" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="40A340" shirt2="1E64A0" pants="1C1C1C" shoes="A0A0A0"/>
+  <players>
+    <player name="Horatio Nelson" attack="9" defense="10" speed="9" stamina="10" headdress="" glasses=""/>
+    <player name="Gay Gatto" attack="8" defense="9" speed="6" stamina="8" headdress="" glasses=""/>
+    <player name="Alexio Nistra" attack="8" defense="10" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Cacao" attack="10" defense="7" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Andy Chiefchenco" attack="10" defense="8" speed="9" stamina="9" headdress="ted" glasses=""/>
+  </players>
+</team>

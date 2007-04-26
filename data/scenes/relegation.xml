@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<guiscene id="relegation">
+  <stadium id="%career.stadium.id%" usecareerads="true"/>
+  <weather id="night-rain" sound="true"/>
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.15" loop="true">
+      <from>
+        <point x="-20" y="1.5" z="-12" times="3"/>
+        <point x="-15" y="1.5" z="-12"/>
+				<point x="-10" y="1.5" z="-12" times="6"/>
+				<point x="-15" y="1.5" z="-12"/>
+				<point x="-20" y="1.5" z="-12" times="3"/>
+      </from>
+      <at>
+        <point x="0" y="1" z="0" times="2"/>
+        <point x="0" y="1" z="-12" times="5"/>
+				<point x="0" y="5" z="-20"/>
+				<point x="-10" y="8" z="-30"/>
+				<point x="-20" y="5" z="-20"/>
+				<point x="-20" y="3" z="-22"/>
+				<point x="-30" y="2" z="-10"/>
+				<point x="-15" y="1" z="-5"/>
+				<point x="0" y="1" z="0"/>
+      </at>
+    </cameraflight>
+
+
+  </cameraflights>
+</guiscene>

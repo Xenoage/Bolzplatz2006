@@ -1,0 +1,7 @@
+<?xml version="1.0"?> 
+<terrain id="terrain1" mesh="terrain1.x">
+  <textures>
+  	<texture type="level1" src="terrain1.png"/>
+  </textures>
+  <sky id="sky1"/>
+</terrain>

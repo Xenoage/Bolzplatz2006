@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="mimosenborgtrondheim" name="Mimosenborg Trondheim" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_4">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="EEEEFF" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="020113" shirt2="1E64A0" pants="020113" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="006699" shirt2="1E64A0" pants="140000" shoes="A0A0A0"/>
+  <players>
+    <player name="Wespen Jessy" attack="6" defense="7" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Chrissy Basta" attack="5" defense="7" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Ernie Hofhund" attack="6" defense="7" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Freddy Winless" attack="7" defense="6" speed="5" stamina="8" headdress="" glasses="glasses"/>
+    <player name="Rhrode Jossen" attack="7" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

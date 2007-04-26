@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="croatia" name="Kroatien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="horizontal" skin="E6A662" shirt="F51818" shirt2="FFEEEF" pants="FFEEEF" shoes="29459B"/>
+  <colors id="away" pattern="horizontal" skin="E6A662" shirt="29459B" shirt2="FFEEEF" pants="29459B" shoes="29459B"/>
+  <colors id="goalkeeper" pattern="" skin="E6A662" shirt="D03D3D" shirt2="1E64A0" pants="D03D3D" shoes="A0A0A0"/>
+  <players>
+    <player name="Borislav Bulimi" attack="7" defense="6" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Igel Pudel" attack="7" defense="7" speed="8" stamina="7" headdress="" glasses=""/>
+    <player name="Jozo Simulant" attack="7" defense="8" speed="9" stamina="2" headdress="" glasses=""/>
+    <player name="Mateo Barbec" attack="6" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Ivica Kannix" attack="6" defense="3" speed="4" stamina="5" headdress="bobblecap" glasses=""/>
+  </players>
+</team>

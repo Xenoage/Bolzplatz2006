@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="argentina" name="Argentinien" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="vertical" skin="F0AC62" shirt="8AB8FC" shirt2="EEEEFF" pants="1F2026" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="F0AC62" shirt="0C0C7C" shirt2="00008B" pants="0C0C7C" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="F0AC62" shirt="F9D855" shirt2="1E64A0" pants="1F2026" shoes="A0A0A0"/>
+  <players>
+    <player name="Bobby Abordado" attack="7" defense="9" speed="9" stamina="10" headdress="" glasses=""/>
+    <player name="Fernando Hot'Bikini" attack="8" defense="9" speed="10" stamina="9" headdress="" glasses=""/>
+    <player name="Juan Paolo Segunda" attack="8" defense="10" speed="9" stamina="10" headdress="" glasses=""/>
+    <player name="Michelangelo" attack="10" defense="9" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Don Juan Romantique" attack="9" defense="8" speed="9" stamina="10" headdress="ted" glasses=""/>
+  </players>
+</team>

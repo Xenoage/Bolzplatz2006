@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="wcbolzburg" name="WC Bolzburg" description="Nur ein Test-Team." group="clubteams" stadium="league2_3">
+  <colors id="home" pattern="" skin="F2DCC7" shirt="006600" shirt2="006600" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="F2DCC7" shirt="FF0000" shirt2="1E64A0" pants="EDDFDF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="F2DCC7" shirt="FFC504" shirt2="1E64A0" pants="171600" shoes="A0A0A0"/>
+  <players>
+    <player name="Simon Senf" attack="4" defense="10" speed="7" stamina="9" headdress="" glasses=""/>
+    <player name="Pablo Tierheim" attack="3" defense="8" speed="8" stamina="4" headdress="" glasses=""/>
+    <player name="Maik Hampf" attack="1" defense="9" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Michi Henker" attack="4" defense="8" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Dego Klimatix" attack="2" defense="8" speed="7" stamina="4" headdress="ted" glasses=""/>
+  </players>
+</team>

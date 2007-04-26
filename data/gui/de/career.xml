@@ -1,0 +1,3624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="career">
+  <scene systemid="career"/>
+  <fading intime="1" incolor="ff00ff" outtime="1" outcolor="000000"/>
+  <music fadein="2" fadeout="1" continue="true">%career.currentmatchdaymusic%</music>
+
+  <groups start="overview">
+
+
+    <!--
+    *******************
+    * CAREER OVERVIEW *
+    *******************
+    -->
+
+    <group id="overview" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+
+      <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/>
+      <action event="groupopen" type="setcaption" param1="overview.usermoney" param2="Kontostand: %career.usermoney% €"/>
+
+			<button caption="allstars victory" visible="false">
+        <pos x="0" y="0" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="championallstars"/>
+      </button>
+			<button caption="allstars exit" visible="false">
+        <pos x="0" y="60" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="allstarsexit"/>
+      </button>
+			<button caption="champion 1" visible="false">
+        <pos x="0" y="120" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="champion1"/>
+      </button>
+			<button caption="champion 2" visible="false">
+        <pos x="0" y="180" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="champion2"/>
+      </button>
+			<button caption="champion 3" visible="false">
+        <pos x="0" y="240" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="champion3"/>
+      </button>
+			<button caption="normal" visible="false">
+        <pos x="0" y="300" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="endofseason"/>
+      </button>
+			<button caption="promotion" visible="false">
+        <pos x="0" y="360" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="promotion"/>
+      </button>
+			<button caption="relegation" visible="false">
+        <pos x="0" y="420" width="400" height="60"/>
+        <action event="click" type="openscreen" param1="relegation"/>
+      </button>
+
+
+      <label id="overview.title" caption="%career.userteam.name%" color="FFB400" center="false">
+        <pos x="30" y="20" width="700" height="80"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label id="overview.league"
+        caption="%career.currentmatchdayleaguename%, %career.currentyear%" color="FFEA80" center="false">
+        <pos x="30" y="110" width="600" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="overview.matchday"
+        caption="%career.currentmatchdayname%" color="FFEA80" center="false">
+        <pos x="30" y="150" width="600" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="overview.currentopponentlabel" caption="Nächster Gegner:" color="FFEA80" center="false">
+        <pos x="30" y="220" width="600" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="overview.currentopponent" caption="%career.currentopponent.name%" color="FFEA80" center="false">
+        <pos x="30" y="260" width="600" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <image id="overview.hometeamlogo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="50" y="300" width="256" height="256"/>
+        <flyin x="-400" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-400" y="380" starttime="0" duration="0.5"/>
+        <action event="load" type="changeimage" param1="overview.hometeamlogo"
+          param2="teams/%career.hometeam.id%-logo.png" param3="images/teamunknown-logo.png"/>
+      </image>
+
+      <image id="overview.visitorteamlogo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="210" y="340" width="256" height="256"/>
+        <flyin x="-400" y="-20" starttime="0.4" duration="0.5"/>
+        <flyout x="-400" y="380" starttime="0" duration="0.5"/>
+        <action event="load" type="changeimage" param1="overview.visitorteamlogo"
+          param2="teams/%career.visitorteam.id%-logo.png" param3="images/teamunknown-logo.png"/>
+      </image>
+
+      <label id="overview.refereelabel" caption="Schiedsrichter:" color="FFEA80" center="false">
+        <pos x="30" y="620" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="overview.refereelabel" caption="%career.nextreferee.name%" color="FFEA80" center="false">
+        <pos x="30" y="660" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="overview.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <button id="overview.allstars" caption="Allstars League" visible="%career.isuserteaminallstarsleague%">
+        <pos x="610" y="100" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.ok</next_control>
+          <next_control dir="down">overview.teaminfo</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars%career.allstarsmatchdaystage%" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.teaminfo" caption="Teaminfo">
+        <pos x="590" y="170" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.allstars</next_control>
+          <next_control dir="down">overview.table</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="teaminfo" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.table" caption="Tabelle">
+        <pos x="570" y="240" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.teaminfo</next_control>
+          <next_control dir="down">overview.fixtures</next_control>
+        </next>
+        <!-- TODO: other group for allstars league -->
+        <action event="click" type="activategroup" param1="tableleagues" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.fixtures" caption="Spielplan">
+        <pos x="550" y="310" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.table</next_control>
+          <next_control dir="down">overview.stadium</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="tablefixtures" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.stadium" caption="Stadion">
+        <pos x="530" y="380" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.fixtures</next_control>
+          <next_control dir="down">overview.bagoftricks</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="true"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.bagoftricks" caption="Trickkiste">
+        <pos x="510" y="450" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.stadium</next_control>
+          <next_control dir="down">overview.mainmenu</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="bagoftricks" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.mainmenu" caption="Hauptmenü">
+        <pos x="490" y="520" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.bagoftricks</next_control>
+          <next_control dir="down">overview.save</next_control>
+        </next>
+        <action event="click" type="leavegamemode" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.save" caption="Speichern">
+        <pos x="470" y="590" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.mainmenu</next_control>
+          <next_control dir="down">overview.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="savecareer" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="overview.ok" caption="Los geht's">
+        <focus/>
+        <pos x="450" y="680" width="400" height="60"/>
+        <flyin x="1024" y="280" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="800" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">overview.save</next_control>
+          <next_control dir="down">overview.allstars</next_control>
+        </next>
+				<action event="load" type="savesetting" param1="gamenotsafed" param2="true"/>
+        <action event="click" type="startmatchday" param1="match" param2="true" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+    
+
+    </group>
+
+
+		<!--
+    ********************
+    * TEAM INFORMATION *
+    ********************
+    -->
+
+    <group id="teaminfo" flyinduration="2" flyoutduration="2" nextgroupwaitduration="1">
+			<action event="groupopen" type="savesettingcontrol" param1="teaminfo" param2="teaminfo.team"/>
+			<action event="groupopen" type="setvalue" param1="teaminfo.attack" param2="%teaminfo.attack%"/>
+			<action event="groupopen" type="setvalue" param1="teaminfo.defense" param2="%teaminfo.defense%"/>
+			<action event="groupopen" type="setvalue" param1="teaminfo.speed" param2="%teaminfo.speed%"/>
+			<action event="groupopen" type="setvalue" param1="teaminfo.stamina" param2="%teaminfo.stamina%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <image id="teaminfo.teamlogo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="118" y="120" width="300" height="300"/>
+        <flyin x="-300" y="120" starttime="0.4" duration="0.5"/>
+        <flyout x="-300" y="120" starttime="0" duration="0.5"/>
+				<action event="load" type="changeimage" param1="teaminfo.teamlogo"
+          param2="teams/%career.hometeam.id%-logo.png" param3="images/teamunknown-logo.png"/>
+      </image>
+
+			<label id="teaminfo.teamname" caption="%career.hometeam.name%" color="FFB400" center="true">
+        <pos x="50" y="440" width="437" height="60"/>
+        <flyin x="-437" y="440" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="440" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="teaminfo.attacklabel" caption="Angriff:" color="FFEA80" center="false">
+        <pos x="537" y="80" width="420" height="60"/>
+        <flyin x="1024" y="80" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="80" starttime="0.0" duration="0.5"/>
+      </label>
+
+			<energybar id="teaminfo.attack">
+        <pos x="537" y="140" width="420" height="50"/>
+        <flyin x="1024" y="140" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="140" starttime="0.1" duration="0.5"/>
+      </energybar>
+
+
+			<label id="teaminfo.defenselabel" caption="Abwehr:" color="FFEA80" center="false">
+        <pos x="537" y="200" width="420" height="60"/>
+        <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<energybar id="teaminfo.defense">
+        <pos x="537" y="260" width="420" height="50"/>
+        <flyin x="1024" y="260" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="260" starttime="0.3" duration="0.5"/>
+      </energybar>
+
+
+			<label id="teaminfo.speedlabel" caption="Schnelligkeit:" color="FFEA80" center="false">
+        <pos x="537" y="320" width="420" height="60"/>
+        <flyin x="1024" y="320" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0.4" duration="0.5"/>
+      </label>
+
+			<energybar id="teaminfo.speed">
+        <pos x="537" y="380" width="420" height="50"/>
+        <flyin x="1024" y="380" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="380" starttime="0.5" duration="0.5"/>
+      </energybar>
+
+
+			<label id="teaminfo.staminalabel" caption="Ausdauer:" color="FFEA80" center="false">
+        <pos x="537" y="440" width="420" height="60"/>
+        <flyin x="1024" y="440" starttime="0.6" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0.6" duration="0.5"/>
+      </label>
+
+			<energybar id="teaminfo.stamina">
+        <pos x="537" y="500" width="420" height="50"/>
+        <flyin x="1024" y="500" starttime="0.7" duration="0.5"/>
+        <flyout x="1024" y="500" starttime="0.7" duration="0.5"/>
+      </energybar>
+
+
+			<optionbutton id="teaminfo.team" caption="">
+        <pos x="50" y="610" width="437" height="60"/>
+        <flyin x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="610" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">teaminfo.ok</next_control>
+          <next_control dir="down">teaminfo.ok</next_control>
+        </next>
+        <action event="switch" type="changeimage" param1="teaminfo.teamlogo" param2="teams/%value%-logo.png" param3="images/teamunknown-logo.png" guisound="switch"/>
+				<action event="switch" type="savesettingcontrol" param1="teaminfo" param2="teaminfo.team"/>
+				<action event="switch" type="setcaption" param1="teaminfo.teamname" param2="%teaminfo.name%"/>
+				<action event="switch" type="setvalue" param1="teaminfo.attack" param2="%teaminfo.attack%"/>
+				<action event="switch" type="setvalue" param1="teaminfo.defense" param2="%teaminfo.defense%"/>
+				<action event="switch" type="setvalue" param1="teaminfo.speed" param2="%teaminfo.speed%"/>
+				<action event="switch" type="setvalue" param1="teaminfo.stamina" param2="%teaminfo.stamina%"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="teaminfo.ok"/>
+        <options default="0">
+          <option value="%career.hometeam.id%">Heim-Mannschaft</option>
+          <option value="%career.visitorteam.id%">Gast-Mannschaft</option>
+        </options>
+      </optionbutton>
+
+
+      <button id="teaminfo.ok" caption="Zurück">
+        <focus/>
+        <pos x="537" y="610" width="437" height="60"/>
+        <flyin x="-437" y="610" starttime="0.2" duration="0.5"/>
+        <flyout x="-437" y="610" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">teaminfo.team</next_control>
+          <next_control dir="down">teaminfo.team</next_control>
+        </next>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    **********************************************
+    * ALLSTARS LEAGUE, STAGE 1 (group matchdays) *
+    **********************************************
+    -->
+
+    <group id="allstars1" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+      <action event="groupopen" type="savesetting" param1="career.viewedallstars.matchday" param2="%career.currentallstarsmatchdaymax6%"/>
+      <action event="groupopen" type="savesetting" param1="career.viewedallstars.group" param2="%career.currentallstarsgroup%"/>
+      <action event="groupopen" type="performactions" param1="allstars1.update"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <actionset id="allstars1.update">
+        <action type="setcaption" param1="allstars1.title" param2="ÜFA Allstars League, %career.viewedallstars.matchday%. Spieltag, %career.viewedallstars.groupname%"/>
+        <action type="setcaption" param1="allstars1.match1name1" param2="%career.viewedallstars.match1.name1%"/>
+        <action type="setcaption" param1="allstars1.match1separator" param2="%career.viewedallstars.match1.result%"/>
+        <action type="setcaption" param1="allstars1.match1name2" param2="%career.viewedallstars.match1.name2%"/>
+        <action type="setcaption" param1="allstars1.match2name1" param2="%career.viewedallstars.match2.name1%"/>
+        <action type="setcaption" param1="allstars1.match2separator" param2="%career.viewedallstars.match2.result%"/>
+        <action type="setcaption" param1="allstars1.match2name2" param2="%career.viewedallstars.match2.name2%"/>
+        <action type="setcaption" param1="allstars1.name1" param2="%career.viewedallstars.name1%"/>
+        <action type="setcaption" param1="allstars1.won1" param2="%career.viewedallstars.won1%"/>
+        <action type="setcaption" param1="allstars1.drawn1" param2="%career.viewedallstars.drawn1%"/>
+        <action type="setcaption" param1="allstars1.lost1" param2="%career.viewedallstars.lost1%"/>
+        <action type="setcaption" param1="allstars1.goals1" param2="%career.viewedallstars.goals1%"/>
+        <action type="setcaption" param1="allstars1.points1" param2="%career.viewedallstars.points1%"/>
+        <action type="setcaption" param1="allstars1.name2" param2="%career.viewedallstars.name2%"/>
+        <action type="setcaption" param1="allstars1.won2" param2="%career.viewedallstars.won2%"/>
+        <action type="setcaption" param1="allstars1.drawn2" param2="%career.viewedallstars.drawn2%"/>
+        <action type="setcaption" param1="allstars1.lost2" param2="%career.viewedallstars.lost2%"/>
+        <action type="setcaption" param1="allstars1.goals2" param2="%career.viewedallstars.goals2%"/>
+        <action type="setcaption" param1="allstars1.points2" param2="%career.viewedallstars.points2%"/>
+        <action type="setcaption" param1="allstars1.name3" param2="%career.viewedallstars.name3%"/>
+        <action type="setcaption" param1="allstars1.won3" param2="%career.viewedallstars.won3%"/>
+        <action type="setcaption" param1="allstars1.drawn3" param2="%career.viewedallstars.drawn3%"/>
+        <action type="setcaption" param1="allstars1.lost3" param2="%career.viewedallstars.lost3%"/>
+        <action type="setcaption" param1="allstars1.goals3" param2="%career.viewedallstars.goals3%"/>
+        <action type="setcaption" param1="allstars1.points3" param2="%career.viewedallstars.points3%"/>
+        <action type="setcaption" param1="allstars1.name4" param2="%career.viewedallstars.name4%"/>
+        <action type="setcaption" param1="allstars1.won4" param2="%career.viewedallstars.won4%"/>
+        <action type="setcaption" param1="allstars1.drawn4" param2="%career.viewedallstars.drawn4%"/>
+        <action type="setcaption" param1="allstars1.lost4" param2="%career.viewedallstars.lost4%"/>
+        <action type="setcaption" param1="allstars1.goals4" param2="%career.viewedallstars.goals4%"/>
+        <action type="setcaption" param1="allstars1.points4" param2="%career.viewedallstars.points4%"/>
+      </actionset>
+
+    <!-- header -->
+
+      <label id="allstars1.title" caption="" color="FFB400" center="true">
+        <pos x="0" y="60" width="1024" height="60"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 1. match -->
+
+      <label id="allstars1.match1name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="400" height="60"/>
+        <flyin x="-450" y="160" starttime="0.1" duration="0.5"/>
+        <flyout x="-450" y="160" starttime="0.5" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.match1separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="160" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.0" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.match1name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="160" width="400" height="60"/>
+        <flyin x="1024" y="160" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="160" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 2. match -->
+
+      <label id="allstars1.match2name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="230" width="400" height="60"/>
+        <flyin x="-450" y="230" starttime="0.2" duration="0.5"/>
+        <flyout x="-450" y="230" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.match2separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="230" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.1" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.match2name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="230" width="400" height="60"/>
+        <flyin x="1024" y="230" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="230" starttime="0.4" duration="0.5"/>
+      </label>
+
+
+    <!-- table header -->
+
+      <label id="allstars1.placelabel" caption="Platz" color="FFB400" center="true">
+        <pos x="10" y="330" width="100" height="60"/>
+        <flyin x="1600" y="330" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.namelabel" caption="Verein" color="FFB400" center="false">
+        <pos x="110" y="330" width="530" height="60"/>
+        <flyin x="1600" y="330" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.wonlabel" caption="G" color="FFB400" center="true">
+        <pos x="640" y="330" width="50" height="60"/>
+        <flyin x="1600" y="330" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.drawnlabel" caption="U" color="FFB400" center="true">
+        <pos x="690" y="330" width="50" height="60"/>
+        <flyin x="1600" y="330" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.lostlabel" caption="V" color="FFB400" center="true">
+        <pos x="740" y="330" width="50" height="60"/>
+        <flyin x="1600" y="330" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.goalslabel" caption="Tore" color="FFB400" center="true">
+        <pos x="790" y="330" width="100" height="60"/>
+        <flyin x="1600" y="330" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.pointslabel" caption="Punkte" color="FFB400" center="true">
+        <pos x="900" y="330" width="100" height="60"/>
+        <flyin x="1600" y="330" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="330" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 1. place -->
+
+      <label id="allstars1.place1" caption="1." color="FFEA80" center="true">
+        <pos x="10" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.name1" caption="" color="FFEA80" center="false">
+        <pos x="110" y="400" width="530" height="60"/>
+        <flyin x="-600" y="400" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.won1" caption="" color="FFEA80" center="true">
+        <pos x="640" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.drawn1" caption="" color="FFEA80" center="true">
+        <pos x="690" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.lost1" caption="" color="FFEA80" center="true">
+        <pos x="740" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.goals1" caption="" color="FFEA80" center="true">
+        <pos x="790" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.points1" caption="" color="FFEA80" center="true">
+        <pos x="900" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 2. place -->
+
+      <label id="allstars1.place2" caption="2." color="FFEA80" center="true">
+        <pos x="10" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.name2" caption="" color="FFEA80" center="false">
+        <pos x="110" y="450" width="530" height="60"/>
+        <flyin x="1600" y="450" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.won2" caption="" color="FFEA80" center="true">
+        <pos x="640" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.drawn2" caption="" color="FFEA80" center="true">
+        <pos x="690" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.lost2" caption="" color="FFEA80" center="true">
+        <pos x="740" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.goals2" caption="" color="FFEA80" center="true">
+        <pos x="790" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.points2" caption="" color="FFEA80" center="true">
+        <pos x="900" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 3. place -->
+
+      <label id="allstars1.place3" caption="3." color="D84D36" center="true">
+        <pos x="10" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.name3" caption="" color="D84D36" center="false">
+        <pos x="110" y="500" width="530" height="60"/>
+        <flyin x="-600" y="500" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.won3" caption="" color="D84D36" center="true">
+        <pos x="640" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.drawn3" caption="" color="D84D36" center="true">
+        <pos x="690" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.lost3" caption="" color="D84D36" center="true">
+        <pos x="740" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.goals3" caption="" color="D84D36" center="true">
+        <pos x="790" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.points3" caption="" color="D84D36" center="true">
+        <pos x="900" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 4. place -->
+
+      <label id="allstars1.place4" caption="4." color="D84D36" center="true">
+        <pos x="10" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.name4" caption="" color="D84D36" center="false">
+        <pos x="110" y="550" width="530" height="60"/>
+        <flyin x="1600" y="550" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.won4" caption="" color="D84D36" center="true">
+        <pos x="640" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.drawn4" caption="" color="D84D36" center="true">
+        <pos x="690" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.lost4" caption="" color="D84D36" center="true">
+        <pos x="740" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.goals4" caption="" color="D84D36" center="true">
+        <pos x="790" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars1.points4" caption="" color="D84D36" center="true">
+        <pos x="900" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+    <!-- buttons -->
+
+      <optionbutton id="allstars1.matchday" caption="">
+        <pos x="22" y="650" width="230" height="60"/>
+        <flyin x="-400" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="-400" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars1.ok</next_control>
+          <next_control dir="down">allstars1.group</next_control>
+        </next>
+        <action event="switch" type="savesettingcontrol" param1="career.viewedallstars.matchday" param2="allstars1.matchday" guisound="switch"/>
+        <action event="switch" type="performactions" param1="allstars1.update"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="allstars1.ok" guisound="accept"/>
+        <options systemlist="career.allallstarsgroupmatchdays" default="%career.currentallstarsmatchdayminus1max5%"/> <!-- minus1 because 0. matchday is not listed -->
+      </optionbutton>
+
+      <optionbutton id="allstars1.group" caption="">
+        <pos x="272" y="650" width="230" height="60"/>
+        <flyin x="-400" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="-400" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars1.matchday</next_control>
+          <next_control dir="down">allstars1.finals</next_control>
+        </next>
+        <action event="switch" type="savesettingcontrol" param1="career.viewedallstars.group" param2="allstars1.group" guisound="switch"/>
+        <action event="switch" type="performactions" param1="allstars1.update"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="allstars1.ok" guisound="accept"/>
+        <options default="%career.currentallstarsgroup%">
+          <option value="0">Gruppe A</option>
+          <option value="1">Gruppe B</option>
+          <option value="2">Gruppe C</option>
+          <option value="3">Gruppe D</option>
+        </options>
+      </optionbutton>
+
+      <button id="allstars1.finals" caption="Endrunde">
+        <focus/>
+        <pos x="522" y="650" width="230" height="60"/>
+        <flyin x="1024" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars1.group</next_control>
+          <next_control dir="down">allstars1.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars2" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+      
+      <button id="allstars1.ok" caption="Zurück">
+        <focus/>
+        <pos x="772" y="650" width="230" height="60"/>
+        <flyin x="1024" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars1.finals</next_control>
+          <next_control dir="down">allstars1.matchday</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    *********************************************
+    * ALLSTARS LEAGUE, STAGE 2 (quarter finals) *
+    *********************************************
+    -->
+
+    <group id="allstars2" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+      <action event="groupopen" type="performactions" param1="allstars2.update"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <actionset id="allstars2.update">
+        <action type="setcaption" param1="allstars2.match1name1" param2="%career.viewedallstars.quarter1.name1%"/>
+        <action type="setcaption" param1="allstars2.match1separator" param2="%career.viewedallstars.quarter1.result%"/>
+        <action type="setcaption" param1="allstars2.match1name2" param2="%career.viewedallstars.quarter1.name2%"/>
+        <action type="setcaption" param1="allstars2.match2name1" param2="%career.viewedallstars.quarter2.name1%"/>
+        <action type="setcaption" param1="allstars2.match2separator" param2="%career.viewedallstars.quarter2.result%"/>
+        <action type="setcaption" param1="allstars2.match2name2" param2="%career.viewedallstars.quarter2.name2%"/>
+        <action type="setcaption" param1="allstars2.match3name1" param2="%career.viewedallstars.quarter3.name1%"/>
+        <action type="setcaption" param1="allstars2.match3separator" param2="%career.viewedallstars.quarter3.result%"/>
+        <action type="setcaption" param1="allstars2.match3name2" param2="%career.viewedallstars.quarter3.name2%"/>
+        <action type="setcaption" param1="allstars2.match4name1" param2="%career.viewedallstars.quarter4.name1%"/>
+        <action type="setcaption" param1="allstars2.match4separator" param2="%career.viewedallstars.quarter4.result%"/>
+        <action type="setcaption" param1="allstars2.match4name2" param2="%career.viewedallstars.quarter4.name2%"/>
+      </actionset>
+
+
+    <!-- header -->
+
+      <label id="allstars2.title"
+        caption="ÜFA Allstars League, Viertelfinale" color="FFB400" center="true">
+        <pos x="0" y="60" width="1024" height="60"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 1. match -->
+
+      <label id="allstars2.match1name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="180" width="400" height="60"/>
+        <flyin x="-450" y="180" starttime="0.1" duration="0.5"/>
+        <flyout x="-450" y="180" starttime="0.5" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match1separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="180" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.0" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match1name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="180" width="400" height="60"/>
+        <flyin x="1024" y="180" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="180" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 2. match -->
+
+      <label id="allstars2.match2name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="250" width="400" height="60"/>
+        <flyin x="-450" y="250" starttime="0.2" duration="0.5"/>
+        <flyout x="-450" y="250" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match2separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="250" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.1" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match2name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="250" width="400" height="60"/>
+        <flyin x="1024" y="250" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="250" starttime="0.4" duration="0.5"/>
+      </label>
+
+
+    <!-- 3. match -->
+
+      <label id="allstars2.match3name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="320" width="400" height="60"/>
+        <flyin x="-450" y="320" starttime="0.3" duration="0.5"/>
+        <flyout x="-450" y="320" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match3separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="320" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.2" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match3name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="320" width="400" height="60"/>
+        <flyin x="1024" y="320" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0.3" duration="0.5"/>
+      </label>
+
+
+    <!-- 4. match -->
+
+      <label id="allstars2.match4name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="390" width="400" height="60"/>
+        <flyin x="-450" y="390" starttime="0.4" duration="0.5"/>
+        <flyout x="-450" y="390" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match4separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="390" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.3" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars2.match4name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="390" width="400" height="60"/>
+        <flyin x="1024" y="390" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="390" starttime="0.2" duration="0.5"/>
+      </label>
+     
+
+    <!-- buttons -->
+
+      <button id="allstars2.groups" caption="Gruppenphase">
+        <pos x="32" y="650" width="300" height="60"/>
+        <flyin x="1024" y="650" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="650" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars2.ok</next_control>
+          <next_control dir="down">allstars2.finals</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars1" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="allstars2.finals" caption="Finals">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="1024" y="650" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="650" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars2.groups</next_control>
+          <next_control dir="down">allstars2.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars3" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="allstars2.ok" caption="Zurück">
+        <pos x="692" y="650" width="300" height="60"/>
+        <flyin x="1024" y="650" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="650" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars2.finals</next_control>
+          <next_control dir="down">allstars2.groups</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ************************************************************
+    * ALLSTARS LEAGUE, STAGE 3 (semi finals, 3rd place, final) *
+    ************************************************************
+    -->
+
+    <group id="allstars3" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+      <action event="groupopen" type="performactions" param1="allstars3.update"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <actionset id="allstars3.update">
+        <action type="setcaption" param1="allstars3.match1name1" param2="%career.viewedallstars.final.name1%"/>
+        <action type="setcaption" param1="allstars3.match1separator" param2="%career.viewedallstars.final.result%"/>
+        <action type="setcaption" param1="allstars3.match1name2" param2="%career.viewedallstars.final.name2%"/>
+        <action type="setcaption" param1="allstars3.match2name1" param2="%career.viewedallstars.3rdplace.name1%"/>
+        <action type="setcaption" param1="allstars3.match2separator" param2="%career.viewedallstars.3rdplace.result%"/>
+        <action type="setcaption" param1="allstars3.match2name2" param2="%career.viewedallstars.3rdplace.name2%"/>
+        <action type="setcaption" param1="allstars3.match3name1" param2="%career.viewedallstars.semi1.name1%"/>
+        <action type="setcaption" param1="allstars3.match3separator" param2="%career.viewedallstars.semi1.result%"/>
+        <action type="setcaption" param1="allstars3.match3name2" param2="%career.viewedallstars.semi1.name2%"/>
+        <action type="setcaption" param1="allstars3.match4name1" param2="%career.viewedallstars.semi2.name1%"/>
+        <action type="setcaption" param1="allstars3.match4separator" param2="%career.viewedallstars.semi2.result%"/>
+        <action type="setcaption" param1="allstars3.match4name2" param2="%career.viewedallstars.semi2.name2%"/>
+      </actionset>
+
+
+    <!-- final title -->
+
+      <label id="allstars3.finaltitle" caption="Finale" color="FFB400" center="true">
+        <pos x="0" y="30" width="1024" height="80"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- final match -->
+
+      <label id="allstars3.match1name1" caption="" color="ACEB49" center="false">
+        <pos x="50" y="120" width="400" height="60"/>
+        <flyin x="-450" y="120" starttime="0.1" duration="0.5"/>
+        <flyout x="-450" y="120" starttime="0.5" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match1separator" caption="" color="ACEB49" center="true">
+        <pos x="450" y="120" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.0" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match1name2" caption="" color="ACEB49" center="false">
+        <pos x="574" y="120" width="400" height="60"/>
+        <flyin x="1024" y="120" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="120" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 3rdplace title -->
+
+      <label id="allstars3.3rdplacetitle" caption="Spiel um Platz 3" color="FFB400" center="true">
+        <pos x="0" y="220" width="1024" height="60"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 3rdplace match -->
+
+      <label id="allstars3.match2name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="310" width="400" height="60"/>
+        <flyin x="-450" y="310" starttime="0.2" duration="0.5"/>
+        <flyout x="-450" y="310" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match2separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="310" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.1" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match2name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="310" width="400" height="60"/>
+        <flyin x="1024" y="310" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="310" starttime="0.4" duration="0.5"/>
+      </label>
+
+
+    <!-- semi title -->
+
+      <label id="allstars3.semititle" caption="Halbfinals" color="FFB400" center="true">
+        <pos x="0" y="410" width="1024" height="60"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 3. match -->
+
+      <label id="allstars3.match3name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="500" width="400" height="60"/>
+        <flyin x="-450" y="500" starttime="0.3" duration="0.5"/>
+        <flyout x="-450" y="500" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match3separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="500" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.2" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match3name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="500" width="400" height="60"/>
+        <flyin x="1024" y="500" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="500" starttime="0.3" duration="0.5"/>
+      </label>
+
+
+    <!-- 4. match -->
+
+      <label id="allstars3.match4name1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="570" width="400" height="60"/>
+        <flyin x="-450" y="570" starttime="0.4" duration="0.5"/>
+        <flyout x="-450" y="570" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match4separator" caption="" color="FFEA80" center="true">
+        <pos x="450" y="570" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.3" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="allstars3.match4name2" caption="" color="FFEA80" center="false">
+        <pos x="574" y="570" width="400" height="60"/>
+        <flyin x="1024" y="570" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="570" starttime="0.2" duration="0.5"/>
+      </label>
+     
+
+    <!-- buttons -->
+
+      <button id="allstars3.groups" caption="Gruppenphase">
+        <pos x="32" y="680" width="300" height="60"/>
+        <flyin x="1024" y="680" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="680" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars3.ok</next_control>
+          <next_control dir="down">allstars3.quarters</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars1" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="allstars3.quarters" caption="Viertelfinals">
+        <pos x="362" y="680" width="300" height="60"/>
+        <flyin x="1024" y="680" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="680" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars3.groups</next_control>
+          <next_control dir="down">allstars3.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="allstars2" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+      <button id="allstars3.ok" caption="Zurück">
+        <focus/>
+        <pos x="692" y="680" width="300" height="60"/>
+        <flyin x="1024" y="680" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="680" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">allstars3.quarters</next_control>
+          <next_control dir="down">allstars3.groups</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ****************************************
+    * CAREER TABLE (for league 1, 2 and 3) *
+    ****************************************
+    -->
+
+    <group id="tableleagues" flyinduration="1.5" flyoutduration="1.5" nextgroupwaitduration="1">
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+      <action event="groupopen" type="savesetting" param1="career.viewedtable.league" param2="%career.currentleagueid%"/>
+      <action event="groupopen" type="savesetting" param1="career.viewedtable.matchday" param2="%career.currentleaguematchdayminus1%"/>
+      <action event="groupopen" type="performactions" param1="tableleagues.update"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <actionset id="tableleagues.update">
+        <action type="setcaption" param1="tableleagues.name1" param2="%career.viewedtable.name1%"/>
+        <action type="setcaption" param1="tableleagues.won1" param2="%career.viewedtable.won1%"/>
+        <action type="setcaption" param1="tableleagues.drawn1" param2="%career.viewedtable.drawn1%"/>
+        <action type="setcaption" param1="tableleagues.lost1" param2="%career.viewedtable.lost1%"/>
+        <action type="setcaption" param1="tableleagues.goals1" param2="%career.viewedtable.goals1%"/>
+        <action type="setcaption" param1="tableleagues.points1" param2="%career.viewedtable.points1%"/>
+        <action type="setcaption" param1="tableleagues.name2" param2="%career.viewedtable.name2%"/>
+        <action type="setcaption" param1="tableleagues.won2" param2="%career.viewedtable.won2%"/>
+        <action type="setcaption" param1="tableleagues.drawn2" param2="%career.viewedtable.drawn2%"/>
+        <action type="setcaption" param1="tableleagues.lost2" param2="%career.viewedtable.lost2%"/>
+        <action type="setcaption" param1="tableleagues.goals2" param2="%career.viewedtable.goals2%"/>
+        <action type="setcaption" param1="tableleagues.points2" param2="%career.viewedtable.points2%"/>
+        <action type="setcaption" param1="tableleagues.name3" param2="%career.viewedtable.name3%"/>
+        <action type="setcaption" param1="tableleagues.won3" param2="%career.viewedtable.won3%"/>
+        <action type="setcaption" param1="tableleagues.drawn3" param2="%career.viewedtable.drawn3%"/>
+        <action type="setcaption" param1="tableleagues.lost3" param2="%career.viewedtable.lost3%"/>
+        <action type="setcaption" param1="tableleagues.goals3" param2="%career.viewedtable.goals3%"/>
+        <action type="setcaption" param1="tableleagues.points3" param2="%career.viewedtable.points3%"/>
+        <action type="setcaption" param1="tableleagues.name4" param2="%career.viewedtable.name4%"/>
+        <action type="setcaption" param1="tableleagues.won4" param2="%career.viewedtable.won4%"/>
+        <action type="setcaption" param1="tableleagues.drawn4" param2="%career.viewedtable.drawn4%"/>
+        <action type="setcaption" param1="tableleagues.lost4" param2="%career.viewedtable.lost4%"/>
+        <action type="setcaption" param1="tableleagues.goals4" param2="%career.viewedtable.goals4%"/>
+        <action type="setcaption" param1="tableleagues.points4" param2="%career.viewedtable.points4%"/>
+        <action type="setcaption" param1="tableleagues.name5" param2="%career.viewedtable.name5%"/>
+        <action type="setcaption" param1="tableleagues.won5" param2="%career.viewedtable.won5%"/>
+        <action type="setcaption" param1="tableleagues.drawn5" param2="%career.viewedtable.drawn5%"/>
+        <action type="setcaption" param1="tableleagues.lost5" param2="%career.viewedtable.lost5%"/>
+        <action type="setcaption" param1="tableleagues.goals5" param2="%career.viewedtable.goals5%"/>
+        <action type="setcaption" param1="tableleagues.points5" param2="%career.viewedtable.points5%"/>
+        <action type="setcaption" param1="tableleagues.name6" param2="%career.viewedtable.name6%"/>
+        <action type="setcaption" param1="tableleagues.won6" param2="%career.viewedtable.won6%"/>
+        <action type="setcaption" param1="tableleagues.drawn6" param2="%career.viewedtable.drawn6%"/>
+        <action type="setcaption" param1="tableleagues.lost6" param2="%career.viewedtable.lost6%"/>
+        <action type="setcaption" param1="tableleagues.goals6" param2="%career.viewedtable.goals6%"/>
+        <action type="setcaption" param1="tableleagues.points6" param2="%career.viewedtable.points6%"/>
+        <action type="setcaption" param1="tableleagues.name7" param2="%career.viewedtable.name7%"/>
+        <action type="setcaption" param1="tableleagues.won7" param2="%career.viewedtable.won7%"/>
+        <action type="setcaption" param1="tableleagues.drawn7" param2="%career.viewedtable.drawn7%"/>
+        <action type="setcaption" param1="tableleagues.lost7" param2="%career.viewedtable.lost7%"/>
+        <action type="setcaption" param1="tableleagues.goals7" param2="%career.viewedtable.goals7%"/>
+        <action type="setcaption" param1="tableleagues.points7" param2="%career.viewedtable.points7%"/>
+        <action type="setcaption" param1="tableleagues.name8" param2="%career.viewedtable.name8%"/>
+        <action type="setcaption" param1="tableleagues.won8" param2="%career.viewedtable.won8%"/>
+        <action type="setcaption" param1="tableleagues.drawn8" param2="%career.viewedtable.drawn8%"/>
+        <action type="setcaption" param1="tableleagues.lost8" param2="%career.viewedtable.lost8%"/>
+        <action type="setcaption" param1="tableleagues.goals8" param2="%career.viewedtable.goals8%"/>
+        <action type="setcaption" param1="tableleagues.points8" param2="%career.viewedtable.points8%"/>
+        <action type="setcaption" param1="tableleagues.name9" param2="%career.viewedtable.name9%"/>
+        <action type="setcaption" param1="tableleagues.won9" param2="%career.viewedtable.won9%"/>
+        <action type="setcaption" param1="tableleagues.drawn9" param2="%career.viewedtable.drawn9%"/>
+        <action type="setcaption" param1="tableleagues.lost9" param2="%career.viewedtable.lost9%"/>
+        <action type="setcaption" param1="tableleagues.goals9" param2="%career.viewedtable.goals9%"/>
+        <action type="setcaption" param1="tableleagues.points9" param2="%career.viewedtable.points9%"/>
+        <action type="setcaption" param1="tableleagues.name10" param2="%career.viewedtable.name10%"/>
+        <action type="setcaption" param1="tableleagues.won10" param2="%career.viewedtable.won10%"/>
+        <action type="setcaption" param1="tableleagues.drawn10" param2="%career.viewedtable.drawn10%"/>
+        <action type="setcaption" param1="tableleagues.lost10" param2="%career.viewedtable.lost10%"/>
+        <action type="setcaption" param1="tableleagues.goals10" param2="%career.viewedtable.goals10%"/>
+        <action type="setcaption" param1="tableleagues.points10" param2="%career.viewedtable.points10%"/>
+				<action event="groupopen" type="setlabelcolor" param1="*" param2="reset"/>
+				<action event="groupopen" type="setlabelcolor" param1="*" param2="userteam" param3="FFB400"/>
+      </actionset>
+
+    <!-- header -->
+
+      <label id="tableleagues.placelabel" caption="Platz" color="FFB400" center="true">
+        <pos x="10" y="20" width="100" height="60"/>
+        <flyin x="1600" y="20" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.namelabel" caption="Verein" color="FFB400" center="false">
+        <pos x="110" y="20" width="530" height="60"/>
+        <flyin x="1600" y="20" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.wonlabel" caption="G" color="FFB400" center="true">
+        <pos x="640" y="20" width="50" height="60"/>
+        <flyin x="1600" y="20" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawnlabel" caption="U" color="FFB400" center="true">
+        <pos x="690" y="20" width="50" height="60"/>
+        <flyin x="1600" y="20" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lostlabel" caption="V" color="FFB400" center="true">
+        <pos x="740" y="20" width="50" height="60"/>
+        <flyin x="1600" y="20" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goalslabel" caption="Tore" color="FFB400" center="true">
+        <pos x="790" y="20" width="100" height="60"/>
+        <flyin x="1600" y="20" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.pointslabel" caption="Punkte" color="FFB400" center="true">
+        <pos x="900" y="20" width="100" height="60"/>
+        <flyin x="1600" y="20" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="20" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 1. place -->
+
+      <label id="tableleagues.place1" caption="1." color="ACEB49" center="true">
+        <pos x="10" y="100" width="100" height="60"/>
+        <flyin x="-600" y="100" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name1" caption="" color="ACEB49" center="false">
+        <pos x="110" y="100" width="530" height="60"/>
+        <flyin x="-600" y="100" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won1" caption="" color="ACEB49" center="true">
+        <pos x="640" y="100" width="50" height="60"/>
+        <flyin x="-600" y="100" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn1" caption="" color="ACEB49" center="true">
+        <pos x="690" y="100" width="50" height="60"/>
+        <flyin x="-600" y="100" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost1" caption="" color="ACEB49" center="true">
+        <pos x="740" y="100" width="50" height="60"/>
+        <flyin x="-600" y="100" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals1" caption="" color="ACEB49" center="true">
+        <pos x="790" y="100" width="100" height="60"/>
+        <flyin x="-600" y="100" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points1" caption="" color="ACEB49" center="true">
+        <pos x="900" y="100" width="100" height="60"/>
+        <flyin x="-600" y="100" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="100" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 2. place -->
+
+      <label id="tableleagues.place2" caption="2." color="ACEB49" center="true">
+        <pos x="10" y="150" width="100" height="60"/>
+        <flyin x="1600" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name2" caption="" color="ACEB49" center="false">
+        <pos x="110" y="150" width="530" height="60"/>
+        <flyin x="1600" y="150" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won2" caption="" color="ACEB49" center="true">
+        <pos x="640" y="150" width="50" height="60"/>
+        <flyin x="1600" y="150" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn2" caption="" color="ACEB49" center="true">
+        <pos x="690" y="150" width="50" height="60"/>
+        <flyin x="1600" y="150" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost2" caption="" color="ACEB49" center="true">
+        <pos x="740" y="150" width="50" height="60"/>
+        <flyin x="1600" y="150" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals2" caption="" color="ACEB49" center="true">
+        <pos x="790" y="150" width="100" height="60"/>
+        <flyin x="1600" y="150" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points2" caption="" color="ACEB49" center="true">
+        <pos x="900" y="150" width="100" height="60"/>
+        <flyin x="1600" y="150" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 3. place -->
+
+      <label id="tableleagues.place3" caption="3." color="ACEB49" center="true">
+        <pos x="10" y="200" width="100" height="60"/>
+        <flyin x="-600" y="200" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name3" caption="" color="ACEB49" center="false">
+        <pos x="110" y="200" width="530" height="60"/>
+        <flyin x="-600" y="200" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won3" caption="" color="ACEB49" center="true">
+        <pos x="640" y="200" width="50" height="60"/>
+        <flyin x="-600" y="200" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn3" caption="" color="ACEB49" center="true">
+        <pos x="690" y="200" width="50" height="60"/>
+        <flyin x="-600" y="200" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost3" caption="" color="ACEB49" center="true">
+        <pos x="740" y="200" width="50" height="60"/>
+        <flyin x="-600" y="200" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals3" caption="" color="ACEB49" center="true">
+        <pos x="790" y="200" width="100" height="60"/>
+        <flyin x="-600" y="200" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points3" caption="" color="ACEB49" center="true">
+        <pos x="900" y="200" width="100" height="60"/>
+        <flyin x="-600" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="200" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 4. place -->
+
+      <label id="tableleagues.place4" caption="4." color="E9D14F" center="true">
+        <pos x="10" y="250" width="100" height="60"/>
+        <flyin x="1600" y="250" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name4" caption="" color="E9D14F" center="false">
+        <pos x="110" y="250" width="530" height="60"/>
+        <flyin x="1600" y="250" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won4" caption="" color="E9D14F" center="true">
+        <pos x="640" y="250" width="50" height="60"/>
+        <flyin x="1600" y="250" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn4" caption="" color="E9D14F" center="true">
+        <pos x="690" y="250" width="50" height="60"/>
+        <flyin x="1600" y="250" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost4" caption="" color="E9D14F" center="true">
+        <pos x="740" y="250" width="50" height="60"/>
+        <flyin x="1600" y="250" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals4" caption="" color="E9D14F" center="true">
+        <pos x="790" y="250" width="100" height="60"/>
+        <flyin x="1600" y="250" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points4" caption="" color="E9D14F" center="true">
+        <pos x="900" y="250" width="100" height="60"/>
+        <flyin x="1600" y="250" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="250" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 5. place -->
+
+      <label id="tableleagues.place5" caption="5." color="E9D14F" center="true">
+        <pos x="10" y="300" width="100" height="60"/>
+        <flyin x="-600" y="300" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name5" caption="" color="E9D14F" center="false">
+        <pos x="110" y="300" width="530" height="60"/>
+        <flyin x="-600" y="300" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won5" caption="" color="E9D14F" center="true">
+        <pos x="640" y="300" width="50" height="60"/>
+        <flyin x="-600" y="300" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn5" caption="" color="E9D14F" center="true">
+        <pos x="690" y="300" width="50" height="60"/>
+        <flyin x="-600" y="300" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost5" caption="" color="E9D14F" center="true">
+        <pos x="740" y="300" width="50" height="60"/>
+        <flyin x="-600" y="300" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals5" caption="" color="E9D14F" center="true">
+        <pos x="790" y="300" width="100" height="60"/>
+        <flyin x="-600" y="300" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points5" caption="" color="E9D14F" center="true">
+        <pos x="900" y="300" width="100" height="60"/>
+        <flyin x="-600" y="300" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="300" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 6. place -->
+
+      <label id="tableleagues.place6" caption="6." color="E9D14F" center="true">
+        <pos x="10" y="350" width="100" height="60"/>
+        <flyin x="1600" y="350" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name6" caption="" color="E9D14F" center="false">
+        <pos x="110" y="350" width="530" height="60"/>
+        <flyin x="1600" y="350" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won6" caption="" color="E9D14F" center="true">
+        <pos x="640" y="350" width="50" height="60"/>
+        <flyin x="1600" y="350" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn6" caption="" color="E9D14F" center="true">
+        <pos x="690" y="350" width="50" height="60"/>
+        <flyin x="1600" y="350" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost6" caption="" color="E9D14F" center="true">
+        <pos x="740" y="350" width="50" height="60"/>
+        <flyin x="1600" y="350" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals6" caption="" color="E9D14F" center="true">
+        <pos x="790" y="350" width="100" height="60"/>
+        <flyin x="1600" y="350" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points6" caption="" color="E9D14F" center="true">
+        <pos x="900" y="350" width="100" height="60"/>
+        <flyin x="1600" y="350" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="350" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 7. place -->
+
+      <label id="tableleagues.place7" caption="7." color="E9D14F" center="true">
+        <pos x="10" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name7" caption="" color="E9D14F" center="false">
+        <pos x="110" y="400" width="530" height="60"/>
+        <flyin x="-600" y="400" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won7" caption="" color="E9D14F" center="true">
+        <pos x="640" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn7" caption="" color="E9D14F" center="true">
+        <pos x="690" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost7" caption="" color="E9D14F" center="true">
+        <pos x="740" y="400" width="50" height="60"/>
+        <flyin x="-600" y="400" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals7" caption="" color="E9D14F" center="true">
+        <pos x="790" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points7" caption="" color="E9D14F" center="true">
+        <pos x="900" y="400" width="100" height="60"/>
+        <flyin x="-600" y="400" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="400" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 8. place -->
+
+      <label id="tableleagues.place8" caption="8." color="D84D36" center="true">
+        <pos x="10" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name8" caption="" color="D84D36" center="false">
+        <pos x="110" y="450" width="530" height="60"/>
+        <flyin x="1600" y="450" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won8" caption="" color="D84D36" center="true">
+        <pos x="640" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn8" caption="" color="D84D36" center="true">
+        <pos x="690" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost8" caption="" color="D84D36" center="true">
+        <pos x="740" y="450" width="50" height="60"/>
+        <flyin x="1600" y="450" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals8" caption="" color="D84D36" center="true">
+        <pos x="790" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points8" caption="" color="D84D36" center="true">
+        <pos x="900" y="450" width="100" height="60"/>
+        <flyin x="1600" y="450" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="450" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 9. place -->
+
+      <label id="tableleagues.place9" caption="9." color="D84D36" center="true">
+        <pos x="10" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="1.0" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name9" caption="" color="D84D36" center="false">
+        <pos x="110" y="500" width="530" height="60"/>
+        <flyin x="-600" y="500" starttime="0.9" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won9" caption="" color="D84D36" center="true">
+        <pos x="640" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.4" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.6" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn9" caption="" color="D84D36" center="true">
+        <pos x="690" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.3" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.7" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost9" caption="" color="D84D36" center="true">
+        <pos x="740" y="500" width="50" height="60"/>
+        <flyin x="-600" y="500" starttime="0.2" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.8" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals9" caption="" color="D84D36" center="true">
+        <pos x="790" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="0.1" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points9" caption="" color="D84D36" center="true">
+        <pos x="900" y="500" width="100" height="60"/>
+        <flyin x="-600" y="500" starttime="0.0" duration="0.5"/>
+        <flyout x="-600" y="500" starttime="1.0" duration="0.5"/>
+      </label>
+
+
+    <!-- 10. place -->
+
+      <label id="tableleagues.place10" caption="10." color="D84D36" center="true">
+        <pos x="10" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="0.0" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="1.0" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.name10" caption="" color="D84D36" center="false">
+        <pos x="110" y="550" width="530" height="60"/>
+        <flyin x="1600" y="550" starttime="0.1" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.9" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.won10" caption="" color="D84D36" center="true">
+        <pos x="640" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.6" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.drawn10" caption="" color="D84D36" center="true">
+        <pos x="690" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.7" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.lost10" caption="" color="D84D36" center="true">
+        <pos x="740" y="550" width="50" height="60"/>
+        <flyin x="1600" y="550" starttime="0.8" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.goals10" caption="" color="D84D36" center="true">
+        <pos x="790" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="0.9" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tableleagues.points10" caption="" color="D84D36" center="true">
+        <pos x="900" y="550" width="100" height="60"/>
+        <flyin x="1600" y="550" starttime="1.0" duration="0.5"/>
+        <flyout x="1600" y="550" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <optionbutton id="tableleagues.league" caption="">
+        <pos x="32" y="650" width="300" height="60"/>
+        <flyin x="-250" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="-250" y="768" starttime="0.5" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">tableleagues.ok</next_control>
+          <next_control dir="down">tableleagues.matchday</next_control>
+        </next>
+        <action event="switch" type="savesettingcontrol" param1="career.viewedtable.league" param2="tableleagues.league" guisound="switch"/>
+        <action event="switch" type="performactions" param1="tableleagues.update"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="tableleagues.ok" guisound="accept"/>
+        <options default="%career.currentleagueindex%">
+          <option value="league1">1. Liga</option>
+          <option value="league2">2. Liga</option>
+          <option value="league3">3. Liga</option>
+        </options>
+      </optionbutton>
+
+
+      <optionbutton id="tableleagues.matchday" caption="">
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="-250" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="-250" y="768" starttime="0.5" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">tableleagues.league</next_control>
+          <next_control dir="down">tableleagues.ok</next_control>
+        </next>
+        <action event="switch" type="savesettingcontrol" param1="career.viewedtable.matchday" param2="tableleagues.matchday" guisound="switch"/>
+        <action event="switch" type="performactions" param1="tableleagues.update"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="tableleagues.ok" guisound="accept"/>
+        <options systemlist="career.playedmatchdays" default="%career.currentleaguematchdayminus1%"/>
+      </optionbutton>
+
+
+      <button id="tableleagues.ok" caption="Zurück">
+        <focus/>
+        <pos x="692" y="650" width="300" height="60"/>
+        <flyin x="1024" y="650" starttime="0.0" duration="0.5"/>
+        <flyout x="312" y="650" starttime="0.4" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">tableleagues.matchday</next_control>
+          <next_control dir="down">tableleagues.league</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+    
+
+    </group>
+
+
+
+    <!--
+    *******************************************
+    * CAREER FIXTURES (for league 1, 2 and 3) *
+    *******************************************
+    -->
+
+    <group id="tablefixtures" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+      <action event="groupopen" type="savesetting" param1="career.viewedfixtures.matchday" param2="%career.currentleaguematchday%"/>
+      <action event="groupopen" type="performactions" param1="tablefixtures.update"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <actionset id="tablefixtures.update">
+        <action type="setcaption" param1="tablefixtures.title" param2="%career.currentleaguename%, Saison %career.currentyear%, %career.viewedfixtures.matchday%. Spieltag"/>
+        <action type="setcaption" param1="tablefixtures.match1name1" param2="%career.viewedfixtures.match1.name1%"/>
+        <action type="setcaption" param1="tablefixtures.match1separator" param2="%career.viewedfixtures.match1.result%"/>
+        <action type="setcaption" param1="tablefixtures.match1name2" param2="%career.viewedfixtures.match1.name2%"/>
+        <action type="setcaption" param1="tablefixtures.match2name1" param2="%career.viewedfixtures.match2.name1%"/>
+        <action type="setcaption" param1="tablefixtures.match2separator" param2="%career.viewedfixtures.match2.result%"/>
+        <action type="setcaption" param1="tablefixtures.match2name2" param2="%career.viewedfixtures.match2.name2%"/>
+        <action type="setcaption" param1="tablefixtures.match3name1" param2="%career.viewedfixtures.match3.name1%"/>
+        <action type="setcaption" param1="tablefixtures.match3separator" param2="%career.viewedfixtures.match3.result%"/>
+        <action type="setcaption" param1="tablefixtures.match3name2" param2="%career.viewedfixtures.match3.name2%"/>
+        <action type="setcaption" param1="tablefixtures.match4name1" param2="%career.viewedfixtures.match4.name1%"/>
+        <action type="setcaption" param1="tablefixtures.match4separator" param2="%career.viewedfixtures.match4.result%"/>
+        <action type="setcaption" param1="tablefixtures.match4name2" param2="%career.viewedfixtures.match4.name2%"/>
+        <action type="setcaption" param1="tablefixtures.match5name1" param2="%career.viewedfixtures.match5.name1%"/>
+        <action type="setcaption" param1="tablefixtures.match5separator" param2="%career.viewedfixtures.match5.result%"/>
+        <action type="setcaption" param1="tablefixtures.match5name2" param2="%career.viewedfixtures.match5.name2%"/>
+				<action event="groupopen" type="setlabelcolor" param1="*" param2="reset"/>
+				<action event="groupopen" type="setlabelcolor" param1="*" param2="userteam" param3="FFB400"/>
+      </actionset>
+
+    <!-- header -->
+
+      <label id="tablefixtures.title"
+        caption="%career.currentleaguename%, Saison %career.currentyear%, %career.currentleaguematchday%. Spieltag"
+				color="FFB400" center="true">
+        <pos x="0" y="60" width="1024" height="60"/>
+        <flyin x="0" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="0" y="-100" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 1. match -->
+
+      <label id="tablefixtures.match1name1"
+        caption="%career.viewedfixtures.match1.name1%" color="FFEA80" center="false">
+        <pos x="50" y="180" width="400" height="60"/>
+        <flyin x="-450" y="180" starttime="0.1" duration="0.5"/>
+        <flyout x="-450" y="180" starttime="0.5" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match1separator"
+        caption="%career.viewedfixtures.match1.result%" color="FFEA80" center="true">
+        <pos x="450" y="180" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.0" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match1name2"
+        caption="%career.viewedfixtures.match1.name2%" color="FFEA80" center="false">
+        <pos x="574" y="180" width="400" height="60"/>
+        <flyin x="1024" y="180" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="180" starttime="0.5" duration="0.5"/>
+      </label>
+
+
+    <!-- 2. match -->
+
+      <label id="tablefixtures.match2name1"
+        caption="%career.viewedfixtures.match2.name1%" color="FFEA80" center="false">
+        <pos x="50" y="250" width="400" height="60"/>
+        <flyin x="-450" y="250" starttime="0.2" duration="0.5"/>
+        <flyout x="-450" y="250" starttime="0.4" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match2separator"
+        caption="%career.viewedfixtures.match2.result%" color="FFEA80" center="true">
+        <pos x="450" y="250" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.1" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match2name2"
+        caption="%career.viewedfixtures.match2.name2%" color="FFEA80" center="false">
+        <pos x="574" y="250" width="400" height="60"/>
+        <flyin x="1024" y="250" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="250" starttime="0.4" duration="0.5"/>
+      </label>
+
+
+    <!-- 3. match -->
+
+      <label id="tablefixtures.match3name1"
+        caption="%career.viewedfixtures.match3.name1%" color="FFEA80" center="false">
+        <pos x="50" y="320" width="400" height="60"/>
+        <flyin x="-450" y="320" starttime="0.3" duration="0.5"/>
+        <flyout x="-450" y="320" starttime="0.3" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match3separator"
+        caption="%career.viewedfixtures.match3.result%" color="FFEA80" center="true">
+        <pos x="450" y="320" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.2" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match3name2"
+        caption="%career.viewedfixtures.match3.name2%" color="FFEA80" center="false">
+        <pos x="574" y="320" width="400" height="60"/>
+        <flyin x="1024" y="320" starttime="0.3" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0.3" duration="0.5"/>
+      </label>
+
+
+    <!-- 4. match -->
+
+      <label id="tablefixtures.match4name1"
+        caption="%career.viewedfixtures.match4.name1%" color="FFEA80" center="false">
+        <pos x="50" y="390" width="400" height="60"/>
+        <flyin x="-450" y="390" starttime="0.4" duration="0.5"/>
+        <flyout x="-450" y="390" starttime="0.2" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match4separator"
+        caption="%career.viewedfixtures.match4.result%" color="FFEA80" center="true">
+        <pos x="450" y="390" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.3" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match4name2"
+        caption="%career.viewedfixtures.match4.name2%" color="FFEA80" center="false">
+        <pos x="574" y="390" width="400" height="60"/>
+        <flyin x="1024" y="390" starttime="0.4" duration="0.5"/>
+        <flyout x="1024" y="390" starttime="0.2" duration="0.5"/>
+      </label>
+
+
+    <!-- 5. match -->
+
+      <label id="tablefixtures.match5name1"
+        caption="%career.viewedfixtures.match5.name1%" color="FFEA80" center="false">
+        <pos x="50" y="460" width="400" height="60"/>
+        <flyin x="-450" y="460" starttime="0.5" duration="0.5"/>
+        <flyout x="-450" y="460" starttime="0.1" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match5separator"
+        caption="%career.viewedfixtures.match5.result%" color="FFEA80" center="true">
+        <pos x="450" y="460" width="100" height="60"/>
+        <flyin x="450" y="1024" starttime="0.4" duration="0.5"/>
+        <flyout x="450" y="1024" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <label id="tablefixtures.match5name2"
+        caption="%career.viewedfixtures.match5.name2%" color="FFEA80" center="false">
+        <pos x="574" y="460" width="400" height="60"/>
+        <flyin x="1024" y="460" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="460" starttime="0.1" duration="0.5"/>
+      </label>
+     
+
+    <!-- buttons -->
+
+      <optionbutton id="tablefixtures.matchday" caption="">
+        <pos x="50" y="620" width="400" height="60"/>
+        <flyin x="-400" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="-400" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">tablefixtures.ok</next_control>
+          <next_control dir="down">tablefixtures.ok</next_control>
+        </next>
+        <action event="switch" type="savesettingcontrol" param1="career.viewedfixtures.matchday" param2="tablefixtures.matchday" guisound="switch"/>
+        <action event="switch" type="performactions" param1="tablefixtures.update"/>
+        <action event="focus" guisound="focus"/>
+        <action event="click" type="setfocus" param1="tablefixtures.ok" guisound="accept"/>
+        <options systemlist="career.allmatchdays" default="%career.currentleaguematchdayminus1max17%"/> <!-- minus1 because 0. matchday is not listed -->
+      </optionbutton>
+      
+      <button id="tablefixtures.ok" caption="Zurück">
+        <focus/>
+        <pos x="574" y="620" width="400" height="60"/>
+        <flyin x="1024" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">tablefixtures.matchday</next_control>
+          <next_control dir="down">tablefixtures.matchday</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+    <!--
+    ****************
+    * SAVE CAREER  *
+    ****************
+    -->
+
+    <group id="savecareer" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="savecareer.slot1" param2="%savegame.career1%"/>
+      <action event="groupopen" type="setcaption" param1="savecareer.slot2" param2="%savegame.career2%"/>
+      <action event="groupopen" type="setcaption" param1="savecareer.slot3" param2="%savegame.career3%"/>
+      <action event="groupopen" type="setcaption" param1="savecareer.slot4" param2="%savegame.career4%"/>
+      <action event="groupopen" type="setcaption" param1="savecareer.slot5" param2="%savegame.career5%"/>
+      <action event="groupopen" type="cameraflight" param1="center1" guisound="move"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label id="savecareer.title" caption="Karriere abspeichern" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0" duration="0.5"/>
+      </label>
+
+      <label id="savecareer.text" caption="Wähle einen Speicherplatz aus:" color="FFEA80" center="false">
+        <pos x="50" y="110" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.2" duration="0.5"/>
+      </label>
+
+
+      <button id="savecareer.slot1" caption="" center="false">
+        <pos x="30" y="200" width="964" height="60"/>
+        <flyin x="-964" y="200" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.cancel</next_control>
+          <next_control dir="down">savecareer.slot2</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="false"/>
+        <action event="click" type="savecareer" param1="1" guisound="accept"/>
+        <action event="click" type="activategroup" param1="overview"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="savecareer.slot2" caption="" center="false">
+        <pos x="30" y="280" width="964" height="60"/>
+        <flyin x="1024" y="280" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="280" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.slot1</next_control>
+          <next_control dir="down">savecareer.slot3</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="false"/>
+        <action event="click" type="savecareer" param1="2" guisound="accept"/>
+        <action event="click" type="activategroup" param1="overview"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="savecareer.slot3" caption="" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="-964" y="360" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.slot2</next_control>
+          <next_control dir="down">savecareer.slot4</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="false"/>
+        <action event="click" type="savecareer" param1="3" guisound="accept"/>
+        <action event="click" type="activategroup" param1="overview"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="savecareer.slot4" caption="" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.slot3</next_control>
+          <next_control dir="down">savecareer.slot5</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="false"/>
+        <action event="click" type="savecareer" param1="4" guisound="accept"/>
+        <action event="click" type="activategroup" param1="overview"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="savecareer.slot5" caption="" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="-964" y="520" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.slot4</next_control>
+          <next_control dir="down">savecareer.cancel</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="gamenotsafed" param2="false"/>
+        <action event="click" type="savecareer" param1="5" guisound="accept"/>
+        <action event="click" type="activategroup" param1="overview"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="savecareer.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">savecareer.slot5</next_control>
+          <next_control dir="down">savecareer.slot1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ****************
+    * CAREER EVENT *
+    ****************
+    -->
+
+    <group id="careerevent" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="setcaption" param1="careerevent.title" param2="%career.event.title%"/>
+			<action event="groupopen" type="setcaption" param1="careerevent.text" param2="%career.event.text%"/>
+      <!-- <action event="groupopen" type="cameraflight" param1="round1" guisound="move"/> -->
+
+    <!-- header -->
+
+      <label id="careerevent.title"
+        caption="" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+    <!-- text -->
+
+      <label id="careerevent.text"
+        caption="" color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+    <!-- button -->
+
+      <button id="careerevent.ok" caption="Weiter">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">careerevent.ok</next_control>
+          <next_control dir="down">careerevent.ok</next_control>
+        </next>
+        <action event="click" type="startmatchday" param1="match" param2="false" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ***********************
+    * NOT IMPLEMENTED YET *
+    ***********************
+    -->
+
+    <group id="notimplemented" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+
+      <label caption="Betaversion" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Diese Funktion ist in dieser Version noch nicht implementiert." color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="notimplemented.ok" caption="Zurück">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">notimplemented.ok</next_control>
+          <next_control dir="down">notimplemented.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ******************
+    * LEAVE GAMEMODE *
+    ******************
+    -->
+
+    <group id="leavegamemode" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label caption="Karriere verlassen" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="60"/>
+        <flyin x="50" y="-100" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-100" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Wirklich die Karriere ohne Speichern verlassen und ins Hauptmenü wechseln?"
+				color="FFEA80" multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="leavegamemode.yes" caption="Ja">
+        <pos x="192" y="650" width="300" height="60"/>
+        <flyin x="192" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="192" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">leavegamemode.no</next_control>
+          <next_control dir="down">leavegamemode.no</next_control>
+        </next>
+				<action event="click" type="openscreen" param1="mainmenu" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+			<button id="leavecareer.no" caption="Nein">
+        <focus/>
+        <pos x="532" y="650" width="300" height="60"/>
+        <flyin x="532" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="532" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">leavegamemode.yes</next_control>
+          <next_control dir="down">leavegamemode.yes</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ******************
+    * STADIUM EDITOR *
+    ******************
+    -->
+
+    <group id="stadiumeditor" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setoption" param1="stadiumeditor.stands" param2="%career.stadium.maxspectators% Zuschauer"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.adboards" param2="%career.stadium.adboardspercent%% verbaut"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.lawn" param2="%career.stadium.lawn%"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.goals" param2="%career.stadium.goals%"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.lighting" param2="%career.stadium.lighting%"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.scoreboard" param2="%career.stadium.scoreboard%"/>
+			<action event="groupopen" type="setoption" param1="stadiumeditor.attractions" param2="%career.stadium.attractions%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+
+      <label id="stadiumeditor.title" caption="Stadion-Editor" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+
+      <optionbutton id="stadiumeditor.stands" caption="Tribünen" center="false">
+        <pos x="30" y="140" width="964" height="60"/>
+        <flyin x="1024" y="140" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="140" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.cancel</next_control>
+          <next_control dir="down">stadiumeditor.adboards</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumstands" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumeditor.adboards" caption="Werbebanden" center="false">
+        <pos x="30" y="210" width="964" height="60"/>
+        <flyin x="-964" y="210" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="210" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.stands</next_control>
+          <next_control dir="down">stadiumeditor.lawn</next_control>
+        </next>
+        <action event="click" type="savesetting" param1="career.stadium.buildblock" param2="0"/>
+        <action event="click" type="activategroup" param1="stadiumbuildblock" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumeditor.lawn" caption="Rasen" center="false">
+        <pos x="30" y="280" width="964" height="60"/>
+        <flyin x="1024" y="280" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="280" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.adboards</next_control>
+          <next_control dir="down">stadiumeditor.goals</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumlawn" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumeditor.goals" caption="Tore" center="false">
+        <pos x="30" y="350" width="964" height="60"/>
+        <flyin x="-964" y="350" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="350" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.lawn</next_control>
+          <next_control dir="down">stadiumeditor.lighting</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumgoals" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumeditor.lighting" caption="Beleuchtung" center="false">
+        <pos x="30" y="420" width="964" height="60"/>
+        <flyin x="1024" y="420" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="420" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.goals</next_control>
+          <next_control dir="down">stadiumeditor.scoreboard</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumlighting" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumeditor.scoreboard" caption="Anzeigetafel" center="false">
+        <pos x="30" y="490" width="964" height="60"/>
+        <flyin x="-964" y="490" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="490" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.lighting</next_control>
+          <next_control dir="down">stadiumeditor.attractions</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumscoreboard" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumeditor.attractions" caption="Attraktionen" center="false">
+        <pos x="30" y="560" width="964" height="60"/>
+        <flyin x="1024" y="560" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="560" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.scoreboard</next_control>
+          <next_control dir="down">stadiumeditor.teardown</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumattractions" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumeditor.teardown" caption="Abreißen..." visible="false">
+        <focus/>
+        <pos x="30" y="650" width="452" height="60"/>
+        <flyin x="30" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="30" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.attractions</next_control>
+          <next_control dir="down">stadiumeditor.cancel</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="notimplemented" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+
+      <button id="stadiumeditor.cancel" caption="Zurück">
+        <focus/>
+        <pos x="542" y="650" width="452" height="60"/>
+        <flyin x="542" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="542" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumeditor.attractions</next_control>
+          <next_control dir="down">stadiumeditor.stands</next_control>
+					<next_control dir="left">stadiumeditor.teardown</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ********************
+    * NOT ENOUGH MONEY *
+    ********************
+    -->
+
+    <group id="notenoughmoney" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+      <label caption="Nicht genug Geld..." color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Dein Geldbeutel lässt diese Investition leider nicht zu!" color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="notenoughmoney.ok" caption="Zurück">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">notenoughmoney.ok</next_control>
+          <next_control dir="down">notenoughmoney.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+
+		<!--
+    *****************
+    * STADIUM GOALS *
+    *****************
+    -->
+
+    <group id="stadiumgoals" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumgoals.text1" param2="Aufgestellte Tore: %career.stadium.goals%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumgoals.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="groupopen" type="setoption" param1="stadiumgoals.goals1" param2="%career.stadium.goals1cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumgoals.goals2" param2="%career.stadium.goals2cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumgoals.goals3" param2="%career.stadium.goals3cost%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumgoals.title" caption="Tore" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumgoals.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumgoals.text2" caption="Andere Tore kaufen bzw. aufstellen:" color="FFEA80" center="false">
+        <pos x="50" y="240" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<label id="stadiumgoals.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="stadiumgoals.goals1" caption="%lang:goal1%" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="1024" y="360" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumgoals.cancel</next_control>
+          <next_control dir="down">stadiumgoals.goals2</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setgoals" param2="1"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumgoals.goals2" caption="%lang:goal2%" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="-964" y="440" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumgoals.goals1</next_control>
+          <next_control dir="down">stadiumgoals.goals3</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setgoals" param2="2"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumgoals.goals3" caption="%lang:goal3%" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="1024" y="520" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumgoals.goals2</next_control>
+          <next_control dir="down">stadiumgoals.cancel</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setgoals" param2="3"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumgoals.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumgoals.goals3</next_control>
+          <next_control dir="down">stadiumgoals.goals1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ****************
+    * STADIUM LAWN *
+    ****************
+    -->
+
+    <group id="stadiumlawn" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumlawn.text1" param2="Aktueller Zustand: %career.stadium.lawn%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumlawn.usermoney" param2="Kontostand: %career.usermoney% €"/>	
+			<action event="groupopen" type="setoption" param1="stadiumlawn.lawncare" param2="%career.stadium.lawncarecost%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumlawn.title" caption="Rasen" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumlawn.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumlawn.text2" caption="Rasenpflege steigert die Attraktivität des Stadions! Leider nimmt es der Rasenpfleger mit seinen Arbeitszeiten aber nicht so genau..."
+				color="FFEA80" center="false" multiline="true" lineheight="50">
+        <pos x="50" y="240" width="924" height="60"/>
+        <flyin x="50" y="-150" starttime="0" duration="0.5"/>
+        <flyout x="50" y="-150" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<label id="stadiumlawn.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="stadiumlawn.lawncare" caption="Rasenpfleger bestellen" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlawn.cancel</next_control>
+          <next_control dir="down">stadiumlawn.cancel</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="lawncare"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumlawn.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlawn.lawncare</next_control>
+          <next_control dir="down">stadiumlawn.lawncare</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ********************
+    * STADIUM LIGHTING *
+    ********************
+    -->
+
+    <group id="stadiumlighting" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumlighting.text1" param2="Aktuelle Beleuchtung: %career.stadium.lighting%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumlighting.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="groupopen" type="setoption" param1="stadiumlighting.light1" param2="%career.stadium.light1%"/>
+			<action event="groupopen" type="setoption" param1="stadiumlighting.light2" param2="%career.stadium.light2%"/>
+			<action event="groupopen" type="setoption" param1="stadiumlighting.light3" param2="%career.stadium.light3%"/>
+			<action event="groupopen" type="setoption" param1="stadiumlighting.light4" param2="%career.stadium.light4%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumlighting.title" caption="Beleuchtung" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumlighting.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumlighting.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="stadiumlighting.light1" caption="Nord-Ost" center="false">
+        <pos x="30" y="280" width="964" height="60"/>
+        <flyin x="1024" y="280" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="280" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlighting.cancel</next_control>
+          <next_control dir="down">stadiumlighting.light2</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildlight" param2="1"/>
+        <action event="click" type="activategroup" param1="stadiumbuildlight" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumlighting.light2" caption="Süd-Ost" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="-964" y="360" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlighting.light1</next_control>
+          <next_control dir="down">stadiumlighting.light3</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildlight" param2="2"/>
+        <action event="click" type="activategroup" param1="stadiumbuildlight" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumlighting.light3" caption="Süd-West" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlighting.light2</next_control>
+          <next_control dir="down">stadiumlighting.light4</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildlight" param2="3"/>
+        <action event="click" type="activategroup" param1="stadiumbuildlight" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumlighting.light4" caption="Nord-West" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="-964" y="520" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlighting.light3</next_control>
+          <next_control dir="down">stadiumlighting.cancel</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildlight" param2="4"/>
+        <action event="click" type="activategroup" param1="stadiumbuildlight" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumlighting.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumlighting.light4</next_control>
+          <next_control dir="down">stadiumlighting.light1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ***********************
+    * STADIUM BUILD LIGHT *
+    ***********************
+    -->
+
+    <group id="stadiumbuildlight" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="setcaption" param1="stadiumbuildlight.title" param2="%career.stadium.buildlight.name%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumbuildlight.usermoney" param2="Konto: %career.usermoney% €"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildlight.light1" param2="%career.stadium.buildlight.cost1%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildlight.light2" param2="%career.stadium.buildlight.cost2%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildlight.light3" param2="%career.stadium.buildlight.cost3%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumbuildlight.title" caption="" color="FFB400" center="false">
+        <pos x="50" y="20" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumbuildlight.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="740" y="20" width="300" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <optionbutton id="stadiumbuildlight.light1" caption="%lang:floodlight1%" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="-964" y="360" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildlight.cancel</next_control>
+          <next_control dir="down">stadiumbuildlight.light2</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildlight" param2="1"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildlight.light2" caption="%lang:floodlight2%" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="1024" y="440" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildlight.light1</next_control>
+          <next_control dir="down">stadiumbuildlight.light3</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildlight" param2="2"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumbuildlight.light3" caption="%lang:floodlight3%" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="-964" y="520" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildlight.light2</next_control>
+          <next_control dir="down">stadiumbuildlight.cancel</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildlight" param2="3"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumbuildlight.cancel" caption="Zurück">
+        <focus/>
+        <pos x="542" y="680" width="452" height="60"/>
+        <flyin x="542" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="542" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildlight.light3</next_control>
+          <next_control dir="down">stadiumbuildlight.light1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    **********************
+    * STADIUM SCOREBOARD *
+    **********************
+    -->
+
+    <group id="stadiumscoreboard" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumscoreboard.text1" param2="Aktuelle Anzeige: %career.stadium.scoreboard%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumscoreboard.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="groupopen" type="setoption" param1="stadiumscoreboard.board1" param2="%career.stadium.scoreboard1.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumscoreboard.board2" param2="%career.stadium.scoreboard2.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumscoreboard.board3" param2="%career.stadium.scoreboard3.cost%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumscoreboard.title" caption="Anzeigetafeln" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumscoreboard.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumscoreboard.text2" caption="Andere Anzeigetafel kaufen:" color="FFEA80" center="false">
+        <pos x="50" y="240" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.2" duration="0.5"/>
+      </label>
+
+			<label id="stadiumscoreboard.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="stadiumscoreboard.board1" caption="%lang:scoreboard1%" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="1024" y="360" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumscoreboard.cancel</next_control>
+          <next_control dir="down">stadiumscoreboard.board2</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setscoreboard" param2="1"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumscoreboard.board2" caption="%lang:scoreboard2%" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="-964" y="440" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumscoreboard.board1</next_control>
+          <next_control dir="down">stadiumscoreboard.board3</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setscoreboard" param2="2"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumscoreboard.board3" caption="%lang:scoreboard3%" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="1024" y="520" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumscoreboard.board2</next_control>
+          <next_control dir="down">stadiumscoreboard.cancel</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="setscoreboard" param2="3"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumscoreboard.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumscoreboard.board3</next_control>
+          <next_control dir="down">stadiumscoreboard.board1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    *********************************
+    * STADIUM. NORTH STANDS MISSING *
+    *********************************
+    -->
+
+    <group id="northstandsmissing" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+      <label caption="Ausbau nicht möglich" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Für diese Anzeigetafel muss die Nordtribüne weiter ausgebaut sein!" color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="notenoughmoney.ok" caption="Zurück">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">notenoughmoney.ok</next_control>
+          <next_control dir="down">notenoughmoney.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumscoreboard" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ***********************
+    * STADIUM ATTRACTIONS *
+    ***********************
+    -->
+
+    <group id="stadiumattractions" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumattractions.text1" param2="Unterhaltungswert: %career.stadium.attractions%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumattractions.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="groupopen" type="setoption" param1="stadiumattractions.hotdogstand" param2="%career.stadium.attractions.hotdogstand.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumattractions.bettingoffice" param2="%career.stadium.attractions.bettingoffice.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumattractions.beerbar" param2="%career.stadium.attractions.beerbar.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumattractions.track" param2="%career.stadium.attractions.track.cost%"/>
+			<action event="groupopen" type="setoption" param1="stadiumattractions.highjump" param2="%career.stadium.attractions.highjump.cost%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumattractions.title" caption="Attraktionen" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumattractions.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumattractions.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <optionbutton id="stadiumattractions.hotdogstand" caption="%lang:hotdogstand%" center="false">
+        <pos x="30" y="240" width="964" height="60"/>
+        <flyin x="1024" y="240" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="240" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.cancel</next_control>
+          <next_control dir="down">stadiumattractions.bettingoffice</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildattraction" param2="hotdogstand"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumattractions.bettingoffice" caption="%lang:bettingoffice%" center="false">
+        <pos x="30" y="320" width="964" height="60"/>
+        <flyin x="-964" y="320" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="320" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.hotdogstand</next_control>
+          <next_control dir="down">stadiumattractions.beerbar</next_control>
+        </next>
+				<action event="click" type="editstadium" param1="buildattraction" param2="bettingoffice"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumattractions.beerbar" caption="%lang:beerbar%" center="false">
+        <pos x="30" y="400" width="964" height="60"/>
+        <flyin x="1024" y="400" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="400" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.bettingoffice</next_control>
+          <next_control dir="down">stadiumattractions.track</next_control>
+        </next>
+				<action event="click" type="editstadium" param1="buildattraction" param2="beerbar"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumattractions.track" caption="%lang:track%" center="false">
+        <pos x="30" y="480" width="964" height="60"/>
+        <flyin x="-964" y="480" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="480" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.beerbar</next_control>
+          <next_control dir="down">stadiumattractions.highjump</next_control>
+        </next>
+				<action event="click" type="editstadium" param1="buildattraction" param2="track"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumattractions.highjump" caption="%lang:highjump%" center="false">
+        <pos x="30" y="560" width="964" height="60"/>
+        <flyin x="-964" y="560" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="560" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.track</next_control>
+          <next_control dir="down">stadiumattractions.cancel</next_control>
+        </next>
+				<action event="click" type="editstadium" param1="buildattraction" param2="highjump"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumattractions.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumattractions.highjump</next_control>
+          <next_control dir="down">stadiumattractions.hotdogstand</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    ******************
+    * STADIUM STANDS *
+    ******************
+    -->
+
+    <group id="stadiumstands" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumstands.text1" param2="Das Stadion bietet Platz für %career.stadium.maxspectators% Zuschauer."/>
+      <action event="groupopen" type="setcaption" param1="stadiumstands.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumstands.title" caption="Tribünen bauen" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumstands.text1" caption="" color="FFEA80" center="false">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="50" y="-50" starttime="0.1" duration="0.5"/>
+        <flyout x="50" y="-50" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="stadiumstands.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="stadiumstands.block1" caption="%career.stadium.stage1name%" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="1024" y="360" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumstands.cancel</next_control>
+          <next_control dir="down">stadiumstands.block2</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildblock" param2="1"/>
+        <action event="click" type="activategroup" param1="stadiumbuildblock" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumstands.block2" caption="%career.stadium.stage2name%" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="-964" y="440" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumstands.block1</next_control>
+          <next_control dir="down">stadiumstands.block3</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildblock" param2="2"/>
+        <action event="click" type="activategroup" param1="stadiumbuildblock" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumstands.block3" caption="%career.stadium.stage3name%" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="1024" y="520" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumstands.block2</next_control>
+          <next_control dir="down">stadiumstands.cancel</next_control>
+        </next>
+				<action event="click" type="savesetting" param1="career.stadium.buildblock" param2="3"/>
+        <action event="click" type="activategroup" param1="stadiumbuildblock" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumstands.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumstands.block3</next_control>
+          <next_control dir="down">stadiumstands.block1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="stadiumeditor" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ***********************
+    * STADIUM BUILD BLOCK *
+    ***********************
+    -->
+
+    <group id="stadiumbuildblock" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="setcaption" param1="stadiumbuildblock.title" param2="%career.stadium.buildblock.name%"/>
+      <action event="groupopen" type="setcaption" param1="stadiumbuildblock.usermoney" param2="Konto: %career.usermoney% €"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block1" param2="%career.stadium.buildblock.cost1%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block2" param2="%career.stadium.buildblock.cost2%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block3" param2="%career.stadium.buildblock.cost3%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block4" param2="%career.stadium.buildblock.cost4%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block5" param2="%career.stadium.buildblock.cost5%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block6" param2="%career.stadium.buildblock.cost6%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block7" param2="%career.stadium.buildblock.cost7%"/>
+			<action event="groupopen" type="setoption" param1="stadiumbuildblock.block8" param2="%career.stadium.buildblock.cost8%"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="stadiumeditor" guisound="abort"/>
+
+
+      <label id="stadiumbuildblock.title" caption="" color="FFB400" center="false">
+        <pos x="50" y="20" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="stadiumbuildblock.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="740" y="20" width="300" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <optionbutton id="stadiumbuildblock.block1" caption="Nord-Tribüne (mit Eingangstor)" center="false">
+        <pos x="30" y="110" width="964" height="60"/>
+        <flyin x="-964" y="110" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="110" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.cancel</next_control>
+          <next_control dir="down">stadiumbuildblock.block2</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="1"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block2" caption="Nordost-Kurve" center="false">
+        <pos x="30" y="180" width="964" height="60"/>
+        <flyin x="1024" y="180" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="180" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block1</next_control>
+          <next_control dir="down">stadiumbuildblock.block3</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="2"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+			<optionbutton id="stadiumbuildblock.block3" caption="Ost-Tribüne" center="false">
+        <pos x="30" y="250" width="964" height="60"/>
+        <flyin x="-964" y="250" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="250" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block2</next_control>
+          <next_control dir="down">stadiumbuildblock.block4</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="3"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block4" caption="Südost-Kurve (Fankurve)" center="false">
+        <pos x="30" y="320" width="964" height="60"/>
+        <flyin x="1024" y="320" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="320" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block3</next_control>
+          <next_control dir="down">stadiumbuildblock.block5</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="4"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block5" caption="Süd-Tribüne" center="false">
+        <pos x="30" y="390" width="964" height="60"/>
+        <flyin x="-964" y="390" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="390" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block4</next_control>
+          <next_control dir="down">stadiumbuildblock.block6</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="5"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block6" caption="Südwest-Kurve" center="false">
+        <pos x="30" y="460" width="964" height="60"/>
+        <flyin x="1024" y="460" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="460" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block5</next_control>
+          <next_control dir="down">stadiumbuildblock.block7</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="6"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block7" caption="West-Tribüne" center="false">
+        <pos x="30" y="530" width="964" height="60"/>
+        <flyin x="-964" y="530" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="530" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block6</next_control>
+          <next_control dir="down">stadiumbuildblock.block8</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="7"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="stadiumbuildblock.block8" caption="Nordwest-Kurve" center="false">
+        <pos x="30" y="600" width="964" height="60"/>
+        <flyin x="1024" y="600" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="600" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block7</next_control>
+          <next_control dir="down">stadiumbuildblock.cancel</next_control>
+        </next>
+        <action event="click" type="editstadium" param1="buildblock" param2="8"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="stadiumbuildblock.cancel" caption="Zurück">
+        <focus/>
+        <pos x="542" y="680" width="452" height="60"/>
+        <flyin x="542" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="542" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">stadiumbuildblock.block8</next_control>
+          <next_control dir="down">stadiumbuildblock.block1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    *****************
+    * BAG OF TRICKS *
+    *****************
+    -->
+
+    <group id="bagoftricks" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="stadiumstands.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+
+      <label id="bagoftricks.title" caption="Trickkiste" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="bagoftricks.text1" caption="Ist der nächste Gegner zu schwer, dann hilft vielleicht ein heimlicher Griff in die Trickkiste..."
+				color="FFEA80" center="false" multiline="true" lineheight="50">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="-1024" y="160" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="160" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="bagoftricks.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="bagoftricks.referee" caption="Schiedsrichter bestechen" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="1024" y="360" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">bagoftricks.cancel</next_control>
+          <next_control dir="down">bagoftricks.cancel</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="%career.refereecorruption%" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="bagoftricks.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">bagoftricks.referee</next_control>
+          <next_control dir="down">bagoftricks.referee</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    **********************
+    * REFEREE CORRUPTION *
+    **********************
+    -->
+
+    <group id="refereecorruption" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+      <action event="groupopen" type="setcaption" param1="refereecorruption.text1" param2="%career.nextreferee.name% gilt als %career.nextreferee.loyalitydescription%"/>
+      <action event="groupopen" type="setcaption" param1="refereecorruption.usermoney" param2="Kontostand: %career.usermoney% €"/>			
+			<action event="groupopen" type="setoption" param1="refereecorruption.corruption1" param2="%career.corruption.cost1% €"/>			
+			<action event="groupopen" type="setoption" param1="refereecorruption.corruption2" param2="%career.corruption.cost2% €"/>	
+			<action event="groupopen" type="setoption" param1="refereecorruption.corruption3" param2="%career.corruption.cost3% €"/>	
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+
+      <label id="refereecorruption.title" caption="Schiri bestechen" color="FFB400" center="false">
+        <pos x="50" y="50" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.2" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0" duration="0.5"/>
+      </label>
+
+			<label id="refereecorruption.text1" caption="" color="FFEA80" center="false" multiline="true" lineheight="50">
+        <pos x="50" y="160" width="924" height="60"/>
+        <flyin x="-1024" y="160" starttime="0.1" duration="0.5"/>
+        <flyout x="1024" y="160" starttime="0.1" duration="0.5"/>
+      </label>
+
+			<label id="refereecorruption.usermoney" caption="" color="FFEA80" center="false">
+        <pos x="640" y="20" width="400" height="60"/>
+        <flyin x="1024" y="150" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="150" starttime="0.0" duration="0.5"/>
+      </label>
+
+      <optionbutton id="refereecorruption.corruption1" caption="Kuvert in die Hosentasche" center="false">
+        <pos x="30" y="360" width="964" height="60"/>
+        <flyin x="1024" y="360" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="360" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">refereecorruption.cancel</next_control>
+          <next_control dir="down">refereecorruption.corruption2</next_control>
+        </next>
+        <action event="click" type="corruptreferee" param1="1" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="refereecorruption.corruption2" caption="WM 2006 Eintrittskarte" center="false">
+        <pos x="30" y="440" width="964" height="60"/>
+        <flyin x="-964" y="440" starttime="0" duration="0.5"/>
+        <flyout x="1024" y="440" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">refereecorruption.corruption1</next_control>
+          <next_control dir="down">refereecorruption.corruption3</next_control>
+        </next>
+        <action event="click" type="corruptreferee" param1="2" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <optionbutton id="refereecorruption.corruption3" caption="Urlaub auf den Malediven" center="false">
+        <pos x="30" y="520" width="964" height="60"/>
+        <flyin x="1024" y="520" starttime="0" duration="0.5"/>
+        <flyout x="-964" y="520" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">refereecorruption.corruption2</next_control>
+          <next_control dir="down">refereecorruption.cancel</next_control>
+        </next>
+        <action event="click" type="corruptreferee" param1="3" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </optionbutton>
+
+
+      <button id="refereecorruption.cancel" caption="Zurück">
+        <focus/>
+        <pos x="512" y="650" width="422" height="60"/>
+        <flyin x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">refereecorruption.corruption3</next_control>
+          <next_control dir="down">refereecorruption.corruption1</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+		<!--
+    *****************************
+    * REFEREE ALREADY CORRUPTED *
+    *****************************
+    -->
+
+    <group id="refereealreadycorrupted" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label caption="Schiri bestechen" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Du hast den Schiri bereits bestochen, oder es zumindest versucht..." color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="refereealreadycorrupted.ok" caption="Zurück">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">refereealreadycorrupted.ok</next_control>
+          <next_control dir="down">refereealreadycorrupted.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ***********************************
+    * NO MONEY FOR REFEREE CORRUPTION *
+    ***********************************
+    -->
+
+    <group id="corruptionnomoney" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label caption="Nicht genug Geld" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Dein Geld reicht nicht aus, um den Schiedsrichter auf diese Weise zu bestechen..." color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="corruptionnomoney.ok" caption="Weiter">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">corruptionnomoney.ok</next_control>
+          <next_control dir="down">corruptionnomoney.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    ***************************
+    * REFEREE CORRUPTION DONE *
+    ***************************
+    -->
+
+    <group id="corruptiondone" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label caption="Angenommen!" color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Der Schiri hat das Geld eingesteckt. Mal sehen, was er draus macht!" color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="corruptiondone.ok" caption="Weiter">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">corruptiondone.ok</next_control>
+          <next_control dir="down">corruptiondone.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+		<!--
+    *****************************
+    * REFEREE CORRUPTION FAILED *
+    *****************************
+    -->
+
+    <group id="corruptionfailed" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="overview" guisound="abort"/>
+
+      <label caption="Oje..." color="FFB400" center="false">
+        <pos x="50" y="60" width="924" height="80"/>
+        <flyin x="50" y="-80" starttime="0.0" duration="0.5"/>
+        <flyout x="50" y="-80" starttime="0.0" duration="0.5"/>
+      </label>
+
+
+      <label caption="Dieser Versuch ging gründlich in die Hose. Der Schiri hat das Geld nicht angenommen.\nDu bekommst nur 50% der Summe zurück, den Rest kassiert der Bote." color="FFEA80"
+				multiline="true" lineheight="50">
+        <pos x="50" y="200" width="924" height="60"/>
+        <flyin x="-1024" y="200" starttime="0.0" duration="0.5"/>
+        <flyout x="1024" y="200" starttime="0.0" duration="0.5"/>
+      </label>
+     
+
+      <button id="corruptionfailed.ok" caption="Weiter">
+        <focus/>
+        <pos x="362" y="650" width="300" height="60"/>
+        <flyin x="362" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="362" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">corruptionfailed.ok</next_control>
+          <next_control dir="down">corruptionfailed.ok</next_control>
+        </next>
+        <action event="click" type="activategroup" param1="overview" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+
+  </groups>
+
+</screen>

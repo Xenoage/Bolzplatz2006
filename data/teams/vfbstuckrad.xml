@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="vfbstuckrad" name="VfB Stuckrad" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league1_4">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="FF0000" shirt2="F1E7E7" pants="F1E7E7" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FF0000" shirt2="1E64A0" pants="D11111" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FFCC33" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Dino Hüttenbrand" attack="4" defense="8" speed="7" stamina="8" headdress="ted" glasses=""/>
+    <player name="Hansi Hinker" attack="5" defense="7" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Kasimir Saldo" attack="6" defense="4" speed="5" stamina="3" headdress="" glasses=""/>
+    <player name="Jan Tomasstahl" attack="8" defense="3" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Cacadu" attack="7" defense="2" speed="6" stamina="5" headdress="none" glasses=""/>
+  </players>
+</team>

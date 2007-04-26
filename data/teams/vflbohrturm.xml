@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="vflbohrturm" name="VFL Bohrturm" description="VFL Bohrturm. Hergestellt von PsychoFish." group="clubteams" stadium="league2_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="0066FF" shirt2="FFFFFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000000" shirt2="0066FF" pants="000000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="99CCFF" shirt2="000000" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Rein ins Tor" attack="4" defense="6" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Sonny Coldplay" attack="3" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Dario Wurscht" attack="6" defense="5" speed="7" stamina="6" headdress="" glasses="glasses"/>
+    <player name="Nimm n Becher man" attack="7" defense="4" speed="5" stamina="5" headdress="ted" glasses=""/>
+    <player name="Joris Verhaut" attack="6" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="team_germany" value="Germany"/>
+  <entry id="team_costarica" value="Costa Rica"/>
+  <entry id="team_poland" value="Poland"/>
+  <entry id="team_ecuador" value="Ecuador"/>
+  <entry id="team_england" value="England"/>
+  <entry id="team_paraguay" value="Paraguay"/>
+  <entry id="team_trinidad" value="Trinidad and Tobago"/>
+  <entry id="team_sweden" value="Sweden"/>
+  <entry id="team_argentina" value="Argentina"/>
+  <entry id="team_cotedivoire" value="Côte d'Ivoire"/>
+  <entry id="team_serbia" value="Serbia-Montenegro"/>
+  <entry id="team_netherlands" value="Netherlands"/>
+  <entry id="team_mexico" value="Mexico"/>
+  <entry id="team_iran" value="Iran"/>
+  <entry id="team_angola" value="Angola"/>
+  <entry id="team_portugal" value="Portugal"/>
+  <entry id="team_italy" value="Italy"/>
+  <entry id="team_ghana" value="Ghana"/>
+  <entry id="team_unitedstates" value="United States"/>
+  <entry id="team_czech" value="Czech Republic"/>
+  <entry id="team_brazil" value="Brazil"/>
+  <entry id="team_croatia" value="Croatia"/>
+  <entry id="team_australia" value="Australia"/>
+  <entry id="team_japan" value="Japan"/>
+  <entry id="team_france" value="France"/>
+  <entry id="team_switzerland" value="Switzerland"/>
+  <entry id="team_korea" value="South Korea"/>
+  <entry id="team_togo" value="Togo"/>
+  <entry id="team_spain" value="Spain"/>
+  <entry id="team_ukraine" value="Ukraine"/>
+  <entry id="team_tunisia" value="Tunisia"/>
+  <entry id="team_saudiarabia" value="Saudi Arabia"/>
+</language>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<weather id="day-fog">
+  <fog red="200" green="200" blue="200" min="0.1" max="25"/>
+  <ambientlight red="192" green="192" blue="192"/>
+  <directionallight red="255" green="255" blue="255" x="1" y="0.5" z="-1"/>
+  <stadiumlighting>off</stadiumlighting>
+  <crowdfactor>0.8</crowdfactor>
+</weather>

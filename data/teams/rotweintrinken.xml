@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="rotweintrinken" name="Rot-Wein Trinken" description="Beschreibung des Vereins" group="nationalteams" stadium="league3_2">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="F5F4F4" pants="E60808" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="007C00" shirt2="1E64A0" pants="125E12" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF0000" shirt2="1E64A0" pants="140101" shoes="A0A0A0"/>
+  <players>
+    <player name="Detlef Öhrlisheim" attack="3" defense="2" speed="4" stamina="2" headdress="" glasses=""/>
+    <player name="Werner Bärtramm" attack="2" defense="3" speed="3" stamina="3" headdress="bobblecap" glasses=""/>
+    <player name="Bastian Hohlst" attack="4" defense="3" speed="4" stamina="3" headdress="" glasses=""/>
+    <player name="Anton Metzler" attack="5" defense="4" speed="3" stamina="3" headdress="" glasses=""/>
+    <player name="Pavy Goliath" attack="4" defense="2" speed="4" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

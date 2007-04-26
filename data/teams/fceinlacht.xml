@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fceinlacht" name="FC Einlacht" description="Hihihi!!!" group="clubteams" stadium="allstars_1">
+  <colors id="home" pattern="" skin="FFC280" shirt="000000" shirt2="FFFFFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000000" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF4D00" shirt2="1E64A0" pants="170101" shoes="A0A0A0"/>
+  <players>
+    <player name="Joel Massimo" attack="5" defense="6" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Mé Lérrè" attack="4" defense="2" speed="3" stamina="3" headdress="iro" glasses=""/>
+    <player name="Méré Tourné" attack="1" defense="2" speed="4" stamina="2" headdress="cap" glasses=""/>
+    <player name="Mario Plazia" attack="3" defense="2" speed="3" stamina="0" headdress="cap" glasses="glasses"/>
+    <player name="Lary Gery" attack="2" defense="3" speed="2" stamina="3" headdress="none" glasses="glasses"/>
+  </players>
+</team>

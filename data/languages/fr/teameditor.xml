@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="teameditor_title" value="Coupe de Foot 2006 - Team-Editor (mode créateurs)"/>
+  <entry id="teamdata" value="Equipes et valeurs"/>
+  <entry id="worldcup" value="Coupe du monde"/>
+  <entry id="statistics" value="Statistiques"/>
+  <entry id="newteam" value="Créer une équipe"/>
+  <entry id="deleteteam" value="Effacer une équipe"/>
+  <entry id="selectteamhere" value="Choisir une équipe"/>
+  <entry id="teamid" value="ID de l'équipe"/>
+  <entry id="teamname" value="Nom de l'équipe"/>
+  <entry id="teamdescription" value="Déscription"/>
+  <entry id="teamlogo" value="Emblème de l'équipe"/>
+  <entry id="selectteamlogo" value="Choisir un emblème..."/>
+	<entry id="teamgroup" value="Groupe"/>
+  <entry id="teamstadium" value="Stade domicile"/>
+  <entry id="nostadium" value="Stade hôte"/>
+  <entry id="playername" value="Nom"/>
+  <entry id="attack" value="Attaque"/>
+  <entry id="defense" value="Défense"/>
+  <entry id="speed" value="Vitesse"/>
+  <entry id="stamina" value="Endurance"/>
+  <entry id="homecolors" value="Couleurs home"/>
+  <entry id="awaycolors" value="Couleurs away"/>
+  <entry id="goalkeepercolors" value="Couleurs du gardien"/>
+  <entry id="pattern" value="Dessin"/>
+  <entry id="pattern_plain" value="Unicolore"/>
+  <entry id="pattern_vertical" value="Rayure verticale"/>
+  <entry id="pattern_horizontal" value="Rayure horizontale"/>
+  <entry id="pattern_rednose" value="Uni, nez rouge"/>
+  <entry id="skin" value="Peau"/>
+  <entry id="shirt" value="Maillot"/>
+  <entry id="shirt2" value="Maillot 2"/>
+  <entry id="pants" value="Short"/>
+  <entry id="shoes" value="Chaussures"/>
+  <entry id="choosecolor" value="Choisir un couleur"/>
+  <entry id="question_saveteam" value="Enregistrer changements? &quot;%teamid%&quot;"/>
+  <entry id="teammodified" value="Equipe changée"/>
+  <entry id="chooseteamlogo" value="Choisir un emblème"/>
+  <entry id="teamlogofilter" value="Fichier PNG, %size% x% size% Pixel (*.png)"/>
+  <entry id="invalidteamlogo" value="Emblème invalide! Le fichier doit être PNG
+d'une taille de %size% x %size% pixel!"/>
+  <entry id="teamlogoerror" value="Faute en copiant fichier Equipe-Emblèmei!"/>
+  <entry id="newteamid" value="ID de la nouvelle équipe:"/>
+  <entry id="teamalreadyexists" value="Cette équipe existe déjà!"/>
+  <entry id="question_deleteteam" value="Vraiment effacer cette équipe? &quot;%teamid%&quot; "/>
+  <entry id="ranking" value="Ordre"/>
+  <entry id="total" value="Total"/>
+  <entry id="remainingteams" value="Equipes restantes"/>
+  <entry id="worldcupteams" value="Equipes de la coupe du monde"/>
+  <entry id="addteams" value="Ajouter les équipes"/>
+  <entry id="moveup" value="En haut"/>
+  <entry id="movedown" value="En bas"/>
+  <entry id="removeteams" value="Effacer les équipes"/>
+  <entry id="realworldcupteams" value="Equipes de la coupe du monde originale"/>
+  <entry id="worldcup32teamsallowed" value="32 équipes peuvent participer à la coupe du monde. Efface des équipes de la liste avant d'y ajouter des autres, s'il te plaît."/>
+  <entry id="loadrealworldcupteams" value="Effacer la liste actuelle
+et charger les équipes originales de la coupe du monde 2006?"/>
+  <entry id="warning_32teams" value="Attention: Pour que la coupe puisse avoir lieu, il faut avoir 32 équipes dans la liste!"/>
+  <entry id="international" value="L'UFO"/>
+  <entry id="hint_leagues" value="13 équipes choisies par hasard participeront a l'UFO ainsi que:"/>
+  <entry id="warning_leagues" value="Attention: Il faut que chacune des trois ligues nationales ait 10 équipes, et la ligue internationale (L'UFO) ait 13 équipes. A l´état actuel le jeu ne peut pas avoir lieu! "/>
+  <entry id="league10teamsallowed" value="Chaque ligue ne peut consister qu'en 10 équipes!
+Tu en as choisi trop."/>
+  <entry id="chooseteamads" value="Choisir un panneau..."/>
+  <entry id="teamadsfilter" value="Fichier PNG, %size% x %size% Pixel (*.png)"/>
+  <entry id="invalidteamads" value="Panneau invalide! Le fichier doit être PNG
+d'une taille de %size% x %size% pixel!"/>
+  <entry id="teamads" value="Panneaux publicitaires"/>
+  <entry id="ad" value="Publicité"/>
+  <entry id="fanbanners" value="Bannières des supporters"/>
+  <entry id="backside" value="Derrière"/>
+  <entry id="showcareerteams" value="Montrer les équipes du mode carrière"/>
+  <entry id="showworldcupteams" value="Montrer les équipes de la coupe du monde"/>
+  <entry id="hairdress" value="Coiffure"/>
+  <entry id="nohairdress" value="Nul"/>
+  <entry id="cap" value="Casquette"/>
+  <entry id="bobblecap" value="Polo"/>
+  <entry id="ted" value="Ted"/>
+  <entry id="iro" value="Iro"/>
+  <entry id="glasses" value="Lunettes"/>
+</language>

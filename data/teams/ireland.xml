@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="ireland" name="Ireland" description="Irland hat's leider nicht in die WM geschaft. Aber hier sind sie...!" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="00FF00" shirt2="00FF00" pants="FFFFFF" shoes="00FF00"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="FFFFFF" pants="00FF00" shoes="FFFFFF"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="A80D0D" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Samus Geben" attack="4" defense="7" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Jon O'Schi" attack="4" defense="6" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Dami Doof" attack="5" defense="4" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Clinlon Sommiron" attack="6" defense="4" speed="6" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Robert Kann" attack="7" defense="5" speed="6" stamina="6" headdress="ted" glasses=""/>
+  </players>
+</team>

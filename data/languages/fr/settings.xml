@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="settings" value="Options"/>
+  <entry id="video" value="Video"/>
+  <entry id="lowquality" value="Moins de détails (recommandé pour les ordinateurs lents)"/>
+  <entry id="audio" value="Audio"/>
+	<entry id="language" value="Langue"/>
+  <entry id="currentvideomodedoesnotexist" value="Le mode-video addapté n´existe pas.
+Veuillez choisir un autre."/>
+	<entry id="novideomodelistfound" value="La liste de mode-video ne pouvait pas être chargé!
+La résolution 640 x 480 x 16 est offert!"/>
+  <entry id="windowedmode" value="mode-fenêtre"/>
+  <entry id="fullscreenmode" value="mode-complète"/>
+	<entry id="javasounddevice" value="Java Sound (Standard)"/>
+  <entry id="lwjgldevice" value="LWJGL/OpenAL/OggVorbis (Standard)"/>
+  <entry id="nulldevice" value="Pas de son(Null Device)"/>
+	<entry id="unknownaudiodevice" value="Audio-Engine inconnu reglé!
+Veuillez choisir un autre!"/>
+	<entry id="audioconfiginvalid" value="Fichier-audio n´est pas lisible!
+Veuillez choisir un autre Audio-Engine!"/>
+	<entry id="languageconfiginvalid" value="Fichier de langue n´est pas lisible!
+Veuillez choisir une autre langue!"/>
+	<entry id="savevideoconfigerror" value="Faute dans la mémorisation de l´installation-vidéo!
+Détails: Voyez log.txt"/>
+	<entry id="savevideoconfigerror" value="Faute dans la mémorisation de l´installation-vidéo QUALITY!
+Détails: Voyez log.txt"/>
+	<entry id="saveaudioconfigerror" value="Faute dans la mémorisation de l´installation-audio!
+Détails: Voyez log.txt"/>
+	<entry id="savelanguageconfigerror" value="Faute dans l´enrégistrage des installations de langue!
+Détails: Voyez log.txt"/>
+	<entry id="notyetimplemented" value="Version beta: Pas encore encastré."/>
+  <entry id="exitwithoutsaving" value="Quitter sans enregistrer?"/>
+</language>

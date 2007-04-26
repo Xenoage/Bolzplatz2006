@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="marthabse" name="Martha BSE" description="Hier steht irgendeine Beschreibung des Teams." group="clubteams" stadium="league1_3">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="000080" shirt2="E0E0F0" pants="000080" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000080" shirt2="1E64A0" pants="E7E7EE" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="ECEC47" shirt2="1E64A0" pants="000118" shoes="A0A0A0"/>
+  <players>
+    <player name="Christian Streicher" attack="3" defense="7" speed="5" stamina="7" headdress="" glasses=""/>
+    <player name="Niko Kavic" attack="6" defense="7" speed="7" stamina="5" headdress="" glasses=""/>
+    <player name="Arne Friedhof" attack="4" defense="7" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Yildoroy Basstard" attack="7" defense="5" speed="8" stamina="7" headdress="" glasses=""/>
+    <player name="Mauselinho" attack="8" defense="2" speed="8" stamina="8" headdress="iro" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="redburnmofas" name="Redburn Mofas" description="Redburn Mofas by Eintracht4ever" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="F9F9F9" shirt2="274AAF" pants="F9F9F9" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="CB1335" shirt2="F9F9F9" pants="CB1335" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="BCBCBC" shirt2="737373" pants="737373" shoes="A0A0A0"/>
+  <players>
+    <player name="Friedel Brett" attack="6" defense="8" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Robbie Wilder" attack="5" defense="7" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Lukas Viel" attack="6" defense="8" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Morton Spätersen" attack="6" defense="7" speed="8" stamina="7" headdress="none" glasses="glasses"/>
+    <player name="Steffen Reihert" attack="7" defense="6" speed="7" stamina="7" headdress="ted" glasses=""/>
+  </players>
+</team>

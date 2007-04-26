@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="en">
+  <entry id="version" value="Version"/>
+  <entry id="goalkeeper" value="Goalkeeper"/>
+  <entry id="defenseleft" value="Left defense"/>
+  <entry id="defenseright" value="Right defense"/>
+  <entry id="forwardleft" value="Left forward"/>
+  <entry id="forwardright" value="Right forward"/>
+  <entry id="error" value="Error!"/>
+  <entry id="attention" value="Attention!"/>
+  <entry id="group" value="Group"/>
+  <entry id="leagueallstars" value="Allstars League"/>
+  <entry id="league1" value="1. League"/>
+  <entry id="league2" value="2. League"/>
+  <entry id="league3" value="3. League"/>
+  <entry id="leagueallstarslong" value="UFO Allstars League"/>
+  <entry id="league1long" value="1. League (Premium League)"/>
+  <entry id="league2long" value="2. League (Country League)"/>
+  <entry id="league3long" value="3. League (Village League)"/>
+  <entry id="leagueallstarsshort" value="All.L."/>
+  <entry id="startofseason" value="Start of season"/>
+  <entry id="matchday" value="Matchday"/>
+  <entry id="emptyslot" value="Not in use yet"/>
+  <entry id="invalidslot" value="Invalid slot!"/>
+  <entry id="career" value="Career"/>
+  <entry id="date" value="%year%-%month%-%day%"/>
+  <entry id="groupmatchday" value="Group matchday"/>
+  <entry id="eighthfinal" value="Round of sixteen"/>
+  <entry id="quarterfinal" value="Quarter final"/>
+  <entry id="semifinal" value="Semi final"/>
+  <entry id="thirdplacematch" value="Third place match"/>
+  <entry id="final" value="Finale"/>
+  <entry id="winterbreak" value="Winter break"/>
+  <entry id="seasonfinal" value="Season final"/>
+  <entry id="groupa" value="Group A"/>
+  <entry id="groupb" value="Group B"/>
+  <entry id="groupc" value="Group C"/>
+  <entry id="groupd" value="Group D"/>
+  <entry id="groupe" value="Group E"/>
+  <entry id="groupf" value="Group F"/>
+  <entry id="groupg" value="Group G"/>
+  <entry id="grouph" value="Group H"/>
+  <entry id="firstplace" value="Leader"/>
+  <entry id="secondplace" value="Second"/>
+  <entry id="yetunknown" value="Still unknown"/>
+  <entry id="winner" value="Winner"/>
+  <entry id="loser" value="Loser"/>
+	<entry id="unknown" value="Unknown"/>
+  <entry id="fatalerrormessage" value="Fatal error: The game must be closed.
+For details see log.txt"/>
+	<entry id="alreadybought" value="Already bought"/>
+	<entry id="loyality0" value="moneygrubbing. Already for a few Euro he forgets his conscience."/>
+	<entry id="loyality1" value="dubious. It is said that the bigger part of his income does not come from the football federation."/>
+	<entry id="loyality2" value="neutral. But nothing ventured, nothing gained, so try it anyway."/>
+	<entry id="loyality3" value="reliable. Probably he will not take part in this act."/>
+	<entry id="loyality4" value="very faithful. You must be a magician to convince him!"/>
+	<entry id="loyality5" value="extremly loyal. Corruption is a foreign word for him."/>
+  <entry id="ok" value="OK"/>
+  <entry id="cancel" value="Cancel"/>
+</language>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcgorgonzola" name="FC Gorgonzola" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_1">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="1D5DA7" shirt2="A62651" pants="A62651" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="CFDD13" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Hector Waldis" attack="8" defense="10" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Dacapo" attack="10" defense="8" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Lukovic Gully" attack="8" defense="9" speed="10" stamina="9" headdress="" glasses=""/>
+    <player name="Roland Ninjo" attack="10" defense="9" speed="10" stamina="10" headdress="iro" glasses=""/>
+    <player name="Sammy Atom" attack="10" defense="8" speed="10" stamina="9" headdress="" glasses=""/>
+  </players>
+</team>

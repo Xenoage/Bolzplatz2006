@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="version" value="Version"/>
+  <entry id="goalkeeper" value="Gardien de but"/>
+  <entry id="defenseleft" value="Défenseur gauche"/>
+  <entry id="defenseright" value="Défenseur droit"/>
+  <entry id="forwardleft" value="Attaquant gauche"/>
+  <entry id="forwardright" value="Attaquant droit"/>
+  <entry id="error" value="Faute!"/>
+  <entry id="attention" value="Attention!"/>
+  <entry id="group" value="Groupe"/>
+  <entry id="leagueallstars" value="Ligue internationale"/>
+  <entry id="league1" value="1ère Ligue"/>
+  <entry id="league2" value="2ème Ligue"/>
+  <entry id="league3" value="3ème Ligue"/>
+  <entry id="leagueallstarslong" value="Ligue Allstars UFO"/>
+  <entry id="league1long" value="1ère Ligue"/>
+  <entry id="league2long" value="Ligue régionale"/>
+  <entry id="league3long" value="Ligue paysanne"/>
+  <entry id="leagueallstarsshort" value="All.L."/>
+  <entry id="startofseason" value="Début de la saison"/>
+  <entry id="matchday" value="journée"/>
+  <entry id="emptyslot" value="Pas encore occupé"/>
+  <entry id="invalidslot" value="La sauvegarde contient des erreurs!"/>
+  <entry id="career" value="Carrière"/>
+  <entry id="date" value="%month%-%day%-%year%"/>
+  <entry id="groupmatchday" value="Journée des groupes"/>
+  <entry id="eighthfinal" value="Huitième de finale"/>
+  <entry id="quarterfinal" value="Quart de finale"/>
+  <entry id="semifinal" value="Demi-finale"/>
+  <entry id="thirdplacematch" value="Match pour la 3ème place"/>
+  <entry id="final" value="Match de finale"/>
+  <entry id="winterbreak" value="Pause d´hiver"/>
+  <entry id="seasonfinal" value="Finale de la saison"/>
+  <entry id="groupa" value="Groupe A"/>
+  <entry id="groupb" value="Groupe B"/>
+  <entry id="groupc" value="Groupe C"/>
+  <entry id="groupd" value="Groupe D"/>
+  <entry id="groupe" value="Groupe E"/>
+  <entry id="groupf" value="Groupe F"/>
+  <entry id="groupg" value="Groupe G"/>
+  <entry id="grouph" value="Groupe H"/>
+  <entry id="firstplace" value="Premier"/>
+  <entry id="secondplace" value="Deuxième"/>
+  <entry id="yetunknown" value="Encore inconnu"/>
+  <entry id="winner" value="Vainqueur"/>
+  <entry id="loser" value="Perdant"/>
+	<entry id="unknown" value="Inconnu"/>
+  <entry id="fatalerrormessage" value="Il y avait une erreur grave.
+Le jeu doit être fini.
+Pour détails voyez log.txt"/>
+	<entry id="alreadybought" value="déjà acheté"/>
+	<entry id="loyality0" value="Cupide. Pour quelques Euros déjà il vend son âme."/>
+	<entry id="loyality1" value="Douteux. C'est de qui qu'il reçoit son argent?"/>
+	<entry id="loyality2" value="Neutre. Mais ça vaut un essai."/>
+	<entry id="loyality3" value="Serieux. C'est probablement pas la peine d'essayer."/>
+	<entry id="loyality4" value="Consciencieux. Gagner sa bienveillance n´est pas facile."/>
+	<entry id="loyality5" value="Très loyal. Il ne connait même pas le mot acheter..."/>
+  <entry id="ok" value="OK"/>
+  <entry id="cancel" value="Annuler"/>
+</language>

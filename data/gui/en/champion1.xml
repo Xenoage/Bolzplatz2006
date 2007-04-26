@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="career">
+  <scene systemid="champion1"/>
+  <fading intime="1" incolor="000000" outtime="1" outcolor="000000"/>
+  <music fadein="2" fadeout="1" continue="true">music/allstars.ogg</music>
+
+  <groups start="champion1">
+
+
+    <!--
+    ************************************
+    * END OF SEASON: CHAMPION LEAGUE 1 *
+    ************************************
+    -->
+
+    <group id="champion1" flyinduration="1" flyoutduration="1" nextgroupwaitduration="1">
+			<action event="groupopen" type="cameraflight" param1="round1" guisound="move"/>
+
+
+      <button id="champion2.ok" caption="You are the champion of the Premium League!">
+        <focus/>
+        <pos x="100" y="620" width="824" height="60"/>
+        <flyin x="1024" y="768" starttime="0.5" duration="0.5"/>
+        <flyout x="1024" y="768" starttime="0.0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">champion1.ok</next_control>
+          <next_control dir="down">champion1.ok</next_control>
+        </next>
+        <action event="click" type="openscreen" param1="career" guisound="select"/>
+        <action event="focus" guisound="focus"/>
+      </button>
+
+    </group>
+
+
+  </groups>
+
+</screen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="austria" name="Österreich" description="Austria by Eintracht4ever" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="D81D04" shirt2="F9F9F9" pants="F9F9F9" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="080808" shirt2="D81D04" pants="D81D04" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="81D7F1" shirt2="F9F9F9" pants="F9F9F9" shoes="A0A0A0"/>
+  <players>
+    <player name="Helga Schrayer" attack="6" defense="3" speed="7" stamina="2" headdress="" glasses=""/>
+    <player name="Martin Stronzer" attack="7" defense="4" speed="6" stamina="4" headdress="none" glasses="glasses"/>
+    <player name="Manuel Pockertest" attack="6" defense="3" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Andi Iwan Schnitzt" attack="7" defense="3" speed="6" stamina="5" headdress="ted" glasses=""/>
+    <player name="Ronald Prinz" attack="7" defense="1" speed="5" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

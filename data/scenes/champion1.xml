@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<guiscene id="champion1">
+  <stadium id="%career.stadium.id%" light="true" usecareerads="true"/>
+  <weather id="night-moonlight"/>
+	<program id="champion1"/>
+
+  <cameraflights>
+
+    <cameraflight id="round1" speed="0.3" loop="true">
+      <from>
+        <point x="22" y="3" z="-5"/>
+				<point x="27" y="4" z="-7"/>
+        <point x="29" y="5" z="-12"/>
+        <point x="27" y="5" z="-17"/>
+				<point x="22" y="4" z="-19"/>
+				<point x="17" y="3" z="-17"/>
+				<point x="15" y="2" z="-12"/>
+				<point x="17" y="2" z="-7"/>
+      </from>
+      <at>
+				<point x="20" y="1" z="-9" times="8"/>
+      </at>
+    </cameraflight>
+
+  </cameraflights>
+</guiscene>

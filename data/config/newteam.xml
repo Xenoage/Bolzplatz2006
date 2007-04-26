@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="newteam" name="Name des Vereins" description="Beschreibung des Vereins" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F4E5E5" shirt2="EEEEFF" pants="CC0000" shoes="C8C8C8"/>
+  <colors id="away" pattern="horizontal" skin="99785A" shirt="1E64A0" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="99785A" shirt="1E64A0" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Torwart" attack="5" defense="5" speed="5" stamina="5"/>
+    <player name="Linker Verteidiger" attack="5" defense="5" speed="5" stamina="5"/>
+    <player name="Rechter Verteidiger" attack="5" defense="5" speed="5" stamina="5"/>
+    <player name="Linker Stürmer" attack="5" defense="5" speed="5" stamina="5"/>
+    <player name="Rechter Stürmer" attack="5" defense="5" speed="5" stamina="5"/>
+  </players>
+</team>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<playersettings>
+  <player>
+    <speed>4</speed> <!-- player-speed in m/s -->
+    <sprintfactor>1.3</sprintfactor> <!-- speed factor for sprinting -->
+    <rotationspeed>720</rotationspeed> <!-- player-rotation-speed in degrees/s -->
+  </player>
+  <!-- OBSOLETE
+  <pass>
+    <speedh>12</speedh> //horizontal ball-speed of a pass in m/s
+    <speedv>1</speedv> //vertical ball-speed of a pass in m/s
+    <speedvadd>5</speedvadd> //additional keypress-duration dependent vertical speed of a pass in m/s
+  </pass>
+  --> 
+  <pass>
+    <speedhmin>8</speedhmin> <!-- minimal horizontal ballspeed of a pass in m/s -->
+    <speedvmin>1</speedvmin> <!-- minimal vertical ballspeed of a pass in m/s -->
+    <speedhmax>12</speedhmax> <!-- maximal horizontal ballspeed of a pass in m/s -->
+    <speedvmax>5</speedvmax> <!-- maximal vertical ballspeed of a pass in m/s -->
+  </pass>
+  <shoot>
+    <speedh>10</speedh> <!-- horizontal ball-speed of a goal-shoot in m/s -->
+    <speedhadd>10</speedhadd> <!-- additional keypress-duration dependent horizontal speed of a goal-shoot in m/s -->
+    <speedv>5</speedv> <!-- vertical ball-speed of a normal goal-shoot in m/s -->
+    <speedliftv>6</speedliftv> <!-- vertical ball-speed of a "lifted" goal-shoot in m/s -->
+    <speedlifthred>0.4</speedlifthred> <!-- horizontal ball-speed-reduction of a "lifted" goal shoot (e.g. 0.1 = 10% of normal speed) -->
+  </shoot>
+  <goalkick>
+    <speedhmin>8</speedhmin> <!-- minimal horizontal ballspeed of a goalkick in m/s -->
+    <speedvmin>3</speedvmin> <!-- minimal vertical ballspeed of a goalkick in m/s -->
+    <speedhmax>10</speedhmax> <!-- maximal horizontal ballspeed of a goalkick in m/s -->
+    <speedvmax>12</speedvmax> <!-- maximal vertical ballspeed of a goalkick in m/s -->
+  </goalkick>
+  <cornerkick>
+    <speedhmin>8</speedhmin> <!-- minimal horizontal ballspeed of a cornerkick in m/s -->
+    <speedvmin>3</speedvmin> <!-- minimal vertical ballspeed of a cornerkick in m/s -->
+    <speedhmax>10</speedhmax> <!-- maximal horizontal ballspeed of a cornerkick in m/s -->
+    <speedvmax>12</speedvmax> <!-- maximal vertical ballspeed of a cornerkick in m/s -->
+  </cornerkick>
+  <throwin>
+    <speedhmin>4</speedhmin> <!-- minimal horizontal ballspeed of a throwin in m/s -->
+    <speedvmin>1</speedvmin> <!-- minimal vertical ballspeed of a throwin in m/s -->
+    <speedhmax>6</speedhmax> <!-- maximal horizontal ballspeed of a throwin in m/s -->
+    <speedvmax>7</speedvmax> <!-- maximal vertical ballspeed of a throwin in m/s -->
+  </throwin>
+  <penaltykick>
+    <speedhmin>5</speedhmin> <!-- minimal horizontal ballspeed of a penaltykick in m/s -->
+    <speedvmin>1</speedvmin> <!-- minimal vertical ballspeed of a penaltykick in m/s -->
+    <speedhmax>18</speedhmax> <!-- maximal horizontal ballspeed of a penaltykick in m/s -->
+    <speedvmax>8</speedvmax> <!-- maximal vertical ballspeed of a penaltykick in m/s -->
+  </penaltykick>
+  <freekick>
+    <speedhmin>10</speedhmin> <!-- minimal horizontal ballspeed of a freekick in m/s -->
+    <speedvmin>2</speedvmin> <!-- minimal vertical ballspeed of a freekick in m/s -->
+    <speedhmax>20</speedhmax> <!-- maximal horizontal ballspeed of a freekick in m/s -->
+    <speedvmax>8</speedvmax> <!-- maximal vertical ballspeed of a freekick in m/s -->
+  </freekick>
+  <bounce>
+    <ballspeed>11</ballspeed> <!-- minimal speed in m/s where a player can not get the ball, but bounces it -->
+    <goalkeeperballspeed>13</goalkeeperballspeed> <!-- minimal speed in m/s where a goalkeeper can not catch the ball, but bounces it -->
+    <velfactor>-0.4</velfactor> <!-- this number is multiplied with the ball velocity when bouncing -->
+    <velrandom>3</velrandom> <!-- after bounce [randomCenter(velrandom),randomCenter(velrandom),randomCenter(velrandom)] is added to the ball velocity -->
+  </bounce>
+  <!-- TODO: speed reduction when not shooting in running direction... -->
+</playersettings>
+
+
+
+
+
+
+
+
+
+
+
+
+

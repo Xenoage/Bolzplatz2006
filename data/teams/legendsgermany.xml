@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="legendsgermany" name="Germany Legends" description="Beschreibung des Vereins" group="specialteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F4F1F1" shirt2="EEEEFF" pants="222423" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="CC0000" shirt2="1E64A0" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="DAD000" shirt2="DAD000" pants="232022" shoes="A0A0A0"/>
+  <players>
+    <player name="Sepp Muller" attack="6" defense="10" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Mothar Thaddeus " attack="6" defense="10" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="The Kaiser" attack="7" defense="10" speed="9" stamina="9" headdress="ted" glasses=""/>
+    <player name="Uwe Keller" attack="9" defense="8" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Gerd Maier" attack="10" defense="7" speed="9" stamina="8" headdress="" glasses=""/>
+  </players>
+</team>

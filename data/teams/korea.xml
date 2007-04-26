@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="korea" name="Südkorea" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF3366" shirt2="EEEEFF" pants="000066" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="FF3366" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="AF0505" shirt2="1A1A9C" pants="FFFFFF" shoes="A0A0A0"/>
+  <players>
+    <player name="Jing-Jai Jauo" attack="4" defense="5" speed="3" stamina="5" headdress="" glasses=""/>
+    <player name="Jasang Punker" attack="4" defense="5" speed="6" stamina="3" headdress="" glasses=""/>
+    <player name="Yo Pyroleng" attack="4" defense="5" speed="3" stamina="4" headdress="none" glasses=""/>
+    <player name="Bang-Boom Da" attack="6" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Da. Mi. Cheye" attack="7" defense="4" speed="7" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

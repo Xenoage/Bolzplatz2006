@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<stadium id="league3_5" name="Sludge Stadium">
+  <terrain id="terrain1"/>
+  <lawn quality="0"/>
+  <goals id="garbagecans" wooden="true"/>
+  <careerstandblocks/>
+  <careeradboardblocks/>
+  <stands maxspectators="240">
+    <stand id="stage1_normal" modification="stage1_normal_banister">
+      <position x="20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_banister">
+      <position x="-20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+  </stands>
+  <adboards>
+    <adboard id="adboard1">
+      <position x="-12.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-24.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="12.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="2.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-7.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+  </adboards>
+  <scoreboard stage="1">
+    <position x="22.0" y="0.0" z="14.0"/>
+    <rotation x="0.0" y="30.0" z="0.0"/>
+  </scoreboard>
+  <floodlights/>
+  <attractions/>
+  <objects>
+    <object id="banner.x">
+      <position x="-22.0" y="4.0" z="30.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="-13.0" y="4.0" z="30.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="garbagecan.x">
+      <position x="-7.0" y="0.0" z="13.0"/>
+      <rotation x="0.0" y="30.0" z="0.0"/>
+    </object>
+    <object id="garbagecan.x">
+      <position x="-6.0" y="0.0" z="15.0"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </object>
+    <object id="garbagecan.x">
+      <position x="7.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="garbagecan.x">
+      <position x="3.0" y="0.0" z="-12.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree1.x">
+      <position x="-27.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="-21.0" y="0.0" z="-20.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="-32.0" y="0.0" z="-12.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="-27.0" y="0.0" z="-26.0"/>
+      <rotation x="0.0" y="75.0" z="0.0"/>
+    </object>
+    <object id="tree1.x">
+      <position x="26.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="tree3.x">
+      <position x="20.0" y="0.0" z="-22.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+  </objects>
+</stadium>

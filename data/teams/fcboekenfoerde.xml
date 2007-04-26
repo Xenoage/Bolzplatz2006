@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcboekenfoerde" name="FC Bökenförde" description="Beschreibung des Vereins" group="clubteams" stadium="league2_2">
+  <colors id="home" pattern="" skin="FFC280" shirt="F5F4F4" shirt2="EEEEFF" pants="F5F4F4" shoes="C8C8C8"/>
+  <colors id="away" pattern="vertical" skin="FFC280" shirt="AC120A" shirt2="2E0E0C" pants="2E0E0C" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="vertical" skin="FFC280" shirt="FF0000" shirt2="FFFFFF" pants="FF0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Sebi Wessi" attack="6" defense="6" speed="4" stamina="4" headdress="cap" glasses=""/>
+    <player name="Luke Singelitz" attack="4" defense="6" speed="3" stamina="5" headdress="" glasses=""/>
+    <player name="Albern Zoff" attack="6" defense="5" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Marc Strahler" attack="5" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Luke Poltersky" attack="9" defense="4" speed="7" stamina="7" headdress="ted" glasses=""/>
+  </players>
+</team>

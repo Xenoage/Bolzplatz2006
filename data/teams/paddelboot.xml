@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="paddelboot" name="SC Paddelboot" description="SC Paddelboot. Hergestellt von PsychoFish." group="clubteams" stadium="league3_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="3399FF" shirt2="FFFFFF" pants="3399FF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000000" shirt2="FFFFFF" pants="000000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FFCC00" shirt2="000000" pants="FFCC00" shoes="A0A0A0"/>
+  <players>
+    <player name="Tim Schwache" attack="1" defense="3" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Martin Bollwerk" attack="2" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Röhre Brauer" attack="3" defense="4" speed="5" stamina="5" headdress="bobblecap" glasses=""/>
+    <player name="Rene Meyer" attack="5" defense="2" speed="6" stamina="6" headdress="" glasses="glasses"/>
+    <player name="Ben Schüssel" attack="4" defense="3" speed="4" stamina="5" headdress="" glasses=""/>
+  </players>
+</team>

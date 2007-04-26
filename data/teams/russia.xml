@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="russia" name="Russland" description="Russia by Eintracht4ever" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F9F9F9" shirt2="1264B4" pants="F9F9F9" shoes="C8C8C8"/>
+  <colors id="away" pattern="vertical" skin="FFC280" shirt="ED0D0D" shirt2="F9F9F9" pants="ED0D0D" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="040404" shirt2="868686" pants="040404" shoes="A0A0A0"/>
+  <players>
+    <player name="Igor Gutefeev" attack="6" defense="7" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Aleksei Bärentatzki" attack="5" defense="7" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Alles Schmerzen" attack="6" defense="7" speed="6" stamina="7" headdress="" glasses=""/>
+    <player name="Alex Kerbenkopf" attack="8" defense="5" speed="7" stamina="7" headdress="ted" glasses=""/>
+    <player name="Andre Aschafin" attack="6" defense="2" speed="5" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

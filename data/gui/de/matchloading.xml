@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="match">
+
+  <fading intime="1" incolor="000000" usefadeout="false"/>
+
+  <groups start="matchloading">
+
+    <group id="matchloading">
+      <action event="grouptime" eventparam="1" type="openscreen" param1="match"/>
+      
+			<image src="images/matchloading.png" srcwidth="512" srcheight="512">
+        <pos x="0" y="0" width="1024" height="768"/>
+      </image>
+
+			<image id="matchloading.home1logo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="100" y="80" width="256" height="256"/>
+        <action event="load" type="changeimage" param1="matchloading.home1logo"
+          param2="teams/%match.team1.id%-logo.png" param3="images/teamunknown-logo.png"/>
+      </image>
+
+      <image id="matchloading.team2logo" src="images/teamunknown-logo.png" srcwidth="512" srcheight="512">
+        <pos x="668" y="80" width="256" height="256"/>
+        <action event="load" type="changeimage" param1="matchloading.team2logo"
+          param2="teams/%match.team2.id%-logo.png" param3="images/teamunknown-logo.png"/>
+      </image>
+
+			<label id="matchloading.team1name" caption="%match.team1.name%" color="FFB400" center="true">
+        <pos x="50" y="370" width="356" height="60"/>
+      </label>
+
+			<label id="matchloading.team2name" caption="%match.team2.name%" color="FFB400" center="true">
+        <pos x="618" y="370" width="356" height="60"/>
+      </label>
+
+<!--
+			<label caption="Links:" color="FFEA80" center="false">
+	      <pos x="50" y="380" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:0:0%" color="FFEA80" center="false">
+	      <pos x="300" y="380" width="100" height="50"/>
+	    </label>
+
+			<label caption="Oben:" color="FFEA80" center="false">
+	      <pos x="50" y="420" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:1:0%" color="FFEA80" center="false">
+	      <pos x="300" y="420" width="100" height="50"/>
+	    </label>
+
+			<label caption="Rechts:" color="FFEA80" center="false">
+	      <pos x="50" y="460" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:2:0%" color="FFEA80" center="false">
+	      <pos x="300" y="460" width="100" height="50"/>
+	    </label>
+
+			<label caption="Unten:" color="FFEA80" center="false">
+	      <pos x="50" y="500" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:3:0%" color="FFEA80" center="false">
+	      <pos x="300" y="500" width="100" height="50"/>
+	    </label>
+
+			<label caption="Passen / Grätschen:" color="FFEA80" center="false">
+	      <pos x="50" y="540" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:4:0%" color="FFEA80" center="false">
+	      <pos x="300" y="540" width="100" height="50"/>
+	    </label>
+
+			<label caption="Schießen / Spielerwechsel:" color="FFEA80" center="false">
+	      <pos x="50" y="580" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:5:0%" color="FFEA80" center="false">
+	      <pos x="300" y="580" width="100" height="50"/>
+	    </label>
+
+			<label caption="Sprinten:" color="FFEA80" center="false">
+	      <pos x="50" y="620" width="200" height="50"/>
+	    </label>
+			<label caption="%bp2k6key:6:0%" color="FFEA80" center="false">
+	      <pos x="300" y="620" width="100" height="50"/>
+	    </label>
+-->
+
+      <label id="matchloading.referee" caption="Schiedsrichter: %match.referee.name%" color="FFEA80" center="true">
+        <pos x="0" y="500" width="1024" height="60"/>
+      </label>
+
+			<label caption="Spiel wird geladen..." color="FFEA80" center="true">
+        <pos x="0" y="600" width="1024" height="60"/>
+      </label>
+
+    </group>
+
+  </groups>
+
+</screen>

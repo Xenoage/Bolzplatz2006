@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<weather id="day-sunshine">
+	<sky id="sky1"/>
+  <ambientlight red="192" green="192" blue="192"/>
+  <directionallight red="255" green="255" blue="255" x="-2" y="3" z="-1"/>
+  <stadiumlighting>off</stadiumlighting>
+  <ambiencesound>ambience_village.ogg</ambiencesound>
+  <crowdfactor>1</crowdfactor>
+</weather>

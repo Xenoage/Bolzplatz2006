@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+<jar path="D:/Werkstatt/Bolzplatz2006/bolzplatz2006_v1.1/gold.jar"/>
+<options buildIfNeeded="true" compress="false" descriptionLocation="/Bolzplatz 2006/gold.jardesc" exportErrors="false" exportWarnings="false" includeDirectoryEntries="false" overwrite="true" saveDescription="true" useSourceFolders="false"/>
+<manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+<sealing sealJar="false">
+<packagesToSeal/>
+<packagesToUnSeal/>
+</sealing>
+</manifest>
+<selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.teameditor.ctrl"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.languagecreator"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.stadiumeditor"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.teameditor.gui"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.gamefontcreator"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.teameditor"/>
+<javaElement handleIdentifier="=Bolzplatz 2006/src&lt;com.xenoage.bp2k6.tools.stadiumeditor.gui"/>
+</selectedElements>
+</jardesc>

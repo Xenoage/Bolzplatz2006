@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="zwietrachtzankfurt" name="Zwietracht Zankfurt" description="Nur ein Test-Team." group="clubteams" stadium="kommerzgeil">
+  <colors id="home" pattern="" skin="FFC280" shirt="DB1212" shirt2="DB1212" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="E2E8ED" shirt2="1E64A0" pants="160101" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="1E64A0" shirt2="1E64A0" pants="BE0000" shoes="A0A0A0"/>
+  <players>
+    <player name="Opa Nikolaus" attack="3" defense="6" speed="5" stamina="7" headdress="" glasses=""/>
+    <player name="Marcus Römer" attack="4" defense="6" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Bene Buckel" attack="5" defense="4" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Francisco Escapado" attack="7" defense="3" speed="8" stamina="8" headdress="ted" glasses=""/>
+    <player name="Anis Bananatidis" attack="6" defense="4" speed="6" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

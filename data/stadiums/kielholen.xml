@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<stadium id="kielholen" name="Kielholen Stadion">
+  <terrain id="terrain1"/>
+  <lawn quality="7"/>
+  <goals id="aluminumgoals" wooden="true" aluminum="true"/>
+  <careerstandblocks/>
+  <careeradboardblocks/>
+  <stands maxspectators="220">
+    <stand id="stage1_normal" modification="stage1_normal_entrance3">
+      <position x="0.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+  </stands>
+  <adboards>
+    <adboard id="adboard1">
+      <position x="16.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="8.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="0.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="-8.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="-16.0" y="0.0" z="-18.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="24.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="165.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="28.0" y="0.0" z="-12.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="25.0" y="0.0" z="17.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="28.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="17.0" y="0.0" z="18.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="9.0" y="0.0" z="18.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="-8.0" y="0.0" z="18.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-16.0" y="0.0" z="18.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-24.0" y="0.0" z="17.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-24.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="195.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-28.0" y="0.0" z="-12.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="-28.0" y="0.0" z="12.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="-28.0" y="0.0" z="4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-28.0" y="0.0" z="-4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="28.0" y="0.0" z="-4.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="28.0" y="0.0" z="4.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+  </adboards>
+  <scoreboard stage="2">
+    <position x="0.0" y="3.0" z="-24.0"/>
+    <rotation x="0.0" y="180.0" z="0.0"/>
+  </scoreboard>
+  <floodlights>
+    <floodlight stage="2">
+      <position x="30.0" y="0.0" z="-21.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="2">
+      <position x="30.0" y="0.0" z="21.0"/>
+      <rotation x="0.0" y="225.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="2">
+      <position x="-30.0" y="0.0" z="-21.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="2">
+      <position x="-30.0" y="0.0" z="21.0"/>
+      <rotation x="0.0" y="120.0" z="0.0"/>
+    </floodlight>
+  </floodlights>
+  <attractions>
+    <hotdogstand>
+      <position x="-23.0" y="0.0" z="29.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </hotdogstand>
+    <beerbar>
+      <position x="-32.0" y="0.0" z="-4.0"/>
+      <rotation x="0.0" y="285.0" z="0.0"/>
+    </beerbar>
+    <track>
+      <position x="0.0" y="0.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </track>
+    <highjump>
+      <position x="33.0" y="0.0" z="4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </highjump>
+  </attractions>
+  <objects>
+    <object id="stage2_curve_banister.x">
+      <position x="30.0" y="-8.050001" z="15.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stage2_curve_banister.x">
+      <position x="-30.0" y="-8.050001" z="15.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="stage2_curve_banister.x">
+      <position x="-30.0" y="-8.050001" z="-15.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="stage2_curve_banister.x">
+      <position x="30.0" y="-8.050001" z="-15.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="stage1_normal_banister.x">
+      <position x="10.0" y="-3.05" z="-20.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="stage1_normal_banister.x">
+      <position x="-10.0" y="-3.05" z="-20.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="stage1_normal.x">
+      <position x="-35.0" y="-3.05" z="0.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="stage1_normal.x">
+      <position x="35.0" y="-3.05" z="0.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="tree1.x">
+      <position x="-24.0" y="0.0" z="-29.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="0.0" y="0.0" z="-46.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="tree4.x">
+      <position x="14.0" y="0.0" z="-32.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree3.x">
+      <position x="-43.0" y="0.0" z="-9.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="54.0" y="0.0" z="7.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="35.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree4.x">
+      <position x="-6.0" y="0.0" z="-29.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="13.0" y="1.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="4.0" y="1.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="-11.0" y="1.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="stage3_normal_roof1.x">
+      <position x="-10.0" y="-10.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stage3_normal_roof1.x">
+      <position x="10.0" y="-10.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree2.x">
+      <position x="0.0" y="0.0" z="41.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="tree1.x">
+      <position x="-10.0" y="0.0" z="-38.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="adboard4.x">
+      <position x="40.0" y="3.0" z="0.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="adboard2.x">
+      <position x="-40.0" y="3.0" z="1.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="house1.x">
+      <position x="-53.0" y="0.0" z="-36.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="house3.x">
+      <position x="55.0" y="0.0" z="-45.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="tree4.x">
+      <position x="46.0" y="0.0" z="-47.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-7.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-2.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="3.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="8.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-12.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="13.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="-17.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="fence.x">
+      <position x="18.0" y="-2.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="1.0" y="0.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="10.0" y="-1.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+    <object id="banner.x">
+      <position x="-16.0" y="0.0" z="-19.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </object>
+  </objects>
+</stadium>

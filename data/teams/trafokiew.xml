@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="trafokiew" name="Trafo Kiew" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="FFFFFF" pants="0000FF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="0000FF" shirt2="1E64A0" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FFCC00" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Olaf Schurkowsky" attack="7" defense="7" speed="6" stamina="8" headdress="" glasses=""/>
+    <player name="Sergej Federstoff" attack="5" defense="7" speed="6" stamina="8" headdress="" glasses=""/>
+    <player name="Erdgas Kosmonauski" attack="6" defense="7" speed="6" stamina="6" headdress="" glasses=""/>
+    <player name="Sergy Rebstock" attack="6" defense="5" speed="6" stamina="5" headdress="iro" glasses=""/>
+    <player name="Klebstoff" attack="8" defense="6" speed="7" stamina="6" headdress="" glasses=""/>
+  </players>
+</team>

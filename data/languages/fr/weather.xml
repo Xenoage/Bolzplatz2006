@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="day-sunshine" value="Soleil"/>
+  <entry id="day-rain" value="Pluie (Jour)"/>
+  <entry id="day-snow" value="Neige (Jour)"/>
+  <entry id="day-fog" value="Brouillard (Jour)"/>
+  <entry id="day-sunset" value="Coucher du soleil"/>
+  <entry id="night-moonlight" value="Clair de lune"/>
+  <entry id="night-rain" value="Pluie (Nuit)"/>
+  <entry id="night-snow" value="Neige (Nuit)"/>
+  <entry id="night-fog" value="Brouillard (Nuit)"/>
+  <entry id="night-thunderstorm" value="Tempête (Nuit)"/>
+</language>

@@ -1,0 +1,18 @@
+*********************************************************
+* Bolzplatz 2006 / Slam Soccer 2006 / Coup de Foot 2006 *
+*                    GOLD EDITION                       *
+*********************************************************
+
+
+The Gold-Edition of this game (Team-Editor, Stadium-Editor
+and the other tools) is NOT provided under the GPL.
+
+You may not redistribute it!
+
+The source code is available in the subfolder "srcgold".
+You can modify it for private use, but if you want to
+make it available for public use, you must have
+our explicit consent: contact info@xenoage.com!
+
+
+Copyright (c) 2006 by Xenoage Software, www.xenoage.com

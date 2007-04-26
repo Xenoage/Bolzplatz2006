@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<leagues>
+  <league type="1">
+    <team id="fchollywood"/>
+    <team id="fchalde04"/>
+    <team id="marthabsc"/>
+    <team id="harburgersv"/>
+    <team id="foo"/> <!-- TODO: Dortmund -->
+    <team id="fckaiserschmarrn"/>
+    <team id="borussiamflachpass"/>
+    <team id="weialebersausen"/>
+    <team id="vfbstuckrad"/>
+    <team id="svwehebremen"/>
+  </league>
+  <league type="2">
+    <team id="msvduesentrieb"/>
+    <team id="fsvheinz05"/>
+    <team id="1680muenchhausen"/>
+    <team id="zwietrachtzankfurt"/>
+    <team id="hallowach96"/>
+    <team id="hannarohrstock"/>
+    <team id="vwbolzburg"/>
+    <team id="scfreibier"/>
+    <team id="energieflottschuss"/>
+    <team id="fcsanktmausi"/>
+  </league>
+  <league type="3"> <!-- TODO ... -->
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+  </league>
+  <league type="0">
+    <team id="foo"/> <!-- Add all international teams, at least 13 -->
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+    <team id="foo"/>
+  </league>
+</leagues>

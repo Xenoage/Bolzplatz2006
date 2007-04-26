@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="fcfranky" name="FC Franky " description="Team by Speedy" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFA500" shirt2="FFA500" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F4ECEC" shirt2="1E64A0" pants="DF0303" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="F4C8C8" shirt2="CC0000" pants="342626" shoes="A0A0A0"/>
+  <players>
+    <player name="Diego Mara" attack="1" defense="2" speed="1" stamina="0" headdress="iro" glasses=""/>
+    <player name="Sagi sahara" attack="3" defense="2" speed="2" stamina="1" headdress="" glasses=""/>
+    <player name="Jörg Bohler" attack="2" defense="1" speed="3" stamina="2" headdress="iro" glasses=""/>
+    <player name="Marc Gonzalas" attack="2" defense="3" speed="5" stamina="1" headdress="" glasses=""/>
+    <player name="Marco Lessel" attack="1" defense="2" speed="2" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

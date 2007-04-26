@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="azzuro" name="Azzuro Rom" description="" group="clubteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="EEC591" shirt="98F5FF" shirt2="98F5FF" pants="FFFFFF" shoes="7A8B8B"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="FFFFFF" shirt2="FFFFFF" pants="98F5FF" shoes="7A8B8B"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="FFD700" shirt2="FFD700" pants="FFFFFF" shoes="7A8B8B"/>
+  <players>
+    <player name="Pierre Azuri" attack="4" defense="5" speed="4" stamina="7" headdress="" glasses=""/>
+    <player name="Manny Otto" attack="5" defense="6" speed="4" stamina="5" headdress="iro" glasses=""/>
+    <player name="Felix Grande" attack="4" defense="5" speed="5" stamina="7" headdress="" glasses=""/>
+    <player name="Alfons Geldado" attack="7" defense="5" speed="7" stamina="7" headdress="" glasses="glasses"/>
+    <player name="Simon Iksagsnie" attack="7" defense="5" speed="7" stamina="7" headdress="ted" glasses=""/>
+  </players>
+</team>

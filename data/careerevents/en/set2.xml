@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+
+	<event>
+		<beforematch>
+	    <conditions>
+	    	<lawn quality="10" type="less"/>
+	    </conditions>
+			<actions>
+				<money value="1400"/>
+			</actions>
+		</beforematch>
+    <title>A heart for the nature:</title>
+    <text>As the care on your lawn was disregarded for some time, the small animals feel very well on your lawn. This is honored by ecologists with an award amounting to 1400 Euro.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<teamvalues speed="-5"/>
+			</actions>
+		</beforematch>
+    <title>The beloved alcohol...</title>
+    <text>At a team celebration your players drunk too much. The speed value for the next game will decline.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="3200"/>
+			</actions>
+		</beforematch>
+    <title>Geldsegen</title>
+    <text>Last match the oil billionair Ronny Aprahlovitsch was in the VIP lounge. Liberally he donates 3200 Euro to the club because of the great passion of your team.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="800"/>
+			</actions>
+		</beforematch>
+    <title>Irresistible beauty</title>
+    <text>You were elected to the most beautiful trainer of the year by the soccer magazin "Bolzblatt"! For the picture on the front page you received 800 Euro.</text>
+  </event>
+
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="600"/>
+			</actions>
+		</beforematch>
+    <title>Dive</title>
+    <text>For the impressive dive in the last game your striker is awarded the "Golden Dive" and an amount of 600 Euro.</text>
+  </event>
+
+
+</events>

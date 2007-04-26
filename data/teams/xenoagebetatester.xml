@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="xenoagebetatester" name="Xenoage Betatester" description="Die Betatester von Bozplatz 2006" group="specialteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="B90B0B" shirt2="F7ECEC" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F47E1D" shirt2="1E64A0" pants="F6E7E7" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="A80D0D" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="ElDiablo" attack="4" defense="7" speed="7" stamina="6" headdress="" glasses=""/>
+    <player name="Uli" attack="3" defense="7" speed="8" stamina="7" headdress="ted" glasses=""/>
+    <player name="Jannes" attack="7" defense="4" speed="6" stamina="6" headdress="none" glasses=""/>
+    <player name="Martin Troll" attack="7" defense="6" speed="4" stamina="8" headdress="bobblecap" glasses=""/>
+    <player name="MatzeOne" attack="6" defense="2" speed="4" stamina="6" headdress="cap" glasses="glasses"/>
+  </players>
+</team>

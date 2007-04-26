@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<soundfx>
+  <whistle_short volume="60"/>
+  <whistle_long volume="60"/>
+  <whistle_2short1long volume="60"/>
+  <whistle_5short volume="60"/>
+  <whistle_congested volume="40"/>
+  <player_cheer volume="80"/>
+  <player_cry volume="80"/>
+  <player_rail volume="80"/>
+  <player_gasp volume="80"/>
+  <fireworks_rocket volume="40"/>
+  <fireworks_explosion volume="100"/>
+	<crowd_horn volume="50"/>
+  <crowd_fanfare volume="50"/>
+</soundfx>

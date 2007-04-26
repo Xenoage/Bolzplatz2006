@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<referee id="rosini" name="Rolando Rosini">
+  <colors skin="FFC280" shirt="437501" shirt2="000000" pants="111111" shoes="BBBBBB"/>
+  <values competence="9" strictness="1" loyality="0"/>
+</referee>

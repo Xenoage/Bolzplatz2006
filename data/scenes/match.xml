@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<guiscene id="match">
+  <cameraflights>
+
+		<!-- halftime flight for stadium with north entrance -->
+    <cameraflight id="halftime1" speed="0.5">
+      <from>
+        <point pos="current"/>
+        <point x="0" y="3" z="10"/>
+        <point x="-1" y="2" z="26" times="5"/>
+				<point x="0.5" y="2" z="15"/>
+				<point x="0" y="5" z="0"/>
+				<point x="0" y="10" z="-20"/>
+				<point x="0" y="20" z="-25"/>
+				<point x="0" y="30" z="-30" times="10"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="0" y="2" z="15"/>
+				<point x="10" y="2" z="15"/>
+				<point x="0" y="0" z="0" times="5"/>
+				<point x="10" y="0" z="0"/>
+				<point x="0" y="0" z="0" times="10"/>
+      </at>
+    </cameraflight>
+
+
+		<!-- flight before penalty shootout -->
+    <cameraflight id="beforepenaltyshootout" speed="0.10" loop="true">
+      <from>
+        <point pos="current"/>
+        <point x="-22" y="10" z="0"/>
+        <point x="0" y="8" z="18"/>
+        <point x="22" y="2" z="0"/>
+        <point x="0" y="8" z="-18"/>
+        <point x="-22" y="10" z="0"/>
+        <point x="0" y="8" z="18"/>
+        <point x="24" y="1" z="0"/>
+        <point x="0" y="8" z="-18"/>
+        <point x="-22" y="10" z="0"/>
+        <point x="-30" y="30" z="10"/>
+        <point x="-31" y="32" z="12"/>
+        <point x="-32" y="34" z="14"/>
+        <point x="-31" y="31" z="12"/>
+        <point x="0" y="8" z="18"/>
+        <point x="22" y="2" z="0"/>
+        <point x="0" y="8" z="-18"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point x="0" y="0" z="10"/>
+        <point x="20" y="5" z="15"/>
+        <point x="0" y="0" z="-15"/>
+        <point x="-20" y="-10" z="0"/>
+        <point x="0" y="0" z="10"/>
+        <point x="20" y="5" z="15"/>
+        <point x="0" y="0" z="-15"/>
+        <point x="-20" y="-10" z="0"/>
+        <point x="0" y="0" z="10"/>
+        <point x="10" y="0" z="10"/>
+        <point x="10" y="0" z="-10"/>
+        <point x="-20" y="0" z="-10"/>
+        <point x="-20" y="0" z="10"/>
+        <point x="20" y="5" z="15"/>
+        <point x="0" y="0" z="-15"/>
+        <point x="-20" y="-10" z="0"/>
+      </at>
+    </cameraflight>
+
+
+		<!-- flight to scoreboard -->
+    <cameraflight id="scoreboard1" speed="0.2">
+      <from>
+        <point pos="current"/>
+        <point x="0" y="8" z="0"/>
+        <point pos="scoreboard" times="10"/>
+      </from>
+      <at>
+        <point pos="current"/>
+        <point pos="behindscoreboard" times="11"/>
+      </at>
+    </cameraflight>
+
+  </cameraflights>
+</guiscene>

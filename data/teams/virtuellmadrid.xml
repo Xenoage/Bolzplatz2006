@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="virtuellmadrid" name="Virtuell Madrid" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_2">
+  <colors id="home" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000099" shirt2="1E64A0" pants="000099" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Hinker Castellos" attack="6" defense="7" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Gatzi" attack="7" defense="8" speed="7" stamina="8" headdress="" glasses=""/>
+    <player name="Berti Haarlos" attack="8" defense="8" speed="8" stamina="9" headdress="" glasses=""/>
+    <player name="Cheeky Checkman" attack="8" defense="7" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Rolandi" attack="10" defense="7" speed="9" stamina="9" headdress="none" glasses="glasses"/>
+  </players>
+</team>

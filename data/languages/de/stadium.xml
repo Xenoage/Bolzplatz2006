@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="hotdogstand" value="Würstchenbude"/>
+  <entry id="bettingoffice" value="Wettbüro"/>
+  <entry id="beerbar" value="Bierschänke"/>
+  <entry id="track" value="Aschenbahn"/>
+  <entry id="highjump" value="Hochsprunganlage"/>
+  <entry id="attractions0" value="Gähnende Langeweile"/>
+  <entry id="attractions1" value="Wenig los hier"/>
+  <entry id="attractions2" value="Seichte Unterhaltung"/>
+  <entry id="attractions3" value="Einiges los hier"/>
+  <entry id="attractions4" value="Sehenswert"/>
+  <entry id="attractions5" value="Erlebnispark"/>
+	<entry id="lawn_mudfield" value="Schlammplatz"/>
+	<entry id="lawn_grassland" value="Grüne Wiese"/>
+	<entry id="lawn_tendedlawn" value="Gepflegter Rasen"/>
+	<entry id="lawn_sod" value="Hochwertiger Rollrasen"/>
+	<entry id="goals" value="Tore"/>
+	<entry id="goal1" value="Alte Mülltonnen"/>
+	<entry id="goal2" value="Wacklige Holztore"/>
+	<entry id="goal3" value="Aluminiumtore"/>
+	<entry id="lighting_moonlit" value="Stockdunkel"/>
+	<entry id="lighting_dusky" value="Düster"/>
+	<entry id="lighting_dimlylit" value="Schwach beleuchtet"/>
+	<entry id="lighting_bright" value="Hell beleuchtet"/>
+	<entry id="lighting_perfect" value="Perfekt beleuchtet"/>
+  <entry id="stadium_stage0name" value="Werbebanden"/>
+  <entry id="stadium_stage1name" value="Stufe 1 (Reihe 1 bis 6)"/>
+  <entry id="stadium_stage2name" value="Stufe 2 (Reihe 7 bis 12)"/>
+  <entry id="stadium_stage3name" value="Stufe 3 (Galerie und Dach)"/>
+  <entry id="built" value="Gebaut"/>
+	<entry id="floodlight0" value="Keine Beleuchtung"/>
+	<entry id="floodlight1" value="Straßenlampe"/>
+	<entry id="floodlight2" value="Halogenstrahler"/>
+	<entry id="floodlight3" value="Flutlichtmasten"/>
+	<entry id="stadium_light1name" value="Beleuchtung Nord-Ost"/>
+  <entry id="stadium_light2name" value="Beleuchtung Süd-Ost"/>
+  <entry id="stadium_light3name" value="Beleuchtung Süd-West"/>
+  <entry id="stadium_light4name" value="Beleuchtung Nord-West"/>
+  <entry id="scoreboard_none" value="Keine Anzeigetafel"/>
+  <entry id="scoreboard1" value="Holztafel"/>
+	<entry id="scoreboard2" value="Digitalanzeige"/>
+	<entry id="scoreboard3" value="Videoleinwand"/>
+</language>

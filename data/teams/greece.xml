@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="greece" name="Griechenland" description="Griechenland by Eintracht4ever" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="F9F9F9" shirt2="13306A" pants="F9F9F9" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="13306A" shirt2="F9F9F9" pants="13306A" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="F9F9F9" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Anton Nikotinidids" attack="4" defense="3" speed="4" stamina="5" headdress="none" glasses=""/>
+    <player name="Drei Warme Teller" attack="2" defense="8" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Theo Zick-Zack" attack="2" defense="3" speed="3" stamina="4" headdress="" glasses=""/>
+    <player name="Dimi Mamadopoulos" attack="5" defense="3" speed="4" stamina="3" headdress="ted" glasses=""/>
+    <player name="Engels Charakterias" attack="6" defense="3" speed="4" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

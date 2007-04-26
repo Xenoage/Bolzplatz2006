@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="erzgebirgeaua" name="Erzgebirge Aua" description="Beschreibung des Vereins" group="clubteams" stadium="league3_2">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="AA00FF" shirt2="F9F9FA" pants="AA00FF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F9F9FA" shirt2="1E64A0" pants="F9F9FA" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="AA00FF" shirt2="1E64A0" pants="FFCC00" shoes="A0A0A0"/>
+  <players>
+    <player name="Thomas Stobbel" attack="5" defense="4" speed="4" stamina="3" headdress="bobblecap" glasses=""/>
+    <player name="Norbert Looser" attack="4" defense="4" speed="4" stamina="4" headdress="ted" glasses=""/>
+    <player name="Jens Jämmerlich" attack="3" defense="5" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Henry Lieblich" attack="5" defense="3" speed="6" stamina="5" headdress="" glasses=""/>
+    <player name="Thorsten Klinika" attack="5" defense="2" speed="5" stamina="6" headdress="" glasses="glasses"/>
+  </players>
+</team>

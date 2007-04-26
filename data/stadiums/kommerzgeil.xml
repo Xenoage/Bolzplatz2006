@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<stadium id="kommerzgeil" name="Kommerzgeil-Arena">
+  <terrain id="terrain1"/>
+  <lawn quality="17"/>
+  <goals id="aluminumgoals"/>
+  <careerstandblocks/>
+  <careeradboardblocks/>
+  <stands maxspectators="3230">
+    <stand id="stage1_normal" modification="stage1_normal_stairs_r">
+      <position x="-20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_l">
+      <position x="20.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve_banister">
+      <position x="35.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve_banister">
+      <position x="-35.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_m">
+      <position x="-35.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_m">
+      <position x="-35.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve">
+      <position x="-35.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_banister">
+      <position x="0.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_l">
+      <position x="-20.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_r">
+      <position x="20.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_curve" modification="stage1_curve">
+      <position x="35.0" y="0.0" z="-25.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_m">
+      <position x="35.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_stairs_m">
+      <position x="35.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal_banister">
+      <position x="-45.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal_banister">
+      <position x="45.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal_banister">
+      <position x="45.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_curve" modification="stage2_curve_banister">
+      <position x="40.0" y="0.0" z="-30.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="0.0" y="0.0" z="45.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="-20.0" y="0.0" z="45.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="20.0" y="0.0" z="45.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="-55.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="-55.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="55.0" y="0.0" z="10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="55.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="-20.0" y="0.0" z="-45.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="0.0" y="0.0" z="-45.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_normal" modification="stage3_normal_roof1">
+      <position x="20.0" y="0.0" z="-45.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="20.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="-20.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage1_normal" modification="stage1_normal_entrance1">
+      <position x="0.0" y="0.0" z="25.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="0.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="0.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="20.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="-20.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_normal" modification="stage2_normal">
+      <position x="-45.0" y="0.0" z="-10.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_curve" modification="stage2_curve_banister">
+      <position x="-40.0" y="0.0" z="30.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_curve" modification="stage2_curve_banister">
+      <position x="40.0" y="0.0" z="30.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage2_curve" modification="stage2_curve_banister">
+      <position x="-40.0" y="0.0" z="-30.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_curve" modification="stage3_curve_roof1">
+      <position x="45.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_curve" modification="stage3_curve_roof1">
+      <position x="-45.0" y="0.0" z="-35.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_curve" modification="stage3_curve_roof1">
+      <position x="45.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </stand>
+    <stand id="stage3_curve" modification="stage3_curve_roof1">
+      <position x="-45.0" y="0.0" z="35.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </stand>
+  </stands>
+  <adboards>
+    <adboard id="adboard1">
+      <position x="16.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="8.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-8.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="-16.0" y="0.0" z="14.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-24.0" y="0.0" z="8.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-24.0" y="0.0" z="-8.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="-24.0" y="0.0" z="0.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="-16.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-8.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="0.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="8.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="16.0" y="0.0" z="-14.0"/>
+      <rotation x="0.0" y="180.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="24.0" y="0.0" z="-8.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="24.0" y="0.0" z="0.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="24.0" y="0.0" z="8.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="-48.0" y="11.0" z="-12.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="-48.0" y="11.0" z="-4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="-48.0" y="11.0" z="4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="-48.0" y="11.0" z="12.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard2">
+      <position x="48.0" y="11.0" z="4.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard1">
+      <position x="48.0" y="11.0" z="12.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard3">
+      <position x="48.0" y="11.0" z="-4.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+    <adboard id="adboard4">
+      <position x="48.0" y="11.0" z="-12.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </adboard>
+  </adboards>
+  <floodlights>
+    <floodlight stage="3">
+      <position x="-45.0" y="-4.0" z="34.0"/>
+      <rotation x="0.0" y="135.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3">
+      <position x="45.0" y="-4.0" z="35.0"/>
+      <rotation x="0.0" y="225.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3">
+      <position x="-44.0" y="-4.0" z="-35.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </floodlight>
+    <floodlight stage="3">
+      <position x="45.0" y="-4.0" z="-35.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </floodlight>
+  </floodlights>
+  <attractions>
+    <hotdogstand>
+      <position x="-27.0" y="0.0" z="17.0"/>
+      <rotation x="0.0" y="225.0" z="0.0"/>
+    </hotdogstand>
+    <bettingoffice>
+      <position x="25.0" y="0.0" z="18.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </bettingoffice>
+    <beerbar>
+      <position x="-26.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </beerbar>
+    <highjump>
+      <position x="27.0" y="0.0" z="-17.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </highjump>
+  </attractions>
+  <objects>
+    <object id="tafel.x">
+      <position x="0.0" y="15.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="5.0" y="19.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="16.0" y="19.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-30.0" y="19.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-42.0" y="19.0" z="0.0"/>
+      <rotation x="0.0" y="0.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="0.0" y="19.0" z="4.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="0.0" y="19.0" z="-31.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="4.0" y="19.0" z="1.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="15.0" y="19.0" z="4.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="3.0" y="19.0" z="2.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="3.0" y="19.0" z="3.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="2.0" y="19.0" z="3.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="1.0" y="19.0" z="3.0"/>
+      <rotation x="0.0" y="285.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="17.0" y="19.0" z="10.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="11.0" y="19.0" z="11.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="5.0" y="19.0" z="8.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="4.0" y="19.0" z="-1.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="3.0" y="19.0" z="-2.0"/>
+      <rotation x="0.0" y="30.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="3.0" y="19.0" z="-3.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="2.0" y="19.0" z="-3.0"/>
+      <rotation x="0.0" y="60.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="1.0" y="19.0" z="-4.0"/>
+      <rotation x="0.0" y="75.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="15.0" y="19.0" z="-4.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="17.0" y="19.0" z="-10.0"/>
+      <rotation x="0.0" y="30.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="11.0" y="19.0" z="-11.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="5.0" y="19.0" z="-8.0"/>
+      <rotation x="0.0" y="60.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-29.0" y="19.0" z="8.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-26.0" y="19.0" z="15.0"/>
+      <rotation x="0.0" y="30.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-21.0" y="19.0" z="21.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-15.0" y="19.0" z="26.0"/>
+      <rotation x="0.0" y="60.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-8.0" y="19.0" z="29.0"/>
+      <rotation x="0.0" y="75.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-40.0" y="19.0" z="11.0"/>
+      <rotation x="0.0" y="15.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-40.0" y="19.0" z="23.0"/>
+      <rotation x="0.0" y="30.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-29.0" y="19.0" z="29.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-18.0" y="19.0" z="31.0"/>
+      <rotation x="0.0" y="60.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-29.0" y="19.0" z="-8.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-25.0" y="19.0" z="-15.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-21.0" y="19.0" z="-21.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-15.0" y="19.0" z="-26.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-8.0" y="19.0" z="-29.0"/>
+      <rotation x="0.0" y="285.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-40.0" y="19.0" z="-11.0"/>
+      <rotation x="0.0" y="345.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-39.0" y="19.0" z="-23.0"/>
+      <rotation x="0.0" y="330.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-29.0" y="19.0" z="-29.0"/>
+      <rotation x="0.0" y="315.0" z="0.0"/>
+    </object>
+    <object id="stahlseil.x">
+      <position x="-18.0" y="19.0" z="-31.0"/>
+      <rotation x="0.0" y="300.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="0.0" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="4.3300076" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-4.1900043" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-8.43001" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="8.630014" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-12.690016" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="13.0" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="17.270006" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-17.0" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-21.200005" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="21.480011" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="0.0" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="4.140003" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-4.2400055" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-8.42001" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="8.320007" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="12.480011" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-12.789995" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="16.839996" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-17.0" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="21.080002" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-21.210005" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-25.380009" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="25.839996" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="90.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="-25.41001" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="loge.x">
+      <position x="25.270006" y="11.0" z="-43.0"/>
+      <rotation x="0.0" y="270.0" z="0.0"/>
+    </object>
+    <object id="traininggoal.x">
+      <position x="43.0" y="11.0" z="43.0"/>
+      <rotation x="0.0" y="45.0" z="0.0"/>
+    </object>
+  </objects>
+</stadium>

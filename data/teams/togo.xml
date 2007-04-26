@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="togo" name="Togo" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="FF0000" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="horizontal" skin="FFC280" shirt="FFFFFF" shirt2="FFFFFF" pants="BE0000" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="horizontal" skin="FFC280" shirt="00664B" shirt2="F3C400" pants="B80E0E" shoes="A0A0A0"/>
+  <players>
+    <player name="Kotzi Ackata" attack="6" defense="5" speed="2" stamina="3" headdress="" glasses=""/>
+    <player name="Erni A'Skonto" attack="3" defense="4" speed="5" stamina="4" headdress="" glasses="glasses"/>
+    <player name="Manu Matthew" attack="3" defense="5" speed="4" stamina="4" headdress="" glasses=""/>
+    <player name="Jaw Akaziavo" attack="4" defense="4" speed="4" stamina="4" headdress="none" glasses=""/>
+    <player name="Shy Abdayca" attack="6" defense="4" speed="6" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

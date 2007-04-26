@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="legendsitaly" name="Italy Legends" description="Beschreibung des Vereins" group="specialteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="4455EE" shirt2="EEEEFF" pants="FFFFFF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="1E64A0" pants="4455EE" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF9900" shirt2="1E64A0" pants="FF3300" shoes="A0A0A0"/>
+  <players>
+    <player name="Zino Doff" attack="7" defense="10" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Franz Birasi" attack="7" defense="10" speed="9" stamina="9" headdress="" glasses=""/>
+    <player name="Paulo Grissini" attack="7" defense="10" speed="9" stamina="9" headdress="ted" glasses=""/>
+    <player name="Robert Bagger" attack="10" defense="9" speed="10" stamina="8" headdress="" glasses=""/>
+    <player name="Paul Pussi" attack="10" defense="9" speed="9" stamina="9" headdress="" glasses=""/>
+  </players>
+</team>

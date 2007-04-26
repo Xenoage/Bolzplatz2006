@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="stadiumeditor_title" value="Bolzplatz 2006 - Stadion-Editor (Entwicklermodus)"/>
+  <entry id="stadiumeditor_openstadium_title" value="Stadion öffnen"/>
+  <entry id="stadiumeditor_savestadium_title" value="Stadion speichern unter..."/>
+  <entry id="stadiumeditor_savequestion_text" value="Willst Du das aktuelle Stadion speichern?"/>
+  <entry id="stadiumeditor_savequestion_title" value="Stadion speichern?"/>
+  <entry id="stage1_normal" value="Normal"/>
+  <entry id="stage1_banister" value="Geländer hinten"/>
+  <entry id="stage1_normal_entrance1" value="Eingang 1"/>
+  <entry id="stage1_normal_entrance2" value="Eingang 2"/>
+  <entry id="stage1_normal_stairs_l" value="Treppe links"/>
+  <entry id="stage1_normal_stairs_m" value="Treppe mitte"/>
+  <entry id="stage1_normal_stairs_r" value="Treppe rechts"/>
+  <entry id="stadium" value="Stadion"/>
+  <entry id="stands" value="Tribünen"/>
+  <entry id="adboards" value="Banden"/>
+  <entry id="attractions" value="Attraktionen"/>
+  <entry id="scoreboard" value="Anzeigetafel"/>
+  <entry id="floodlight" value="Flutlicht"/>
+  <entry id="objects" value="Objekte"/>
+  <entry id="lawn" value="Rasen"/>
+  <entry id="terrain" value="Terrain"/>
+  <entry id="attractionalreadybuilt" value="Diese Attraktion wurde bereits gebaut."/>
+  <entry id="addobject..." value="Objekt hinzufügen..."/>
+  <entry id="3dobjectmustbeinmeshesdirectory" value="Objekte müssen sich im Ordner data/meshes/ befinden!"/>
+  <entry id="stadiumname" value="Name des Stadions:"/>
+  <entry id="unnamedstadium" value="Unbenanntes Stadion"/>
+  <entry id="numberofspectators" value="Anzahl Zuschauerplätze:"/>
+  <entry id="menu_stadium" value="Stadion"/>
+  <entry id="menu_new" value="New"/>
+  <entry id="menu_open" value="Öffnen..."/>
+  <entry id="menu_saveas" value="Speichern unter..."/>
+  <entry id="menu_exit" value="Beenden"/>
+  <entry id="menu_edit" value="Bearbeiten"/>
+  <entry id="menu_north" value="Nach Norden"/>
+  <entry id="menu_south" value="Nach Süden"/>
+  <entry id="menu_west" value="Nach Westen"/>
+  <entry id="menu_east" value="Nach Osten"/>
+  <entry id="menu_up" value="Nach oben"/>
+  <entry id="menu_down" value="Nach unten"/>
+  <entry id="menu_rotateleft" value="Links drehen"/>
+  <entry id="menu_rotateright" value="Rechts drehen"/>
+  <entry id="menu_modification" value="Nächste Variante"/>
+  <entry id="menu_delete" value="Löschen"/>
+  <entry id="menu_help" value="Hilfe"/>
+  <entry id="menu_shortcuts" value="Shortcuts..."/>
+  <entry id="menu_about" value="Info..."/>
+</language>

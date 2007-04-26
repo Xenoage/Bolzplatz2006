@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="slovakia" name="Slowakei" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="E6A662" shirt="1B57D4" shirt2="1B57D4" pants="1B57D4" shoes="29459B"/>
+  <colors id="away" pattern="" skin="E6A662" shirt="F9F9F9" shirt2="F9F9F9" pants="F9F9F9" shoes="29459B"/>
+  <colors id="goalkeeper" pattern="" skin="E6A662" shirt="FFDB13" shirt2="070707" pants="070707" shoes="A0A0A0"/>
+  <players>
+    <player name="Karl Kontoleerski" attack="3" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Radkappe Zerfall Nit" attack="4" defense="4" speed="5" stamina="4" headdress="" glasses=""/>
+    <player name="Morislaf Karton" attack="5" defense="6" speed="7" stamina="2" headdress="" glasses="glasses"/>
+    <player name="Mark Mental" attack="5" defense="5" speed="5" stamina="6" headdress="" glasses=""/>
+    <player name="Rob Wittert" attack="6" defense="4" speed="5" stamina="4" headdress="none" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<referee id="fernandez" name="Diego Fernández">
+  <colors pattern="vertical" skin="FFC280" shirt="437501" shirt2="000000" pants="111111" shoes="BBBBBB"/>
+  <values competence="4" strictness="5" loyality="4"/>
+</referee>

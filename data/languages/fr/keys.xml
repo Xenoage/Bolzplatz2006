@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="key" value="Touche"/>
+  <entry id="key_left" value="A gauche"/>
+  <entry id="key_up" value="En haut"/>
+  <entry id="key_right" value="A droite"/>
+  <entry id="key_down" value="En bas"/>
+  <entry id="key_tab" value="En haut"/>
+  <entry id="key_backspace" value="Backspace"/>
+  <entry id="key_enter" value="Entrée"/>
+  <entry id="key_shift" value="Shift"/>
+  <entry id="key_ctrl" value="Strg"/>
+  <entry id="key_menu" value="Menue"/>
+  <entry id="key_pause" value="Pause"/>
+  <entry id="key_kana" value="Kana"/>
+  <entry id="key_hanguel" value="Hanguel"/>
+  <entry id="key_hangul" value="Hangul"/>
+  <entry id="key_junja" value="Junja"/>
+  <entry id="key_final" value="Finale"/>
+  <entry id="key_hanja" value="Hanja"/>
+  <entry id="key_kanji" value="Kanji"/>
+  <entry id="key_escape" value="Esc"/>
+  <entry id="key_convert" value="Convert"/>
+  <entry id="key_nonconvert" value="Nonconvert"/>
+  <entry id="key_accept" value="Accept"/>
+  <entry id="key_modechange" value="Modechange"/>
+  <entry id="key_space" value="Barre d´espacement"/>
+  <entry id="key_prior" value="Prior"/>
+  <entry id="key_next" value="Prochain"/>
+  <entry id="key_end" value="Fin"/>
+  <entry id="key_home" value="Pos 1"/>
+  <entry id="key_select" value="Select"/>
+  <entry id="key_print" value="Touche imprimer"/>
+  <entry id="key_execute" value="Execute"/>
+  <entry id="key_snapshot" value="Snapshot"/>
+  <entry id="key_insert" value="Insertion"/>
+  <entry id="key_delete" value="Effacement"/>
+  <entry id="key_help" value="Aide"/>
+  <entry id="key_lwin" value="Win droite"/>
+  <entry id="key_rwin" value="Win gauche"/>
+  <entry id="key_apps" value="Apps"/>
+  <entry id="key_sleep" value="Sleep"/>
+  <entry id="key_numpad" value="Numpad"/>
+  <entry id="key_multiply" value="Multiply"/>
+  <entry id="key_add" value="Add"/>
+  <entry id="key_separator" value="Separator"/>
+  <entry id="key_subtract" value="Subtract"/>
+  <entry id="key_decimal" value="Decimal"/>
+  <entry id="key_divide" value="Divide"/>
+  <entry id="key_numlock" value="NumLock"/>
+  <entry id="key_scroll" value="Scroll"/>
+  <entry id="key_lshift" value="Shift gauche"/>
+  <entry id="key_rshift" value="Shift droite"/>
+  <entry id="key_lcontrol" value="Strg gauche"/>
+  <entry id="key_rcontrol" value="Strg droite"/>
+  <entry id="key_lmenu" value="Menue gauche"/>
+  <entry id="key_rmenu" value="Menue droite"/>
+  <entry id="key_attn" value="Attn"/>
+  <entry id="key_crsel" value="CrSel"/>
+  <entry id="key_exsel" value="ExSel"/>
+  <entry id="key_ereof" value="Erase EOF"/>
+  <entry id="key_play" value="Play"/>
+  <entry id="key_zoom" value="Zoom"/>
+  <entry id="key_pa1" value="PA1"/>
+  <entry id="key_oemclear" value="OEM Clear"/>
+</language>

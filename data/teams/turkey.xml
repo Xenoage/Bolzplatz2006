@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="turkey" name="Türkei" description="Türkei by Eintracht4ever" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="BF121C" shirt2="F9F9F9" pants="BF121C" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F9F9F9" shirt2="BF121C" pants="F9F9F9" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="000000" shirt2="F9F9F9" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Volker Demoral" attack="4" defense="5" speed="4" stamina="5" headdress="none" glasses=""/>
+    <player name="Azölan Alpen" attack="2" defense="8" speed="4" stamina="5" headdress="" glasses=""/>
+    <player name="Hamit Malzeintopf" attack="8" defense="4" speed="8" stamina="7" headdress="" glasses=""/>
+    <player name="Papi Tekkan" attack="5" defense="3" speed="4" stamina="3" headdress="ted" glasses=""/>
+    <player name="Hakan Drehtür" attack="6" defense="3" speed="4" stamina="3" headdress="" glasses=""/>
+  </players>
+</team>

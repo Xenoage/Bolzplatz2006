@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="genua" name="Historia Genua" description="" group="clubteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="vertical" skin="EEC591" shirt="104E8B" shirt2="FFFFFF" pants="CD3333" shoes="000000"/>
+  <colors id="away" pattern="vertical" skin="EEC591" shirt="FFFFFF" shirt2="000000" pants="CD3333" shoes="104E8B"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="228B22" shirt2="228B22" pants="FFFFFF" shoes="000000"/>
+  <players>
+    <player name="Luca Paparazzi" attack="3" defense="7" speed="5" stamina="7" headdress="" glasses=""/>
+    <player name="Scharfe Salsa" attack="5" defense="5" speed="5" stamina="5" headdress="" glasses="glasses"/>
+    <player name="Simo Pavian" attack="4" defense="6" speed="4" stamina="5" headdress="iro" glasses=""/>
+    <player name="Francesco Flasche" attack="5" defense="2" speed="5" stamina="5" headdress="" glasses=""/>
+    <player name="Angelo Columbo" attack="5" defense="3" speed="5" stamina="6" headdress="ted" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events>
+
+	<event>
+		<beforematch>
+	    <conditions>
+	    	<lawn quality="10" type="less"/>
+	    </conditions>
+			<actions>
+				<money value="1400"/>
+			</actions>
+		</beforematch>
+    <title>Ein Herz für die Umwelt:</title>
+    <text>Da du die Rasenpflege in letzter Zeit etwas vernachlässigt hast, fühlen sich die Kleintierkulturen auf deinem Rasen pudelwohl. Diese für einen Fußballplatz seltene Erscheinung honoriert der Naturschutzbund mit einer Prämie in Höhe von 1400 Euro.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<teamvalues speed="-5"/>
+			</actions>
+		</beforematch>
+    <title>Der liebe Alkohol...</title>
+    <text>Bei einer vereinsinternen Feier haben Deine Spieler wohl ein paar Promille zu laut gesungen. Der Geschwindigkeits-Wert fällt für das nächste Spiel deutlich.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="3200"/>
+			</actions>
+		</beforematch>
+    <title>Geldsegen</title>
+    <text>Beim letzten Heimspiel tummelte sich auch der Ölmilliardär Ronny Aprahlovitsch in der VIP-Lounge. Großzügig, wie er ist, spendete er dem Verein 3200 Euro für den tollen Einsatz, den deine Mannschaft zeigt.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="800"/>
+			</actions>
+		</beforematch>
+    <title>Unwiderstehlich schön...</title>
+    <text>Du wurdest vom Fußballmagazin "Bolzblatt" zum hübschesten Trainer des Jahres gewählt! Für das Bild auf der Titelseite bekommst du 800 Euro.</text>
+  </event>
+
+
+	<event>
+		<beforematch>
+			<actions>
+				<money value="600"/>
+			</actions>
+		</beforematch>
+    <title>Schwalbe</title>
+    <text>Für die eindrucksvolle Schwalbe im letzten Spiel wird deinem Stürmer die "Goldene Schwalbe" verliehen die mit einem Preisgeld von 600 Euro dotiert ist.</text>
+  </event>
+
+
+</events>

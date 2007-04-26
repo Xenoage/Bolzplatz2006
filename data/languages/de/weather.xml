@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="de">
+  <entry id="day-sunshine" value="Sonnenschein"/>
+  <entry id="day-rain" value="Regen (Tag)"/>
+  <entry id="day-snow" value="Schnee (Tag)"/>
+  <entry id="day-fog" value="Nebel (Tag)"/>
+  <entry id="day-sunset" value="Sonnenuntergang"/>
+  <entry id="night-moonlight" value="Mondschein"/>
+  <entry id="night-rain" value="Regen (Nacht)"/>
+  <entry id="night-snow" value="Schnee (Nacht)"/>
+  <entry id="night-fog" value="Nebel (Nacht)"/>
+  <entry id="night-thunderstorm" value="Gewitter (Nacht)"/>
+</language>

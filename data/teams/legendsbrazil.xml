@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="legendsbrazil" name="Brazil Legends" description="Beschreibung des Vereins" group="specialteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="E9A65D" shirt="FAFA4D" shirt2="EEEEFF" pants="366BD8" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="E9A65D" shirt="366BD8" shirt2="1E64A0" pants="EBF0FB" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="E9A65D" shirt="8BB1FF" shirt2="1E64A0" pants="366BD8" shoes="A0A0A0"/>
+  <players>
+    <player name="Claudius Talerfell" attack="6" defense="9" speed="8" stamina="9" headdress="" glasses="glasses"/>
+    <player name="Cafe" attack="7" defense="10" speed="9" stamina="8" headdress="" glasses=""/>
+    <player name="Alter Ir" attack="6" defense="9" speed="8" stamina="8" headdress="" glasses=""/>
+    <player name="Zitzo" attack="10" defense="7" speed="10" stamina="10" headdress="" glasses=""/>
+    <player name="Lepe" attack="10" defense="8" speed="9" stamina="9" headdress="" glasses=""/>
+  </players>
+</team>

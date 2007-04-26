@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="gralstreit" name="Gralstreit Gena" description="Hier steht irgendeine Beschreibung zum Team" group="clubteams" stadium="juxappel">
+  <colors id="home" pattern="" skin="EEC591" shirt="3333FF" shirt2="FFFF00" pants="3333FF" shoes="FFFFFF"/>
+  <colors id="away" pattern="" skin="EEC591" shirt="FFFFFF" shirt2="FFFFFF" pants="FFFFFF" shoes="FFFF33"/>
+  <colors id="goalkeeper" pattern="" skin="EEC591" shirt="999999" shirt2="FFFF00" pants="3366FF" shoes="A0A0A0"/>
+  <players>
+    <player name="Chris Typ" attack="1" defense="3" speed="4" stamina="5" headdress="none" glasses=""/>
+    <player name="Toni Traurig" attack="2" defense="3" speed="2" stamina="2" headdress="" glasses=""/>
+    <player name="Pfosten Zirkler" attack="3" defense="4" speed="4" stamina="3" headdress="bobblecap" glasses="glasses"/>
+    <player name="Axel Mundwerk" attack="4" defense="1" speed="3" stamina="3" headdress="iro" glasses=""/>
+    <player name="Fred Dunkelsmall" attack="5" defense="2" speed="3" stamina="4" headdress="" glasses=""/>
+  </players>
+</team>

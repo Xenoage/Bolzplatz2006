@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen id="match">
+
+  <program>match</program>
+  <scene systemid="match"/>
+
+  <fading intime="3" incolor="000000" outtime="3" outcolor="000000"/>
+  <follow nextid="start"/>
+
+  <groups start="matchui">
+
+
+    <!--
+    ************
+    * MATCH UI *
+    ************
+    -->
+
+    <group id="matchui" flyinduration="6" flyoutduration="5" nextgroupwaitduration="1">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="true"/>
+      <action event="keypress" eventparam="cancel" type="activategroup" param1="pause"/>
+
+
+      <panel>
+        <pos x="0" y="0" width="1024" height="73"/>
+        <flyin x="0" y="-73" starttime="4" duration="2"/>
+        <flyout x="0" y="-73" starttime="3" duration="2"/>
+        <controls>
+
+          <image src="images/matchui.png" srcx="0" srcy="153" srcwidth="512" srcheight="58">
+            <pos x="0" y="0" width="512" height="73"/>
+          </image>
+          <image src="images/matchui.png" srcx="0" srcy="216" srcwidth="512" srcheight="58">
+            <pos x="512" y="0" width="512" height="73"/>
+          </image>
+
+          <label id="match.time" font="timescore" fontsize="full" caption="00:00" center="true">
+            <pos x="312" y="25" width="400" height="35"/>
+          </label>
+
+        </controls>
+      </panel>
+
+      <panel>
+        <pos x="0" y="663" width="1024" height="73"/>
+        <flyin x="0" y="768" starttime="4" duration="2"/>
+        <flyout x="0" y="768" starttime="3" duration="2"/>
+        <controls>
+
+          <image src="images/matchui.png" srcx="0" srcy="2" srcwidth="512" srcheight="73">
+            <pos x="0" y="32" width="512" height="73"/>
+          </image>
+          <image src="images/matchui.png" srcx="0" srcy="78" srcwidth="512" srcheight="73">
+            <pos x="512" y="32" width="512" height="73"/>
+          </image>
+
+          <label id="match.player1name" caption="Name1" color="FFFFFF" center="true">
+            <pos x="10" y="62" width="160" height="40"/>
+          </label>
+          <imageswitch id="match.player1energy" src="images/matchui.png">
+            <pos x="182" y="66" width="33" height="33"/>
+            <enabled>false</enabled>
+            <options>
+              <option value="0" srcx="340" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="1" srcx="306" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="2" srcx="272" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="3" srcx="238" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="4" srcx="204" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="5" srcx="170" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="6" srcx="136" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="7" srcx="102" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="8" srcx="68" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="9" srcx="34" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="10" srcx="0" srcy="278" srcwidth="33" srcheight="33"/>
+            </options>
+          </imageswitch>
+					<imageswitch id="match.player1card" src="images/matchui.png">
+            <pos x="220" y="49" width="40" height="53"/>
+            <enabled>false</enabled>
+            <options>
+              <option value="0" srcx="0" srcy="312" srcwidth="1" srcheight="1"/>
+              <option value="1" srcx="0" srcy="312" srcwidth="40" srcheight="53"/>
+              <option value="2" srcx="41" srcy="312" srcwidth="40" srcheight="53"/>
+            </options>
+          </imageswitch>
+
+          <label id="match.score" font="timescore" fontsize="full" caption="0:0" center="true">
+            <pos x="412" y="52" width="200" height="50"/>
+          </label>
+
+					<imageswitch id="match.player2card" src="images/matchui.png">
+            <pos x="766" y="49" width="40" height="53"/>
+            <enabled>false</enabled>
+            <options>
+              <option value="0" srcx="0" srcy="312" srcwidth="1" srcheight="1"/>
+              <option value="1" srcx="0" srcy="312" srcwidth="40" srcheight="53"/>
+              <option value="2" srcx="41" srcy="312" srcwidth="40" srcheight="53"/>
+            </options>
+          </imageswitch>
+          <imageswitch id="match.player2energy" src="images/matchui.png">
+            <pos x="810" y="66" width="33" height="33"/>
+            <enabled>false</enabled>
+            <options>
+              <option value="0" srcx="340" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="1" srcx="306" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="2" srcx="272" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="3" srcx="238" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="4" srcx="204" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="5" srcx="170" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="6" srcx="136" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="7" srcx="102" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="8" srcx="68" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="9" srcx="34" srcy="278" srcwidth="33" srcheight="33"/>
+              <option value="10" srcx="0" srcy="278" srcwidth="33" srcheight="33"/>
+            </options>
+          </imageswitch>
+          <label id="match.player2name" caption="Name2" color="FFFFFF" center="true">
+            <pos x="855" y="62" width="160" height="40"/>
+          </label>
+
+					<!-- Teamlogos -->
+					<image id="match.team1logo" src="images/teamunknown-logo.png" srcx="0" srcy="0" srcwidth="512" srcheight="512">
+            <pos x="12" y="0" width="64" height="64"/>
+          </image>
+					<image id="match.team2logo" src="images/teamunknown-logo.png" srcx="0" srcy="0" srcwidth="512" srcheight="512">
+            <pos x="948" y="0" width="64" height="64"/>
+          </image>
+
+
+        </controls>
+      </panel>
+
+			<energybar id="match.energybar" visible="false">
+				<pos x="422" y="666" width="180" height="30"/>
+      </energybar>
+
+    </group>
+
+
+
+		<group id="pause" flyinduration="0.7" flyoutduration="0.7" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+			<action event="grouptime" eventparam="0" type="setpause" param1="true"/>
+			<action event="keypress" eventparam="cancel" type="setpause" param1="false" guisound="abort"/>
+			<action event="keypress" eventparam="cancel" type="activategroup" param1="matchui"/>
+
+      <button id="pause.continue" caption="Weiterspielen">
+        <focus/>
+        <pos x="212" y="200" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0.2" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">pause.exit</next_control>
+          <next_control dir="down">pause.exit</next_control>
+        </next>
+        <action event="click" type="setpause" param1="false"/>
+				<action event="click" type="activategroup" param1="matchui" guisound="select"/>
+      </button>
+
+      <button id="pause.exit" caption="Spiel verlassen">
+        <pos x="212" y="280" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0.2" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <next>
+          <next_control dir="up">pause.continue</next_control>
+          <next_control dir="down">pause.continue</next_control>
+        </next>
+				<action event="click" type="matchover" param1="exitmatch" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+    <group id="halftime" flyinduration="1" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="halftime.button1" caption="Weiter mit der 2. Halbzeit">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchevent" param1="secondhalf"/>
+        <action event="click" type="activategroup" param1="matchui" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+    <group id="timeupregulartime" flyinduration="3" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="timeupregulartime.button1" caption="Weiter">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="2" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchover" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+		<group id="beforeovertime" flyinduration="1" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="beforeovertime.button1" caption="Weiter mit der Verlängerung">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchevent" param1="overtime"/>
+        <action event="click" type="activategroup" param1="matchui" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+		<group id="overtimehalftime" flyinduration="1" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="overtimehalftime.button1" caption="Weiter mit der 2. Halbzeit">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchevent" param1="overtimesecondhalf"/>
+        <action event="click" type="activategroup" param1="matchui" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+
+    <group id="timeupovertime" flyinduration="3" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="timeupovertime.button1" caption="Weiter">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="2" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchover" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+		<group id="beforepenaltyshootout" flyinduration="1" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="beforepenaltyshootout.button1" caption="Weiter mit Elfmeterschießen">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="0" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchevent" param1="penaltyshootout"/>
+        <action event="click" type="activategroup" param1="matchui" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+		<group id="penaltyshootoutfinished" flyinduration="3" flyoutduration="1" nextgroupwaitduration="2">
+      <action event="grouptime" eventparam="0" type="inputgamemode" param1="false"/>
+
+      <button id="penaltyshootoutfinished.button1" caption="Weiter">
+        <focus/>
+        <pos x="212" y="600" width="600" height="60"/>
+        <flyin x="212" y="800" starttime="2" duration="0.5"/>
+        <flyout x="212" y="800" starttime="0" duration="0.5"/>
+        <enabled>true</enabled>
+        <action event="click" type="matchover" guisound="select"/>
+      </button>
+
+    </group>
+
+
+
+
+		<group id="flashtextgoal" flyinduration="2" flyoutduration="0" nextgroupwaitduration="0">
+			<action event="grouptime" eventparam="3" type="activategroup" param1="matchui"/>
+
+      <image id="flashtextgoal.img" src="images/de/flashtext1.png" srcx="0" srcy="271" srcwidth="512" srcheight="158">
+        <pos x="0" y="300" width="1024" height="316"/>
+        <flyin x="0" y="-316" starttime="1" duration="0.5"/>
+      </image>
+
+    </group>
+
+
+
+		<group id="flashtextyellow" flyinduration="0.5" flyoutduration="0.5" nextgroupwaitduration="0">
+			<action event="grouptime" eventparam="4" type="activategroup" param1="matchui"/>
+
+      <image id="flashtextyellow.img1" src="images/de/flashtext1.png" srcx="0" srcy="0" srcwidth="424" srcheight="135">
+        <pos x="300" y="180" width="424" height="135"/>
+        <flyin x="300" y="-135" starttime="0" duration="0.5"/>
+				<flyout x="300" y="-135" starttime="0" duration="0.5"/>
+      </image>
+
+			<image id="flashtextyellow.img2" src="images/de/flashtext1.png" srcx="425" srcy="0" srcwidth="86" srcheight="134">
+        <pos x="469" y="290" width="86" height="134"/>
+        <flyin x="469" y="768" starttime="0" duration="0.5"/>
+				<flyout x="469" y="768" starttime="0" duration="0.5"/>
+      </image>
+
+    </group>
+
+
+
+		<group id="flashtextred" flyinduration="0.5" flyoutduration="0.5" nextgroupwaitduration="0">
+			<action event="grouptime" eventparam="4" type="activategroup" param1="matchui"/>
+
+      <image id="flashtextred.img1" src="images/de/flashtext1.png" srcx="0" srcy="136" srcwidth="424" srcheight="135">
+        <pos x="300" y="180" width="424" height="135"/>
+        <flyin x="300" y="-135" starttime="0" duration="0.5"/>
+				<flyout x="300" y="-135" starttime="0" duration="0.5"/>
+      </image>
+
+			<image id="flashtextred.img2" src="images/de/flashtext1.png" srcx="425" srcy="136" srcwidth="86" srcheight="134">
+        <pos x="469" y="290" width="86" height="134"/>
+        <flyin x="469" y="768" starttime="0" duration="0.5"/>
+				<flyout x="469" y="768" starttime="0" duration="0.5"/>
+      </image>
+
+    </group>
+
+
+		<group id="flashtextpenalty" flyinduration="0.5" flyoutduration="0.5" nextgroupwaitduration="0">
+			<action event="grouptime" eventparam="2" type="activategroup" param1="matchui"/>
+
+      <image id="flashtextpenalty.img1" src="images/de/flashtext2.png" srcx="0" srcy="0" srcwidth="512" srcheight="200">
+        <pos x="256" y="250" width="512" height="200"/>
+        <flyin x="256" y="-200" starttime="0" duration="0.5"/>
+				<flyout x="256" y="-200" starttime="0" duration="0.5"/>
+      </image>
+
+    </group>
+
+
+
+<!--
+  <image src="images/playerpose.png" srcwidth="325" srcheight="420">
+      <pos x="100" y="200" width="325" height="420"/>
+    </image>
+
+    <button id="Button1" caption="Freundschaftsspiel">
+      <focus/>
+      <pos x="550" y="200" width="400" height="60"/>
+      <flyin x="1024" y="200" starttime="0.2" duration="0.5"/>
+      <enabled>true</enabled>
+      <tooltip>Freundschaftsspiel</tooltip>
+      <next>
+        <next_control dir="up">Button4</next_control>
+        <next_control dir="down">Button2</next_control>
+      </next>
+      <action event="click" type="openscreen" param="selectcontrollers" sound="data/sound/soundfx/gui-b2.wav"/>
+      <action event="focus" sound="data/sound/soundfx/gui-b1.wav"/>
+    </button>
+-->
+
+  </groups>
+
+</screen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="malficalissabon" name="Malfica Lissabon" description="Beschreibung des Vereins" group="clubteams" stadium="allstars_3">
+  <colors id="home" pattern="" skin="FFC280" shirt="DE0000" shirt2="EEEEFF" pants="F5E2E2" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="F4ECEC" shirt2="1E64A0" pants="DF0303" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="F4C8C8" shirt2="CC0000" pants="342626" shoes="A0A0A0"/>
+  <players>
+    <player name="Josef Mordero" attack="9" defense="3" speed="2" stamina="9" headdress="" glasses=""/>
+    <player name="Luipfau" attack="9" defense="3" speed="3" stamina="9" headdress="" glasses=""/>
+    <player name="Georg Kängurunis" attack="9" defense="4" speed="2" stamina="10" headdress="" glasses=""/>
+    <player name="Marc Ferdines" attack="9" defense="2" speed="3" stamina="10" headdress="" glasses=""/>
+    <player name="Momo Gnomes" attack="10" defense="1" speed="3" stamina="10" headdress="" glasses=""/>
+  </players>
+</team>

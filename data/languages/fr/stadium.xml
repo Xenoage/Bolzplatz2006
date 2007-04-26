@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="fr">
+  <entry id="hotdogstand" value="Snack-bar"/>
+  <entry id="bettingoffice" value="Bureau de paris"/>
+  <entry id="beerbar" value="Débit de bière"/>
+  <entry id="track" value="Cendrée"/>
+  <entry id="highjump" value="Stade de saute en hauteur"/>
+  <entry id="attractions0" value="L'ennui total"/>
+  <entry id="attractions1" value="Pas de divertissement"/>
+  <entry id="attractions2" value="Peu de divertissement"/>
+  <entry id="attractions3" value="Assez amusant"/>
+  <entry id="attractions4" value="Remarquable"/>
+  <entry id="attractions5" value="Parc d´aventure!"/>
+	<entry id="lawn_mudfield" value="Champ de boue"/>
+	<entry id="lawn_grassland" value="Pré vert"/>
+	<entry id="lawn_tendedlawn" value="Pelouse"/>
+	<entry id="lawn_sod" value="Gazon anglais de valeur"/>
+	<entry id="goals" value="Buts"/>
+	<entry id="goal1" value="Poubelles"/>
+	<entry id="goal2" value="Buts en bois"/>
+	<entry id="goal3" value="Buts d´aluminium"/>
+	<entry id="lighting_moonlit" value="Noir"/>
+	<entry id="lighting_dusky" value="Sombre"/>
+	<entry id="lighting_dimlylit" value="Peu éclairé"/>
+	<entry id="lighting_bright" value="Clair"/>
+	<entry id="lighting_perfect" value="Lumineux"/>
+  <entry id="stadium_stage0name" value="Panneaux publicitaires"/>
+  <entry id="stadium_stage1name" value="Gradin 1 (Rangs 1 à 6)"/>
+  <entry id="stadium_stage2name" value="Gradin 2 (Rangs 7 à 12)"/>
+  <entry id="stadium_stage3name" value="Gradin 3 (Galeries et toit)"/>
+  <entry id="built" value="Construit"/>
+	<entry id="floodlight0" value="Pas d'illumination"/>
+	<entry id="floodlight1" value="Réverbère"/>
+	<entry id="floodlight2" value="Lampe halogène"/>
+	<entry id="floodlight3" value="Projecteur"/>
+	<entry id="stadium_light1name" value="Illumination de nord-est"/>
+  <entry id="stadium_light2name" value="Illumination de sud-est"/>
+  <entry id="stadium_light3name" value="Illumination de sud-ouest"/>
+  <entry id="stadium_light4name" value="Illumination de nord-ouest"/>
+  <entry id="scoreboard_none" value="Pas de tableau d´affichage"/>
+  <entry id="scoreboard1" value="Tableau en bois"/>
+	<entry id="scoreboard2" value="Affichage digital"/>
+	<entry id="scoreboard3" value="Tableau d'affichage vidéo"/>
+</language>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="sanmarino" name="San Marino" description="Beschreibung des Vereins" group="nationalteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="" skin="FFC280" shirt="0082D1" shirt2="0082D1" pants="0082D1" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="FFFFFF" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="979797" shirt2="000000" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Fred Gazpromoni" attack="1" defense="1" speed="1" stamina="1" headdress="" glasses=""/>
+    <player name="Simon Bachstelzioni" attack="1" defense="1" speed="1" stamina="1" headdress="none" glasses=""/>
+    <player name="Alex Vella Dalle" attack="1" defense="1" speed="1" stamina="1" headdress="" glasses=""/>
+    <player name="Mark Domenicus" attack="1" defense="1" speed="1" stamina="1" headdress="" glasses=""/>
+    <player name="Alles Selber" attack="1" defense="1" speed="1" stamina="1" headdress="" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="iceleipzig" name="ICE Leipzig" description="Beschreibung des Vereins" group="clubteams" stadium="league3_5">
+  <colors id="home" pattern="vertical" skin="FFC280" shirt="4C66FF" shirt2="FFEC43" pants="4C66FF" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="4C66FF" shirt2="1E64A0" pants="4C66FF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="00008E" shirt2="1E64A0" pants="0E0101" shoes="A0A0A0"/>
+  <players>
+    <player name="Michi Millchkuh" attack="1" defense="1" speed="2" stamina="1" headdress="" glasses=""/>
+    <player name="Dieter Haschisch" attack="1" defense="1" speed="0" stamina="1" headdress="" glasses=""/>
+    <player name="Herz-Klopf" attack="1" defense="2" speed="1" stamina="1" headdress="" glasses=""/>
+    <player name="Ibrahim Irrgarten" attack="1" defense="1" speed="1" stamina="0" headdress="" glasses="glasses"/>
+    <player name="Rudi Seusel" attack="2" defense="1" speed="1" stamina="1" headdress="" glasses=""/>
+  </players>
+</team>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="xenoageteam" name="Xenoage Team" description="Die Entwickler von Bolzplatz 2006 in einem Team!" group="specialteams" stadium="Kein Heimstadion (Zufälliges Stadion)">
+  <colors id="home" pattern="horizontal" skin="FFC280" shirt="3278C8" shirt2="F1F1F7" pants="000000" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="000000" shirt2="1E64A0" pants="3278C8" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="A80D0D" shirt2="1E64A0" pants="000000" shoes="A0A0A0"/>
+  <players>
+    <player name="Andi" attack="5" defense="6" speed="7" stamina="9" headdress="" glasses=""/>
+    <player name="m.a.o.z." attack="3" defense="5" speed="9" stamina="4" headdress="iro" glasses=""/>
+    <player name="Milian" attack="6" defense="5" speed="4" stamina="7" headdress="ted" glasses=""/>
+    <player name="Sneer" attack="8" defense="3" speed="7" stamina="6" headdress="" glasses="glasses"/>
+    <player name="Flowmatix" attack="6" defense="4" speed="7" stamina="4" headdress="iro" glasses=""/>
+  </players>
+</team>

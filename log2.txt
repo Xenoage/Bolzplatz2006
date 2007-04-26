@@ -1,0 +1,35 @@
+Irrlicht Engine version 0.14.0
+Microsoft Windows XP Professional Service Pack 2 (Build 2600)
+Using renderer: OpenGL 1.5
+MOBILITY RADEON 9700 x86/SSE2: ATI Technologies Inc.
+OpenGL driver version is 1.2 or better.
+Loaded texture: #DefaultFont
+Loaded texture: data/meshes/stadiumgrid.png
+Loaded mesh: data/meshes/stadiumgrid.x
+Could not open file of texture: data/meshes/terrain.png
+Could not load texture: data/meshes/terrain.png
+Could not open file of texture: terrain.png
+Could not load texture: terrain.png
+Could not open file of texture: data/meshes/envi04.png
+Could not load texture: data/meshes/envi04.png
+Could not open file of texture: envi04.png
+Could not load texture: envi04.png
+Could not open file of texture: data/meshes/soccerfield04.png
+Could not load texture: data/meshes/soccerfield04.png
+Could not open file of texture: soccerfield04.png
+Could not load texture: soccerfield04.png
+Loaded mesh: data/meshes/terrain1.x
+Loaded texture: data/meshes/terrain1.png
+Loaded texture: data/meshes/cornerflag.png
+Loaded mesh: data/meshes/cornerflag.x
+Loaded texture: data/meshes/envi3.png
+Loaded texture: data/meshes/soccerfield3.png
+Unknown data object in mesh in x file: FVFData
+Loaded texture: data/meshes/aluminumgoal.png
+Loaded mesh: data/meshes/aluminumgoal.x
+Loaded texture: data/meshes/concrete1.png
+Loaded texture: data/meshes/concrete2.png
+Loaded texture: data/meshes/concrete3.png
+Loaded texture: data/meshes/concrete4.png
+Loaded mesh: data/meshes/stage1_normal.x
+Loaded mesh: data/meshes/stage1_curve.x

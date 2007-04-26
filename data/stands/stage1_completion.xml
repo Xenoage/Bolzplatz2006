@@ -1,0 +1,171 @@
+<?xml version="1.0"?> 
+<stand id="stage1_completion" sizex="20" sizez="10">
+  <modifications>
+    <modification id="stage1_completion_round_l" src="stage1_completion_round_l.x" maxspectators="70">
+			<crowd>
+
+    		<char x="-1" y="1" z="-4" roty="0"/>
+				<char x="-1" y="2" z="-2.75" roty="0"/>
+    		<char x="-1" y="3" z="-0.25" roty="0"/>
+    		<char x="-1" y="4" z="1" roty="0"/>
+    		<char x="-1" y="5" z="2.25" roty="0"/>
+    		<char x="-1" y="6" z="3.5" roty="0"/>
+
+    		<char x="0" y="1" z="-4.3" roty="0"/>
+				<char x="0" y="2" z="-3.05" roty="0"/>
+    		<char x="0" y="3" z="-0.55" roty="0"/>
+    		<char x="0" y="4" z="0.7" roty="0"/>
+    		<char x="0" y="5" z="1.95" roty="0"/>
+    		<char x="0" y="6" z="3.2" roty="0"/>
+
+    		<char x="1" y="1" z="-4" roty="0"/>
+				<char x="1" y="2" z="-2.75" roty="0"/>
+    		<char x="1" y="3" z="-0.25" roty="0"/>
+    		<char x="1" y="4" z="1" roty="0"/>
+    		<char x="1" y="5" z="2.25" roty="0"/>
+    		<char x="1" y="6" z="3.5" roty="0"/>
+
+    		<char x="2" y="1" z="-4.3" roty="0"/>
+				<char x="2" y="2" z="-3.05" roty="0"/>
+    		<char x="2" y="3" z="-0.55" roty="0"/>
+    		<char x="2" y="4" z="0.7" roty="0"/>
+    		<char x="2" y="5" z="1.95" roty="0"/>
+    		<char x="2" y="6" z="3.2" roty="0"/>
+
+    		<char x="3" y="1" z="-4" roty="0"/>
+				<char x="3" y="2" z="-2.75" roty="0"/>
+    		<char x="3" y="3" z="-0.25" roty="0"/>
+    		<char x="3" y="4" z="1" roty="0"/>
+    		<char x="3" y="5" z="2.25" roty="0"/>
+    		<char x="3" y="6" z="3.5" roty="0"/>
+
+    		<char x="4" y="1" z="-4.3" roty="0"/>
+				<char x="4" y="2" z="-3.05" roty="0"/>
+    		<char x="4" y="3" z="-0.55" roty="0"/>
+    		<char x="4" y="4" z="0.7" roty="0"/>
+    		<char x="4" y="5" z="1.95" roty="0"/>
+    		<char x="4" y="6" z="3.2" roty="0"/>
+
+    		<char x="5" y="1" z="-4" roty="0"/>
+				<char x="5" y="2" z="-2.75" roty="0"/>
+    		<char x="5" y="3" z="-0.25" roty="0"/>
+    		<char x="5" y="4" z="1" roty="0"/>
+    		<char x="5" y="5" z="2.25" roty="0"/>
+    		<char x="5" y="6" z="3.5" roty="0"/>
+
+    		<char x="6" y="1" z="-4.3" roty="0"/>
+				<char x="6" y="2" z="-3.05" roty="0"/>
+    		<char x="6" y="3" z="-0.55" roty="0"/>
+    		<char x="6" y="4" z="0.7" roty="0"/>
+    		<char x="6" y="5" z="1.95" roty="0"/>
+    		<char x="6" y="6" z="3.2" roty="0"/>
+
+    		<char x="7" y="1" z="-4" roty="0"/>
+				<char x="7" y="2" z="-2.75" roty="0"/>
+    		<char x="7" y="3" z="-0.25" roty="0"/>
+    		<char x="7" y="4" z="1" roty="0"/>
+    		<char x="7" y="5" z="2.25" roty="0"/>
+    		<char x="7" y="6" z="3.5" roty="0"/>
+
+    		<char x="8.1" y="1" z="-4.3" roty="0"/>
+				<char x="8.1" y="2" z="-3.05" roty="0"/>
+    		<char x="8.1" y="3" z="-0.55" roty="0"/>
+    		<char x="8.1" y="4" z="0.7" roty="0"/>
+    		<char x="8.1" y="5" z="1.95" roty="0"/>
+    		<char x="8.1" y="6" z="3.2" roty="0"/>
+
+    		<char x="9.2" y="1" z="-4" roty="0"/>
+				<char x="9.2" y="2" z="-2.75" roty="0"/>
+    		<char x="9.2" y="3" z="-0.25" roty="0"/>
+    		<char x="9.2" y="4" z="1" roty="0"/>
+    		<char x="9.2" y="5" z="2.25" roty="0"/>
+    		<char x="9.2" y="6" z="3.5" roty="0"/>
+
+  		</crowd>
+      <bengallight x="3" y="5" z="-1"/>
+    </modification>
+    <modification id="stage1_completion_round_r" src="stage1_completion_round_r.x" maxspectators="70">
+			<crowd>
+
+    		<char x="-9.2" y="1" z="-4" roty="0"/>
+				<char x="-9.2" y="2" z="-2.75" roty="0"/>
+    		<char x="-9.2" y="3" z="-0.25" roty="0"/>
+    		<char x="-9.2" y="4" z="1" roty="0"/>
+    		<char x="-9.2" y="5" z="2.25" roty="0"/>
+    		<char x="-9.2" y="6" z="3.5" roty="0"/>
+
+    		<char x="-8.1" y="1" z="-4.3" roty="0"/>
+				<char x="-8.1" y="2" z="-3.05" roty="0"/>
+    		<char x="-8.1" y="3" z="-0.55" roty="0"/>
+    		<char x="-8.1" y="4" z="0.7" roty="0"/>
+    		<char x="-8.1" y="5" z="1.95" roty="0"/>
+    		<char x="-8.1" y="6" z="3.2" roty="0"/>
+
+    		<char x="-7" y="1" z="-4" roty="0"/>
+				<char x="-7" y="2" z="-2.75" roty="0"/>
+    		<char x="-7" y="3" z="-0.25" roty="0"/>
+    		<char x="-7" y="4" z="1" roty="0"/>
+    		<char x="-7" y="5" z="2.25" roty="0"/>
+    		<char x="-7" y="6" z="3.5" roty="0"/>
+
+    		<char x="-6" y="1" z="-4.3" roty="0"/>
+				<char x="-6" y="2" z="-3.05" roty="0"/>
+    		<char x="-6" y="3" z="-0.55" roty="0"/>
+    		<char x="-6" y="4" z="0.7" roty="0"/>
+    		<char x="-6" y="5" z="1.95" roty="0"/>
+    		<char x="-6" y="6" z="3.2" roty="0"/>
+
+    		<char x="-5" y="1" z="-4" roty="0"/>
+				<char x="-5" y="2" z="-2.75" roty="0"/>
+    		<char x="-5" y="3" z="-0.25" roty="0"/>
+    		<char x="-5" y="4" z="1" roty="0"/>
+    		<char x="-5" y="5" z="2.25" roty="0"/>
+    		<char x="-5" y="6" z="3.5" roty="0"/>
+
+    		<char x="-4" y="1" z="-4.3" roty="0"/>
+				<char x="-4" y="2" z="-3.05" roty="0"/>
+    		<char x="-4" y="3" z="-0.55" roty="0"/>
+    		<char x="-4" y="4" z="0.7" roty="0"/>
+    		<char x="-4" y="5" z="1.95" roty="0"/>
+    		<char x="-4" y="6" z="3.2" roty="0"/>
+
+    		<char x="-3" y="1" z="-4" roty="0"/>
+				<char x="-3" y="2" z="-2.75" roty="0"/>
+    		<char x="-3" y="3" z="-0.25" roty="0"/>
+    		<char x="-3" y="4" z="1" roty="0"/>
+    		<char x="-3" y="5" z="2.25" roty="0"/>
+    		<char x="-3" y="6" z="3.5" roty="0"/>
+
+    		<char x="-2" y="1" z="-4.3" roty="0"/>
+				<char x="-2" y="2" z="-3.05" roty="0"/>
+    		<char x="-2" y="3" z="-0.55" roty="0"/>
+    		<char x="-2" y="4" z="0.7" roty="0"/>
+    		<char x="-2" y="5" z="1.95" roty="0"/>
+    		<char x="-2" y="6" z="3.2" roty="0"/>
+
+    		<char x="-1" y="1" z="-4" roty="0"/>
+				<char x="-1" y="2" z="-2.75" roty="0"/>
+    		<char x="-1" y="3" z="-0.25" roty="0"/>
+    		<char x="-1" y="4" z="1" roty="0"/>
+    		<char x="-1" y="5" z="2.25" roty="0"/>
+    		<char x="-1" y="6" z="3.5" roty="0"/>
+
+    		<char x="0" y="1" z="-4.3" roty="0"/>
+				<char x="0" y="2" z="-3.05" roty="0"/>
+    		<char x="0" y="3" z="-0.55" roty="0"/>
+    		<char x="0" y="4" z="0.7" roty="0"/>
+    		<char x="0" y="5" z="1.95" roty="0"/>
+    		<char x="0" y="6" z="3.2" roty="0"/>
+
+    		<char x="1" y="1" z="-4" roty="0"/>
+				<char x="1" y="2" z="-2.75" roty="0"/>
+    		<char x="1" y="3" z="-0.25" roty="0"/>
+    		<char x="1" y="4" z="1" roty="0"/>
+    		<char x="1" y="5" z="2.25" roty="0"/>
+    		<char x="1" y="6" z="3.5" roty="0"/>
+
+  		</crowd>
+      <bengallight x="-4" y="5" z="-1"/>
+    </modification>
+  </modifications>
+</stand>

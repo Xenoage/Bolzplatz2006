@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<language id="en">
+  <entry id="day-sunshine" value="Sunshine"/>
+  <entry id="day-rain" value="Rain (day)"/>
+  <entry id="day-snow" value="Snow (day)"/>
+  <entry id="day-fog" value="Fog (day)"/>
+  <entry id="day-sunset" value="Sunset"/>
+  <entry id="night-moonlight" value="Moonlight"/>
+  <entry id="night-rain" value="Rain (night)"/>
+  <entry id="night-snow" value="Snow (night)"/>
+  <entry id="night-fog" value="Fog (night)"/>
+  <entry id="night-thunderstorm" value="Thunderstorm"/>
+</language>
