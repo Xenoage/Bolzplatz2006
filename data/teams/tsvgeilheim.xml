@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="tsvgeilheim" name="TSV Geilheim" stadium="league2_2">
+  <colors id="home" pants="000000" pattern="" shirt="FFFF00" shirt2="FFFF00" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="0000FF" pattern="" shirt="0000FF" shirt2="FFFFFF" shoes="A0A0A0" skin="FFC280"/>
+  <colors id="goalkeeper" pants="6A6868" pattern="" shirt="000099" shirt2="1E64A0" shoes="A0A0A0" skin="FFC280"/>
+  <players>
+    <player attack="1" defense="5" glasses="glasses" headdress="cap" name="Silke Brechreiz" speed="4" stamina="7"/>
+    <player attack="5" defense="2" glasses="" headdress="" name="Doris Idol" speed="2" stamina="3"/>
+    <player attack="5" defense="3" glasses="glasses" headdress="" name="Inge Linkel" speed="3" stamina="7"/>
+    <player attack="0" defense="3" glasses="glasses" headdress="ted" name="Caroline Knacker" speed="4" stamina="6"/>
+    <player attack="6" defense="6" glasses="" headdress="" name="Jutta Manager" speed="1" stamina="2"/>
+  </players>
+</team>

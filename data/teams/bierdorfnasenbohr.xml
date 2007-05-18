@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-15" group="" id="bierdorfnasenbohr" name="FFC Bierdorf Nasenbohr" stadium="league2_4">
+  <colors id="home" pants="008000" pattern="" shirt="FFFFFF" shirt2="008000" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="FFFFFF" pattern="" shirt="000080" shirt2="000080" shoes="A0A0A0" skin="FFC280"/>
+  <colors id="goalkeeper" pants="0000CC" pattern="horizontal" shirt="FFFFFF" shirt2="CC0000" shoes="A0A0A0" skin="FFC280"/>
+  <players>
+    <player attack="1" defense="1" glasses="" headdress="cap" name="Birgit Bolzer" speed="7" stamina="3"/>
+    <player attack="5" defense="2" glasses="glasses" headdress="" name="Sabine Kapuczyk" speed="1" stamina="6"/>
+    <player attack="6" defense="2" glasses="" headdress="" name="Julia Kreißer" speed="3" stamina="3"/>
+    <player attack="1" defense="1" glasses="" headdress="bobblecap" name="Ayse Denizeri" speed="5" stamina="3"/>
+    <player attack="1" defense="6" glasses="" headdress="" name="Katrin Luchs" speed="2" stamina="3"/>
+  </players>
+</team>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="mainhattangirls" name="Mainhattan Girls" stadium="league1_1">
+  <colors id="home" pants="000000" pattern="" shirt="000000" shirt2="F45A80" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="000000" pattern="" shirt="FFFFFF" shirt2="1E64A0" shoes="A0A0A0" skin="FFC280"/>
+  <colors id="goalkeeper" pants="F7F8F9" pattern="" shirt="003366" shirt2="1E64A0" shoes="A0A0A0" skin="FFC280"/>
+  <players>
+    <player attack="3" defense="4" glasses="" headdress="iro" name="Susi Rotzburg" speed="6" stamina="5"/>
+    <player attack="6" defense="5" glasses="glasses" headdress="bobblecap" name="Mary Jane" speed="2" stamina="1"/>
+    <player attack="3" defense="2" glasses="" headdress="iro" name="Nora Kunzler" speed="4" stamina="2"/>
+    <player attack="6" defense="2" glasses="glasses" headdress="iro" name="Barbara Fürst" speed="1" stamina="2"/>
+    <player attack="5" defense="1" glasses="" headdress="iro" name="Sarah Slusak" speed="3" stamina="2"/>
+  </players>
+</team>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="dynamopotsdam" name="Dynamo Potsdam" stadium="league1_3">
+  <colors id="home" pants="FFFFFF" pattern="" shirt="FFFFFF" shirt2="FFFFFF" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="FFFFFF" pattern="" shirt="0000FF" shirt2="FFFFFF" shoes="A0A0A0" skin="FFC280"/>
+  <colors id="goalkeeper" pants="1E64A0" pattern="" shirt="1E64A0" shirt2="1E64A0" shoes="A0A0A0" skin="FFC280"/>
+  <players>
+    <player attack="3" defense="7" glasses="glasses" headdress="bobblecap" name="Nadja Angermann" speed="3" stamina="4"/>
+    <player attack="5" defense="6" glasses="" headdress="iro" name="Babsi Paul" speed="2" stamina="1"/>
+    <player attack="1" defense="5" glasses="glasses" headdress="" name="Inga Tasse" speed="3" stamina="5"/>
+    <player attack="5" defense="2" glasses="glasses" headdress="none" name="Caro Puhler" speed="4" stamina="4"/>
+    <player attack="2" defense="3" glasses="" headdress="" name="Elke Abend" speed="5" stamina="2"/>
+  </players>
+</team>

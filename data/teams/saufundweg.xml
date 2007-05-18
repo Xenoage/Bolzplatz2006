@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="saufundweg" name="SG Sauf und weg" stadium="league1_4">
+  <colors id="home" pants="000000" pattern="" shirt="00FFFF" shirt2="000000" shoes="FF0033" skin="EEC591"/>
+  <colors id="away" pants="FF0000" pattern="" shirt="FF0000" shirt2="FFFFFF" shoes="FF0033" skin="EEC591"/>
+  <colors id="goalkeeper" pants="000000" pattern="" shirt="FFFF00" shirt2="FFFF00" shoes="A0A0A0" skin="EEC591"/>
+  <players>
+    <player attack="3" defense="1" glasses="" headdress="ted" name="Sandra Schwör" speed="1" stamina="5"/>
+    <player attack="4" defense="2" glasses="" headdress="" name="Sandra Mozart" speed="3" stamina="3"/>
+    <player attack="1" defense="3" glasses="" headdress="bobblecap" name="Sandra Ntumulus" speed="2" stamina="1"/>
+    <player attack="5" defense="4" glasses="" headdress="bobblecap" name="Sandra Härtel" speed="1" stamina="2"/>
+    <player attack="7" defense="5" glasses="" headdress="" name="Sandra Hoffmann" speed="3" stamina="3"/>
+  </players>
+</team>

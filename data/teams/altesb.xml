@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="altesb" name="FC 1700 Altes B" stadium="league2_1">
+  <colors id="home" pants="808080" pattern="" shirt="808080" shirt2="808080" shoes="000000" skin="EEC591"/>
+  <colors id="away" pants="000000" pattern="" shirt="FFFF00" shirt2="FFFF00" shoes="FFA54F" skin="EEC591"/>
+  <colors id="goalkeeper" pants="FFFFFF" pattern="" shirt="1874CD" shirt2="1874CD" shoes="8B2323" skin="EEC591"/>
+  <players>
+    <player attack="6" defense="1" glasses="" headdress="" name="Christine Wasnlos" speed="0" stamina="0"/>
+    <player attack="4" defense="6" glasses="glasses" headdress="none" name="Steffi Vogelweide" speed="4" stamina="5"/>
+    <player attack="6" defense="5" glasses="" headdress="bobblecap" name="Marta Himmelshof" speed="3" stamina="5"/>
+    <player attack="5" defense="4" glasses="" headdress="ted" name="Ilse Meister" speed="4" stamina="3"/>
+    <player attack="5" defense="1" glasses="" headdress="" name="Monika Schmand" speed="4" stamina="1"/>
+  </players>
+</team>

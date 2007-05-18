@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-15" group="" id="kerstinsauber" name="FSV Kerstin Sauber" stadium="league2_3">
+  <colors id="home" pants="000000" pattern="" shirt="FFFFFF" shirt2="000000" shoes="C8C8C8" skin="FFC280"/>
+  <colors id="away" pants="000000" pattern="" shirt="FF0000" shirt2="000000" shoes="A0A0A0" skin="FFC280"/>
+  <colors id="goalkeeper" pants="1E64A0" pattern="" shirt="1E64A0" shirt2="1E64A0" shoes="A0A0A0" skin="FFC280"/>
+  <players>
+    <player attack="3" defense="7" glasses="" headdress="bobblecap" name="Anne Schmidt" speed="0" stamina="1"/>
+    <player attack="2" defense="6" glasses="" headdress="none" name="Jolijn Wouters" speed="4" stamina="1"/>
+    <player attack="3" defense="1" glasses="" headdress="" name="Heike Bruckmann" speed="5" stamina="4"/>
+    <player attack="1" defense="7" glasses="glasses" headdress="none" name="Diana Biss" speed="4" stamina="4"/>
+    <player attack="4" defense="4" glasses="" headdress="" name="Wespe Maczky" speed="3" stamina="3"/>
+  </players>
+</team>

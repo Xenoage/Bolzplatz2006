@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<team description="erstellt von Yuunli 2007-05-13" group="" id="du-katzen" name="Duisburger Katzen" stadium="league1_2">
+  <colors id="home" pants="FFFFFF" pattern="" shirt="FFFFFF" shirt2="008000" shoes="FFFFFF" skin="EEC591"/>
+  <colors id="away" pants="000080" pattern="" shirt="000080" shirt2="FFFFFF" shoes="333333" skin="EEC591"/>
+  <colors id="goalkeeper" pants="666666" pattern="" shirt="009999" shirt2="FFFFFF" shoes="A0A0A0" skin="EEC591"/>
+  <players>
+    <player attack="5" defense="3" glasses="glasses" headdress="iro" name="Lena Schwarz" speed="1" stamina="7"/>
+    <player attack="1" defense="2" glasses="glasses" headdress="" name="Silke Hand" speed="6" stamina="2"/>
+    <player attack="4" defense="2" glasses="glasses" headdress="" name="Antje Hahn" speed="2" stamina="5"/>
+    <player attack="1" defense="2" glasses="glasses" headdress="" name="Inge Kringel" speed="5" stamina="4"/>
+    <player attack="7" defense="3" glasses="glasses" headdress="" name="Verena Dichter" speed="2" stamina="7"/>
+  </players>
+</team>
