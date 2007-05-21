@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="com/xenoage/bp2k6/match/characters/PlayerX.java|com/xenoage/bp2k6/match/teamai/TeamAI1.java|com/xenoage/bp2k6/match/teamai/TeamAI2.java|com/xenoage/bp2k6/match/teamai/TeamAI3.java|com/xenoage/bp2k6/match/teamai/TeamAI4.java|com/xenoage/bp2k6/match/teamai/TeamAIPlayer1.java|StreamPlaylist.java" kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/lwjgl/lwjgl_util.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/lwjgl/lwjgl.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/sdl/sdljava.jar"/>
 	<classpathentry kind="lib" path="lib/vecmath.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/jirr/irrlicht.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/vorbisspi/jogg-0.0.7.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/vorbisspi/jorbis-0.0.15.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/vorbisspi/tritonus_share.jar"/>
-	<classpathentry kind="lib" path="D:/Werkstatt/Bolzplatz/public/trunk/lib/vorbisspi/vorbisspi1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/jirr/irrlicht.jar"/>
+	<classpathentry kind="lib" path="lib/jirrklang/irrklang.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl/lwjgl.jar"/>
+	<classpathentry kind="lib" path="lib/sdl/sdljava.jar"/>
+	<classpathentry kind="lib" path="lib/vorbisspi/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/vorbisspi/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="lib/vorbisspi/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="lib/vorbisspi/vorbisspi1.0.2.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
