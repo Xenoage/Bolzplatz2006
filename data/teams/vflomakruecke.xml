@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<team id="omakruecke" name="VfL Omakrücke" description="VfL Omakrücke by Eintracht4ever" stadium="">
+  <colors id="home" pattern="" skin="FFC280" shirt="990099" shirt2="EEEEFF" pants="990099" shoes="C8C8C8"/>
+  <colors id="away" pattern="" skin="FFC280" shirt="FFFFFF" shirt2="F1E7E7" pants="FFFFFF" shoes="A0A0A0"/>
+  <colors id="goalkeeper" pattern="" skin="FFC280" shirt="FF9933" shirt2="1E64A0" pants="040E25" shoes="A0A0A0"/>
+  <players>
+    <player name="Frederik Goseling" attack="2" defense="4" speed="3" stamina="3" headdress="" glasses=""/>
+    <player name="Marko Drehtopf" attack="2" defense="4" speed="2" stamina="3" headdress="none" glasses=""/>
+    <player name="Domi Dscheng" attack="1" defense="3" speed="3" stamina="4" headdress="none" glasses=""/>
+    <player name="Tom Armentaler" attack="5" defense="1" speed="3" stamina="3" headdress="" glasses=""/>
+    <player name="Markus Volldoof" attack="4" defense="1" speed="3" stamina="2" headdress="cap" glasses=""/>
+  </players>
+</team>
