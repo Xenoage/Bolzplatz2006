@@ -463,7 +463,11 @@ public class Input
     if (event.getEventType() == EEVENT_TYPE.EET_KEY_INPUT_EVENT)
     {
       //keyboard event
-      int k = event.getKeyInputKey().swigValue(); //get the value of the enum element
+      
+      //WORKAROUND: try to get code directly first, and if not
+      //found, search for the enum value (e.g. arrow keys have no
+      //charcode). GOON: does not work, because charcode != keycode
+      int k = event.getKeyInputKeyInt();
       KeyboardEvent kbEvent = new KeyboardEvent(
         k, false, event.isKeyInputPressedDown());
       KeyEvents.add(kbEvent);
