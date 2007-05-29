@@ -81,7 +81,9 @@ public class IO
     String file = "" + filepath;
     if (homedir)
       file = getGameHomeDir() + file;
-    //GOON: create dir, if it does not exist
+    File dir = new File(file).getParentFile();
+    if (dir != null && !dir.exists())
+      dir.mkdirs();
     return new FileOutputStream(new File(file));
   }
   
