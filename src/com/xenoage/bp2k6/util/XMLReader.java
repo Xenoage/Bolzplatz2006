@@ -1,6 +1,6 @@
 /**
- * Bolzplatz 2006
- * Copyright (C) 2006 by Xenoage Software
+ * Bolzplatz
+ * Copyright (C) 2006-2007 by Xenoage Software
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -19,6 +19,7 @@
 package com.xenoage.bp2k6.util;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 import javax.xml.parsers.*;
@@ -46,6 +47,18 @@ public class XMLReader
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder = factory.newDocumentBuilder();
     return builder.parse(file);
+  }
+  
+  
+  /**
+   * Reads and returns the XML document at the given input stream.
+   */
+  public static Document readFile(InputStream inputStream)
+    throws ParserConfigurationException, SAXException, IOException
+  {
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    DocumentBuilder builder = factory.newDocumentBuilder();
+    return builder.parse(inputStream);
   }
   
 

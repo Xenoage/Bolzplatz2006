@@ -351,12 +351,16 @@ public class Match
       else if (career.getCurrentMatchDayLeague() == Career.LEAGUE_ALLSTARS)
         attendance = 1;
     }
+    Logging.log(Logging.LEVEL_MESSAGES, "Base attendance: " +
+      (int) (attendance * 100) + "%");
     attendance *= stadium.getField().getLawn().crowdAttendance; //lawn
     attendance *= stadium.getStadiumInfo().getGoals().crowdAttendance; //goals
     attendance *= weather.getCrowdFactor();
     attendance *= stadium.getLightingCrowdAttendance(weather.isStadiumLighting());
     attendance *= stadium.getAttractionsCrowdAttendance();
     attendance *= stadium.getScoreboardCrowdAttendance();
+    Logging.log(Logging.LEVEL_MESSAGES, "Attendance after all factors: " +
+      (int) (attendance * 100) + "%");
     
     //team that is supported by the crowd
     int supportedTeam = 0;

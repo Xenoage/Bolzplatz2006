@@ -1198,6 +1198,9 @@ public class Stadium
   public Crowd createCrowd(float attendance, int team,
     Color homeTeamShirtColor, Color homeTeamPantsColor, boolean celebration)
   {
+    Logging.log(Logging.LEVEL_MESSAGES, "Create crowd with " +
+      (int) (attendance * 100) + "% attendance");
+    
     //create crowd colors
     //fan colors
     CrowdColors crowdColors = new CrowdColors();

@@ -24,6 +24,7 @@ import com.xenoage.bp2k6.audio.SoundEffectPool;
 import com.xenoage.bp2k6.gui.EnergyBar;
 import com.xenoage.bp2k6.input.Input;
 import com.xenoage.bp2k6.match.Team;
+import com.xenoage.bp2k6.match.TeamControl;
 import com.xenoage.bp2k6.match.Match.MatchStatus;
 import com.xenoage.bp2k6.match.characters.actions.*;
 import com.xenoage.bp2k6.match.characters.enums.*;

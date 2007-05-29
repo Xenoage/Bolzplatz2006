@@ -1,6 +1,6 @@
 /**
- * Bolzplatz 2006
- * Copyright (C) 2006 by Xenoage Software
+ * Bolzplatz
+ * Copyright (C) 2006-2007 by Xenoage Software
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -21,8 +21,7 @@ package com.xenoage.bp2k6.util;
 import java.awt.Color;
 import java.io.*;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
+import org.w3c.dom.*;
 
 
 /**
@@ -36,11 +35,13 @@ public class ConfigFile
   
   private String filename;
   private Document document;
-  private Node root;
+  private Element root;
   
   
   /**
-   * Parses the given config XML file.
+   * Parses the given config XML file. It is read from
+   * the home directory, if available, otherwise from
+   * the game directory.
    */
   public ConfigFile(String filename)
     throws Exception
@@ -48,8 +49,8 @@ public class ConfigFile
     Logging.log(Logging.LEVEL_MESSAGES, this,
       "Parsing config file \"" + filename + "\"...");
     this.filename = filename;
-    document = XMLReader.readFile(filename);
-    root = document.getFirstChild();
+    document = XMLReader.readFile(IO.openDataFile(filename));
+    root = document.getDocumentElement();
     Logging.log(Logging.LEVEL_MESSAGES, this, "Config file parsed.");
   }
   
@@ -129,7 +130,7 @@ public class ConfigFile
    * It can be read and modified, and then saved
    * again by calling <code>saveToXML</code>.
    */
-  public Node getRootElement()
+  public Element getRootElement()
   {
     return root;
   }
@@ -150,12 +151,14 @@ public class ConfigFile
   
   /**
    * Saves this config XML file.
+   * It is always saved to the user's home directory.
    */
   public void saveToXML() throws IOException
   {
     try
     {
-      XMLWriter.writeFile(document, filename);
+      XMLWriter.writeStream(
+        document, IO.createOutputStream(filename, true));
     }
     catch (Exception ex)
     {
