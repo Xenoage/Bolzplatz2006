@@ -3,6 +3,7 @@
   <stadium id="%random%" light="weatherdependent"/>
   <weather id="random"/>
   <cameraflights>
+	
     <cameraflight id="start1" speed="0.25">
       <from>
         <point x="-220" y="140" z="-210"/>
@@ -19,6 +20,58 @@
         <point x="0" y="0" z="0" times="8"/>
       </at>
     </cameraflight>
+		
+		<cameraflight id="start2" speed="0.28">
+      <from>
+        <point x="220" y="100" z="-210"/>
+        <point x="100" y="60" z="-100"/>
+        <point x="0" y="35" z="-60"/>
+        <point x="0" y="10" z="-18" times="10"/>
+      </from>
+      <at>
+        <point x="100" y="0" z="-100"/>
+        <point x="0" y="0" z="0"/>
+        <point x="-50" y="0" z="0"/>
+        <point x="0" y="0" z="-50"/>
+        <point x="50" y="0" z="0"/>
+        <point x="0" y="0" z="0" times="8"/>
+      </at>
+    </cameraflight>
+		
+		<cameraflight id="start3" speed="0.22">
+      <from>
+        <point x="220" y="140" z="210"/>
+        <point x="100" y="60" z="100"/>
+        <point x="0" y="30" z="60"/>
+        <point x="0" y="20" z="20" times="10"/>
+      </from>
+      <at>
+        <point x="100" y="0" z="100"/>
+        <point x="0" y="0" z="0"/>
+        <point x="50" y="0" z="0"/>
+        <point x="0" y="0" z="50"/>
+        <point x="50" y="0" z="0"/>
+        <point x="0" y="0" z="0" times="8"/>
+      </at>
+    </cameraflight>
+		
+		<cameraflight id="start4" speed="0.20">
+      <from>
+        <point x="-220" y="140" z="210"/>
+        <point x="-100" y="60" z="100"/>
+        <point x="0" y="30" z="60"/>
+        <point x="0" y="10" z="20" times="10"/>
+      </from>
+      <at>
+        <point x="-100" y="0" z="100"/>
+        <point x="0" y="0" z="0"/>
+        <point x="50" y="0" z="0"/>
+        <point x="0" y="0" z="50"/>
+        <point x="-50" y="0" z="0"/>
+        <point x="0" y="0" z="0" times="8"/>
+      </at>
+    </cameraflight>
+		
 
     <cameraflight id="goalleft1" speed="0.25">
       <from>

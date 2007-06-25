@@ -52,6 +52,7 @@ public class Action
     None,               //no action
     ActivateGroup,      //starts the fly-in of the controls of a group and activated it
     CameraFlight,       //starts a camera flight from a gui scene
+    CameraFlightRandom, //starts a random camera flight from a gui scene
     ChangeGameMode,     //changes the gamemode
     ChangeImage,        //change the image of a image or imageswitch control
     ChangeImageControl, //change the image of a image or imageswitch control,
@@ -301,6 +302,14 @@ public class Action
     {
       //start camera flight with id <argument1>
       ui.startCameraFlight(param1);
+    }
+    else if (type == ActionType.CameraFlightRandom)
+    {
+      //start camera flight with id "<argument1><random_number>",
+      //where <random_number> is a number between 1 and
+      //<argument2>
+      int max = Integer.parseInt(param2);
+      ui.startCameraFlight(param1 + (1 + (int) (Math.random() * max)));
     }
     else if (type == ActionType.ChangeGameMode)
     {

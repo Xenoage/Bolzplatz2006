@@ -19,7 +19,7 @@
     -->
 
     <group id="start" flyinduration="2.3" flyoutduration="0.3" nextgroupwaitduration="0.3">
-      <action event="groupopen" type="cameraflight" param1="start1"/>
+      <action event="groupopen" type="cameraflight" param1="start2" param2="4"/>
       <action event="grouptime" eventparam="8" type="activategroup" param1="mainmenu"/>
       <action event="keypress" eventparam="confirm" type="activategroup" param1="mainmenu"/>
 			<action event="keypress" eventparam="cancel" type="exitprogram"/>

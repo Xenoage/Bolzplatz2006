@@ -165,7 +165,7 @@ public class GUIScene
       //create camera
       nativeCamera = sceneManager.addCameraSceneNode();
       //System.out.println(nativeCamera.getFOV());
-      nativeCamera.setFarValue(500f * GameEngine.UNITS_GAME_TO_IRRLICHT);
+      nativeCamera.setFarValue(600f * GameEngine.UNITS_GAME_TO_IRRLICHT);
       nativeCamera.setNearValue(1f * GameEngine.UNITS_GAME_TO_IRRLICHT);
       //OBSOLETE: nativeCamera.setFOV(0.015f);
       sceneManager.setAmbientLight(new SColorf(1, 1, 1, 1));

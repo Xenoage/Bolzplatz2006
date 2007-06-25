@@ -51,6 +51,8 @@ public class ActionParser
       at = Action.ActionType.ActivateGroup;
     else if (type.equals("cameraflight"))
       at = Action.ActionType.CameraFlight;
+    else if (type.equals("cameraflightrandom"))
+      at = Action.ActionType.CameraFlightRandom;
     else if (type.equals("changegamemode"))
       at = Action.ActionType.ChangeGameMode;
     else if (type.equals("changeimage"))
