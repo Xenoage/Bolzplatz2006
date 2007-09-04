@@ -111,7 +111,7 @@ public class GameEngine
   private static GameEngine thisObject = new GameEngine();
   
   //background color (used for clearing the screen)
-  private static SColor backgroundColor = new SColor(255, 0, 0, 0);
+  private static SColor backgroundColor;
   
   //game modes
   public enum GameMode
@@ -205,7 +205,9 @@ public class GameEngine
       screenDimension.getWidth(), screenDimension.getHeight());
     
     //hide splash screen
-    SplashScreen.getSplashScreen().close();
+    SplashScreen splashScreen = SplashScreen.getSplashScreen();
+    if (splashScreen != null)
+      splashScreen.close();
 
     //create irrlicht device
     Logging.log(Logging.LEVEL_MESSAGES, thisObject,
@@ -229,6 +231,9 @@ public class GameEngine
       E_TEXTURE_CREATION_FLAG.ETCF_CREATE_MIP_MAPS, VIDEO_MIPMAPS);
     GameEngine.getVideoDriver().setTextureCreationFlag(
       E_TEXTURE_CREATION_FLAG.ETCF_ALWAYS_32_BIT, true);
+    
+    //set background color
+    backgroundColor = new SColor(255, 0, 0, 0);
 
 
     //create input engine
@@ -340,7 +345,7 @@ public class GameEngine
           "Thread for SoundTracks ended.");
       }
     };
-    soundTracksThread.start();
+    //TEST soundTracksThread.start();
 
     float lastFrameTime = 0;
     float lastFPSLogTime = 0;
@@ -385,13 +390,14 @@ public class GameEngine
 
       //show current frames per second - TEST
       fps = videoDriver.getFPS();
-      if (newTime - lastFPSLogTime > 1)
+      if (newTime - lastFPSLogTime > 1 && osWindows)
       {
         irrlichtDevice.setWindowCaption(PROJECT_NAME + " - FPS: " + fps);
       }
       if (newTime - lastFPSLogTime > 10)
       {
         lastFPSLogTime = newTime;
+        System.out.println("FPS: " + fps);
         Logging.log(Logging.LEVEL_MESSAGES, thisObject, "FPS: " + fps);
       }
 

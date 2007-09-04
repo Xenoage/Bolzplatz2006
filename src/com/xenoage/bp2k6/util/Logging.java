@@ -141,7 +141,7 @@ public class Logging {
      * @param sender The Object, that caused the exception
      * @param e The thrown exception
      */
-    public static void log(int level, Object sender, Exception e)
+    public static void log(int level, Object sender, Throwable e)
     {
       if (sender == null) {
           sender = new Object();

@@ -2,6 +2,6 @@
 <resolution>
   <width>800</width>
   <height>600</height>
-  <depth>32</depth>
-  <fullscreen>false</fullscreen>
+  <depth>24</depth>
+  <fullscreen>true</fullscreen>
 </resolution>

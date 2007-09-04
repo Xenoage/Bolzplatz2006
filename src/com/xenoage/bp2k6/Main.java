@@ -143,6 +143,7 @@ public class Main
     catch (UnsatisfiedLinkError err)
     {
       //Jirr is a must-have. Without it we can not start.
+      Logging.log(Logging.LEVEL_ERRORS, null, err);
       fatalError(null,
         new Exception("Jirr could not be loaded. Installation is corrupt."));
     }
