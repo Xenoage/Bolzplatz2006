@@ -1,0 +1,6 @@
+# Makefile1324 was renamed to Makefile,
+# because we want to use SWIG 1.3.24 by default.
+#
+# Update the makefile to the path of SWIG 1.3.24!
+#
+# Andi, 04/2007
