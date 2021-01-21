@@ -1,0 +1,715 @@
+# Project: Irrlicht
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = obj/CGUIButton.o obj/CGUICheckbox.o obj/CGUIComboBox.o obj/CGUIContextMenu.o obj/CGUIEditBox.o obj/CGUIEnvironment.o obj/CGUIFileOpenDialog.o obj/CGUIFont.o obj/CGUIImage.o obj/CGUIInOutFader.o obj/CGUIListBox.o obj/CGUIMenu.o obj/CGUIMeshViewer.o obj/CGUIMessageBox.o obj/CGUIModalScreen.o obj/CGUIScrollBar.o obj/CGUISkin.o obj/CGUIStaticText.o obj/CGUITabControl.o obj/CGUIToolBar.o obj/CGUIWindow.o obj/CSoftwareDriver.o obj/CSoftwareTexture.o obj/CTRFlat.o obj/CTRFlatWire.o obj/CTRGouraud.o obj/CTRGouraudWire.o obj/CTRTextureFlat.o obj/CTRTextureFlatWire.o obj/CTRTextureGouraud.o obj/CTRTextureGouraudAdd.o obj/CTRTextureGouraudNoZ.o obj/CTRTextureGouraudWire.o obj/CZBuffer.o obj/COpenGLDriver.o obj/COpenGLNormalMapRenderer.o obj/COpenGLParallaxMapRenderer.o obj/COpenGLShaderMaterialRenderer.o obj/COpenGLTexture.o obj/CD3D8Driver.o obj/CD3D8NormalMapRenderer.o obj/CD3D8ParallaxMapRenderer.o obj/CD3D8ShaderMaterialRenderer.o obj/CD3D8Texture.o obj/CColorConverter.o obj/CFPSCounter.o obj/CImage.o obj/CImageLoaderBmp.o obj/CImageLoaderJPG.o obj/CImageLoaderPCX.o obj/CImageLoaderPNG.o obj/CImageLoaderPSD.o obj/CImageLoaderTGA.o obj/CNullDriver.o obj/CD3D9Driver.o obj/CD3D9HLSLMaterialRenderer.o obj/CD3D9NormalMapRenderer.o obj/CD3D9ParallaxMapRenderer.o obj/CD3D9ShaderMaterialRenderer.o obj/CD3D9Texture.o obj/CVideoModeList.o obj/C3DSMeshFileLoader.o obj/CAnimatedMeshMD2.o obj/CAnimatedMeshMS3D.o obj/CAnimatedMeshSceneNode.o obj/CBillboardSceneNode.o obj/CCameraFPSSceneNode.o obj/CCameraMayaSceneNode.o obj/CCameraSceneNode.o obj/CColladaFileLoader.o obj/CCSMLoader.o obj/CDefaultMeshFormatLoader.o obj/CDMFLoader.o obj/CDummyTransformationSceneNode.o obj/CEmptySceneNode.o obj/CGeometryCreator.o obj/CLightSceneNode.o obj/CLMTSMeshFileLoader.o obj/CMeshManipulator.o obj/CMeshSceneNode.o obj/CMetaTriangleSelector.o obj/CMY3DMeshFileLoader.o obj/COCTLoader.o obj/COctTreeSceneNode.o obj/COctTreeTriangleSelector.o obj/CParticleBoxEmitter.o obj/CParticleFadeOutAffector.o obj/CParticleGravityAffector.o obj/CParticlePointEmitter.o obj/CParticleSystemSceneNode.o obj/CQ3LevelMesh.o obj/CSceneCollisionManager.o obj/CSceneManager.o obj/CSceneNodeAnimatorCollisionResponse.o obj/CSceneNodeAnimatorDelete.o obj/CSceneNodeAnimatorFlyCircle.o obj/CSceneNodeAnimatorFlyStraight.o obj/CSceneNodeAnimatorFollowSpline.o obj/CSceneNodeAnimatorRotation.o obj/CSceneNodeAnimatorTexture.o obj/CShadowVolumeSceneNode.o obj/CSkyBoxSceneNode.o obj/CStaticMeshOBJ.o obj/CTerrainSceneNode.o obj/CTerrainTriangleSelector.o obj/CTestSceneNode.o obj/CTextSceneNode.o obj/CTriangleBBSelector.o obj/CTriangleSelector.o obj/CWaterSurfaceSceneNode.o obj/CXAnimationPlayer.o obj/CXFileReader.o obj/CXMeshFileLoader.o obj/CFileList.o obj/CFileSystem.o obj/CLimitReadFile.o obj/CMemoryReadFile.o obj/CReadFile.o obj/CWriteFile.o obj/CXMLReader.o obj/CXMLWriter.o obj/CZipReader.o obj/irrXML.o obj/adler32.o obj/compress.o obj/crc32.o obj/deflate.o obj/inffast.o obj/inflate.o obj/inftrees.o obj/trees.o obj/uncompr.o obj/zutil.o obj/cdjpeg.o obj/jcapimin.o obj/jcapistd.o obj/jccoefct.o obj/jccolor.o obj/jcdctmgr.o obj/jchuff.o obj/jcinit.o obj/jcmainct.o obj/jcmarker.o obj/jcmaster.o obj/jcomapi.o obj/jcparam.o obj/jcphuff.o obj/jcprepct.o obj/jcsample.o obj/jctrans.o obj/jdapimin.o obj/jdapistd.o obj/jdatadst.o obj/jdatasrc.o obj/jdcoefct.o obj/jdcolor.o obj/jddctmgr.o obj/jdhuff.o obj/jdinput.o obj/jdmainct.o obj/jdmarker.o obj/jdmaster.o obj/jdmerge.o obj/jdphuff.o obj/jdpostct.o obj/jdsample.o obj/jdtrans.o obj/jerror.o obj/jfdctflt.o obj/jfdctfst.o obj/jfdctint.o obj/jidctflt.o obj/jidctfst.o obj/jidctint.o obj/jidctred.o obj/jmemmgr.o obj/jmemnobs.o obj/jquant1.o obj/jquant2.o obj/jutils.o obj/rdbmp.o obj/rdcolmap.o obj/rdgif.o obj/rdppm.o obj/rdrle.o obj/rdswitch.o obj/rdtarga.o obj/transupp.o obj/wrbmp.o obj/wrgif.o obj/wrppm.o obj/wrrle.o obj/wrtarga.o obj/png.o obj/pngerror.o obj/pngget.o obj/pngmem.o obj/pngpread.o obj/pngread.o obj/pngrio.o obj/pngrtran.o obj/pngrutil.o obj/pngset.o obj/pngtrans.o obj/pngwio.o obj/pngwrite.o obj/pngwtran.o obj/pngwutil.o obj/CIrrDeviceLinux.o obj/CIrrDeviceStub.o obj/CIrrDeviceWin32.o obj/CLogger.o obj/COSOperator.o obj/CStringParameters.o obj/Irrlicht.o obj/os.o obj/CMeshCache.o obj/COpenGLSLMaterialRenderer.o obj/CZBuffer2.o obj/CTRTextureGouraudAlpha2.o obj/CTRTextureGouraudNoZ2.o obj/CTRTextureLightMap2_M2.o obj/CTRTextureLightMap2_M4.o obj/CTRTextureLightMap2_M1.o obj/CSoftwareDriver2.o obj/CSoftwareTexture2.o obj/CTRTextureGouraud2.o obj/CCrowdSceneNode.o $(RES)
+LINKOBJ  = obj/CGUIButton.o obj/CGUICheckbox.o obj/CGUIComboBox.o obj/CGUIContextMenu.o obj/CGUIEditBox.o obj/CGUIEnvironment.o obj/CGUIFileOpenDialog.o obj/CGUIFont.o obj/CGUIImage.o obj/CGUIInOutFader.o obj/CGUIListBox.o obj/CGUIMenu.o obj/CGUIMeshViewer.o obj/CGUIMessageBox.o obj/CGUIModalScreen.o obj/CGUIScrollBar.o obj/CGUISkin.o obj/CGUIStaticText.o obj/CGUITabControl.o obj/CGUIToolBar.o obj/CGUIWindow.o obj/CSoftwareDriver.o obj/CSoftwareTexture.o obj/CTRFlat.o obj/CTRFlatWire.o obj/CTRGouraud.o obj/CTRGouraudWire.o obj/CTRTextureFlat.o obj/CTRTextureFlatWire.o obj/CTRTextureGouraud.o obj/CTRTextureGouraudAdd.o obj/CTRTextureGouraudNoZ.o obj/CTRTextureGouraudWire.o obj/CZBuffer.o obj/COpenGLDriver.o obj/COpenGLNormalMapRenderer.o obj/COpenGLParallaxMapRenderer.o obj/COpenGLShaderMaterialRenderer.o obj/COpenGLTexture.o obj/CD3D8Driver.o obj/CD3D8NormalMapRenderer.o obj/CD3D8ParallaxMapRenderer.o obj/CD3D8ShaderMaterialRenderer.o obj/CD3D8Texture.o obj/CColorConverter.o obj/CFPSCounter.o obj/CImage.o obj/CImageLoaderBmp.o obj/CImageLoaderJPG.o obj/CImageLoaderPCX.o obj/CImageLoaderPNG.o obj/CImageLoaderPSD.o obj/CImageLoaderTGA.o obj/CNullDriver.o obj/CD3D9Driver.o obj/CD3D9HLSLMaterialRenderer.o obj/CD3D9NormalMapRenderer.o obj/CD3D9ParallaxMapRenderer.o obj/CD3D9ShaderMaterialRenderer.o obj/CD3D9Texture.o obj/CVideoModeList.o obj/C3DSMeshFileLoader.o obj/CAnimatedMeshMD2.o obj/CAnimatedMeshMS3D.o obj/CAnimatedMeshSceneNode.o obj/CBillboardSceneNode.o obj/CCameraFPSSceneNode.o obj/CCameraMayaSceneNode.o obj/CCameraSceneNode.o obj/CColladaFileLoader.o obj/CCSMLoader.o obj/CDefaultMeshFormatLoader.o obj/CDMFLoader.o obj/CDummyTransformationSceneNode.o obj/CEmptySceneNode.o obj/CGeometryCreator.o obj/CLightSceneNode.o obj/CLMTSMeshFileLoader.o obj/CMeshManipulator.o obj/CMeshSceneNode.o obj/CMetaTriangleSelector.o obj/CMY3DMeshFileLoader.o obj/COCTLoader.o obj/COctTreeSceneNode.o obj/COctTreeTriangleSelector.o obj/CParticleBoxEmitter.o obj/CParticleFadeOutAffector.o obj/CParticleGravityAffector.o obj/CParticlePointEmitter.o obj/CParticleSystemSceneNode.o obj/CQ3LevelMesh.o obj/CSceneCollisionManager.o obj/CSceneManager.o obj/CSceneNodeAnimatorCollisionResponse.o obj/CSceneNodeAnimatorDelete.o obj/CSceneNodeAnimatorFlyCircle.o obj/CSceneNodeAnimatorFlyStraight.o obj/CSceneNodeAnimatorFollowSpline.o obj/CSceneNodeAnimatorRotation.o obj/CSceneNodeAnimatorTexture.o obj/CShadowVolumeSceneNode.o obj/CSkyBoxSceneNode.o obj/CStaticMeshOBJ.o obj/CTerrainSceneNode.o obj/CTerrainTriangleSelector.o obj/CTestSceneNode.o obj/CTextSceneNode.o obj/CTriangleBBSelector.o obj/CTriangleSelector.o obj/CWaterSurfaceSceneNode.o obj/CXAnimationPlayer.o obj/CXFileReader.o obj/CXMeshFileLoader.o obj/CFileList.o obj/CFileSystem.o obj/CLimitReadFile.o obj/CMemoryReadFile.o obj/CReadFile.o obj/CWriteFile.o obj/CXMLReader.o obj/CXMLWriter.o obj/CZipReader.o obj/irrXML.o obj/adler32.o obj/compress.o obj/crc32.o obj/deflate.o obj/inffast.o obj/inflate.o obj/inftrees.o obj/trees.o obj/uncompr.o obj/zutil.o obj/cdjpeg.o obj/jcapimin.o obj/jcapistd.o obj/jccoefct.o obj/jccolor.o obj/jcdctmgr.o obj/jchuff.o obj/jcinit.o obj/jcmainct.o obj/jcmarker.o obj/jcmaster.o obj/jcomapi.o obj/jcparam.o obj/jcphuff.o obj/jcprepct.o obj/jcsample.o obj/jctrans.o obj/jdapimin.o obj/jdapistd.o obj/jdatadst.o obj/jdatasrc.o obj/jdcoefct.o obj/jdcolor.o obj/jddctmgr.o obj/jdhuff.o obj/jdinput.o obj/jdmainct.o obj/jdmarker.o obj/jdmaster.o obj/jdmerge.o obj/jdphuff.o obj/jdpostct.o obj/jdsample.o obj/jdtrans.o obj/jerror.o obj/jfdctflt.o obj/jfdctfst.o obj/jfdctint.o obj/jidctflt.o obj/jidctfst.o obj/jidctint.o obj/jidctred.o obj/jmemmgr.o obj/jmemnobs.o obj/jquant1.o obj/jquant2.o obj/jutils.o obj/rdbmp.o obj/rdcolmap.o obj/rdgif.o obj/rdppm.o obj/rdrle.o obj/rdswitch.o obj/rdtarga.o obj/transupp.o obj/wrbmp.o obj/wrgif.o obj/wrppm.o obj/wrrle.o obj/wrtarga.o obj/png.o obj/pngerror.o obj/pngget.o obj/pngmem.o obj/pngpread.o obj/pngread.o obj/pngrio.o obj/pngrtran.o obj/pngrutil.o obj/pngset.o obj/pngtrans.o obj/pngwio.o obj/pngwrite.o obj/pngwtran.o obj/pngwutil.o obj/CIrrDeviceLinux.o obj/CIrrDeviceStub.o obj/CIrrDeviceWin32.o obj/CLogger.o obj/COSOperator.o obj/CStringParameters.o obj/Irrlicht.o obj/os.o obj/CMeshCache.o obj/COpenGLSLMaterialRenderer.o obj/CZBuffer2.o obj/CTRTextureGouraudAlpha2.o obj/CTRTextureGouraudNoZ2.o obj/CTRTextureLightMap2_M2.o obj/CTRTextureLightMap2_M4.o obj/CTRTextureLightMap2_M1.o obj/CSoftwareDriver2.o obj/CSoftwareTexture2.o obj/CTRTextureGouraud2.o obj/CCrowdSceneNode.o $(RES)
+LIBS =  -L"C:/Programme/Dev-Cpp/lib" -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -lglu32 -lopengl32  
+INCS =  -I"C:/Programme/Dev-Cpp/include"  -I"include"  -I"zlib" 
+CXXINCS =  -I"C:/Programme/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2"  -I"C:/Programme/Dev-Cpp/include"  -I"include"  -I"zlib" 
+BIN  = bin/Irrlicht.dll
+CXXFLAGS = $(CXXINCS) -D__GNUWIN32__ -W -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS -D_USRDLL -DIRRLICHT_EXPORTS   -fexpensive-optimizations -O1
+CFLAGS = $(INCS) -D__GNUWIN32__ -W -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS -D_USRDLL -DIRRLICHT_EXPORTS   -fexpensive-optimizations -O1
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before bin/Irrlicht.dll all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+DEFFILE=bin/libIrrlicht.def
+STATICLIB=bin/libIrrlicht.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --output-def $(DEFFILE) --driver-name c++ --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -o $(BIN)
+
+obj/CGUIButton.o: CGUIButton.cpp
+	$(CPP) -c CGUIButton.cpp -o obj/CGUIButton.o $(CXXFLAGS)
+
+obj/CGUICheckbox.o: CGUICheckbox.cpp
+	$(CPP) -c CGUICheckbox.cpp -o obj/CGUICheckbox.o $(CXXFLAGS)
+
+obj/CGUIComboBox.o: CGUIComboBox.cpp
+	$(CPP) -c CGUIComboBox.cpp -o obj/CGUIComboBox.o $(CXXFLAGS)
+
+obj/CGUIContextMenu.o: CGUIContextMenu.cpp
+	$(CPP) -c CGUIContextMenu.cpp -o obj/CGUIContextMenu.o $(CXXFLAGS)
+
+obj/CGUIEditBox.o: CGUIEditBox.cpp
+	$(CPP) -c CGUIEditBox.cpp -o obj/CGUIEditBox.o $(CXXFLAGS)
+
+obj/CGUIEnvironment.o: CGUIEnvironment.cpp
+	$(CPP) -c CGUIEnvironment.cpp -o obj/CGUIEnvironment.o $(CXXFLAGS)
+
+obj/CGUIFileOpenDialog.o: CGUIFileOpenDialog.cpp
+	$(CPP) -c CGUIFileOpenDialog.cpp -o obj/CGUIFileOpenDialog.o $(CXXFLAGS)
+
+obj/CGUIFont.o: CGUIFont.cpp
+	$(CPP) -c CGUIFont.cpp -o obj/CGUIFont.o $(CXXFLAGS)
+
+obj/CGUIImage.o: CGUIImage.cpp
+	$(CPP) -c CGUIImage.cpp -o obj/CGUIImage.o $(CXXFLAGS)
+
+obj/CGUIInOutFader.o: CGUIInOutFader.cpp
+	$(CPP) -c CGUIInOutFader.cpp -o obj/CGUIInOutFader.o $(CXXFLAGS)
+
+obj/CGUIListBox.o: CGUIListBox.cpp
+	$(CPP) -c CGUIListBox.cpp -o obj/CGUIListBox.o $(CXXFLAGS)
+
+obj/CGUIMenu.o: CGUIMenu.cpp
+	$(CPP) -c CGUIMenu.cpp -o obj/CGUIMenu.o $(CXXFLAGS)
+
+obj/CGUIMeshViewer.o: CGUIMeshViewer.cpp
+	$(CPP) -c CGUIMeshViewer.cpp -o obj/CGUIMeshViewer.o $(CXXFLAGS)
+
+obj/CGUIMessageBox.o: CGUIMessageBox.cpp
+	$(CPP) -c CGUIMessageBox.cpp -o obj/CGUIMessageBox.o $(CXXFLAGS)
+
+obj/CGUIModalScreen.o: CGUIModalScreen.cpp
+	$(CPP) -c CGUIModalScreen.cpp -o obj/CGUIModalScreen.o $(CXXFLAGS)
+
+obj/CGUIScrollBar.o: CGUIScrollBar.cpp
+	$(CPP) -c CGUIScrollBar.cpp -o obj/CGUIScrollBar.o $(CXXFLAGS)
+
+obj/CGUISkin.o: CGUISkin.cpp
+	$(CPP) -c CGUISkin.cpp -o obj/CGUISkin.o $(CXXFLAGS)
+
+obj/CGUIStaticText.o: CGUIStaticText.cpp
+	$(CPP) -c CGUIStaticText.cpp -o obj/CGUIStaticText.o $(CXXFLAGS)
+
+obj/CGUITabControl.o: CGUITabControl.cpp
+	$(CPP) -c CGUITabControl.cpp -o obj/CGUITabControl.o $(CXXFLAGS)
+
+obj/CGUIToolBar.o: CGUIToolBar.cpp
+	$(CPP) -c CGUIToolBar.cpp -o obj/CGUIToolBar.o $(CXXFLAGS)
+
+obj/CGUIWindow.o: CGUIWindow.cpp
+	$(CPP) -c CGUIWindow.cpp -o obj/CGUIWindow.o $(CXXFLAGS)
+
+obj/CSoftwareDriver.o: CSoftwareDriver.cpp
+	$(CPP) -c CSoftwareDriver.cpp -o obj/CSoftwareDriver.o $(CXXFLAGS)
+
+obj/CSoftwareTexture.o: CSoftwareTexture.cpp
+	$(CPP) -c CSoftwareTexture.cpp -o obj/CSoftwareTexture.o $(CXXFLAGS)
+
+obj/CTRFlat.o: CTRFlat.cpp
+	$(CPP) -c CTRFlat.cpp -o obj/CTRFlat.o $(CXXFLAGS)
+
+obj/CTRFlatWire.o: CTRFlatWire.cpp
+	$(CPP) -c CTRFlatWire.cpp -o obj/CTRFlatWire.o $(CXXFLAGS)
+
+obj/CTRGouraud.o: CTRGouraud.cpp
+	$(CPP) -c CTRGouraud.cpp -o obj/CTRGouraud.o $(CXXFLAGS)
+
+obj/CTRGouraudWire.o: CTRGouraudWire.cpp
+	$(CPP) -c CTRGouraudWire.cpp -o obj/CTRGouraudWire.o $(CXXFLAGS)
+
+obj/CTRTextureFlat.o: CTRTextureFlat.cpp
+	$(CPP) -c CTRTextureFlat.cpp -o obj/CTRTextureFlat.o $(CXXFLAGS)
+
+obj/CTRTextureFlatWire.o: CTRTextureFlatWire.cpp
+	$(CPP) -c CTRTextureFlatWire.cpp -o obj/CTRTextureFlatWire.o $(CXXFLAGS)
+
+obj/CTRTextureGouraud.o: CTRTextureGouraud.cpp
+	$(CPP) -c CTRTextureGouraud.cpp -o obj/CTRTextureGouraud.o $(CXXFLAGS)
+
+obj/CTRTextureGouraudAdd.o: CTRTextureGouraudAdd.cpp
+	$(CPP) -c CTRTextureGouraudAdd.cpp -o obj/CTRTextureGouraudAdd.o $(CXXFLAGS)
+
+obj/CTRTextureGouraudNoZ.o: CTRTextureGouraudNoZ.cpp
+	$(CPP) -c CTRTextureGouraudNoZ.cpp -o obj/CTRTextureGouraudNoZ.o $(CXXFLAGS)
+
+obj/CTRTextureGouraudWire.o: CTRTextureGouraudWire.cpp
+	$(CPP) -c CTRTextureGouraudWire.cpp -o obj/CTRTextureGouraudWire.o $(CXXFLAGS)
+
+obj/CZBuffer.o: CZBuffer.cpp
+	$(CPP) -c CZBuffer.cpp -o obj/CZBuffer.o $(CXXFLAGS)
+
+obj/COpenGLDriver.o: COpenGLDriver.cpp
+	$(CPP) -c COpenGLDriver.cpp -o obj/COpenGLDriver.o $(CXXFLAGS)
+
+obj/COpenGLNormalMapRenderer.o: COpenGLNormalMapRenderer.cpp
+	$(CPP) -c COpenGLNormalMapRenderer.cpp -o obj/COpenGLNormalMapRenderer.o $(CXXFLAGS)
+
+obj/COpenGLParallaxMapRenderer.o: COpenGLParallaxMapRenderer.cpp
+	$(CPP) -c COpenGLParallaxMapRenderer.cpp -o obj/COpenGLParallaxMapRenderer.o $(CXXFLAGS)
+
+obj/COpenGLShaderMaterialRenderer.o: COpenGLShaderMaterialRenderer.cpp
+	$(CPP) -c COpenGLShaderMaterialRenderer.cpp -o obj/COpenGLShaderMaterialRenderer.o $(CXXFLAGS)
+
+obj/COpenGLTexture.o: COpenGLTexture.cpp
+	$(CPP) -c COpenGLTexture.cpp -o obj/COpenGLTexture.o $(CXXFLAGS)
+
+obj/CD3D8Driver.o: CD3D8Driver.cpp
+	$(CPP) -c CD3D8Driver.cpp -o obj/CD3D8Driver.o $(CXXFLAGS)
+
+obj/CD3D8NormalMapRenderer.o: CD3D8NormalMapRenderer.cpp
+	$(CPP) -c CD3D8NormalMapRenderer.cpp -o obj/CD3D8NormalMapRenderer.o $(CXXFLAGS)
+
+obj/CD3D8ParallaxMapRenderer.o: CD3D8ParallaxMapRenderer.cpp
+	$(CPP) -c CD3D8ParallaxMapRenderer.cpp -o obj/CD3D8ParallaxMapRenderer.o $(CXXFLAGS)
+
+obj/CD3D8ShaderMaterialRenderer.o: CD3D8ShaderMaterialRenderer.cpp
+	$(CPP) -c CD3D8ShaderMaterialRenderer.cpp -o obj/CD3D8ShaderMaterialRenderer.o $(CXXFLAGS)
+
+obj/CD3D8Texture.o: CD3D8Texture.cpp
+	$(CPP) -c CD3D8Texture.cpp -o obj/CD3D8Texture.o $(CXXFLAGS)
+
+obj/CColorConverter.o: CColorConverter.cpp
+	$(CPP) -c CColorConverter.cpp -o obj/CColorConverter.o $(CXXFLAGS)
+
+obj/CFPSCounter.o: CFPSCounter.cpp
+	$(CPP) -c CFPSCounter.cpp -o obj/CFPSCounter.o $(CXXFLAGS)
+
+obj/CImage.o: CImage.cpp
+	$(CPP) -c CImage.cpp -o obj/CImage.o $(CXXFLAGS)
+
+obj/CImageLoaderBmp.o: CImageLoaderBmp.cpp
+	$(CPP) -c CImageLoaderBmp.cpp -o obj/CImageLoaderBmp.o $(CXXFLAGS)
+
+obj/CImageLoaderJPG.o: CImageLoaderJPG.cpp
+	$(CPP) -c CImageLoaderJPG.cpp -o obj/CImageLoaderJPG.o $(CXXFLAGS)
+
+obj/CImageLoaderPCX.o: CImageLoaderPCX.cpp
+	$(CPP) -c CImageLoaderPCX.cpp -o obj/CImageLoaderPCX.o $(CXXFLAGS)
+
+obj/CImageLoaderPNG.o: CImageLoaderPNG.cpp
+	$(CPP) -c CImageLoaderPNG.cpp -o obj/CImageLoaderPNG.o $(CXXFLAGS)
+
+obj/CImageLoaderPSD.o: CImageLoaderPSD.cpp
+	$(CPP) -c CImageLoaderPSD.cpp -o obj/CImageLoaderPSD.o $(CXXFLAGS)
+
+obj/CImageLoaderTGA.o: CImageLoaderTGA.cpp
+	$(CPP) -c CImageLoaderTGA.cpp -o obj/CImageLoaderTGA.o $(CXXFLAGS)
+
+obj/CNullDriver.o: CNullDriver.cpp
+	$(CPP) -c CNullDriver.cpp -o obj/CNullDriver.o $(CXXFLAGS)
+
+obj/CD3D9Driver.o: CD3D9Driver.cpp
+	$(CPP) -c CD3D9Driver.cpp -o obj/CD3D9Driver.o $(CXXFLAGS)
+
+obj/CD3D9HLSLMaterialRenderer.o: CD3D9HLSLMaterialRenderer.cpp
+	$(CPP) -c CD3D9HLSLMaterialRenderer.cpp -o obj/CD3D9HLSLMaterialRenderer.o $(CXXFLAGS)
+
+obj/CD3D9NormalMapRenderer.o: CD3D9NormalMapRenderer.cpp
+	$(CPP) -c CD3D9NormalMapRenderer.cpp -o obj/CD3D9NormalMapRenderer.o $(CXXFLAGS)
+
+obj/CD3D9ParallaxMapRenderer.o: CD3D9ParallaxMapRenderer.cpp
+	$(CPP) -c CD3D9ParallaxMapRenderer.cpp -o obj/CD3D9ParallaxMapRenderer.o $(CXXFLAGS)
+
+obj/CD3D9ShaderMaterialRenderer.o: CD3D9ShaderMaterialRenderer.cpp
+	$(CPP) -c CD3D9ShaderMaterialRenderer.cpp -o obj/CD3D9ShaderMaterialRenderer.o $(CXXFLAGS)
+
+obj/CD3D9Texture.o: CD3D9Texture.cpp
+	$(CPP) -c CD3D9Texture.cpp -o obj/CD3D9Texture.o $(CXXFLAGS)
+
+obj/CVideoModeList.o: CVideoModeList.cpp
+	$(CPP) -c CVideoModeList.cpp -o obj/CVideoModeList.o $(CXXFLAGS)
+
+obj/C3DSMeshFileLoader.o: C3DSMeshFileLoader.cpp
+	$(CPP) -c C3DSMeshFileLoader.cpp -o obj/C3DSMeshFileLoader.o $(CXXFLAGS)
+
+obj/CAnimatedMeshMD2.o: CAnimatedMeshMD2.cpp
+	$(CPP) -c CAnimatedMeshMD2.cpp -o obj/CAnimatedMeshMD2.o $(CXXFLAGS)
+
+obj/CAnimatedMeshMS3D.o: CAnimatedMeshMS3D.cpp
+	$(CPP) -c CAnimatedMeshMS3D.cpp -o obj/CAnimatedMeshMS3D.o $(CXXFLAGS)
+
+obj/CAnimatedMeshSceneNode.o: CAnimatedMeshSceneNode.cpp
+	$(CPP) -c CAnimatedMeshSceneNode.cpp -o obj/CAnimatedMeshSceneNode.o $(CXXFLAGS)
+
+obj/CBillboardSceneNode.o: CBillboardSceneNode.cpp
+	$(CPP) -c CBillboardSceneNode.cpp -o obj/CBillboardSceneNode.o $(CXXFLAGS)
+
+obj/CCameraFPSSceneNode.o: CCameraFPSSceneNode.cpp
+	$(CPP) -c CCameraFPSSceneNode.cpp -o obj/CCameraFPSSceneNode.o $(CXXFLAGS)
+
+obj/CCameraMayaSceneNode.o: CCameraMayaSceneNode.cpp
+	$(CPP) -c CCameraMayaSceneNode.cpp -o obj/CCameraMayaSceneNode.o $(CXXFLAGS)
+
+obj/CCameraSceneNode.o: CCameraSceneNode.cpp
+	$(CPP) -c CCameraSceneNode.cpp -o obj/CCameraSceneNode.o $(CXXFLAGS)
+
+obj/CColladaFileLoader.o: CColladaFileLoader.cpp
+	$(CPP) -c CColladaFileLoader.cpp -o obj/CColladaFileLoader.o $(CXXFLAGS)
+
+obj/CCSMLoader.o: CCSMLoader.cpp
+	$(CPP) -c CCSMLoader.cpp -o obj/CCSMLoader.o $(CXXFLAGS)
+
+obj/CDefaultMeshFormatLoader.o: CDefaultMeshFormatLoader.cpp
+	$(CPP) -c CDefaultMeshFormatLoader.cpp -o obj/CDefaultMeshFormatLoader.o $(CXXFLAGS)
+
+obj/CDMFLoader.o: CDMFLoader.cpp
+	$(CPP) -c CDMFLoader.cpp -o obj/CDMFLoader.o $(CXXFLAGS)
+
+obj/CDummyTransformationSceneNode.o: CDummyTransformationSceneNode.cpp
+	$(CPP) -c CDummyTransformationSceneNode.cpp -o obj/CDummyTransformationSceneNode.o $(CXXFLAGS)
+
+obj/CEmptySceneNode.o: CEmptySceneNode.cpp
+	$(CPP) -c CEmptySceneNode.cpp -o obj/CEmptySceneNode.o $(CXXFLAGS)
+
+obj/CGeometryCreator.o: CGeometryCreator.cpp
+	$(CPP) -c CGeometryCreator.cpp -o obj/CGeometryCreator.o $(CXXFLAGS)
+
+obj/CLightSceneNode.o: CLightSceneNode.cpp
+	$(CPP) -c CLightSceneNode.cpp -o obj/CLightSceneNode.o $(CXXFLAGS)
+
+obj/CLMTSMeshFileLoader.o: CLMTSMeshFileLoader.cpp
+	$(CPP) -c CLMTSMeshFileLoader.cpp -o obj/CLMTSMeshFileLoader.o $(CXXFLAGS)
+
+obj/CMeshManipulator.o: CMeshManipulator.cpp
+	$(CPP) -c CMeshManipulator.cpp -o obj/CMeshManipulator.o $(CXXFLAGS)
+
+obj/CMeshSceneNode.o: CMeshSceneNode.cpp
+	$(CPP) -c CMeshSceneNode.cpp -o obj/CMeshSceneNode.o $(CXXFLAGS)
+
+obj/CMetaTriangleSelector.o: CMetaTriangleSelector.cpp
+	$(CPP) -c CMetaTriangleSelector.cpp -o obj/CMetaTriangleSelector.o $(CXXFLAGS)
+
+obj/CMY3DMeshFileLoader.o: CMY3DMeshFileLoader.cpp
+	$(CPP) -c CMY3DMeshFileLoader.cpp -o obj/CMY3DMeshFileLoader.o $(CXXFLAGS)
+
+obj/COCTLoader.o: COCTLoader.cpp
+	$(CPP) -c COCTLoader.cpp -o obj/COCTLoader.o $(CXXFLAGS)
+
+obj/COctTreeSceneNode.o: COctTreeSceneNode.cpp
+	$(CPP) -c COctTreeSceneNode.cpp -o obj/COctTreeSceneNode.o $(CXXFLAGS)
+
+obj/COctTreeTriangleSelector.o: COctTreeTriangleSelector.cpp
+	$(CPP) -c COctTreeTriangleSelector.cpp -o obj/COctTreeTriangleSelector.o $(CXXFLAGS)
+
+obj/CParticleBoxEmitter.o: CParticleBoxEmitter.cpp
+	$(CPP) -c CParticleBoxEmitter.cpp -o obj/CParticleBoxEmitter.o $(CXXFLAGS)
+
+obj/CParticleFadeOutAffector.o: CParticleFadeOutAffector.cpp
+	$(CPP) -c CParticleFadeOutAffector.cpp -o obj/CParticleFadeOutAffector.o $(CXXFLAGS)
+
+obj/CParticleGravityAffector.o: CParticleGravityAffector.cpp
+	$(CPP) -c CParticleGravityAffector.cpp -o obj/CParticleGravityAffector.o $(CXXFLAGS)
+
+obj/CParticlePointEmitter.o: CParticlePointEmitter.cpp
+	$(CPP) -c CParticlePointEmitter.cpp -o obj/CParticlePointEmitter.o $(CXXFLAGS)
+
+obj/CParticleSystemSceneNode.o: CParticleSystemSceneNode.cpp
+	$(CPP) -c CParticleSystemSceneNode.cpp -o obj/CParticleSystemSceneNode.o $(CXXFLAGS)
+
+obj/CQ3LevelMesh.o: CQ3LevelMesh.cpp
+	$(CPP) -c CQ3LevelMesh.cpp -o obj/CQ3LevelMesh.o $(CXXFLAGS)
+
+obj/CSceneCollisionManager.o: CSceneCollisionManager.cpp
+	$(CPP) -c CSceneCollisionManager.cpp -o obj/CSceneCollisionManager.o $(CXXFLAGS)
+
+obj/CSceneManager.o: CSceneManager.cpp
+	$(CPP) -c CSceneManager.cpp -o obj/CSceneManager.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorCollisionResponse.o: CSceneNodeAnimatorCollisionResponse.cpp
+	$(CPP) -c CSceneNodeAnimatorCollisionResponse.cpp -o obj/CSceneNodeAnimatorCollisionResponse.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorDelete.o: CSceneNodeAnimatorDelete.cpp
+	$(CPP) -c CSceneNodeAnimatorDelete.cpp -o obj/CSceneNodeAnimatorDelete.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorFlyCircle.o: CSceneNodeAnimatorFlyCircle.cpp
+	$(CPP) -c CSceneNodeAnimatorFlyCircle.cpp -o obj/CSceneNodeAnimatorFlyCircle.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorFlyStraight.o: CSceneNodeAnimatorFlyStraight.cpp
+	$(CPP) -c CSceneNodeAnimatorFlyStraight.cpp -o obj/CSceneNodeAnimatorFlyStraight.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorFollowSpline.o: CSceneNodeAnimatorFollowSpline.cpp
+	$(CPP) -c CSceneNodeAnimatorFollowSpline.cpp -o obj/CSceneNodeAnimatorFollowSpline.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorRotation.o: CSceneNodeAnimatorRotation.cpp
+	$(CPP) -c CSceneNodeAnimatorRotation.cpp -o obj/CSceneNodeAnimatorRotation.o $(CXXFLAGS)
+
+obj/CSceneNodeAnimatorTexture.o: CSceneNodeAnimatorTexture.cpp
+	$(CPP) -c CSceneNodeAnimatorTexture.cpp -o obj/CSceneNodeAnimatorTexture.o $(CXXFLAGS)
+
+obj/CShadowVolumeSceneNode.o: CShadowVolumeSceneNode.cpp
+	$(CPP) -c CShadowVolumeSceneNode.cpp -o obj/CShadowVolumeSceneNode.o $(CXXFLAGS)
+
+obj/CSkyBoxSceneNode.o: CSkyBoxSceneNode.cpp
+	$(CPP) -c CSkyBoxSceneNode.cpp -o obj/CSkyBoxSceneNode.o $(CXXFLAGS)
+
+obj/CStaticMeshOBJ.o: CStaticMeshOBJ.cpp
+	$(CPP) -c CStaticMeshOBJ.cpp -o obj/CStaticMeshOBJ.o $(CXXFLAGS)
+
+obj/CTerrainSceneNode.o: CTerrainSceneNode.cpp
+	$(CPP) -c CTerrainSceneNode.cpp -o obj/CTerrainSceneNode.o $(CXXFLAGS)
+
+obj/CTerrainTriangleSelector.o: CTerrainTriangleSelector.cpp
+	$(CPP) -c CTerrainTriangleSelector.cpp -o obj/CTerrainTriangleSelector.o $(CXXFLAGS)
+
+obj/CTestSceneNode.o: CTestSceneNode.cpp
+	$(CPP) -c CTestSceneNode.cpp -o obj/CTestSceneNode.o $(CXXFLAGS)
+
+obj/CTextSceneNode.o: CTextSceneNode.cpp
+	$(CPP) -c CTextSceneNode.cpp -o obj/CTextSceneNode.o $(CXXFLAGS)
+
+obj/CTriangleBBSelector.o: CTriangleBBSelector.cpp
+	$(CPP) -c CTriangleBBSelector.cpp -o obj/CTriangleBBSelector.o $(CXXFLAGS)
+
+obj/CTriangleSelector.o: CTriangleSelector.cpp
+	$(CPP) -c CTriangleSelector.cpp -o obj/CTriangleSelector.o $(CXXFLAGS)
+
+obj/CWaterSurfaceSceneNode.o: CWaterSurfaceSceneNode.cpp
+	$(CPP) -c CWaterSurfaceSceneNode.cpp -o obj/CWaterSurfaceSceneNode.o $(CXXFLAGS)
+
+obj/CXAnimationPlayer.o: CXAnimationPlayer.cpp
+	$(CPP) -c CXAnimationPlayer.cpp -o obj/CXAnimationPlayer.o $(CXXFLAGS)
+
+obj/CXFileReader.o: CXFileReader.cpp
+	$(CPP) -c CXFileReader.cpp -o obj/CXFileReader.o $(CXXFLAGS)
+
+obj/CXMeshFileLoader.o: CXMeshFileLoader.cpp
+	$(CPP) -c CXMeshFileLoader.cpp -o obj/CXMeshFileLoader.o $(CXXFLAGS)
+
+obj/CFileList.o: CFileList.cpp
+	$(CPP) -c CFileList.cpp -o obj/CFileList.o $(CXXFLAGS)
+
+obj/CFileSystem.o: CFileSystem.cpp
+	$(CPP) -c CFileSystem.cpp -o obj/CFileSystem.o $(CXXFLAGS)
+
+obj/CLimitReadFile.o: CLimitReadFile.cpp
+	$(CPP) -c CLimitReadFile.cpp -o obj/CLimitReadFile.o $(CXXFLAGS)
+
+obj/CMemoryReadFile.o: CMemoryReadFile.cpp
+	$(CPP) -c CMemoryReadFile.cpp -o obj/CMemoryReadFile.o $(CXXFLAGS)
+
+obj/CReadFile.o: CReadFile.cpp
+	$(CPP) -c CReadFile.cpp -o obj/CReadFile.o $(CXXFLAGS)
+
+obj/CWriteFile.o: CWriteFile.cpp
+	$(CPP) -c CWriteFile.cpp -o obj/CWriteFile.o $(CXXFLAGS)
+
+obj/CXMLReader.o: CXMLReader.cpp
+	$(CPP) -c CXMLReader.cpp -o obj/CXMLReader.o $(CXXFLAGS)
+
+obj/CXMLWriter.o: CXMLWriter.cpp
+	$(CPP) -c CXMLWriter.cpp -o obj/CXMLWriter.o $(CXXFLAGS)
+
+obj/CZipReader.o: CZipReader.cpp
+	$(CPP) -c CZipReader.cpp -o obj/CZipReader.o $(CXXFLAGS)
+
+obj/irrXML.o: irrXML.cpp
+	$(CPP) -c irrXML.cpp -o obj/irrXML.o $(CXXFLAGS)
+
+obj/adler32.o: zlib/adler32.c
+	$(CC) -c zlib/adler32.c -o obj/adler32.o $(CFLAGS)
+
+obj/compress.o: zlib/compress.c
+	$(CC) -c zlib/compress.c -o obj/compress.o $(CFLAGS)
+
+obj/crc32.o: zlib/crc32.c
+	$(CC) -c zlib/crc32.c -o obj/crc32.o $(CFLAGS)
+
+obj/deflate.o: zlib/deflate.c
+	$(CC) -c zlib/deflate.c -o obj/deflate.o $(CFLAGS)
+
+obj/inffast.o: zlib/inffast.c
+	$(CC) -c zlib/inffast.c -o obj/inffast.o $(CFLAGS)
+
+obj/inflate.o: zlib/inflate.c
+	$(CC) -c zlib/inflate.c -o obj/inflate.o $(CFLAGS)
+
+obj/inftrees.o: zlib/inftrees.c
+	$(CC) -c zlib/inftrees.c -o obj/inftrees.o $(CFLAGS)
+
+obj/trees.o: zlib/trees.c
+	$(CC) -c zlib/trees.c -o obj/trees.o $(CFLAGS)
+
+obj/uncompr.o: zlib/uncompr.c
+	$(CC) -c zlib/uncompr.c -o obj/uncompr.o $(CFLAGS)
+
+obj/zutil.o: zlib/zutil.c
+	$(CC) -c zlib/zutil.c -o obj/zutil.o $(CFLAGS)
+
+obj/cdjpeg.o: jpeglib/cdjpeg.c
+	$(CC) -c jpeglib/cdjpeg.c -o obj/cdjpeg.o $(CFLAGS)
+
+obj/jcapimin.o: jpeglib/jcapimin.c
+	$(CC) -c jpeglib/jcapimin.c -o obj/jcapimin.o $(CFLAGS)
+
+obj/jcapistd.o: jpeglib/jcapistd.c
+	$(CC) -c jpeglib/jcapistd.c -o obj/jcapistd.o $(CFLAGS)
+
+obj/jccoefct.o: jpeglib/jccoefct.c
+	$(CC) -c jpeglib/jccoefct.c -o obj/jccoefct.o $(CFLAGS)
+
+obj/jccolor.o: jpeglib/jccolor.c
+	$(CC) -c jpeglib/jccolor.c -o obj/jccolor.o $(CFLAGS)
+
+obj/jcdctmgr.o: jpeglib/jcdctmgr.c
+	$(CC) -c jpeglib/jcdctmgr.c -o obj/jcdctmgr.o $(CFLAGS)
+
+obj/jchuff.o: jpeglib/jchuff.c
+	$(CC) -c jpeglib/jchuff.c -o obj/jchuff.o $(CFLAGS)
+
+obj/jcinit.o: jpeglib/jcinit.c
+	$(CC) -c jpeglib/jcinit.c -o obj/jcinit.o $(CFLAGS)
+
+obj/jcmainct.o: jpeglib/jcmainct.c
+	$(CC) -c jpeglib/jcmainct.c -o obj/jcmainct.o $(CFLAGS)
+
+obj/jcmarker.o: jpeglib/jcmarker.c
+	$(CC) -c jpeglib/jcmarker.c -o obj/jcmarker.o $(CFLAGS)
+
+obj/jcmaster.o: jpeglib/jcmaster.c
+	$(CC) -c jpeglib/jcmaster.c -o obj/jcmaster.o $(CFLAGS)
+
+obj/jcomapi.o: jpeglib/jcomapi.c
+	$(CC) -c jpeglib/jcomapi.c -o obj/jcomapi.o $(CFLAGS)
+
+obj/jcparam.o: jpeglib/jcparam.c
+	$(CC) -c jpeglib/jcparam.c -o obj/jcparam.o $(CFLAGS)
+
+obj/jcphuff.o: jpeglib/jcphuff.c
+	$(CC) -c jpeglib/jcphuff.c -o obj/jcphuff.o $(CFLAGS)
+
+obj/jcprepct.o: jpeglib/jcprepct.c
+	$(CC) -c jpeglib/jcprepct.c -o obj/jcprepct.o $(CFLAGS)
+
+obj/jcsample.o: jpeglib/jcsample.c
+	$(CC) -c jpeglib/jcsample.c -o obj/jcsample.o $(CFLAGS)
+
+obj/jctrans.o: jpeglib/jctrans.c
+	$(CC) -c jpeglib/jctrans.c -o obj/jctrans.o $(CFLAGS)
+
+obj/jdapimin.o: jpeglib/jdapimin.c
+	$(CC) -c jpeglib/jdapimin.c -o obj/jdapimin.o $(CFLAGS)
+
+obj/jdapistd.o: jpeglib/jdapistd.c
+	$(CC) -c jpeglib/jdapistd.c -o obj/jdapistd.o $(CFLAGS)
+
+obj/jdatadst.o: jpeglib/jdatadst.c
+	$(CC) -c jpeglib/jdatadst.c -o obj/jdatadst.o $(CFLAGS)
+
+obj/jdatasrc.o: jpeglib/jdatasrc.c
+	$(CC) -c jpeglib/jdatasrc.c -o obj/jdatasrc.o $(CFLAGS)
+
+obj/jdcoefct.o: jpeglib/jdcoefct.c
+	$(CC) -c jpeglib/jdcoefct.c -o obj/jdcoefct.o $(CFLAGS)
+
+obj/jdcolor.o: jpeglib/jdcolor.c
+	$(CC) -c jpeglib/jdcolor.c -o obj/jdcolor.o $(CFLAGS)
+
+obj/jddctmgr.o: jpeglib/jddctmgr.c
+	$(CC) -c jpeglib/jddctmgr.c -o obj/jddctmgr.o $(CFLAGS)
+
+obj/jdhuff.o: jpeglib/jdhuff.c
+	$(CC) -c jpeglib/jdhuff.c -o obj/jdhuff.o $(CFLAGS)
+
+obj/jdinput.o: jpeglib/jdinput.c
+	$(CC) -c jpeglib/jdinput.c -o obj/jdinput.o $(CFLAGS)
+
+obj/jdmainct.o: jpeglib/jdmainct.c
+	$(CC) -c jpeglib/jdmainct.c -o obj/jdmainct.o $(CFLAGS)
+
+obj/jdmarker.o: jpeglib/jdmarker.c
+	$(CC) -c jpeglib/jdmarker.c -o obj/jdmarker.o $(CFLAGS)
+
+obj/jdmaster.o: jpeglib/jdmaster.c
+	$(CC) -c jpeglib/jdmaster.c -o obj/jdmaster.o $(CFLAGS)
+
+obj/jdmerge.o: jpeglib/jdmerge.c
+	$(CC) -c jpeglib/jdmerge.c -o obj/jdmerge.o $(CFLAGS)
+
+obj/jdphuff.o: jpeglib/jdphuff.c
+	$(CC) -c jpeglib/jdphuff.c -o obj/jdphuff.o $(CFLAGS)
+
+obj/jdpostct.o: jpeglib/jdpostct.c
+	$(CC) -c jpeglib/jdpostct.c -o obj/jdpostct.o $(CFLAGS)
+
+obj/jdsample.o: jpeglib/jdsample.c
+	$(CC) -c jpeglib/jdsample.c -o obj/jdsample.o $(CFLAGS)
+
+obj/jdtrans.o: jpeglib/jdtrans.c
+	$(CC) -c jpeglib/jdtrans.c -o obj/jdtrans.o $(CFLAGS)
+
+obj/jerror.o: jpeglib/jerror.c
+	$(CC) -c jpeglib/jerror.c -o obj/jerror.o $(CFLAGS)
+
+obj/jfdctflt.o: jpeglib/jfdctflt.c
+	$(CC) -c jpeglib/jfdctflt.c -o obj/jfdctflt.o $(CFLAGS)
+
+obj/jfdctfst.o: jpeglib/jfdctfst.c
+	$(CC) -c jpeglib/jfdctfst.c -o obj/jfdctfst.o $(CFLAGS)
+
+obj/jfdctint.o: jpeglib/jfdctint.c
+	$(CC) -c jpeglib/jfdctint.c -o obj/jfdctint.o $(CFLAGS)
+
+obj/jidctflt.o: jpeglib/jidctflt.c
+	$(CC) -c jpeglib/jidctflt.c -o obj/jidctflt.o $(CFLAGS)
+
+obj/jidctfst.o: jpeglib/jidctfst.c
+	$(CC) -c jpeglib/jidctfst.c -o obj/jidctfst.o $(CFLAGS)
+
+obj/jidctint.o: jpeglib/jidctint.c
+	$(CC) -c jpeglib/jidctint.c -o obj/jidctint.o $(CFLAGS)
+
+obj/jidctred.o: jpeglib/jidctred.c
+	$(CC) -c jpeglib/jidctred.c -o obj/jidctred.o $(CFLAGS)
+
+obj/jmemmgr.o: jpeglib/jmemmgr.c
+	$(CC) -c jpeglib/jmemmgr.c -o obj/jmemmgr.o $(CFLAGS)
+
+obj/jmemnobs.o: jpeglib/jmemnobs.c
+	$(CC) -c jpeglib/jmemnobs.c -o obj/jmemnobs.o $(CFLAGS)
+
+obj/jquant1.o: jpeglib/jquant1.c
+	$(CC) -c jpeglib/jquant1.c -o obj/jquant1.o $(CFLAGS)
+
+obj/jquant2.o: jpeglib/jquant2.c
+	$(CC) -c jpeglib/jquant2.c -o obj/jquant2.o $(CFLAGS)
+
+obj/jutils.o: jpeglib/jutils.c
+	$(CC) -c jpeglib/jutils.c -o obj/jutils.o $(CFLAGS)
+
+obj/rdbmp.o: jpeglib/rdbmp.c
+	$(CC) -c jpeglib/rdbmp.c -o obj/rdbmp.o $(CFLAGS)
+
+obj/rdcolmap.o: jpeglib/rdcolmap.c
+	$(CC) -c jpeglib/rdcolmap.c -o obj/rdcolmap.o $(CFLAGS)
+
+obj/rdgif.o: jpeglib/rdgif.c
+	$(CC) -c jpeglib/rdgif.c -o obj/rdgif.o $(CFLAGS)
+
+obj/rdppm.o: jpeglib/rdppm.c
+	$(CC) -c jpeglib/rdppm.c -o obj/rdppm.o $(CFLAGS)
+
+obj/rdrle.o: jpeglib/rdrle.c
+	$(CC) -c jpeglib/rdrle.c -o obj/rdrle.o $(CFLAGS)
+
+obj/rdswitch.o: jpeglib/rdswitch.c
+	$(CC) -c jpeglib/rdswitch.c -o obj/rdswitch.o $(CFLAGS)
+
+obj/rdtarga.o: jpeglib/rdtarga.c
+	$(CC) -c jpeglib/rdtarga.c -o obj/rdtarga.o $(CFLAGS)
+
+obj/transupp.o: jpeglib/transupp.c
+	$(CC) -c jpeglib/transupp.c -o obj/transupp.o $(CFLAGS)
+
+obj/wrbmp.o: jpeglib/wrbmp.c
+	$(CC) -c jpeglib/wrbmp.c -o obj/wrbmp.o $(CFLAGS)
+
+obj/wrgif.o: jpeglib/wrgif.c
+	$(CC) -c jpeglib/wrgif.c -o obj/wrgif.o $(CFLAGS)
+
+obj/wrppm.o: jpeglib/wrppm.c
+	$(CC) -c jpeglib/wrppm.c -o obj/wrppm.o $(CFLAGS)
+
+obj/wrrle.o: jpeglib/wrrle.c
+	$(CC) -c jpeglib/wrrle.c -o obj/wrrle.o $(CFLAGS)
+
+obj/wrtarga.o: jpeglib/wrtarga.c
+	$(CC) -c jpeglib/wrtarga.c -o obj/wrtarga.o $(CFLAGS)
+
+obj/png.o: libpng/png.c
+	$(CC) -c libpng/png.c -o obj/png.o $(CFLAGS)
+
+obj/pngerror.o: libpng/pngerror.c
+	$(CC) -c libpng/pngerror.c -o obj/pngerror.o $(CFLAGS)
+
+obj/pngget.o: libpng/pngget.c
+	$(CC) -c libpng/pngget.c -o obj/pngget.o $(CFLAGS)
+
+obj/pngmem.o: libpng/pngmem.c
+	$(CC) -c libpng/pngmem.c -o obj/pngmem.o $(CFLAGS)
+
+obj/pngpread.o: libpng/pngpread.c
+	$(CC) -c libpng/pngpread.c -o obj/pngpread.o $(CFLAGS)
+
+obj/pngread.o: libpng/pngread.c
+	$(CC) -c libpng/pngread.c -o obj/pngread.o $(CFLAGS)
+
+obj/pngrio.o: libpng/pngrio.c
+	$(CC) -c libpng/pngrio.c -o obj/pngrio.o $(CFLAGS)
+
+obj/pngrtran.o: libpng/pngrtran.c
+	$(CC) -c libpng/pngrtran.c -o obj/pngrtran.o $(CFLAGS)
+
+obj/pngrutil.o: libpng/pngrutil.c
+	$(CC) -c libpng/pngrutil.c -o obj/pngrutil.o $(CFLAGS)
+
+obj/pngset.o: libpng/pngset.c
+	$(CC) -c libpng/pngset.c -o obj/pngset.o $(CFLAGS)
+
+obj/pngtrans.o: libpng/pngtrans.c
+	$(CC) -c libpng/pngtrans.c -o obj/pngtrans.o $(CFLAGS)
+
+obj/pngwio.o: libpng/pngwio.c
+	$(CC) -c libpng/pngwio.c -o obj/pngwio.o $(CFLAGS)
+
+obj/pngwrite.o: libpng/pngwrite.c
+	$(CC) -c libpng/pngwrite.c -o obj/pngwrite.o $(CFLAGS)
+
+obj/pngwtran.o: libpng/pngwtran.c
+	$(CC) -c libpng/pngwtran.c -o obj/pngwtran.o $(CFLAGS)
+
+obj/pngwutil.o: libpng/pngwutil.c
+	$(CC) -c libpng/pngwutil.c -o obj/pngwutil.o $(CFLAGS)
+
+obj/CIrrDeviceLinux.o: CIrrDeviceLinux.cpp
+	$(CPP) -c CIrrDeviceLinux.cpp -o obj/CIrrDeviceLinux.o $(CXXFLAGS)
+
+obj/CIrrDeviceStub.o: CIrrDeviceStub.cpp
+	$(CPP) -c CIrrDeviceStub.cpp -o obj/CIrrDeviceStub.o $(CXXFLAGS)
+
+obj/CIrrDeviceWin32.o: CIrrDeviceWin32.cpp
+	$(CPP) -c CIrrDeviceWin32.cpp -o obj/CIrrDeviceWin32.o $(CXXFLAGS)
+
+obj/CLogger.o: CLogger.cpp
+	$(CPP) -c CLogger.cpp -o obj/CLogger.o $(CXXFLAGS)
+
+obj/COSOperator.o: COSOperator.cpp
+	$(CPP) -c COSOperator.cpp -o obj/COSOperator.o $(CXXFLAGS)
+
+obj/CStringParameters.o: CStringParameters.cpp
+	$(CPP) -c CStringParameters.cpp -o obj/CStringParameters.o $(CXXFLAGS)
+
+obj/Irrlicht.o: Irrlicht.cpp
+	$(CPP) -c Irrlicht.cpp -o obj/Irrlicht.o $(CXXFLAGS)
+
+obj/os.o: os.cpp
+	$(CPP) -c os.cpp -o obj/os.o $(CXXFLAGS)
+
+obj/CMeshCache.o: CMeshCache.cpp
+	$(CPP) -c CMeshCache.cpp -o obj/CMeshCache.o $(CXXFLAGS)
+
+obj/COpenGLSLMaterialRenderer.o: COpenGLSLMaterialRenderer.cpp
+	$(CPP) -c COpenGLSLMaterialRenderer.cpp -o obj/COpenGLSLMaterialRenderer.o $(CXXFLAGS)
+
+obj/CZBuffer2.o: CZBuffer2.cpp
+	$(CPP) -c CZBuffer2.cpp -o obj/CZBuffer2.o $(CXXFLAGS)
+
+obj/CTRTextureGouraudAlpha2.o: CTRTextureGouraudAlpha2.cpp
+	$(CPP) -c CTRTextureGouraudAlpha2.cpp -o obj/CTRTextureGouraudAlpha2.o $(CXXFLAGS)
+
+obj/CTRTextureGouraudNoZ2.o: CTRTextureGouraudNoZ2.cpp
+	$(CPP) -c CTRTextureGouraudNoZ2.cpp -o obj/CTRTextureGouraudNoZ2.o $(CXXFLAGS)
+
+obj/CTRTextureLightMap2_M2.o: CTRTextureLightMap2_M2.cpp
+	$(CPP) -c CTRTextureLightMap2_M2.cpp -o obj/CTRTextureLightMap2_M2.o $(CXXFLAGS)
+
+obj/CTRTextureLightMap2_M4.o: CTRTextureLightMap2_M4.cpp
+	$(CPP) -c CTRTextureLightMap2_M4.cpp -o obj/CTRTextureLightMap2_M4.o $(CXXFLAGS)
+
+obj/CTRTextureLightMap2_M1.o: CTRTextureLightMap2_M1.cpp
+	$(CPP) -c CTRTextureLightMap2_M1.cpp -o obj/CTRTextureLightMap2_M1.o $(CXXFLAGS)
+
+obj/CSoftwareDriver2.o: CSoftwareDriver2.cpp
+	$(CPP) -c CSoftwareDriver2.cpp -o obj/CSoftwareDriver2.o $(CXXFLAGS)
+
+obj/CSoftwareTexture2.o: CSoftwareTexture2.cpp
+	$(CPP) -c CSoftwareTexture2.cpp -o obj/CSoftwareTexture2.o $(CXXFLAGS)
+
+obj/CTRTextureGouraud2.o: CTRTextureGouraud2.cpp
+	$(CPP) -c CTRTextureGouraud2.cpp -o obj/CTRTextureGouraud2.o $(CXXFLAGS)
+
+obj/CCrowdSceneNode.o: CCrowdSceneNode.cpp
+	$(CPP) -c CCrowdSceneNode.cpp -o obj/CCrowdSceneNode.o $(CXXFLAGS)
