@@ -1,0 +1,13 @@
+diff -rNbBu3 jirr2/src/native/irrlicht_wrap.cxx jirr/src/native/irrlicht_wrap.cxx 
+--- jirr2/src/native/irrlicht_wrap.cxx	2005-03-29 22:12:46.093750000 +0200
++++ jirr/src/native/irrlicht_wrap.cxx	2005-03-29 22:29:06.312500000 +0200
+@@ -1567,7 +1567,8 @@
+         "Attempted to invoke pure virtual method irr::IEventReceiver::OnEvent.");
+         return result;
+     }
+-    *((irr::SEvent *)&jevent) = &event;
++    //*((irr::SEvent *)&jevent) = &event;
++    jevent = (long)&event;
+     jresult = (jboolean) jenv->CallStaticBooleanMethod(Swig::jclass_JirrJNI, Swig::director_methids[30], swig_get_self(), jevent);
+     if (jenv->ExceptionOccurred()) return result;
+     result = jresult ? true : false; 

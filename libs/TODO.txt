@@ -1,0 +1,2 @@
+Found to source directories for the JIRR lib.
+Not sure yet if "jirr" or "jirr-dev" is the latest one.
