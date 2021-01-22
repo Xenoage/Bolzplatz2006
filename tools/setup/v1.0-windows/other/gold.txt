@@ -1,0 +1,10 @@
+ACHTUNG:
+
+Bolzplatz 2006 muss bereits installiert sein.
+Die Gold-Edition muss unbedingt im gleichen Verzeichnis wie Bolzplatz 2006 installiert werden, sonst laufen die Programme nicht!
+
+
+ATTENTION:
+
+Slam Soccer 2006 or Coup de Foot 2006 must already be installed.
+The Gold-Edition must be installed in the same folder as Slam Soccer 2006 or Coup de Foot 2006, otherwise the programs will not run!

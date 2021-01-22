@@ -1,0 +1,1 @@
+Paths in the *.iss files are specific to Andi's PC in 2006
