@@ -31,11 +31,11 @@ jobs:
       - run:
           name: Build for Windows
           command: |
-            ant
+            cd game && ant
       - run:
           name: build starter files
           command: | 
-            cd starter/exe/bolzplatz2006/ && make
+            cd game/starter/exe/bolzplatz2006/ && make
             cd ../settings && make
             cd ../stadioneditor && make
             cd ../teameditor && make
