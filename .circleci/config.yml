@@ -29,7 +29,7 @@ jobs:
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode
             curl -SL "https://files.jrsoftware.org/is/6/innosetup-6.1.2.exe" -o is.exe
-            wine-x11-run wine is.exe /SP- /VERYSILENT /ALLUSERS /SUPPRESSMSGBOXES
+            wine is.exe /SP- /VERYSILENT /ALLUSERS /SUPPRESSMSGBOXES
             rm is.exe
             cd "$HOME/.wine/drive_c/Program Files/Inno Setup 6/Languages"
             curl -L "https://api.github.com/repos/jrsoftware/issrc/tarball/is-6_1_2"
