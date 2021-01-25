@@ -26,6 +26,7 @@ jobs:
       - run:
           name: Prepare the Windows build environment
           command: |
+            export DISPLAY=xserver:0
             dpkg --add-architecture i386 
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32
