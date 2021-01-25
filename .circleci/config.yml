@@ -1,0 +1,50 @@
+version: 2
+defaults: &defaults
+  docker:
+    - image: ubuntu:18.04
+jobs:
+  build_linux:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Id
+          command: cat /etc/*release
+      - run:
+          name: Setup requirements
+          command: apt-get update && apt-get install -y git ant
+      - run:
+          name: Build for Linux
+          command: ant 
+      - store_artifacts:
+          path: game.jar
+  build_win32:
+    docker:
+      - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run:
+          name: Prepare the Windows build environment
+          command: |
+            apt-get update 
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk nsis libsaxonb-java curl ant git
+      - run:
+          name: Build for Windows
+          command: |
+            ant
+      - run:
+          name: build starter files
+          command: | 
+            cd starter/exe/bolzplatz2006/ && make
+            cd ../settings && make
+            cd ../stadioneditor && make
+            cd ../teameditor && make
+      - store_artifacts:
+          path: game.jar
+
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - build_linux
+      - build_win32
