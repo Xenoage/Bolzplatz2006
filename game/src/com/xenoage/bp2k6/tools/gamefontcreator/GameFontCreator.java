@@ -1,10 +1,11 @@
 /**
  * Bolzplatz 2006
- * Copyright (C) 2006 by Xenoage Software
- * 
- * Attention: This file is part of the Gold-Edition
- * of Bolzplatz 2006 and is not released under the GPL!
- * Ask info@xenoage.com if you want to modify it.
+ * Copyright (C) 2006 / 2021 by Xenoage Software
+ *
+ * This file is part of the Gold-Edition
+ * of Bolzplatz 2006 and was originally not released under the GPL.
+ * 2021-01-15 the Gold-Edition was released under the GPL like
+ * the other code of this game.
  */
 package com.xenoage.bp2k6.tools.gamefontcreator;
 
@@ -33,13 +34,13 @@ import com.xenoage.bp2k6.util.XMLWriter;
  * <code>
  * A B C D E F G H I J
  * K L M N O P Q R S T
- * U V W X Y Z Ä Ö Ü ©
+ * U V W X Y Z ï¿½ ï¿½ ï¿½ ï¿½
  * a b c d e f g h i j
  * k l m n o p q r s t
- * u v w x y z ä ö ü ß
+ * u v w x y z ï¿½ ï¿½ ï¿½ ï¿½
  * 0 1 2 3 4 5 6 7 8 9
  * . , ; : _ ! ? " ' &
- * + - * / = € $ § @ %
+ * + - * / = ï¿½ $ ï¿½ @ %
  * ( ) { } [ ] < > \  
  * </code>
  * All letters must have the same height,

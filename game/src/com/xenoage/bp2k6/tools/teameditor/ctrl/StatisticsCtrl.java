@@ -1,10 +1,11 @@
 /**
  * Bolzplatz 2006
- * Copyright (C) 2006 by Xenoage Software
- * 
- * Attention: This file is part of the Gold-Edition
- * of Bolzplatz 2006 and is not released under the GPL!
- * Ask info@xenoage.com if you want to modify it.
+ * Copyright (C) 2006 / 2021 by Xenoage Software
+ *
+ * This file is part of the Gold-Edition
+ * of Bolzplatz 2006 and was originally not released under the GPL.
+ * 2021-01-15 the Gold-Edition was released under the GPL like
+ * the other code of this game.
  */
 package com.xenoage.bp2k6.tools.teameditor.ctrl;
 
@@ -277,4 +278,3 @@ public class StatisticsCtrl
   }
   
 }
-  
