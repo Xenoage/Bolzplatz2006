@@ -12,8 +12,7 @@ jobs:
           command: cat /etc/*release
       - run:
           name: Setup requirements
-          command: apt-get update && apt-get install -y git ant && dpkg --add-architecture i386 && apt-get update && apt-get install wine32
-      - run:
+          command: apt-get update && apt-get install -y git ant       - run:
           name: Build for Linux
           command: cd game && ant 
       - store_artifacts:
@@ -26,8 +25,9 @@ jobs:
       - run:
           name: Prepare the Windows build environment
           command: |
+            dpkg --add-architecture i386 
             apt-get update 
-            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32
             curl -SL "https://files.jrsoftware.org/is/6/innosetup-6.1.2.exe" -o is.exe
             wine is.exe /SP- /VERYSILENT /ALLUSERS /SUPPRESSMSGBOXES
             rm is.exe
