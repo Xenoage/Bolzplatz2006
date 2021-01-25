@@ -12,7 +12,8 @@ jobs:
           command: cat /etc/*release
       - run:
           name: Setup requirements
-          command: apt-get update && apt-get install -y git ant       - run:
+          command: apt-get update && apt-get install -y git ant
+      - run:
           name: Build for Linux
           command: cd game && ant 
       - store_artifacts:
