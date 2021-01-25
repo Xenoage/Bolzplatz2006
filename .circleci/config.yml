@@ -27,7 +27,7 @@ jobs:
           name: Prepare the Windows build environment
           command: |
             apt-get update 
-            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine procps wine32 xvfb osslsigncode
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode
             curl -SL "https://files.jrsoftware.org/is/6/innosetup-6.1.2.exe" -o is.exe
             wine-x11-run wine is.exe /SP- /VERYSILENT /ALLUSERS /SUPPRESSMSGBOXES
             rm is.exe
