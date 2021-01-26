@@ -29,7 +29,7 @@ jobs:
             export DISPLAY=xserver:0
             dpkg --add-architecture i386 
             apt-get update 
-            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32 wine-gecko
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32 
       - run:
           name: Build for Windows
           command: |
