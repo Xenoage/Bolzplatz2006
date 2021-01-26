@@ -37,7 +37,7 @@ jobs:
       - run:
           name: build starter files
           command: | 
-            cd game/starter/exe/bolzplatz2006/ && make && ls ../../../../../
+            cd game/starter/exe/bolzplatz2006/ && make && ls ../../../../tools/setup/v1.0-windows/
             cd ../settings && make
             cd ../stadioneditor && make
             cd ../teameditor && make
