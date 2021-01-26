@@ -30,12 +30,6 @@ jobs:
             dpkg --add-architecture i386 
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32 wine-gecko
-            curl -SL "https://files.jrsoftware.org/is/6/innosetup-6.1.2.exe" -o is.exe
-            wine is.exe /SP- /VERYSILENT /ALLUSERS /SUPPRESSMSGBOXES
-            rm is.exe
-            cd "$HOME/.wine/drive_c/Program Files/Inno Setup 6/Languages"
-            curl -L "https://api.github.com/repos/jrsoftware/issrc/tarball/is-6_1_2"
-            tar xz --strip-components=4 --wildcards "*/Files/Languages/Unofficial/*.isl"
       - run:
           name: Build for Windows
           command: |
@@ -47,6 +41,9 @@ jobs:
             cd ../settings && make
             cd ../stadioneditor && make
             cd ../teameditor && make
+      - run:
+          name: start Inno Setup
+          command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
       - store_artifacts:
           path: game.jar
 
