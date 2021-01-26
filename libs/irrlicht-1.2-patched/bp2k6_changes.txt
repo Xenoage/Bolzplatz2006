@@ -1,0 +1,8 @@
+- include/vector3d.h: "<"-operator added. See https://sourceforge.net/forum/message.php?msg_id=3432297.
+- CCrowdSceneNode.cpp, .h and include/ICrowdSceneNode.h added. Added include to irrlicht.h.
+- ISceneManager.h/CSceneManager.h/CSceneManager.cpp: addCrowdSceneNode(...) added.
+- rect.h: set(...) added
+- IVideoDriver.h/CNullDriver.*/COpenGLDriver.*: draw2DImageRotation(...) (2 versions) added. Implemented only in OpenGL driver.
+- All VideoDriver .h and .cpp: changed drawImage(..., SColor*, ...) (4 colors, 1 for each vertex) to changed drawImage(..., SColor, ...) (one color for all vertices). Reason: SWIG means that it is only one vertex, which leads to an incorrect display
+- COpenGLDriver.cpp: setRenderStates2DMode(): glTexParameteri: GL_LINEAR statt GL_NEAREST
+- CSkyBoxSceneNode.cpp: 1000 units long (instead of 10)

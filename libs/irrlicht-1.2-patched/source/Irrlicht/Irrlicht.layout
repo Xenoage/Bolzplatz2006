@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="..\..\changes.txt" open="1" top="0">
+		<Cursor position="22192" topLine="416"/>
+	</File>
+	<File name="..\..\include\EDriverTypes.h" open="1" top="0">
+		<Cursor position="1367" topLine="12"/>
+	</File>
+	<File name="..\..\include\ILightSceneNode.h" open="0" top="0">
+		<Cursor position="809" topLine="8"/>
+	</File>
+	<File name="..\..\include\ISceneManager.h" open="1" top="0">
+		<Cursor position="63549" topLine="1097"/>
+	</File>
+	<File name="..\..\include\IVideoDriver.h" open="1" top="0">
+		<Cursor position="1320" topLine="46"/>
+	</File>
+	<File name="..\..\include\SMaterial.h" open="1" top="1">
+		<Cursor position="4462" topLine="83"/>
+	</File>
+	<File name="..\..\include\rect.h" open="0" top="0">
+		<Cursor position="5506" topLine="171"/>
+	</File>
+	<File name="C3DSMeshFileLoader.cpp" open="1" top="0">
+		<Cursor position="25276" topLine="1029"/>
+	</File>
+	<File name="C3DSMeshFileLoader.h" open="0" top="0">
+		<Cursor position="335" topLine="0"/>
+	</File>
+	<File name="CCrowdSceneNode.cpp" open="0" top="0">
+		<Cursor position="255" topLine="0"/>
+	</File>
+	<File name="CCrowdSceneNode.h" open="0" top="0">
+		<Cursor position="172" topLine="0"/>
+	</File>
+	<File name="CD3D8Driver.cpp" open="1" top="0">
+		<Cursor position="37547" topLine="1201"/>
+	</File>
+	<File name="CD3D8Driver.h" open="0" top="0">
+		<Cursor position="2922" topLine="69"/>
+	</File>
+	<File name="CD3D9Driver.cpp" open="1" top="0">
+		<Cursor position="25484" topLine="842"/>
+	</File>
+	<File name="CD3D9Driver.h" open="0" top="0">
+		<Cursor position="2811" topLine="45"/>
+	</File>
+	<File name="CDefaultSceneNodeFactory.cpp" open="0" top="0">
+		<Cursor position="488" topLine="0"/>
+	</File>
+	<File name="CLightSceneNode.cpp" open="0" top="0">
+		<Cursor position="312" topLine="0"/>
+	</File>
+	<File name="CNullDriver.cpp" open="0" top="0">
+		<Cursor position="14381" topLine="575"/>
+	</File>
+	<File name="CNullDriver.h" open="0" top="0">
+		<Cursor position="5646" topLine="115"/>
+	</File>
+	<File name="COpenGLDriver.cpp" open="1" top="0">
+		<Cursor position="13828" topLine="368"/>
+	</File>
+	<File name="COpenGLDriver.h" open="1" top="0">
+		<Cursor position="15378" topLine="303"/>
+	</File>
+	<File name="COpenGLTexture.cpp" open="0" top="0">
+		<Cursor position="10897" topLine="307"/>
+	</File>
+	<File name="CSceneManager.cpp" open="0" top="0">
+		<Cursor position="2136" topLine="54"/>
+	</File>
+	<File name="CSceneManager.h" open="1" top="0">
+		<Cursor position="18740" topLine="367"/>
+	</File>
+	<File name="CSkyBoxSceneNode.cpp" open="1" top="0">
+		<Cursor position="2313" topLine="117"/>
+	</File>
+	<File name="CSoftwareDriver.cpp" open="0" top="0">
+		<Cursor position="594" topLine="0"/>
+	</File>
+	<File name="CSoftwareDriver.h" open="0" top="0">
+		<Cursor position="2000" topLine="37"/>
+	</File>
+	<File name="CSoftwareDriver2.cpp" open="0" top="0">
+		<Cursor position="399" topLine="0"/>
+	</File>
+	<File name="CSoftwareDriver2.h" open="0" top="0">
+		<Cursor position="2656" topLine="46"/>
+	</File>
+</CodeBlocks_layout_file>
