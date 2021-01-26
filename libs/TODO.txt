@@ -1,2 +1,3 @@
-Found to source directories for the JIRR lib.
-Not sure yet if "jirr" or "jirr-dev" is the latest one.
+Not sure any more which was the finally used Irrlicht/JIRR version.
+I guess, Irrlicht 1.2, patched with Bolzplatz additions (crowd scene node), see folder "irrlicht-1.2-patched"
+I've put the other found sources of Irrlicht 0.14 and different JIRR versions in the "archive" folder for now.
