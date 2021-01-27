@@ -45,7 +45,7 @@ jobs:
           name: start Inno Setup
           command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
       - store_artifacts:
-          path: game.jar
+          path: /root/project/tools/setup/v1.0-windows/output/bolzplatz2006-1.0.3-install.exe
 
 workflows:
   version: 2
