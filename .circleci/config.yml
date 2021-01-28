@@ -29,7 +29,7 @@ jobs:
             export DISPLAY=xserver:0
             dpkg --add-architecture i386 
             apt-get update 
-            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget unzip
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
             ls /root
