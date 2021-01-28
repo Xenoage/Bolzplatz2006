@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Build for Windows
           command: |
-            cd game && ant 
+            cd game && ant && ls ..
             cd ../libs/irrlicht-1.2-patched/source && make && ls
       - run:
           name: build starter files
