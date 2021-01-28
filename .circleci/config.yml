@@ -34,7 +34,6 @@ jobs:
           name: Build for Windows
           command: |
             cd game && ant && ls ../libs/
-            cd ../libs/irrlicht-1.2-patched/source/Irrlicht && make && ls
       - run:
           name: build starter files
           command: | 
