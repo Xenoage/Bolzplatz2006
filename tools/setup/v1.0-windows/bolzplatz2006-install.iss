@@ -35,6 +35,7 @@ Source: "Z:\root\project\game\data\config\language.xml"; DestDir: "{app}\data\co
 Source: "Z:\root\project\game\data\config\language-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
 Source: "Z:\root\project\game\anleitung.html"; DestDir: "{app}"; Flags: ignoreversion
 ;exclude: gold files, temp files, savegame files, input config, language config
+Source: "Z:\root\project\tools\setup\v1.0-windows\bolzplatz2006\*"; DestDir: "{app}"; Excludes: "gold.jar,license-gold.txt,data\temp\*,data\savegames\career\*,data\savegames\worldcup\*,data\config\input.xml,data\config\input-default.xml,data\config\language.xml,data\config\language-default.xml"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [INI]

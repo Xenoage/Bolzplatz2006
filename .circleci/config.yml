@@ -33,14 +33,21 @@ jobs:
       - run:
           name: Build for Windows
           command: |
-            cd game && ant
+            cd game && ant 
+            cd ../libs/irrlicht-1.2-patched/source && make && ls
       - run:
           name: build starter files
           command: | 
-            cd game/starter/exe/bolzplatz2006/ && make && cp bolzplatz2006.exe ../../../../tools/setup/v1.0-windows/other/de/
-            cd ../settings && make && cp settings.exe ../../../../tools/setup/v1.0-windows/other/de/einstellungen.exe
+            cd game/starter/exe/bolzplatz2006/ && make 
+            cd ../settings && make 
             cd ../stadioneditor && make
             cd ../teameditor && make
+      - run:
+          name: collect files for installation package
+          command: |
+            cp -r /root/project/game/data /root/project/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/project/game/doc /root/project/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/project/game/game.jar /root/project/tools/setup/v1.0-windows/bolzplatz2006/
       - run:
           name: start Inno Setup
           command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
