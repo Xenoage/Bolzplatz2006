@@ -30,6 +30,9 @@ jobs:
             dpkg --add-architecture i386 
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32 
+            cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
+            cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
+            ls /root
       - run:
           name: Build for Windows
           command: |
@@ -47,6 +50,7 @@ jobs:
             cp -r /root/project/game/data /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             cp -r /root/project/game/doc /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             cp -r /root/project/game/game.jar /root/project/tools/setup/v1.0-windows/bolzplatz2006/
+            mkdir -p /root/project/tools/setup/v1.0-windows/bolzplatz2006/jre/bin/
       - run:
           name: start Inno Setup
           command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
