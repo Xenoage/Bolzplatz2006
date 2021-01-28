@@ -50,7 +50,7 @@ jobs:
             cp -r /root/project/game/data /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             cp -r /root/project/game/doc /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             cp -r /root/project/game/game.jar /root/project/tools/setup/v1.0-windows/bolzplatz2006/
-            mkdir -p /root/project/tools/setup/v1.0-windows/bolzplatz2006/jre/bin/ && cp /root/jdk-11.0.10+9-jre/bin/javaw.exe /root/project/tools/setup/v1.0-windows/bolzplatz2006/jre/bin/ 
+            mkdir -p /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp /root/jdk-11.0.10+9-jre/bin/javaw.exe /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ 
       - run:
           name: start Inno Setup
           command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
