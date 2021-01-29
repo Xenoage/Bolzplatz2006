@@ -51,7 +51,7 @@ jobs:
             cp -r /root/project/game/doc /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             cp -r /root/project/game/game.jar /root/project/tools/setup/v1.0-windows/bolzplatz2006/
             mkdir -p /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp -r /root/jdk-11.0.10+9-jre/* /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/
-            mkdir /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.1.jar -P /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
+            mkdir /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
       - run:
           name: start Inno Setup
           command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
