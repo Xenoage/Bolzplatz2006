@@ -36,7 +36,8 @@ jobs:
       - run:
           name: Build for Windows
           command: |
-            cd game && ant && ls ../libs/
+            cd game && ant 
+            cd ../libs/lwjgl && mkdir bin && ant
       - run:
           name: build starter files
           command: | 
