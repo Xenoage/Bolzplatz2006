@@ -311,17 +311,17 @@
 	
 	<!-- Compiles the Java source code -->
 	<target name="compile" description="Compiles the java source code">
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/*.java" source="1.4" target="1.4" taskname="lwjgl" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/input/**" source="1.4" target="1.4" taskname="input" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/openal/**" source="1.4" target="1.4" taskname="openal" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/audio/*.java" source="1.5" target="1.5" taskname="audio" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/audio/vorbis/*.java" source="1.5" target="1.5" taskname="audio-vorbis" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/opengl/**" source="1.4" target="1.4" taskname="opengl" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/test/**" source="1.4" target="1.4" taskname="test" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/examples/**" source="1.4" target="1.4" taskname="examples" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/util/**" excludes="org/lwjgl/util/generator/**" source="1.4" target="1.4" taskname="util" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/fmod3/**" source="1.4" target="1.4" taskname="fmod" />
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/devil/**" source="1.4" target="1.4" taskname="devil"/>
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/*.java" source="11" target="11" taskname="lwjgl" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/input/**" source="11" target="11" taskname="input" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/openal/**" source="11" target="11" taskname="openal" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/audio/*.java" source="11" target="11" taskname="audio" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/audio/vorbis/*.java" source="11" target="11" taskname="audio-vorbis" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/opengl/**" source="11" target="11" taskname="opengl" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/test/**" source="11" target="11" taskname="test" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/examples/**" source="11" target="11" taskname="examples" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/util/**" excludes="org/lwjgl/util/generator/**" source="11" target="11" taskname="util" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/fmod3/**" source="11" target="11" taskname="fmod" />
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/devil/**" source="11" target="11" taskname="devil"/>
 	</target>
 	
 	<!-- Generates the native headers from source files -->
@@ -390,7 +390,7 @@
 	
 	<!-- Creates the Javadoc -->
 	<target name="javadoc" description="Creates javadoc from java source code">
-		<javadoc destdir="${lwjgl.docs}/javadoc" author="true" version="true" use="true" source="1.4" windowtitle="LWJGL API">
+		<javadoc destdir="${lwjgl.docs}/javadoc" author="true" version="true" use="true" source="11" windowtitle="LWJGL API">
 			<fileset refid="lwjgl.javadoc.fileset" />
 			<doctitle><![CDATA[<h1>Lightweight Java Game Toolkit</h1>]]></doctitle>
 			<bottom><![CDATA[<i>Copyright &#169; 2002-2005 lwjgl.org. All Rights Reserved.</i>]]></bottom>
@@ -399,7 +399,7 @@
 
 	<!-- Compiles the Java source code -->
 	<target name="generators" description="Compiles the native method generators">
-		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/util/generator/**.java" source="1.4" target="1.4" taskname="generator">
+		<javac debug="yes" srcdir="${lwjgl.src}/java/" destdir="${lwjgl.bin}" includes="org/lwjgl/util/generator/**.java" source="11" target="11" taskname="generator">
 			<compilerarg value="-Xlint:all"/>
 		</javac>
 	</target>
