@@ -10,11 +10,12 @@ AppSupportURL=http://www.bolzplatz2006.de
 AppUpdatesURL=http://www.bolzplatz2006.de
 DefaultDirName={pf}\Bolzplatz 2006
 DefaultGroupName=Bolzplatz 2006
+UsePreviousAppDir=no
 AllowNoIcons=yes
 LicenseFile=Z:\root\project\game\license.txt
 InfoBeforeFile=Z:\root\project\tools\setup\v1.0-windows\other\info.txt
 OutputDir=Z:\root\project\tools\setup\v1.0-windows\output
-OutputBaseFilename=bolzplatz2006-1.0.3-install
+OutputBaseFilename=bolzplatz2006-git-install
 Compression=lzma
 SolidCompression=yes
 
