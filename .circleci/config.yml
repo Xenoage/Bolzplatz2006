@@ -47,7 +47,7 @@ jobs:
             cd ../teameditor && make
       - run:
           name: build irrlicht-0.14
-          command: cd /root/project/libs/archive/irrlicht-0.14-patched && make -f Makefile.win
+          command: cd /root/project/libs/archive/irrlicht-0.14-patched &&  sed -i '7 a #defined _IRR_WINDOWS' CFileList.cpp && make -f Makefile.win
       - run:
           name: collect files for installation package
           command: |
