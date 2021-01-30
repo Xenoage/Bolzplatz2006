@@ -82,6 +82,7 @@ bool CGUIButton::OnEvent(SEvent event)
 			}
 			return true;
 		}
+		break;
 	case EET_GUI_EVENT:
 		if (event.GUIEvent.EventType == EGET_ELEMENT_FOCUS_LOST)
 		{
