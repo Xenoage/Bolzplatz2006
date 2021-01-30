@@ -46,6 +46,9 @@ jobs:
             cd ../stadioneditor && make
             cd ../teameditor && make
       - run:
+          name: build irrlicht-0.14
+          command: cd /root/project/libs/archive/irrlicht-0.14-patched && make -f Makefile.win
+      - run:
           name: collect files for installation package
           command: |
             cp -r /root/project/game/data /root/project/tools/setup/v1.0-windows/bolzplatz2006/
