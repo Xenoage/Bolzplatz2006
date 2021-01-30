@@ -53,7 +53,7 @@ public:
 	//! unlock function
 	virtual void unlock();
 
-  virtual void COpenGLTexture::snowPixel(s32 count);
+        virtual void snowPixel(s32 count);
 
 	//! Returns original size of the texture.
 	virtual const core::dimension2d<s32>& getOriginalSize();

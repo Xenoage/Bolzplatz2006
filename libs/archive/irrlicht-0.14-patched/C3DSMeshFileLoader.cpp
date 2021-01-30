@@ -116,7 +116,7 @@ IAnimatedMesh* C3DSMeshFileLoader::createMesh(io::IReadFile* file)
 
 	file->read(&data.header, sizeof(ChunkHeader));
 	if (data.header.id != 0x4D4D)
-		return false;
+		return NULL; //false;
 
 	CurrentMaterial.Material = video::SMaterial();
 	CurrentMaterial.Name = "";

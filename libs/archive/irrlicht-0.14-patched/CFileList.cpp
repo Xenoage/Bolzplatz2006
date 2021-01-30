@@ -5,11 +5,6 @@
 #include "CFileList.h"
 #include "IrrCompileConfig.h"
 
-namespace irr
-{
-namespace io
-{
-
 #ifdef LINUX
 #include <dirent.h>
 #include <stdio.h>
@@ -27,6 +22,12 @@ namespace io
 #include <io.h>
 #include <direct.h>
 #endif
+
+namespace irr
+{
+namespace io
+{
+
 
 
 CFileList::CFileList()

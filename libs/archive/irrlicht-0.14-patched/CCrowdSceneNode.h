@@ -46,12 +46,12 @@ namespace scene
 		//! returns amount of materials used by this scene node.
 		virtual s32 getMaterialCount();
 
-    void CCrowdSceneNode::createCharacter(
+    void createCharacter(
       s32 characterIndex, f32 x, f32 y, f32 z, f32 rotY, f32 width, f32 height);
 
-    void CCrowdSceneNode::updateBox();
+    void updateBox();
 
-    void CCrowdSceneNode::setCharacterTCords(s32 characterIndex,
+    void setCharacterTCords(s32 characterIndex,
       f32 x0, f32 y0, f32 x1, f32 y1, f32 x2, f32 y2, f32 x3, f32 y3);
 
 	private:
