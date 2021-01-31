@@ -49,7 +49,7 @@ jobs:
           name: build irrlicht-0.14
           command: |
             cd /root/project/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define _IRR_WINDOWS_" CFileList.cpp && sed -i "4a \#define _IRR_WINDOWS_" COpenGLTexture.h
-            make -f Makefile.win
+            cd /root/project/libs/archive/irrlicht-0.14-patched && make -f Makefile.win
       - run:
           name: collect files for installation package
           command: |
