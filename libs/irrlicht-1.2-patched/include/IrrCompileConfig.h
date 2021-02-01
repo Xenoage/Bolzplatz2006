@@ -41,8 +41,8 @@ and this to the linker settings: -ld3dx9 -ld3dx8 **/
 #if (defined(_IRR_WINDOWS_) || defined(_XBOX)) && \
  (!defined(__GNUC__) || defined(IRR_COMPILE_WITH_DX9_DEV_PACK))
 
-#define _IRR_COMPILE_WITH_DIRECT3D_8_
-#define _IRR_COMPILE_WITH_DIRECT3D_9_
+//#define _IRR_COMPILE_WITH_DIRECT3D_8_
+//#define _IRR_COMPILE_WITH_DIRECT3D_9_
 
 #endif
 
