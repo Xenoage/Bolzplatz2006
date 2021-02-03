@@ -1,0 +1,4 @@
+The used font is "Java Jive Regular.ttf", a commercial font.
+See https://www.linotype.com/de/409914/java-jive-regular-product.html?SiteId=575
+It can not be added to this repository because of it's license.
+Contact info@xenoage.com for further information.
