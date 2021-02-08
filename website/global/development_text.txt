@@ -1,0 +1,39 @@
+<span class="head"><b>Information / Development</b></span><P>
+This game is open source! The source code is provided under the <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">General Public License (GPL)</a>, so you are welcome to modify and extend it. Share your modifications with the community and contact <a href="mailto:info@xenoage.com">info@xenoage.com</a> if think your work should be included in later updates of the game! Thanks :-)
+<BR>
+The source code is available on the <a href="downloads.php">download page</a>.
+<BR>
+This page can only sum up the most important things about the game.<!-- If you need any help or futher information, just ask in our <a href="http://www.xenoage.com/bp2k6/forum/viewforum.php?f=4" target="_blank">development forum</a>! -->
+
+
+<BR><P><span class="head"><b>Technical background</b></span><P>
+This game is written in two programming languages: Java and C++. Java is used for the game engine (gameflow, artificial intelligence, game data handling, ...), while the libraries for video, audio and input are coded in C++. The connection between the Java classes and the native binaries is achieved by the Java Native Interface (JNI). Most game data is coded in XML, so it's really easy to edit it.
+<P>
+That means, there are three ways of modifying this game:
+<UL>
+<LI> If you want to modify the game data (e.g. add referees, stadiums, teams, change camera flights, ...): For the two most important purposes you can use the team-editor and stadium-editor of the <a>gold edition</a>. All game data can also be edited manually by modifying the XML-files in the data-folder (subfolder names should be self-explaining).
+<P><LI> If you want to change the game logic (e.g. let the referee show no red cards any more, change the camera perspective, add camera flights, integrate new 3d models), you can edit and recompile the Java source files. We tried to use as much comments as possible, but unfortunately there is no document or tutorial available at the moment, that explains the general structure.<!-- If you need help, please ask in the <a href="http://www.xenoage.com/bp2k6/forum/viewforum.php?f=4" target="_blank">development forum</a>! -->
+<P><LI> If you really want to change the native libraries (there must be a good reason to do that ;-)), you have to compile the sources for Windows and Linux (32bit and 64bit if it should run everywhere).
+  <BR><b>The native libraries are:</b>
+    <dl>
+    <LI> Irrlicht 0.14 with some extensions and bugfixes
+    <LI> LWJGL 0.97 with Ogg Vorbis extension
+    <LI> Not included (because unmodified): SDL
+    <LI>Both are included in the source code package.
+    </dl>
+  <b>The bindings to the Java language:</b>
+  <dl>
+  <LI> Jirr 0.6, for Irrlicht
+  <LI> Not included (because unmodified): SDLJava
+  </dl>
+<BR>
+Please notice that these libraries are provided under different licenses,<BR>for details see license.txt in the main folder of the game.
+</UL>
+
+
+<!--
+<BR><P><span class="head"><b>More information...</b></span><P>
+
+... will follow later, if the demand is there ;-)<BR>
+Use the <a href="http://www.xenoage.com/bp2k6/forum/viewforum.php?f=4" target="_blank">development forum</a> for your questions, we will try to support you wherever possible.
+-->

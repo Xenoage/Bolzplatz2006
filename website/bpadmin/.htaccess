@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "- - - X E N O A G E - - -"
+AuthUserFile /your/path/bpadmin/.htpasswd
+require valid-user
