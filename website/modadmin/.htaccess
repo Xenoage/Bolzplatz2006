@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Geschützter Bereich"
+AuthUserFile /your/path/modadmin/.htpasswd
+require valid-user

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /global/
+Disallow: /de-newsletter/
+Disallow: /en-newsletter/
+Disallow: /bpadmin/
