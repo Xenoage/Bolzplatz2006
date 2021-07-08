@@ -1,0 +1,4 @@
+game.jar
+*.exe
+classes/*
+*.o
