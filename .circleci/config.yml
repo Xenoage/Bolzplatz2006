@@ -6,13 +6,13 @@ jobs:
   build_linux:
     <<: *defaults
     steps:
-      - checkout
       - run:
           name: Id
           command: cat /etc/*release
       - run:
           name: Setup requirements
           command: apt-get update && apt-get install -y git ant
+      - checkout
       - run:
           name: Build for Linux
           command: cd game && ant 
@@ -29,11 +29,11 @@ jobs:
             dpkg --add-architecture i386 
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget unzip swig
-            git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-win32-bin.zip && unzip sdljava-0.9.1-win32-bin.zip
             cd /root && wget "https://netcologne.dl.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip" && unzip lwjgl-2.9.3.zip
+      - checkout
       - run:
           name: Build for Windows
           command: |
