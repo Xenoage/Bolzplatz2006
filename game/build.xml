@@ -9,6 +9,7 @@
     <property name="ECLIPSE_HOME" value="C:/Programme/eclipse"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
     <path id="Bolzplatz 2006.classpath">
         <pathelement location="classes"/>
         <pathelement location="lib/dom4j/dom4j-1.6.1.jar"/>
