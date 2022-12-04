@@ -30,7 +30,7 @@ jobs:
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget unzip
             git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
-            cd /root && wget wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz/download -O swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
+            cd /root && wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz/download -O swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-win32-bin.zip && unzip sdljava-0.9.1-win32-bin.zip
