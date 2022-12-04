@@ -62,8 +62,7 @@ jobs:
             mkdir -p /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp -r /root/jdk-11.0.10+9-jre/* /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/
             mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
             mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl && cp /root/sdljava-0.9.1/lib/{SDLJava.dll,sdljava.jar} /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl
-            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/windows/lwjgl.dll /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/
-            /tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/windows/lwjgl.dll /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl
             cp /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched/bin/Irrlicht.dll  /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
       - run:
           name: start Inno Setup
