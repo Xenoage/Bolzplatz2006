@@ -17,6 +17,7 @@
         <pathelement location="lib/lwjgl/lwjgl.jar"/>
         <pathelement location="lib/sdl/sdljava.jar"/>
         <pathelement location="lib/vecmath.jar"/>
+        <pathelement location="lib/jirr/irrlicht.jar"/>
         <pathelement location="lib/vorbisspi/jogg-0.0.7.jar"/>
         <pathelement location="lib/vorbisspi/jorbis-0.0.15.jar"/>
         <pathelement location="lib/vorbisspi/tritonus_share.jar"/>
