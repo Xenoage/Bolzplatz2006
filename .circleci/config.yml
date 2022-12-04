@@ -37,7 +37,7 @@ jobs:
             mkdir /root/release/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/linux/{libopenal.so,liblwjgl.so} /root/release/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/release/bolzplatz2006/lib/lwjgl
       - run:
           name: zip resulting files
-          command: cd /root/release && tar czvf bolzplatz20006.tar.gz bolzplatz
+          command: cd /root/release && tar czvf bolzplatz20006.tar.gz bolzplatz2006
 
       - store_artifacts:
           path: /root/bolzplatz2006/game/game.jar
