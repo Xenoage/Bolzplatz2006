@@ -11,11 +11,13 @@ jobs:
           command: cat /etc/*release
       - run:
           name: Setup requirements
-          command: apt-get update && apt-get install -y git ant
-      - checkout
+          command: | 
+            apt-get update
+            apt-get install -y git ant wget unzip default-jdk
+            git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
       - run:
           name: Build for Linux
-          command: cd game && ant 
+          command: cd /root/bolzplatz2006/game && ant 
       - store_artifacts:
           path: game.jar
   build_win32:
@@ -75,3 +77,4 @@ workflows:
   build_all:
     jobs:
       - build_win32
+      - build_linux
