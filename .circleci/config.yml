@@ -20,7 +20,7 @@ jobs:
             cd /root/sdljava && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-linux-2.6-bin.tar.gz && tar xzvf sdljava-0.9.1-linux-2.6-bin.tar.gz
             cd /root && wget "https://netcologne.dl.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip" && unzip lwjgl-2.9.3.zip
 
-            mkdir /root/release/bolzplatz2006
+            mkdir -p /root/release/bolzplatz2006
             mkdir /root/release/bolzplatz2006/lib
       - run:
           name: Build for Linux
