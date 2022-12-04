@@ -40,7 +40,9 @@ jobs:
           command: cd /root/release && tar czvf bolzplatz20006.tar.gz bolzplatz2006
 
       - store_artifacts:
-          path: /root/bolzplatz2006/game/game.jar
+          path: |
+            /root/bolzplatz2006/game/game.jar
+            /root/release/bolzplatz2006.tar.gz
   build_win32:
     docker:
       - image: ubuntu:18.04
