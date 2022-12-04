@@ -43,32 +43,33 @@ jobs:
       - run:
           name: build starter files
           command: | 
-            cd /root/game/starter/exe/bolzplatz2006/ && make 
+            cd /root/bolzplatz2006/game/starter/exe/bolzplatz2006/ && make 
             cd ../settings && make 
             cd ../stadioneditor && make
             cd ../teameditor && make
       - run:
           name: build irrlicht-0.14
           command: |
-            cd /root/project/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define _IRR_WINDOWS_" CFileList.cpp && sed -i "4a \#define _IRR_WINDOWS_" COpenGLTexture.h
-            cd /root/project/libs/archive/irrlicht-0.14-patched && mkdir obj && make -f Makefile.win
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define _IRR_WINDOWS_" CFileList.cpp && sed -i "4a \#define _IRR_WINDOWS_" COpenGLTexture.h
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched && mkdir obj && make -f Makefile.win
       - run:
           name: collect files for installation package
           command: |
-            cp -r /root/project/game/data /root/project/tools/setup/v1.0-windows/bolzplatz2006/
-            cp -r /root/project/game/doc /root/project/tools/setup/v1.0-windows/bolzplatz2006/
-            cp -r /root/project/game/game.jar /root/project/tools/setup/v1.0-windows/bolzplatz2006/
-            cp -r /root/project/game/license.txt /root/project/tools/setup/v1.0-windows/bolzplatz2006/
-            mkdir -p /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp -r /root/jdk-11.0.10+9-jre/* /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/
-            mkdir /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
-            mkdir /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl && cp /root/sdljava-0.9.1/lib/{SDLJava.dll,sdljava.jar} /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl
-            mkdir /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/windows/lwjgl.dll /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/project/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl
-            cp /root/project/libs/archive/irrlicht-0.14-patched/bin/Irrlicht.dll  /root/project/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/data /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/doc /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/game.jar /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/license.txt /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            mkdir -p /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp -r /root/jdk-11.0.10+9-jre/* /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl && cp /root/sdljava-0.9.1/lib/{SDLJava.dll,sdljava.jar} /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/windows/lwjgl.dll /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/
+            /tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl
+            cp /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched/bin/Irrlicht.dll  /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
       - run:
           name: start Inno Setup
-          command: cd tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
+          command: cd /root/bolzplatz2006/tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
       - store_artifacts:
-          path: /root/project/tools/setup/v1.0-windows/output/bolzplatz2006-git-install.exe
+          path: /root/bolzplatz2006/tools/setup/v1.0-windows/output/bolzplatz2006-git-install.exe
 
 workflows:
   version: 2
