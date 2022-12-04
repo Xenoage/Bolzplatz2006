@@ -22,7 +22,6 @@ jobs:
     docker:
       - image: ubuntu:18.04
     steps:
-      - checkout
       - run:
           name: Prepare the Windows build environment
           command: |
@@ -30,6 +29,7 @@ jobs:
             dpkg --add-architecture i386 
             apt-get update 
             apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget unzip swig
+            git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
             cd /root && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-win32-bin.zip && unzip sdljava-0.9.1-win32-bin.zip
@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Build for Windows
           command: |
-            cd game && ant 
+            cd /root/bolzplatz2006/game && ant 
       - run:
           name: build starter files
           command: | 
