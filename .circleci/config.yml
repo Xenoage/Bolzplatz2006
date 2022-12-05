@@ -14,7 +14,7 @@ jobs:
           command: | 
             dpkg --add-architecture i386 
             apt-get update
-            apt-get install -y git ant wget unzip default-jdk build-essential
+            apt-get install -y git ant wget unzip default-jdk build-essential libgl-dev
             git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
             mkdir /root/sdljava
             cd /root && wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
@@ -29,7 +29,8 @@ jobs:
       - run:
           name: build irrlicht-0.14
           command: |
-            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define LINUX" CFileList.cpp && sed -i "4a \#define LINUX" COpenGLTexture.h
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define LINUX" CFileList.cpp && sed -i "4a \#define LINUX" COpenGLTexture.h && sed -i "27s/$/  -Wno-narrowing &/" Makefile
+
             cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched && mkdir obj && make 
       - run:
           name: collect files for installation package
