@@ -12,6 +12,7 @@ jobs:
       - run:
           name: Setup requirements
           command: | 
+            dpkg --add-architecture i386 
             apt-get update
             apt-get install -y git ant wget unzip default-jdk build-essential
             git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
