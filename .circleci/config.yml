@@ -14,7 +14,7 @@ jobs:
           command: | 
             dpkg --add-architecture i386 
             apt-get update
-            apt-get install -y git ant wget unzip default-jdk build-essential libgl-dev libglu1-mesa-dev
+            apt-get install -y git ant wget unzip default-jdk build-essential libcgal-dev
             git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
             mkdir /root/sdljava
             cd /root && wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
