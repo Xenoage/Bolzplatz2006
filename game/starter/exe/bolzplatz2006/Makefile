@@ -26,5 +26,5 @@ $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
 main.o: main.c
-	$(CC) -c main.c -o main.o $(CFLAGS)
+	$(CC) -c main.c bolzplatz2006_private.res -o main.o $(CFLAGS)
 

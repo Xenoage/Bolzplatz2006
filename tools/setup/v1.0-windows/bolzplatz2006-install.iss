@@ -35,8 +35,8 @@ Source: "Z:\root\bolzplatz2006\game\data\config\input-default.xml"; DestDir: "{a
 Source: "Z:\root\bolzplatz2006\game\data\config\language.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
 Source: "Z:\root\bolzplatz2006\game\data\config\language-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
 Source: "Z:\root\bolzplatz2006\game\anleitung.html"; DestDir: "{app}"; Flags: ignoreversion
-;exclude: gold files, temp files, savegame files, input config, language config
-Source: "Z:\root\bolzplatz2006\tools\setup\v1.0-windows\bolzplatz2006\*"; DestDir: "{app}"; Excludes: "gold.jar,license-gold.txt,data\temp\*,data\savegames\career\*,data\savegames\worldcup\*,data\config\input.xml,data\config\input-default.xml,data\config\language.xml,data\config\language-default.xml"; Flags: ignoreversion recursesubdirs createallsubdirs
+;exclude: temp files, savegame files, input config, language config
+Source: "Z:\root\bolzplatz2006\tools\setup\v1.0-windows\bolzplatz2006\*"; DestDir: "{app}"; Excludes: "data\temp\*,data\savegames\career\*,data\savegames\worldcup\*,data\config\input.xml,data\config\input-default.xml,data\config\language.xml,data\config\language-default.xml"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [INI]
