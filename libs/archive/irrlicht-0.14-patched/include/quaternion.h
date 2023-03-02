@@ -52,7 +52,7 @@ class quaternion
 		quaternion& operator*=(f32 s);
 
 		//! multiplication operator
-		vector3df quaternion::operator* (const vector3df& v) const;
+		vector3df operator* (const vector3df& v) const;
 
 		//! multiplication operator
 		quaternion& operator*=(const quaternion& other);

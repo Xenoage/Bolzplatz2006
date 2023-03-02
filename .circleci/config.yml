@@ -1,0 +1,115 @@
+version: 2
+defaults: &defaults
+  docker:
+    - image: ubuntu:18.04
+jobs:
+  build_linux:
+    <<: *defaults
+    steps:
+      - run:
+          name: Id
+          command: cat /etc/*release
+      - run:
+          name: Setup requirements
+          command: | 
+            dpkg --add-architecture i386 
+            apt-get update
+            apt-get install -y git ant wget unzip default-jdk build-essential mesa-common-dev libglu1-mesa-dev
+            git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
+            mkdir /root/sdljava
+            cd /root && wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
+            cd /root/sdljava && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-linux-2.6-bin.tar.gz && tar xzvf sdljava-0.9.1-linux-2.6-bin.tar.gz
+            cd /root && wget "https://netcologne.dl.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip" && unzip lwjgl-2.9.3.zip
+
+            mkdir -p /root/release/bolzplatz2006
+            mkdir /root/release/bolzplatz2006/lib
+      - run:
+          name: Build for Linux
+          command: cd /root/bolzplatz2006/game && ant
+      - run:
+          name: build irrlicht-0.14
+          command: |
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define LINUX" CFileList.cpp && sed -i "4a \#define LINUX" COpenGLTexture.h && sed -i "27s/$/  -Wno-narrowing &/" Makefile
+
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched && mkdir obj && make 
+      - run:
+          name: collect files for installation package
+          command: |
+            cp -r /root/bolzplatz2006/game/data /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/doc /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/game.jar /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/license.txt /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/settings.sh /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/bolzplatz2006.sh /root/release/bolzplatz2006
+            cp -r /root/bolzplatz2006/game/anleitung.html /root/release/bolzplatz2006/tutorial.html
+            cp -r /root/bolzplatz2006/game/lib/vecmath.jar /root/release/bolzplatz2006/lib/
+            mkdir /root/release/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/release/bolzplatz2006/lib/dom4j/
+            mkdir /root/release/bolzplatz2006/lib/sdl && cp /root/sdljava/sdljava-0.9.1/lib/{libsdljava.so,sdljava.jar} /root/release/bolzplatz2006/lib/sdl
+            mkdir /root/release/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/linux/{libopenal.so,liblwjgl.so} /root/release/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/release/bolzplatz2006/lib/lwjgl
+      - run:
+          name: zip resulting files
+          command: cd /root/release && tar czvf bolzplatz2006.tar.gz bolzplatz2006
+
+      - store_artifacts:
+          path: /root/bolzplatz2006/game/game.jar
+      - store_artifacts:
+          path: /root/release/bolzplatz2006.tar.gz
+  build_win32:
+    docker:
+      - image: ubuntu:18.04
+    steps:
+      - run:
+          name: Prepare the Windows build environment
+          command: |
+            export DISPLAY=xserver:0
+            dpkg --add-architecture i386 
+            apt-get update 
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk libsaxonb-java curl ant git wine-stable procps xvfb osslsigncode wine32  wget unzip
+            git clone https://github.com/hoehnp/Bolzplatz2006 /root/bolzplatz2006
+            cd /root && wget https://sourceforge.net/projects/swig/files/swig/swig-1.3.24/swig-1.3.24.tar.gz/download -O swig-1.3.24.tar.gz && tar xzvf swig-1.3.24.tar.gz
+            cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jre_x86-32_windows_hotspot_11.0.10_9.zip
+            cd /root/ && wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip && unzip OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.10_9.zip
+            cd /root && wget https://phoenixnap.dl.sourceforge.net/project/sdljava/sdljava/0.9.1/sdljava-0.9.1-win32-bin.zip && unzip sdljava-0.9.1-win32-bin.zip
+            cd /root && wget "https://netcologne.dl.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip" && unzip lwjgl-2.9.3.zip
+            cd /root/SWIG-1.3.24 && ./configure --prefix="/usr" && make && make install
+      - run:
+          name: Build for Windows
+          command: |
+            cd /root/bolzplatz2006/game && ant 
+      - run:
+          name: build starter files
+          command: | 
+            cd /root/bolzplatz2006/game/starter/exe/bolzplatz2006/ && make 
+            cd ../settings && make 
+            cd ../stadioneditor && make
+            cd ../teameditor && make
+      - run:
+          name: build irrlicht-0.14
+          command: |
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched &&  sed -i "4a \#define _IRR_WINDOWS_" CFileList.cpp && sed -i "4a \#define _IRR_WINDOWS_" COpenGLTexture.h
+            cd /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched && mkdir obj && make -f Makefile.win
+      - run:
+          name: collect files for installation package
+          command: |
+            cp -r /root/bolzplatz2006/game/data /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/doc /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/game.jar /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/license.txt /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+            cp -r /root/bolzplatz2006/game/lib/vecmath.jar /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/
+            cp -r /root/bolzplatz2006/game/lib/jirr /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/
+            mkdir -p /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/bin/ && cp -r /root/jdk-11.0.10+9-jre/* /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/jre/
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j && wget https://github.com/dom4j/dom4j/releases/download/version-2.1.3/dom4j-2.1.3.jar -P /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/dom4j/
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl && cp /root/sdljava-0.9.1/lib/{SDLJava.dll,sdljava.jar} /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/sdl
+            mkdir /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/native/windows/lwjgl.dll /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl && cp /root/lwjgl-2.9.3/jar/{lwjgl.jar,lwjgl_util.jar} /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/lib/lwjgl
+            cp /root/bolzplatz2006/libs/archive/irrlicht-0.14-patched/bin/Irrlicht.dll  /root/bolzplatz2006/tools/setup/v1.0-windows/bolzplatz2006/
+      - run:
+          name: start Inno Setup
+          command: cd /root/bolzplatz2006/tools/setup/v1.0-windows && wine ISCC.exe bolzplatz2006-install.iss
+      - store_artifacts:
+          path: /root/bolzplatz2006/tools/setup/v1.0-windows/output/bolzplatz2006-git-install.exe
+
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - build_win32

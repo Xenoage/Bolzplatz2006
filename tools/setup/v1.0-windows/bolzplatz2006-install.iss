@@ -10,11 +10,12 @@ AppSupportURL=http://www.bolzplatz2006.de
 AppUpdatesURL=http://www.bolzplatz2006.de
 DefaultDirName={pf}\Bolzplatz 2006
 DefaultGroupName=Bolzplatz 2006
+UsePreviousAppDir=no
 AllowNoIcons=yes
-LicenseFile=D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\bolzplatz2006\license.txt
-InfoBeforeFile=D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\info.txt
-OutputDir=D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\output
-OutputBaseFilename=bolzplatz2006-1.0.3-install
+LicenseFile=Z:\root\bolzplatz2006\game\license.txt
+InfoBeforeFile=Z:\root\bolzplatz2006\tools\setup\v1.0-windows\other\info.txt
+OutputDir=Z:\root\bolzplatz2006\tools\setup\v1.0-windows\output
+OutputBaseFilename=bolzplatz2006-git-install
 Compression=lzma
 SolidCompression=yes
 
@@ -27,15 +28,15 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\bolzplatz2006.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\einstellungen.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\input.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\input-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\language.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\language-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\other\de\anleitung.html"; DestDir: "{app}"; Flags: ignoreversion
-;exclude: gold files, temp files, savegame files, input config, language config
-Source: "D:\Werkstatt\Bolzplatz2006\setup\v1.0-windows\bolzplatz2006\*"; DestDir: "{app}"; Excludes: "gold.jar,license-gold.txt,data\temp\*,data\savegames\career\*,data\savegames\worldcup\*,data\config\input.xml,data\config\input-default.xml,data\config\language.xml,data\config\language-default.xml"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Z:\root\bolzplatz2006\game\starter\exe\bolzplatz2006\bolzplatz2006.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\starter\exe\settings\settings.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\data\config\input.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\data\config\input-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\data\config\language.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\data\config\language-default.xml"; DestDir: "{app}\data\config"; Flags: ignoreversion
+Source: "Z:\root\bolzplatz2006\game\anleitung.html"; DestDir: "{app}"; Flags: ignoreversion
+;exclude: temp files, savegame files, input config, language config
+Source: "Z:\root\bolzplatz2006\tools\setup\v1.0-windows\bolzplatz2006\*"; DestDir: "{app}"; Excludes: "data\temp\*,data\savegames\career\*,data\savegames\worldcup\*,data\config\input.xml,data\config\input-default.xml,data\config\language.xml,data\config\language-default.xml"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [INI]

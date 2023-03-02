@@ -59,7 +59,7 @@ namespace core
 			void setTranslation( const vector3df& translation );			
 
 			//! Gets the current translation
-			vector3df matrix4::getTranslation() const;
+			vector3df getTranslation() const;
 
 			//! Set the inverse translation of the current matrix. Will erase any previous values.
 			void setInverseTranslation( const vector3df& translation );	

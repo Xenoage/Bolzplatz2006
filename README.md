@@ -4,10 +4,4 @@
 
 _The funny football game in 3D-comic-style, published in 2006_
 
-
-The source code and other material of the game (including the "Gold Edition" and the [website](https://www.bolzplatz2006.de) sources) were copied from [sourceforge.net](https://sourceforge.net/projects/bp2k6/) to this repository, mainly for archiving.
-There are also efforts to reactivate the project and improve the game, like in [hoehnp's fork](https://github.com/hoehnp/Bolzplatz2006).
-
-If you have any quesions, please get in touch with info@xenoage.com
-
-_Andi, 2021-02-15_
+The repository aims to provide an updated version of the classic game from 2006. 
