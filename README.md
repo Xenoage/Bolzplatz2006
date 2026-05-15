@@ -9,12 +9,12 @@ _The funny football game in 3D-comic-style, published in 2006_
 - [Bolzplatz 2006](http://prdownloads.sourceforge.net/bp2k6/bolzplatz2006-1.0.3-install.exe?download), 🇩🇪 Deutsch, v1.0.3
 - [Slam Soccer 2006](http://prdownloads.sourceforge.net/bp2k6/slamsoccer2006-1.0.3-install.exe?download), 🇬🇧 English, v1.0.3
 - [Coup de Foot 2006](http://prdownloads.sourceforge.net/bp2k6/coupdefoot2006-1.0.3_install.exe?download), 🇫🇷 Français, v1.0.3
-
+- Gold Edition
+  - Windows: 🇩🇪 [Deutsch](https://github.com/Xenoage/Bolzplatz2006/blob/master/downloads/bolzplatz2006-gold-install.exe), 🇬🇧 [English](https://github.com/Xenoage/Bolzplatz2006/blob/master/downloads/slamsoccer2006-gold-install.exe), 🇫🇷 [Français](https://github.com/Xenoage/Bolzplatz2006/blob/master/downloads/coupdefoot2006-gold-install.exe)
+  - [Linux](https://github.com/Xenoage/Bolzplatz2006/blob/master/downloads/bolzplatz2006-gold-linux.zip)
+  
 ## About
 
 The source code and other material of the game (including the "Gold Edition" and the website sources) were copied from [sourceforge.net](https://sourceforge.net/projects/bp2k6/) to this repository, mainly for archiving.
-There are also efforts to reactivate the project and improve the game, like in [hoehnp's fork](https://github.com/hoehnp/Bolzplatz2006).
 
 If you have any quesions, please get in touch with info@xenoage.com
-
-_Andi, 2021-02-15_
